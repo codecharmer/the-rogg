@@ -1,4 +1,8 @@
+/.idea
+/.vagrant
 /vendor
 /node_modules
-Homestead.yaml
+
 .env
+Homestead.yaml
+phpinfo.php
