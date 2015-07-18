@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace TheRogg\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
