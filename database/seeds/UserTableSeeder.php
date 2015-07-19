@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use TheRogg\Domain\User;
 
 class UserTableSeeder extends Seeder
 {
@@ -11,8 +12,8 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        $testUser = new \TheRogg\User();
-        $testUser->name = 'Christopher';
+        $testUser = new User();
+        $testUser->setName('Christopher');
         $testUser->save();
     }
 }
