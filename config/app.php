@@ -144,6 +144,8 @@ return [
         TheRogg\Providers\EventServiceProvider::class,
         TheRogg\Providers\RouteServiceProvider::class,
 
+        Jenssegers\Mongodb\MongodbServiceProvider::class,
+
     ],
 
     /*
