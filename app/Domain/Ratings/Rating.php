@@ -56,6 +56,78 @@ class Rating extends Entity
         $this->attributes['secondAmendment'] = $secondAmendment;
     }
 
+    public function getThirdAmendment() { return $this->attributes['thirdAmendment']; }
+    public function setThirdAmendment($thirdAmendment)
+    {
+        if (!$this->isValidRating($thirdAmendment))
+            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+
+        $this->attributes['thirdAmendment'] = $thirdAmendment;
+    }
+
+    public function getFourthAmendment() { return $this->attributes['fourthAmendment']; }
+    public function setFourthAmendment($fourthAmendment)
+    {
+        if (!$this->isValidRating($fourthAmendment))
+            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+
+        $this->attributes['fourthAmendment'] = $fourthAmendment;
+    }
+
+    public function getFifthAmendment() { return $this->attributes['fifthAmendment']; }
+    public function setFifthAmendment($fifthAmendment)
+    {
+        if (!$this->isValidRating($fifthAmendment))
+            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+
+        $this->attributes['fifthAmendment'] = $fifthAmendment;
+    }
+
+    public function getSixthAmendment() { return $this->attributes['sixthAmendment']; }
+    public function setSixthAmendment($sixthAmendment)
+    {
+        if (!$this->isValidRating($sixthAmendment))
+            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+
+        $this->attributes['sixthAmendment'] = $sixthAmendment;
+    }
+
+    public function getSeventhAmendment() { return $this->attributes['seventhAmendment']; }
+    public function setSeventhAmendment($seventhAmendment)
+    {
+        if (!$this->isValidRating($seventhAmendment))
+            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+
+        $this->attributes['seventhAmendment'] = $seventhAmendment;
+    }
+
+    public function getEighthAmendment() { return $this->attributes['eighthAmendment']; }
+    public function setEighthAmendment($eighthAmendment)
+    {
+        if (!$this->isValidRating($eighthAmendment))
+            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+
+        $this->attributes['eighthAmendment'] = $eighthAmendment;
+    }
+
+    public function getNinthAmendment() { return $this->attributes['ninthAmendment']; }
+    public function setNinthAmendment($ninthAmendment)
+    {
+        if (!$this->isValidRating($ninthAmendment))
+            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+
+        $this->attributes['ninthAmendment'] = $ninthAmendment;
+    }
+
+    public function getTenthAmendment() { return $this->attributes['tenthAmendment']; }
+    public function setTenthAmendment($tenthAmendment)
+    {
+        if (!$this->isValidRating($tenthAmendment))
+            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+
+        $this->attributes['tenthAmendment'] = $tenthAmendment;
+    }
+
     private function isValidRating($number)
     {
         return is_int($number) || $number >= 1 || $number <= 5;
