@@ -4,7 +4,7 @@ namespace TheRogg\Domain;
 
 abstract class Party
 {
-    const DEMOCRAT    = 1;
-    const REPUBLICAN  = 2;
-    const INDEPENDENT = 3;
+    const Democrat    = 1;
+    const Republican  = 2;
+    const Independent = 3;
 }
