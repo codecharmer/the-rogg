@@ -23,6 +23,16 @@ class Politician extends Entity
     /** @var  Comment[] */
     protected $comments;
 
+    public function __construct($name, $state, $house, $party, $attributes = [])
+    {
+        parent::__construct($attributes);
+
+        $this->setName($name);
+        $this->setState($state);
+        $this->setHouse($house);
+        $this->setParty($party);
+    }
+
     public function getName() { return $this->attributes['name']; }
     public function setName($name)
     {
@@ -32,16 +42,31 @@ class Politician extends Entity
         $this->attributes['name'] = $name;
     }
 
-    public function getHouse() { return $this->attributes['house']; }
-    public function setHouse(House $house)
+    public function getState() { return $this->attributes['state']; }
+    public function setState($state)
     {
+        if (!State::isValidValue($state))
+            throw new InvalidArgumentException($state . ' is not a valid state.');
+
+        $this->attributes['state'] = $state;
+    }
+
+    public function getHouse() { return $this->attributes['house']; }
+    public function setHouse($house)
+    {
+        if (!House::isValidValue($house))
+            throw new InvalidArgumentException($house . ' is not a valid house of Congress.');
+
         $this->attributes['house'] = $house;
     }
 
-    public function getState() { return $this->attributes['state']; }
-    public function setState(State $state)
+    public function getParty() { return $this->attributes['party']; }
+    public function setParty($party)
     {
-        $this->attributes['state'] = $state;
+        if (!Party::isValidValue($party))
+            throw new InvalidArgumentException($party . ' is not a valid political party.');
+
+        $this->attributes['party'] = $party;
     }
 
     public function getPicture() { return $this->attributes['picture']; }
@@ -60,12 +85,6 @@ class Politician extends Entity
             throw new InvalidArgumentException('Message cannot be empty.');
 
         $this->attributes['message'] = $message;
-    }
-
-    public function getParty() { return $this->attributes['party']; }
-    public function setParty(Party $party)
-    {
-        $this->attributes['party'] = $party;
     }
 
     // TODO: Ratings
