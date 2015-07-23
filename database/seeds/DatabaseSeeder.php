@@ -7,11 +7,7 @@ class DatabaseSeeder extends Seeder
 {
     public function run()
     {
-        Model::unguard();
-
         $this->call(PoliticianTableSeeder::class);
         $this->call(UserTableSeeder::class);
-
-        Model::reguard();
     }
 }
