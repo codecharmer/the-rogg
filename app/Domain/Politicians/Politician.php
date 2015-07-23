@@ -23,6 +23,11 @@ class Politician extends Entity
     /** @var  string */
     protected $message;
 
+    protected $attributes = [
+        'ratings'  => [],
+        'comments' => [],
+    ];
+
     public function __construct($name, $state, $house, $party, $attributes = [])
     {
         parent::__construct($attributes);
@@ -31,9 +36,6 @@ class Politician extends Entity
         $this->setState($state);
         $this->setHouse($house);
         $this->setParty($party);
-
-        $this->ratings  = [];
-        $this->comments = [];
     }
 
     public function getName() { return $this->attributes['name']; }
