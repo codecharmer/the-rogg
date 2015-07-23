@@ -62,16 +62,16 @@
         },
         {
             "name": "danielstjules/stringy",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b"
+                "reference": "4749c205db47ee5b32e8d1adf6d9aff8db6caf3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
-                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/4749c205db47ee5b32e8d1adf6d9aff8db6caf3b",
+                "reference": "4749c205db47ee5b32e8d1adf6d9aff8db6caf3b",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2015-02-10 06:19:18"
+            "time": "2015-07-23 00:54:12"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1907,16 +1907,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v2.1.4",
+            "version": "v2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "219357e2fdc6f7a1955fa15fcecd1c2d87e0cc50"
+                "reference": "ca55677158b1ae83106195537092095573b5822a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/219357e2fdc6f7a1955fa15fcecd1c2d87e0cc50",
-                "reference": "219357e2fdc6f7a1955fa15fcecd1c2d87e0cc50",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/ca55677158b1ae83106195537092095573b5822a",
+                "reference": "ca55677158b1ae83106195537092095573b5822a",
                 "shasum": ""
             },
             "require": {
@@ -1944,7 +1944,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2015-07-03 15:56:45"
+            "time": "2015-07-23 14:53:43"
         },
         {
             "name": "mockery/mockery",
