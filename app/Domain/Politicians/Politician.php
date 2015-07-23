@@ -10,7 +10,7 @@ class Politician extends Entity
     protected $name;
     /** @var  House */
     protected $house;
-    /** @var  string */
+    /** @var  State */
     protected $state;
     /** @var  string */
     protected $picture;
@@ -38,13 +38,9 @@ class Politician extends Entity
         $this->attributes['house'] = $house;
     }
 
-    // TODO: Should this be an enum? Probably.
     public function getState() { return $this->attributes['state']; }
-    public function setState($state)
+    public function setState(State $state)
     {
-        if ($this->stringIsNullOrEmpty($state))
-            throw new InvalidArgumentException('State cannot be empty.');
-
         $this->attributes['state'] = $state;
     }
 
