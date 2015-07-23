@@ -2,9 +2,9 @@
 
 namespace TheRogg\Domain;
 
-abstract class Party
+abstract class Party extends Enum
 {
-    const Democrat    = 1;
-    const Republican  = 2;
-    const Independent = 3;
+    const Democrat    = 'Democrat';
+    const Republican  = 'Republican';
+    const Independent = 'Independent';
 }
