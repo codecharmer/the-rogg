@@ -8,20 +8,20 @@ class Politician extends Entity
 {
     /** @var  string */
     protected $name;
-    /** @var  House */
-    protected $house;
     /** @var  State */
     protected $state;
-    /** @var  string */
-    protected $picture;
-    /** @var  string */
-    protected $message;
+    /** @var  House */
+    protected $house;
     /** @var  Party */
     protected $party;
     /** @var  Rating[] */
     protected $ratings;
     /** @var  Comment[] */
     protected $comments;
+    /** @var  string */
+    protected $picture;
+    /** @var  string */
+    protected $message;
 
     public function __construct($name, $state, $house, $party, $attributes = [])
     {
@@ -31,6 +31,9 @@ class Politician extends Entity
         $this->setState($state);
         $this->setHouse($house);
         $this->setParty($party);
+
+        $this->ratings  = [];
+        $this->comments = [];
     }
 
     public function getName() { return $this->attributes['name']; }
@@ -86,7 +89,4 @@ class Politician extends Entity
 
         $this->attributes['message'] = $message;
     }
-
-    // TODO: Ratings
-    // TODO: Comments
 }
