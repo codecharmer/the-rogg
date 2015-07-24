@@ -7,7 +7,7 @@ use Jenssegers\Mongodb\Model;
 
 abstract class Entity extends Model implements EntityInterface
 {
-    public function getId() { $this->attributes['_id']; }
+    public function getId() { return $this->{'_id'}; }
     public function setId($id)
     {
         if ($this->stringIsNullOrEmpty($id))
