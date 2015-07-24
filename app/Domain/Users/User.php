@@ -17,15 +17,6 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
 
     protected $hidden = ['password', 'remember_token'];
 
-    public function __construct($name, $email, $password, $attributes = [])
-    {
-        parent::__construct($attributes);
-
-        $this->setName($name);
-        $this->setEmail($email);
-        $this->setPassword($password);
-    }
-
     public function getName() { return $this->attributes['name']; }
     public function setName($name)
     {
