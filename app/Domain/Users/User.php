@@ -12,17 +12,18 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
 {
     use Authenticatable, CanResetPassword;
 
-    protected $collection = 'users';
+    /** @var  Party */
+    protected $party;
 
     protected $hidden = ['password', 'remember_token'];
 
-    public function getEmail() { return $this->attributes['email']; }
-    public function setEmail($email)
+    public function __construct($name, $email, $password, $attributes = [])
     {
-        if ($this->stringIsNullOrEmpty($email))
-            throw new InvalidArgumentException('Email cannot be empty.');
+        parent::__construct($attributes);
 
-        $this->attributes['email'] = $email;
+        $this->setName($name);
+        $this->setEmail($email);
+        $this->setPassword($password);
     }
 
     public function getName() { return $this->attributes['name']; }
@@ -34,6 +35,15 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
         $this->attributes['name'] = $name;
     }
 
+    public function getEmail() { return $this->attributes['email']; }
+    public function setEmail($email)
+    {
+        if ($this->stringIsNullOrEmpty($email))
+            throw new InvalidArgumentException('Email cannot be empty.');
+
+        $this->attributes['email'] = $email;
+    }
+
     public function getPassword() { return $this->attributes['password']; }
     public function setPassword($password)
     {
@@ -41,5 +51,14 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
             throw new InvalidArgumentException('Password cannot be empty.');
 
         $this->attributes['password'] = $password;
+    }
+
+    public function getParty() { return $this->attributes['party']; }
+    public function setParty($party)
+    {
+        if (!Party::isValidValue($party))
+            throw new InvalidArgumentException($party . ' is not a valid political party.');
+
+        $this->attributes['party'] = $party;
     }
 }
