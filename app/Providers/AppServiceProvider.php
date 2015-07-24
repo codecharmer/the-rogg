@@ -23,7 +23,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        /** @noinspection PhpMethodParametersCountMismatchInspection */
         if ($this->app->environment('local'))
             $this->app->register('Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider');
+
+        $this->app->bind(
+            'TheRogg\Repositories\Politicians\PoliticianRepositoryInterface',
+            'TheRogg\Repositories\Politicians\EloquentPoliticianRepository'
+        );
     }
 }
