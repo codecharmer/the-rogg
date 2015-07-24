@@ -13,37 +13,81 @@ class PoliticianTableSeeder extends Seeder
     {
         Schema::drop('politicians');
 
-        $politician = new Politician('Lamar Alexander', State::Tennessee, House::Senate, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('Lamar Alexander');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Senate);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('Bob Corker', State::Tennessee, House::Senate, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('Bob Corker');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Senate);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('David Roe', State::Tennessee, House::Representatives, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('David Roe');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('John J. Duncan, Jr.', State::Tennessee, House::Representatives, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('John J. Duncan');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('Charles Fleischmann', State::Tennessee, House::Representatives, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('Charles Fleischmann');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('Scott Desjarlais', State::Tennessee, House::Representatives, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('Scott Desjarlais');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('Jim Cooper', State::Tennessee, House::Representatives, Party::Democrat);
+        $politician = new Politician();
+        $politician->setName('Jim Cooper');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Democrat);
         $politician->save();
 
-        $politician = new Politician('Diane Black', State::Tennessee, House::Representatives, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('Diane Black');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('Marsha Blackburn', State::Tennessee, House::Representatives, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('Marsha Blackburn');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('Stephen Fincher', State::Tennessee, House::Representatives, Party::Republican);
+        $politician = new Politician();
+        $politician->setName('Stephen Fincher');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Republican);
         $politician->save();
 
-        $politician = new Politician('Steve Cohen', State::Tennessee, House::Representatives, Party::Democrat);
+        $politician = new Politician();
+        $politician->setName('Steven Cohen');
+        $politician->setState(State::Tennessee);
+        $politician->setHouse(House::Representatives);
+        $politician->setParty(Party::Republican);
         $politician->save();
     }
 }
