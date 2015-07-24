@@ -32,7 +32,7 @@ class EloquentPoliticianRepository implements PoliticianRepositoryInterface
 
     public function findBy($field, $value, $fields = [])
     {
-        $politician = Politician::where($field, $value)->project($fields)->get();
+        $politician = Politician::where($field, $value)->project($fields)->first();
 
         return $politician;
     }
