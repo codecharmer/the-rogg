@@ -81,4 +81,8 @@ class Politician extends Entity
 
         $this->attributes['message'] = $message;
     }
+
+    public function getRatings() { return $this->attributes['ratings']; }
+
+    public function getComments() { return $this->attributes['comments']; }
 }
