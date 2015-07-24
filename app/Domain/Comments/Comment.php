@@ -11,9 +11,13 @@ class Comment extends Entity
     /** @var  string */
     protected $text;
 
-    protected $attributes = [
-        'text' => '',
-    ];
+    public function __construct($userId, $text, $attributes = [])
+    {
+        parent::__construct($attributes);
+
+        $this->setUserId($userId);
+        $this->setText($text);
+    }
 
     public function getUserId() { return $this->attributes['userId']; }
     public function setUserId($userId)
