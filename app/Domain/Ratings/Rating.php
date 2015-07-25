@@ -130,6 +130,6 @@ class Rating extends Entity
 
     private function isValidRating($number)
     {
-        return is_int($number) || $number >= 1 || $number <= 5;
+        return is_int($number) && $number >= 1 && $number <= 5;
     }
 }
