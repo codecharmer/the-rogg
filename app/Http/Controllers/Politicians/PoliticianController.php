@@ -16,13 +16,13 @@ use TheRogg\Repositories\Ratings\RatingRepositoryInterface as RatingRepo;
 class PoliticianController extends Controller
 {
     private $politicianRepo;
-    /**
-     * @var RatingRepo
-     */
     private $ratingRepo;
 
     public function __construct(PoliticianRepo $politicianRepo, RatingRepo $ratingRepo)
     {
+        // TODO: Authentication.
+        // TODO: CSRF token.
+
         $this->politicianRepo = $politicianRepo;
         $this->ratingRepo     = $ratingRepo;
     }
@@ -70,6 +70,37 @@ class PoliticianController extends Controller
         );
 
         return Response::json($model);
+    }
+
+    public function putRatePolitician()
+    {
+        /* {
+                "politicianId": "butts",
+                "userId": "butts",
+                "ratings": {
+                    "First": 1,
+                    "Second": 1,
+                    "Third": 1,
+                    "Fourth": 1,
+                    "Fifth": 1,
+                    "Sixth": 1,
+                    "Seventh": 1,
+                    "Eighth": 1,
+                    "Ninth": 1,
+                    "Tenth": 1
+                }
+            } */
+
+        $model        = Request::json();
+        $politicianId = $model->get('politicianId');
+        $userId       = $model->get('userId');
+        $newRatings   = $model->get('ratings');
+
+        $politician = $this->politicianRepo->find($politicianId);
+        // TODO: Get Politician's ratings.
+        // TODO: Has user already rated?
+        // TODO: True: Update rating.
+        // TODO: False: Create rating.
     }
 
     private function calculateAverageRatings($ratings)
