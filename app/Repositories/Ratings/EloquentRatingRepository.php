@@ -39,6 +39,14 @@ class EloquentRatingRepository implements RatingRepositoryInterface
         return $rating;
     }
 
+    public function findRatings($ids, $fields = [])
+    {
+        /** @noinspection PhpUndefinedMethodInspection */
+        $ratings = Rating::whereIn('_id', $ids)->project($fields)->get();
+
+        return $ratings;
+    }
+
     public function make($userId)
     {
         $rating = new Rating();

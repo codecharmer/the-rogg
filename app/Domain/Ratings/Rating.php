@@ -49,6 +49,17 @@ class Rating extends Entity
         $this->setRating(Amendment::Tenth, $ratings[9]);
     }
 
+    public function getAverageRating()
+    {
+        $total = 0;
+        foreach ($this->attributes['ratings'] as $rating)
+            $total += $rating;
+
+        $average = $total / 10;
+
+        return $average;
+    }
+
     private function isValidRating($number)
     {
         return is_int($number) && $number >= 1 && $number <= 5;

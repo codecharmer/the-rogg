@@ -13,4 +13,12 @@ interface RatingRepositoryInterface extends RepositoryInterface
      * @return Rating
      */
     public function make($userId);
+
+    /**
+     * @param string[] $ids
+     * @param string[] $fields
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function findRatings($ids, $fields = []);
 }

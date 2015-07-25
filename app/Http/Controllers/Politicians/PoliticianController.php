@@ -2,21 +2,29 @@
 
 namespace TheRogg\Http\Controllers\Politicians;
 
+use Illuminate\Support\Collection;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
+use TheRogg\Domain\Rating;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
+use TheRogg\Repositories\Ratings\RatingRepositoryInterface as RatingRepo;
 
 class PoliticianController extends Controller
 {
     private $politicianRepo;
+    /**
+     * @var RatingRepo
+     */
+    private $ratingRepo;
 
-    public function __construct(PoliticianRepo $politicianRepo)
+    public function __construct(PoliticianRepo $politicianRepo, RatingRepo $ratingRepo)
     {
         $this->politicianRepo = $politicianRepo;
+        $this->ratingRepo     = $ratingRepo;
     }
 
     public function getGetList()
@@ -48,16 +56,36 @@ class PoliticianController extends Controller
         /** @var Politician $politician */
         $politician = $this->politicianRepo->find($id);
 
+        $ratingIds = $politician->getRatings();
+        $ratings   = $this->ratingRepo->findRatings($ratingIds);
+
+        $averageRating = $this->calculateAverageRatings($ratings);
+
         $model = new PoliticianDetailsModel(
             $politician->getId(),
             $politician->getName(),
             $politician->getState(),
             $politician->getHouse(),
             $politician->getParty(),
-            $politician->getRatings(),
-            $politician->getComments()
+            $averageRating
         );
 
         return Response::json($model);
+    }
+
+    private function calculateAverageRatings($ratings)
+    {
+        $averages = 0;
+
+        /** @var Collection $ratings */
+        /** @var Rating $rating */
+        foreach ($ratings as $rating)
+        {
+            $averages += $rating->getAverageRating();
+        }
+
+        $averageRating = $averages / $ratings->count();
+
+        return $averageRating;
     }
 }
