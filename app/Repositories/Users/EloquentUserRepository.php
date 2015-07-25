@@ -43,6 +43,7 @@ class EloquentUserRepository implements UserRepositoryInterface
     {
         $user = new User();
         $user->setName($name);
+        $user->setEmail($email);
         $user->setPassword($password);
         if (!empty($party))
             $user->setParty($party);
