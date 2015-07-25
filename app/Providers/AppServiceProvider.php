@@ -31,5 +31,10 @@ class AppServiceProvider extends ServiceProvider
             'TheRogg\Repositories\Politicians\PoliticianRepositoryInterface',
             'TheRogg\Repositories\Politicians\EloquentPoliticianRepository'
         );
+
+        $this->app->bind(
+            'TheRogg\Repositories\Users\UserRepositoryInterface',
+            'TheRogg\Repositories\Users\EloquentUserRepository'
+        );
     }
 }
