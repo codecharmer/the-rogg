@@ -33,6 +33,11 @@ class AppServiceProvider extends ServiceProvider
         );
 
         $this->app->bind(
+            'TheRogg\Repositories\Ratings\RatingRepositoryInterface',
+            'TheRogg\Repositories\Ratings\EloquentRatingRepository'
+        );
+
+        $this->app->bind(
             'TheRogg\Repositories\Users\UserRepositoryInterface',
             'TheRogg\Repositories\Users\EloquentUserRepository'
         );

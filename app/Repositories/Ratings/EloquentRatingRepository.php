@@ -2,38 +2,48 @@
 
 namespace TheRogg\Repositories\Ratings;
 
-use TheRogg\Domain\Entity;
 use TheRogg\Domain\Rating;
 
 class EloquentRatingRepository implements RatingRepositoryInterface
 {
-    public function make($userId)
-    {
-        // TODO: Implement make() method.
-    }
-
     public function getAll($fields = [])
     {
-        // TODO: Implement getAll() method.
+        $ratings = Rating::all($fields);
+
+        return $ratings;
     }
 
     public function save($document)
     {
-        // TODO: Implement save() method.
+        $document->save();
     }
 
     public function delete($ids)
     {
-        // TODO: Implement delete() method.
+        Rating::destroy($ids);
     }
 
     public function find($id, $fields = [])
     {
-        // TODO: Implement find() method.
+        /** @noinspection PhpUndefinedMethodInspection */
+        $rating = Rating::find($fields);
+
+        return $rating;
     }
 
     public function findBy($field, $value, $fields = [])
     {
-        // TODO: Implement findBy() method.
+        /** @noinspection PhpUndefinedMethodInspection */
+        $rating = Rating::where('$field', $value)->project($fields)->first();
+
+        return $rating;
+    }
+
+    public function make($userId)
+    {
+        $rating = new Rating();
+        $rating->setUserId($userId);
+
+        return $rating;
     }
 }
