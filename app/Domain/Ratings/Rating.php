@@ -29,13 +29,6 @@ class Rating extends Entity
     /** @var  int */
     protected $tenthAmendment;
 
-    public function __construct($userId, $attributes = [])
-    {
-        parent::__construct($attributes);
-
-        $this->setUserId($userId);
-    }
-
     public function getUserId() { return $this->attributes['userId']; }
     public function setUserId($userId)
     {
