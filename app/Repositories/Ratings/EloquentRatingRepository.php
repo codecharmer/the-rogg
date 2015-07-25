@@ -43,6 +43,7 @@ class EloquentRatingRepository implements RatingRepositoryInterface
     {
         $rating = new Rating();
         $rating->setUserId($userId);
+        $rating->save();
 
         return $rating;
     }
