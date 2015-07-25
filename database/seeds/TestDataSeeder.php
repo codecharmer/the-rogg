@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 use TheRogg\Domain\House;
 use TheRogg\Domain\Party;
-use TheRogg\Domain\Politicians\Amendment;
 use TheRogg\Domain\State;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Ratings\RatingRepositoryInterface as RatingRepo;
@@ -49,7 +48,7 @@ class TestDataSeeder extends Seeder
         Schema::drop('ratings');
 
         $rating = $this->ratingRepo->make($christopherLamm->getId());
-        $rating->setRating(Amendment::First, 1);
+        $rating->setRatings([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]);
         $this->ratingRepo->save($rating);
 
         $lamarAlexander->addRating($rating->getId());
