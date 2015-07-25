@@ -2,6 +2,7 @@
 
 namespace TheRogg\Domain;
 
+use Hash;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
@@ -41,7 +42,7 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
         if ($this->stringIsNullOrEmpty($password))
             throw new InvalidArgumentException('Password cannot be empty.');
 
-        $this->attributes['password'] = $password;
+        $this->attributes['password'] = Hash::make($password);
     }
 
     public function getParty() { return $this->attributes['party']; }
