@@ -56,9 +56,8 @@ class PoliticianController extends Controller
         /** @var Politician $politician */
         $politician = $this->politicianRepo->find($id);
 
-        $ratingIds = $politician->getRatings();
-        $ratings   = $this->ratingRepo->findRatings($ratingIds);
-
+        $ratingIds     = $politician->getRatings();
+        $ratings       = $this->ratingRepo->findRatings($ratingIds);
         $averageRating = $this->calculateAverageRatings($ratings);
 
         $model = new PoliticianDetailsModel(
