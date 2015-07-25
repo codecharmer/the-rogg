@@ -128,6 +128,23 @@ class Rating extends Entity
         $this->attributes['tenthAmendment'] = $tenthAmendment;
     }
 
+    public function setRatings($ratings)
+    {
+        if (count($ratings) != 10)
+            throw new InvalidArgumentException('Ten ratings must be passed in.');
+
+        $this->setFirstAmendment($ratings[0]);
+        $this->setSecondAmendment($ratings[1]);
+        $this->setThirdAmendment($ratings[2]);
+        $this->setFourthAmendment($ratings[3]);
+        $this->setFifthAmendment($ratings[4]);
+        $this->setSixthAmendment($ratings[5]);
+        $this->setSeventhAmendment($ratings[6]);
+        $this->setEighthAmendment($ratings[7]);
+        $this->setNinthAmendment($ratings[8]);
+        $this->setTenthAmendment($ratings[9]);
+    }
+
     private function isValidRating($number)
     {
         return is_int($number) && $number >= 1 && $number <= 5;

@@ -48,16 +48,7 @@ class TestDataSeeder extends Seeder
         Schema::drop('ratings');
 
         $rating = $this->ratingRepo->make($christopherLamm->getId());
-        $rating->setFirstAmendment(1);
-        $rating->setSecondAmendment(2);
-        $rating->setThirdAmendment(3);
-        $rating->setFourthAmendment(4);
-        $rating->setFifthAmendment(5);
-        $rating->setSixthAmendment(1);
-        $rating->setSeventhAmendment(2);
-        $rating->setEighthAmendment(3);
-        $rating->setNinthAmendment(4);
-        $rating->setTenthAmendment(5);
+        $rating->setRatings([1,2,3,4,5,1,2,3,4,5]);
         $this->ratingRepo->save($rating);
 
         $lamarAlexander->addRating($rating->getId());
