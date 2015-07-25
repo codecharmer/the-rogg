@@ -83,6 +83,10 @@ class Politician extends Entity
     }
 
     public function getRatings() { return $this->attributes['ratings']; }
+    public function addRating($rating)
+    {
+        $this->attributes['ratings'][] = $rating;
+    }
 
     public function getComments() { return $this->attributes['comments']; }
 }
