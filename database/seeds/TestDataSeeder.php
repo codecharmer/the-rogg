@@ -5,29 +5,35 @@ use TheRogg\Domain\House;
 use TheRogg\Domain\Party;
 use TheRogg\Domain\State;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
+use TheRogg\Repositories\Ratings\RatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class TestDataSeeder extends Seeder
 {
     private $userRepo;
     private $politicianRepo;
+    /**
+     * @var RatingRepo
+     */
+    private $ratingRepo;
 
-    public function __construct(UserRepo $userRepo, PoliticianRepo $politicianRepo)
+    public function __construct(PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
     {
-        $this->userRepo       = $userRepo;
         $this->politicianRepo = $politicianRepo;
+        $this->ratingRepo     = $ratingRepo;
+        $this->userRepo       = $userRepo;
     }
 
     public function run()
     {
         Schema::drop('users');
 
-        $this->userRepo->make('Christopher Lamm', 'chris@theantichris.com', 'password', Party::Independent);
+        $christopherLamm = $this->userRepo->make('Christopher Lamm', 'chris@theantichris.com', 'password', Party::Independent);
         $this->userRepo->make('Suzanne Young', 'suzanne@veil22.com', 'password');
 
         Schema::drop('politicians');
 
-        $this->politicianRepo->make('Lamar Alexander', State::Tennessee, House::Senate, Party::Republican);
+        $lamarAlexander = $this->politicianRepo->make('Lamar Alexander', State::Tennessee, House::Senate, Party::Republican);
         $this->politicianRepo->make('Bob Corker', State::Tennessee, House::Senate, Party::Republican);
         $this->politicianRepo->make('David Roe', State::Tennessee, House::Representatives, Party::Republican);
         $this->politicianRepo->make('John J. Duncan', State::Tennessee, House::Representatives, Party::Republican);
@@ -38,5 +44,23 @@ class TestDataSeeder extends Seeder
         $this->politicianRepo->make('Marsha Blackburn', State::Tennessee, House::Representatives, Party::Republican);
         $this->politicianRepo->make('Stephen Fincher', State::Tennessee, House::Representatives, Party::Republican);
         $this->politicianRepo->make('Steven Cohen', State::Tennessee, House::Representatives, Party::Democrat);
+
+        Schema::drop('ratings');
+
+        $rating = $this->ratingRepo->make($christopherLamm->getId());
+        $rating->setFirstAmendment(1);
+        $rating->setSecondAmendment(2);
+        $rating->setThirdAmendment(3);
+        $rating->setFourthAmendment(4);
+        $rating->setFifthAmendment(5);
+        $rating->setSixthAmendment(1);
+        $rating->setSeventhAmendment(2);
+        $rating->setEighthAmendment(3);
+        $rating->setNinthAmendment(4);
+        $rating->setTenthAmendment(5);
+        $this->ratingRepo->save($rating);
+
+        $lamarAlexander->addRating($rating->getId());
+        $this->politicianRepo->save($lamarAlexander);
     }
 }
