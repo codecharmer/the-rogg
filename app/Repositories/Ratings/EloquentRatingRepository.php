@@ -2,6 +2,7 @@
 
 namespace TheRogg\Repositories\Ratings;
 
+use InvalidArgumentException;
 use TheRogg\Domain\Rating;
 
 class EloquentRatingRepository implements RatingRepositoryInterface
@@ -55,20 +56,26 @@ class EloquentRatingRepository implements RatingRepositoryInterface
         return $rating;
     }
 
-    public function make($userId, $politicianId, $ratings, $id = null)
+    public function make($userId, $politicianId, $scores, $id = null)
     {
-        // TODO: Validate ratings.
-
         $rating = new Rating();
 
-        if (!empty($id))
-            $rating->setId($id);
+        try
+        {
+            if (!empty($id))
+                $rating->setId($id);
 
-        $rating->setUserId($userId);
-        $rating->setPoliticianId($politicianId);
-        $rating->setScores($ratings);
-        $rating->save();
+            $rating->setUserId($userId);
+            $rating->setPoliticianId($politicianId);
+            $rating->setScores($scores);
+            $rating->save();
 
-        return $rating;
+            return $rating;
+        }
+        catch (InvalidArgumentException $e)
+        {
+            $rating->delete();
+            throw $e;
+        }
     }
 }

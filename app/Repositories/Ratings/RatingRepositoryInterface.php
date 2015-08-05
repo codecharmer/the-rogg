@@ -10,12 +10,12 @@ interface RatingRepositoryInterface extends RepositoryInterface
     /**
      * @param string      $userId
      * @param string      $politicianId
-     * @param int[]       $ratings
+     * @param int[]       $scores
      * @param string|null $id
      *
      * @return Rating
      */
-    public function make($userId, $politicianId, $ratings, $id = null);
+    public function make($userId, $politicianId, $scores, $id = null);
 
     /**
      * @param string $politicianId
