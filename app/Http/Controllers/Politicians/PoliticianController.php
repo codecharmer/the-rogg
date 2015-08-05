@@ -84,7 +84,7 @@ class PoliticianController extends Controller
 
         if (empty($rating))
         {
-            $rating = $this->ratingRepo->make($userId, $politicianId);
+            $rating = $this->ratingRepo->make($userId, $politicianId, $submittedRatings);
             $rating->setRatings($submittedRatings);
             $this->ratingRepo->save($rating);
         }

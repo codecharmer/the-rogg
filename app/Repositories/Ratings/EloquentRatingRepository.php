@@ -55,8 +55,10 @@ class EloquentRatingRepository implements RatingRepositoryInterface
         return $rating;
     }
 
-    public function make($userId, $politicianId, $id = null)
+    public function make($userId, $politicianId, $ratings, $id = null)
     {
+        // TODO: Validate ratings.
+
         $rating = new Rating();
 
         if (!empty($id))
@@ -64,6 +66,7 @@ class EloquentRatingRepository implements RatingRepositoryInterface
 
         $rating->setUserId($userId);
         $rating->setPoliticianId($politicianId);
+        $rating->setRatings($ratings);
         $rating->save();
 
         return $rating;
