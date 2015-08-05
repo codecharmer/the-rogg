@@ -17,10 +17,9 @@ interface RatingRepositoryInterface extends RepositoryInterface
     public function make($userId, $politicianId, $id = null);
 
     /**
-     * @param string[] $ids
-     * @param string[] $fields
+     * @param string $politicianId
      *
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
-    public function findRatings($ids, $fields = []);
+    public function getByPoliticianId($politicianId);
 }

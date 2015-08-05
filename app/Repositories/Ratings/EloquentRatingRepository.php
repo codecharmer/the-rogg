@@ -39,10 +39,15 @@ class EloquentRatingRepository implements RatingRepositoryInterface
         return $rating;
     }
 
-    public function findRatings($ids, $fields = [])
+    /**
+     * @param string $politicianId
+     *
+     * @return mixed
+     */
+    public function getByPoliticianId($politicianId)
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $ratings = Rating::whereIn('_id', $ids)->project($fields)->get();
+        $ratings = Rating::where('politicianId', $politicianId)->get();
 
         return $ratings;
     }
