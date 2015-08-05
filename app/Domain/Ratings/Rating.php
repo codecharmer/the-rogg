@@ -60,7 +60,7 @@ class Rating extends Entity
         $this->setScore(Amendment::Tenth, $scores['Tenth']);
     }
 
-    public function getAverageRating()
+    public function getAverageScore()
     {
         $total = 0;
         foreach ($this->attributes['scores'] as $score)

@@ -106,7 +106,7 @@ class PoliticianController extends Controller
 
         /** @var Rating $rating */
         foreach ($ratings as $rating)
-            $averages += $rating->getAverageRating();
+            $averages += $rating->getAverageScore();
 
         $averageRating = $averages / $ratings->count();
 
