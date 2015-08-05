@@ -54,4 +54,12 @@ class EloquentPoliticianRepository implements PoliticianRepositoryInterface
 
         return $politician;
     }
+
+    public function isValidPolitician($politicianId)
+    {
+        /** @noinspection PhpUndefinedMethodInspection */
+        $politician = Politician::find($politicianId);
+
+        return !empty($politician);
+    }
 }

@@ -3,6 +3,7 @@
 namespace TheRogg\Http\Controllers\Politicians;
 
 use Illuminate\Database\Eloquent\Collection;
+use InvalidArgumentException;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
@@ -12,19 +13,22 @@ use TheRogg\Http\Controllers\Politicians\Models\PoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Ratings\RatingRepositoryInterface as RatingRepo;
+use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class PoliticianController extends Controller
 {
     private $politicianRepo;
     private $ratingRepo;
+    private $userRepo;
 
-    public function __construct(PoliticianRepo $politicianRepo, RatingRepo $ratingRepo)
+    public function __construct(PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
     {
         // TODO: Authentication.
         // TODO: CSRF token.
 
         $this->politicianRepo = $politicianRepo;
         $this->ratingRepo     = $ratingRepo;
+        $this->userRepo       = $userRepo;
     }
 
     public function getGetList()
@@ -78,7 +82,7 @@ class PoliticianController extends Controller
         $userId       = $model->get('userId');
         $scores       = $model->get('scores');
 
-        // TODO: Validate user and politician.
+        $this->validateIds($userId, $politicianId);
 
         $rating = $this->ratingRepo->findByUserAndPolitician($userId, $politicianId);
 
@@ -107,5 +111,14 @@ class PoliticianController extends Controller
         $averageRating = $averages / $ratings->count();
 
         return $averageRating;
+    }
+
+    private function validateIds($userId, $politicianId)
+    {
+        if (!$this->userRepo->isValidUser($userId))
+            throw new InvalidArgumentException($userId . ' is not a valid user.');
+
+        if (!$this->politicianRepo->isValidPolitician($politicianId))
+            throw new InvalidArgumentException($politicianId . ' is not a valid politician.');
     }
 }

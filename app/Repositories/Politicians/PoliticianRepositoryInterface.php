@@ -17,4 +17,11 @@ interface PoliticianRepositoryInterface extends RepositoryInterface
      * @return Politician
      */
     public function make($name, $state, $house, $party, $id = null);
+
+    /**
+     * @param string $politicianId
+     *
+     * @return bool
+     */
+    public function isValidPolitician($politicianId);
 }

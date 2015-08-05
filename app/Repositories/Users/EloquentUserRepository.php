@@ -57,4 +57,12 @@ class EloquentUserRepository implements UserRepositoryInterface
 
         return $user;
     }
+
+    public function isValidUser($userId)
+    {
+        /** @noinspection PhpUndefinedMethodInspection */
+        $user = User::find($userId);
+
+        return !empty($user);
+    }
 }

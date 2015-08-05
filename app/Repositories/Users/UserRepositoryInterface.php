@@ -17,4 +17,11 @@ interface UserRepositoryInterface extends RepositoryInterface
      * @return User
      */
     public function make($name, $email, $password, $party = null, $id = null);
+
+    /**
+     * @param string $userId
+     *
+     * @return bool
+     */
+    public function isValidUser($userId);
 }
