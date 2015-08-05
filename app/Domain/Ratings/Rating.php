@@ -12,7 +12,7 @@ class Rating extends Entity
     /** @var  string */
     protected $politicianId;
     /** @var int[] */
-    protected $ratings;
+    protected $scores;
 
     public function getUserId() { return $this->attributes['userId']; }
     public function setUserId($userId)
@@ -32,46 +32,46 @@ class Rating extends Entity
         $this->attributes['politicianId'] = $politicianId;
     }
 
-    public function setRating($amendment, $rating)
+    public function setScore($amendment, $score)
     {
         if (!Amendment::isValidValue($amendment))
             throw new InvalidArgumentException($amendment . ' is not a valid Amendment.');
 
-        if (!$this->isValidRating($rating))
-            throw new InvalidArgumentException('Rating must be a number between 1 and 5.');
+        if (!$this->isValidScore($score))
+            throw new InvalidArgumentException('Score must be a number between 1 and 5.');
 
-        $this->attributes['ratings'][$amendment] = $rating;
+        $this->attributes['scores'][$amendment] = $score;
     }
 
-    public function setRatings($ratings)
+    public function setScores($scores)
     {
-        if (count($ratings) != 10)
+        if (count($scores) != 10)
             throw new InvalidArgumentException('Ten ratings must be passed in.');
 
-        $this->setRating(Amendment::First, $ratings['First']);
-        $this->setRating(Amendment::Second, $ratings['Second']);
-        $this->setRating(Amendment::Third, $ratings['Third']);
-        $this->setRating(Amendment::Fourth, $ratings['Fourth']);
-        $this->setRating(Amendment::Fifth, $ratings['Fifth']);
-        $this->setRating(Amendment::Sixth, $ratings['Sixth']);
-        $this->setRating(Amendment::Seventh, $ratings['Seventh']);
-        $this->setRating(Amendment::Eighth, $ratings['Eighth']);
-        $this->setRating(Amendment::Ninth, $ratings['Ninth']);
-        $this->setRating(Amendment::Tenth, $ratings['Tenth']);
+        $this->setScore(Amendment::First, $scores['First']);
+        $this->setScore(Amendment::Second, $scores['Second']);
+        $this->setScore(Amendment::Third, $scores['Third']);
+        $this->setScore(Amendment::Fourth, $scores['Fourth']);
+        $this->setScore(Amendment::Fifth, $scores['Fifth']);
+        $this->setScore(Amendment::Sixth, $scores['Sixth']);
+        $this->setScore(Amendment::Seventh, $scores['Seventh']);
+        $this->setScore(Amendment::Eighth, $scores['Eighth']);
+        $this->setScore(Amendment::Ninth, $scores['Ninth']);
+        $this->setScore(Amendment::Tenth, $scores['Tenth']);
     }
 
     public function getAverageRating()
     {
         $total = 0;
-        foreach ($this->attributes['ratings'] as $rating)
-            $total += $rating;
+        foreach ($this->attributes['scores'] as $score)
+            $total += $score;
 
         $average = $total / 10;
 
         return $average;
     }
 
-    private function isValidRating($number)
+    private function isValidScore($number)
     {
         return is_int($number) && $number >= 1 && $number <= 5;
     }

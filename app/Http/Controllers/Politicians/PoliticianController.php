@@ -57,7 +57,7 @@ class PoliticianController extends Controller
         $politician = $this->politicianRepo->find($id);
 
         $ratings = $this->ratingRepo->getByPoliticianId($politician->getId());;
-        $averageRating = $this->calculateAverageRatings($ratings);
+        $averageRating = $this->calculateAverageRating($ratings);
 
         $model = new PoliticianDetailsModel(
             $politician->getId(),
@@ -85,12 +85,12 @@ class PoliticianController extends Controller
         if (empty($rating))
         {
             $rating = $this->ratingRepo->make($userId, $politicianId, $submittedRatings);
-            $rating->setRatings($submittedRatings);
+            $rating->setScores($submittedRatings);
             $this->ratingRepo->save($rating);
         }
         else
         {
-            $rating->setRatings($submittedRatings);
+            $rating->setScores($submittedRatings);
             $this->ratingRepo->save($rating);
         }
     }
@@ -100,7 +100,7 @@ class PoliticianController extends Controller
      *
      * @return float
      */
-    private function calculateAverageRatings($ratings)
+    private function calculateAverageRating($ratings)
     {
         $averages = 0;
 

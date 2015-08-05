@@ -66,7 +66,7 @@ class EloquentRatingRepository implements RatingRepositoryInterface
 
         $rating->setUserId($userId);
         $rating->setPoliticianId($politicianId);
-        $rating->setRatings($ratings);
+        $rating->setScores($ratings);
         $rating->save();
 
         return $rating;
