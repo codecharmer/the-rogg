@@ -96,8 +96,10 @@ class PoliticianController extends Controller
         $userId       = $model->get('userId');
         $newRatings   = $model->get('ratings');
 
+        /** @var Politician $politician */
         $politician = $this->politicianRepo->find($politicianId);
-        // TODO: Get Politician's ratings.
+        /** @var Collection $ratingIds */
+        $ratingIds = $politician->getRatings();
         // TODO: Has user already rated?
         // TODO: True: Update rating.
         // TODO: False: Create rating.
