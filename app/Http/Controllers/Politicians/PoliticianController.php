@@ -103,16 +103,18 @@ class PoliticianController extends Controller
         // TODO: False: Create rating.
     }
 
+    /**
+     * @param Collection $ratings
+     *
+     * @return float
+     */
     private function calculateAverageRatings($ratings)
     {
         $averages = 0;
 
-        /** @var Collection $ratings */
         /** @var Rating $rating */
         foreach ($ratings as $rating)
-        {
             $averages += $rating->getAverageRating();
-        }
 
         $averageRating = $averages / $ratings->count();
 
