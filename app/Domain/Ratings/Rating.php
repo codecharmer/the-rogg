@@ -48,16 +48,16 @@ class Rating extends Entity
         if (count($ratings) != 10)
             throw new InvalidArgumentException('Ten ratings must be passed in.');
 
-        $this->setRating(Amendment::First, $ratings[0]);
-        $this->setRating(Amendment::Second, $ratings[1]);
-        $this->setRating(Amendment::Third, $ratings[2]);
-        $this->setRating(Amendment::Fourth, $ratings[3]);
-        $this->setRating(Amendment::Fifth, $ratings[4]);
-        $this->setRating(Amendment::Sixth, $ratings[5]);
-        $this->setRating(Amendment::Seventh, $ratings[6]);
-        $this->setRating(Amendment::Eighth, $ratings[7]);
-        $this->setRating(Amendment::Ninth, $ratings[8]);
-        $this->setRating(Amendment::Tenth, $ratings[9]);
+        $this->setRating(Amendment::First, $ratings['First']);
+        $this->setRating(Amendment::Second, $ratings['Second']);
+        $this->setRating(Amendment::Third, $ratings['Third']);
+        $this->setRating(Amendment::Fourth, $ratings['Fourth']);
+        $this->setRating(Amendment::Fifth, $ratings['Fifth']);
+        $this->setRating(Amendment::Sixth, $ratings['Sixth']);
+        $this->setRating(Amendment::Seventh, $ratings['Seventh']);
+        $this->setRating(Amendment::Eighth, $ratings['Eighth']);
+        $this->setRating(Amendment::Ninth, $ratings['Ninth']);
+        $this->setRating(Amendment::Tenth, $ratings['Tenth']);
     }
 
     public function getAverageRating()

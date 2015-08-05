@@ -73,20 +73,25 @@ class PoliticianController extends Controller
 
     public function putRatePolitician()
     {
-        $model        = Request::json();
-        $politicianId = $model->get('politicianId');
-        $userId       = $model->get('userId');
-        $newRatings   = $model->get('ratings');
+        $model            = Request::json();
+        $politicianId     = $model->get('politicianId');
+        $userId           = $model->get('userId');
+        $submittedRatings = $model->get('ratings');
+
+        // TODO: Validate user and politician.
 
         $rating = $this->ratingRepo->findByUserAndPolitician($userId, $politicianId);
 
         if (empty($rating))
         {
-            // TODO: Create new rating.
+            $rating = $this->ratingRepo->make($userId, $politicianId);
+            $rating->setRatings($submittedRatings);
+            $this->ratingRepo->save($rating);
         }
         else
         {
-            // TODO: Update rating.
+            $rating->setRatings($submittedRatings);
+            $this->ratingRepo->save($rating);
         }
     }
 
