@@ -9,6 +9,8 @@ class Rating extends Entity
 {
     /** @var  string */
     protected $userId;
+    /** @var  string */
+    protected $politicianId;
     /** @var int[] */
     protected $ratings;
 
@@ -19,6 +21,15 @@ class Rating extends Entity
             throw new InvalidArgumentException('User ID cannot be empty.');
 
         $this->attributes['userId'] = $userId;
+    }
+
+    public function getPoliticianId() { return $this->attributes['politicianId']; }
+    public function setPoliticianId($politicianId)
+    {
+        if ($this->stringIsNullOrEmpty($politicianId))
+            throw new InvalidArgumentException('Politician ID cannot be empty.');
+
+        $this->attributes['politicianId'] = $politicianId;
     }
 
     public function setRating($amendment, $rating)

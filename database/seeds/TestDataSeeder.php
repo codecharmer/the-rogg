@@ -47,11 +47,8 @@ class TestDataSeeder extends Seeder
 
         Schema::drop('ratings');
 
-        $rating = $this->ratingRepo->make($christopherLamm->getId());
+        $rating = $this->ratingRepo->make($christopherLamm->getId(), $lamarAlexander->getId());
         $rating->setRatings([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]);
         $this->ratingRepo->save($rating);
-
-        $lamarAlexander->addRating($rating->getId());
-        $this->politicianRepo->save($lamarAlexander);
     }
 }

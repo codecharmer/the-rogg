@@ -14,8 +14,6 @@ class Politician extends Entity
     protected $house;
     /** @var  Party */
     protected $party;
-    /** @var  Rating[] */
-    protected $ratings;
     /** @var  Comment[] */
     protected $comments;
     /** @var  string */
@@ -24,7 +22,6 @@ class Politician extends Entity
     protected $message;
 
     protected $attributes = [
-        'ratings'  => [],
         'comments' => [],
     ];
 
@@ -80,12 +77,6 @@ class Politician extends Entity
             throw new InvalidArgumentException('Message cannot be empty.');
 
         $this->attributes['message'] = $message;
-    }
-
-    public function getRatings() { return $this->attributes['ratings']; }
-    public function addRating($rating)
-    {
-        $this->attributes['ratings'][] = $rating;
     }
 
     public function getComments() { return $this->attributes['comments']; }

@@ -8,11 +8,12 @@ use TheRogg\Repositories\RepositoryInterface;
 interface RatingRepositoryInterface extends RepositoryInterface
 {
     /**
-     * @param string $userId
+     * @param string  $userId
+     * @param  string $politicianId
      *
      * @return Rating
      */
-    public function make($userId);
+    public function make($userId, $politicianId);
 
     /**
      * @param string[] $ids
