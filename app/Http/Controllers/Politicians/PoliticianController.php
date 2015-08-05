@@ -2,7 +2,7 @@
 
 namespace TheRogg\Http\Controllers\Politicians;
 
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
@@ -56,6 +56,7 @@ class PoliticianController extends Controller
         /** @var Politician $politician */
         $politician = $this->politicianRepo->find($id);
 
+        // TODO: Refactor for new ratings domain.
         $ratingIds     = $politician->getRatings();
         $ratings       = $this->ratingRepo->findRatings($ratingIds);
         $averageRating = $this->calculateAverageRatings($ratings);
