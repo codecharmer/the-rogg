@@ -8,8 +8,8 @@ use TheRogg\Repositories\RepositoryInterface;
 interface RatingRepositoryInterface extends RepositoryInterface
 {
     /**
-     * @param string  $userId
-     * @param  string $politicianId
+     * @param string $userId
+     * @param string $politicianId
      *
      * @return Rating
      */
