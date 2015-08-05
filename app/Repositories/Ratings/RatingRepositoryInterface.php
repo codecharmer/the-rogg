@@ -22,4 +22,12 @@ interface RatingRepositoryInterface extends RepositoryInterface
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
     public function getByPoliticianId($politicianId);
+
+    /**
+     * @param string $userId
+     * @param string $politicianId
+     *
+     * @return Rating|null
+     */
+    public function findByUserAndPolitician($userId, $politicianId);
 }
