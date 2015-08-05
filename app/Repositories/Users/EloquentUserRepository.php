@@ -39,12 +39,17 @@ class EloquentUserRepository implements UserRepositoryInterface
         return $user;
     }
 
-    public function make($name, $email, $password, $party = null)
+    public function make($name, $email, $password, $party = null, $id = null)
     {
         $user = new User();
+
+        if (!empty($id))
+            $user->setId($id);
+
         $user->setName($name);
         $user->setEmail($email);
         $user->setPassword($password);
+
         if (!empty($party))
             $user->setParty($party);
 

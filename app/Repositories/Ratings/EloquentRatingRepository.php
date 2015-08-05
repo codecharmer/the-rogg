@@ -47,9 +47,13 @@ class EloquentRatingRepository implements RatingRepositoryInterface
         return $ratings;
     }
 
-    public function make($userId, $politicianId)
+    public function make($userId, $politicianId, $id = null)
     {
         $rating = new Rating();
+
+        if (!empty($id))
+            $rating->setId($id);
+
         $rating->setUserId($userId);
         $rating->setPoliticianId($politicianId);
         $rating->save();

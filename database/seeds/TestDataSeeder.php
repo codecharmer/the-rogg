@@ -28,12 +28,12 @@ class TestDataSeeder extends Seeder
     {
         Schema::drop('users');
 
-        $christopherLamm = $this->userRepo->make('Christopher Lamm', 'chris@theantichris.com', 'password', Party::Independent);
+        $christopherLamm = $this->userRepo->make('Christopher Lamm', 'chris@theantichris.com', 'password', Party::Independent, '1');
         $this->userRepo->make('Suzanne Young', 'suzanne@veil22.com', 'password');
 
         Schema::drop('politicians');
 
-        $lamarAlexander = $this->politicianRepo->make('Lamar Alexander', State::Tennessee, House::Senate, Party::Republican);
+        $lamarAlexander = $this->politicianRepo->make('Lamar Alexander', State::Tennessee, House::Senate, Party::Republican, '1');
         $this->politicianRepo->make('Bob Corker', State::Tennessee, House::Senate, Party::Republican);
         $this->politicianRepo->make('David Roe', State::Tennessee, House::Representatives, Party::Republican);
         $this->politicianRepo->make('John J. Duncan', State::Tennessee, House::Representatives, Party::Republican);

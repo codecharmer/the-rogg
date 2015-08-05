@@ -39,9 +39,13 @@ class EloquentPoliticianRepository implements PoliticianRepositoryInterface
         return $politician;
     }
 
-    public function make($name, $state, $house, $party)
+    public function make($name, $state, $house, $party, $id = null)
     {
         $politician = new Politician();
+
+        if (!empty($id))
+            $politician->setId($id);
+
         $politician->setName($name);
         $politician->setState($state);
         $politician->setHouse($house);
