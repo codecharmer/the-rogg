@@ -15,7 +15,7 @@ class Politician extends Entity
     /** @var  Party */
     protected $party;
     /** @var  string */
-    protected $picture;
+    protected $photo;
     /** @var  string */
     protected $message;
     /** @var  bool */
@@ -61,13 +61,10 @@ class Politician extends Entity
         $this->attributes['party'] = $party;
     }
 
-    public function getPicture() { return $this->attributes['picture']; }
-    public function setPicture($picture)
+    public function getPhoto() { return $this->attributes['photo']; }
+    public function setPhoto($photo)
     {
-        if ($this->stringIsNullOrEmpty($picture))
-            throw new InvalidArgumentException('Picture cannot be empty.');
-
-        $this->attributes['picture'] = $picture;
+        $this->attributes['photo'] = $photo;
     }
 
     public function getMessage() { return $this->attributes['message']; }

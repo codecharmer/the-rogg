@@ -34,6 +34,8 @@ class TestDataSeeder extends Seeder
         Schema::drop('politicians');
 
         $lamarAlexander = $this->politicianRepo->make('Lamar Alexander', State::Tennessee, Office::Senate, Party::Republican, '1');
+        $lamarAlexander->setPhoto('alexander-lamar.jpg');
+        $lamarAlexander->save();
         $this->politicianRepo->make('Bob Corker', State::Tennessee, Office::Senate, Party::Republican);
         $this->politicianRepo->make('David Roe', State::Tennessee, Office::Representatives, Party::Republican);
         $this->politicianRepo->make('John J. Duncan', State::Tennessee, Office::Representatives, Party::Republican);
