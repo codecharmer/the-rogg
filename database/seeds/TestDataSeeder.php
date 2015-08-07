@@ -4,8 +4,8 @@ use Illuminate\Database\Seeder;
 use TheRogg\Domain\Office;
 use TheRogg\Domain\Party;
 use TheRogg\Domain\State;
+use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
-use TheRogg\Repositories\Ratings\RatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class TestDataSeeder extends Seeder
@@ -45,7 +45,7 @@ class TestDataSeeder extends Seeder
         $this->politicianRepo->make('Stephen Fincher', State::Tennessee, Office::Representatives, Party::Republican);
         $this->politicianRepo->make('Steven Cohen', State::Tennessee, Office::Representatives, Party::Democrat);
 
-        Schema::drop('ratings');
+        Schema::drop('politician_ratings');
 
         $scores = [
             'First'   => 1,
@@ -59,7 +59,6 @@ class TestDataSeeder extends Seeder
             'Ninth'   => 4,
             'Tenth'   => 5,
         ];
-        $rating = $this->ratingRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores);
-        $this->ratingRepo->save($rating);
+        $this->ratingRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores);
     }
 }

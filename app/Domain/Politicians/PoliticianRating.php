@@ -5,7 +5,7 @@ namespace TheRogg\Domain;
 use InvalidArgumentException;
 use TheRogg\Domain\Politicians\Amendment;
 
-class Rating extends Entity
+class PoliticianRating extends Entity
 {
     /** @var  string */
     protected $userId;

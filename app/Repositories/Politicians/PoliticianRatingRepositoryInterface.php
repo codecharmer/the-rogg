@@ -1,11 +1,11 @@
 <?php
 
-namespace TheRogg\Repositories\Ratings;
+namespace TheRogg\Repositories\Politicians;
 
-use TheRogg\Domain\Rating;
+use TheRogg\Domain\PoliticianRating;
 use TheRogg\Repositories\RepositoryInterface;
 
-interface RatingRepositoryInterface extends RepositoryInterface
+interface PoliticianRatingRepositoryInterface extends RepositoryInterface
 {
     /**
      * @param string      $userId
@@ -13,7 +13,7 @@ interface RatingRepositoryInterface extends RepositoryInterface
      * @param int[]       $scores
      * @param string|null $id
      *
-     * @return Rating
+     * @return PoliticianRating
      */
     public function make($userId, $politicianId, $scores, $id = null);
 
@@ -28,7 +28,7 @@ interface RatingRepositoryInterface extends RepositoryInterface
      * @param string $userId
      * @param string $politicianId
      *
-     * @return Rating|null
+     * @return PoliticianRating|null
      */
     public function findByUserAndPolitician($userId, $politicianId);
 }

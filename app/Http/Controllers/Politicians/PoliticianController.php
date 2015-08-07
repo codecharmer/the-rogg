@@ -7,12 +7,12 @@ use InvalidArgumentException;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
-use TheRogg\Domain\Rating;
+use TheRogg\Domain\PoliticianRating;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
-use TheRogg\Repositories\Ratings\RatingRepositoryInterface as RatingRepo;
+use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class PoliticianController extends Controller
@@ -104,7 +104,7 @@ class PoliticianController extends Controller
     {
         $averages = 0;
 
-        /** @var Rating $rating */
+        /** @var PoliticianRating $rating */
         foreach ($ratings as $rating)
             $averages += $rating->getAverageScore();
 

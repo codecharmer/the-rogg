@@ -1,15 +1,15 @@
 <?php
 
-namespace TheRogg\Repositories\Ratings;
+namespace TheRogg\Repositories\Politicians;
 
 use InvalidArgumentException;
-use TheRogg\Domain\Rating;
+use TheRogg\Domain\PoliticianRating;
 
-class EloquentRatingRepository implements RatingRepositoryInterface
+class EloquentPoliticianRatingRepository implements PoliticianRatingRepositoryInterface
 {
     public function getAll($fields = [])
     {
-        $ratings = Rating::all($fields);
+        $ratings = PoliticianRating::all($fields);
 
         return $ratings;
     }
@@ -21,13 +21,13 @@ class EloquentRatingRepository implements RatingRepositoryInterface
 
     public function delete($ids)
     {
-        Rating::destroy($ids);
+        PoliticianRating::destroy($ids);
     }
 
     public function find($id, $fields = [])
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $rating = Rating::find($fields);
+        $rating = PoliticianRating::find($fields);
 
         return $rating;
     }
@@ -35,7 +35,7 @@ class EloquentRatingRepository implements RatingRepositoryInterface
     public function findBy($field, $value, $fields = [])
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $rating = Rating::where('$field', $value)->project($fields)->first();
+        $rating = PoliticianRating::where('$field', $value)->project($fields)->first();
 
         return $rating;
     }
@@ -43,7 +43,7 @@ class EloquentRatingRepository implements RatingRepositoryInterface
     public function getByPoliticianId($politicianId)
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $ratings = Rating::where('politicianId', $politicianId)->get();
+        $ratings = PoliticianRating::where('politicianId', $politicianId)->get();
 
         return $ratings;
     }
@@ -51,14 +51,14 @@ class EloquentRatingRepository implements RatingRepositoryInterface
     public function findByUserAndPolitician($userId, $politicianId)
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $rating = Rating::where('userId', $userId)->where('politicianId', $politicianId)->first();
+        $rating = PoliticianRating::where('userId', $userId)->where('politicianId', $politicianId)->first();
 
         return $rating;
     }
 
     public function make($userId, $politicianId, $scores, $id = null)
     {
-        $rating = new Rating();
+        $rating = new PoliticianRating();
 
         try
         {
