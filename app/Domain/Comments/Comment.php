@@ -35,7 +35,7 @@ class Comment extends Entity
     public function setText($text)
     {
         if ($this->stringIsNullOrEmpty($text))
-            throw new InvalidArgumentException('Text cannot be empty.');
+            throw new InvalidArgumentException('Comment cannot be empty.');
 
         $this->attributes['text'] = $text;
     }
