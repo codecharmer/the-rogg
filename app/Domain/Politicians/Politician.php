@@ -14,15 +14,15 @@ class Politician extends Entity
     protected $office;
     /** @var  Party */
     protected $party;
-    /** @var  Comment[] */
-    protected $comments;
     /** @var  string */
     protected $picture;
     /** @var  string */
     protected $message;
+    /** @var  bool */
+    protected $isPresidentialCandidate;
 
     protected $attributes = [
-        'comments' => [],
+        'isPresidentialCandidate' => false,
     ];
 
     public function getName() { return $this->attributes['name']; }
@@ -77,6 +77,12 @@ class Politician extends Entity
             throw new InvalidArgumentException('Message cannot be empty.');
 
         $this->attributes['message'] = $message;
+    }
+
+    public function IsPresidentialCandidate() { return $this->isPresidentialCandidate; }
+    public function setIsPresidentialCandidate($isPresidentialCandidate)
+    {
+        $this->attributes['isPresidentialCandidate'] = $isPresidentialCandidate;
     }
 
     public function getComments() { return $this->attributes['comments']; }
