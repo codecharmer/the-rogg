@@ -39,7 +39,7 @@ class EloquentPoliticianRepository implements PoliticianRepositoryInterface
         return $politician;
     }
 
-    public function make($name, $state, $house, $party, $id = null)
+    public function make($name, $state, $office, $party, $id = null)
     {
         $politician = new Politician();
 
@@ -48,7 +48,7 @@ class EloquentPoliticianRepository implements PoliticianRepositoryInterface
 
         $politician->setName($name);
         $politician->setState($state);
-        $politician->setHouse($house);
+        $politician->setOffice($office);
         $politician->setParty($party);
         $politician->save();
 

@@ -2,7 +2,7 @@
 
 namespace TheRogg\Domain;
 
-abstract class House extends Enum
+abstract class Office extends Enum
 {
     const Senate          = 'Senate';
     const Representatives = 'House of Representatives';

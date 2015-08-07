@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use TheRogg\Domain\House;
+use TheRogg\Domain\Office;
 use TheRogg\Domain\Party;
 use TheRogg\Domain\State;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
@@ -33,17 +33,17 @@ class TestDataSeeder extends Seeder
 
         Schema::drop('politicians');
 
-        $lamarAlexander = $this->politicianRepo->make('Lamar Alexander', State::Tennessee, House::Senate, Party::Republican, '1');
-        $this->politicianRepo->make('Bob Corker', State::Tennessee, House::Senate, Party::Republican);
-        $this->politicianRepo->make('David Roe', State::Tennessee, House::Representatives, Party::Republican);
-        $this->politicianRepo->make('John J. Duncan', State::Tennessee, House::Representatives, Party::Republican);
-        $this->politicianRepo->make('Charles Fleischmann', State::Tennessee, House::Representatives, Party::Republican);
-        $this->politicianRepo->make('Scott Desjarlais', State::Tennessee, House::Representatives, Party::Republican);
-        $this->politicianRepo->make('Jim Cooper', State::Tennessee, House::Representatives, Party::Democrat);
-        $this->politicianRepo->make('Diane Black', State::Tennessee, House::Representatives, Party::Republican);
-        $this->politicianRepo->make('Marsha Blackburn', State::Tennessee, House::Representatives, Party::Republican);
-        $this->politicianRepo->make('Stephen Fincher', State::Tennessee, House::Representatives, Party::Republican);
-        $this->politicianRepo->make('Steven Cohen', State::Tennessee, House::Representatives, Party::Democrat);
+        $lamarAlexander = $this->politicianRepo->make('Lamar Alexander', State::Tennessee, Office::Senate, Party::Republican, '1');
+        $this->politicianRepo->make('Bob Corker', State::Tennessee, Office::Senate, Party::Republican);
+        $this->politicianRepo->make('David Roe', State::Tennessee, Office::Representatives, Party::Republican);
+        $this->politicianRepo->make('John J. Duncan', State::Tennessee, Office::Representatives, Party::Republican);
+        $this->politicianRepo->make('Charles Fleischmann', State::Tennessee, Office::Representatives, Party::Republican);
+        $this->politicianRepo->make('Scott Desjarlais', State::Tennessee, Office::Representatives, Party::Republican);
+        $this->politicianRepo->make('Jim Cooper', State::Tennessee, Office::Representatives, Party::Democrat);
+        $this->politicianRepo->make('Diane Black', State::Tennessee, Office::Representatives, Party::Republican);
+        $this->politicianRepo->make('Marsha Blackburn', State::Tennessee, Office::Representatives, Party::Republican);
+        $this->politicianRepo->make('Stephen Fincher', State::Tennessee, Office::Representatives, Party::Republican);
+        $this->politicianRepo->make('Steven Cohen', State::Tennessee, Office::Representatives, Party::Democrat);
 
         Schema::drop('ratings');
 

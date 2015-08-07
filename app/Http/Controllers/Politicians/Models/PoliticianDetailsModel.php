@@ -7,16 +7,16 @@ class PoliticianDetailsModel
     public $id;
     public $name;
     public $state;
-    public $house;
+    public $office;
     public $party;
     public $averageRating;
 
-    public function __construct($id, $name, $state, $house, $party, $averageRating)
+    public function __construct($id, $name, $state, $office, $party, $averageRating)
     {
         $this->id            = $id;
         $this->name          = $name;
         $this->state         = $state;
-        $this->house         = $house;
+        $this->office        = $office;
         $this->party         = $party;
         $this->averageRating = $averageRating;
     }

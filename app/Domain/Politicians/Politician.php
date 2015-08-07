@@ -10,8 +10,8 @@ class Politician extends Entity
     protected $name;
     /** @var  State */
     protected $state;
-    /** @var  House */
-    protected $house;
+    /** @var  Office */
+    protected $office;
     /** @var  Party */
     protected $party;
     /** @var  Comment[] */
@@ -43,13 +43,13 @@ class Politician extends Entity
         $this->attributes['state'] = $state;
     }
 
-    public function getHouse() { return $this->attributes['house']; }
-    public function setHouse($house)
+    public function getOffice() { return $this->attributes['office']; }
+    public function setOffice($office)
     {
-        if (!House::isValidValue($house))
-            throw new InvalidArgumentException($house . ' is not a valid house of Congress.');
+        if (!Office::isValidValue($office))
+            throw new InvalidArgumentException($office . ' is not a valid political office.');
 
-        $this->attributes['house'] = $house;
+        $this->attributes['office'] = $office;
     }
 
     public function getParty() { return $this->attributes['party']; }

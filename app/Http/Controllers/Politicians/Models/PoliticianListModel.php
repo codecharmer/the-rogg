@@ -7,15 +7,15 @@ class PoliticianListModel
     public $id;
     public $name;
     public $state;
-    public $house;
+    public $office;
     public $party;
 
-    public function __construct($id, $name, $state, $house, $party)
+    public function __construct($id, $name, $state, $office, $party)
     {
-        $this->id    = $id;
-        $this->name  = $name;
-        $this->state = $state;
-        $this->house = $house;
-        $this->party = $party;
+        $this->id     = $id;
+        $this->name   = $name;
+        $this->state  = $state;
+        $this->office = $office;
+        $this->party  = $party;
     }
 }

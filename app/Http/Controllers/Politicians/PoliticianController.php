@@ -33,7 +33,7 @@ class PoliticianController extends Controller
 
     public function getGetList()
     {
-        $politicians = $this->politicianRepo->getAll(['_id', 'name', 'state', 'house', 'party']);
+        $politicians = $this->politicianRepo->getAll(['_id', 'name', 'state', 'office', 'party']);
         $models      = [];
 
         /** @var Politician $politician */
@@ -43,7 +43,7 @@ class PoliticianController extends Controller
                 $politician->getId(),
                 $politician->getName(),
                 $politician->getState(),
-                $politician->getHouse(),
+                $politician->getOffice(),
                 $politician->getParty()
             );
 
@@ -67,7 +67,7 @@ class PoliticianController extends Controller
             $politician->getId(),
             $politician->getName(),
             $politician->getState(),
-            $politician->getHouse(),
+            $politician->getOffice(),
             $politician->getParty(),
             $averageRating
         );
