@@ -11,8 +11,8 @@ use TheRogg\Domain\PoliticianRating;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
-use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
+use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class PoliticianController extends Controller
