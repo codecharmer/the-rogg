@@ -107,6 +107,18 @@ class PoliticianController extends Controller
         }
     }
 
+    public function putCommentOnPolitician()
+    {
+        $model        = Request::json();
+        $politicianId = $model->get('politicianId');
+        $userId       = $model->get('userId');
+        $text         = $model->get('text');
+
+        $this->validateIds($userId, $politicianId);
+
+        $this->commentRepo->make($userId, $politicianId, $text);
+    }
+
     /**
      * @param Collection $ratings
      *
