@@ -39,7 +39,7 @@ class PoliticianController extends Controller
     public function getGetList()
     {
         $politicians = $this->politicianRepo->getAll(['_id', 'name', 'state', 'office', 'party']);
-        $models      = [];
+        $viewModels  = [];
 
         /** @var Politician $politician */
         foreach ($politicians as $politician)
@@ -52,10 +52,10 @@ class PoliticianController extends Controller
                 $politician->getParty()
             );
 
-            $models[] = $model;
+            $viewModels[] = $model;
         }
 
-        return Response::json($models);
+        return Response::json($viewModels);
     }
 
     public function getGetPolitician()
@@ -66,15 +66,21 @@ class PoliticianController extends Controller
         $politician = $this->politicianRepo->find($id);
 
         $ratings = $this->ratingRepo->getByPoliticianId($politician->getId());;
-        $averageRating = $this->calculateAverageRating($ratings);
+        if ($ratings->isEmpty())
+            $averageRating = 0;
+        else
+            $averageRating = $this->calculateAverageRating($ratings);
 
         $comments      = $this->commentRepo->getByPoliticianId($politician->getId());
         $commentModels = [];
         /** @var Comment $comment */
         foreach ($comments as $comment)
-            $commentModels[] = new PoliticianCommentModel($comment->getUserId(), $comment->getText(), $comment->getTimestamp());
+        {
+            $commentModel    = new PoliticianCommentModel($comment->getUserId(), $comment->getText(), $comment->getTimestamp());
+            $commentModels[] = $commentModel;
+        }
 
-        $model = new PoliticianDetailsModel(
+        $viewModel = new PoliticianDetailsModel(
             $politician->getId(),
             $politician->getName(),
             $politician->getState(),
@@ -84,7 +90,7 @@ class PoliticianController extends Controller
             $commentModels
         );
 
-        return Response::json($model);
+        return Response::json($viewModel);
     }
 
     public function putRatePolitician()
