@@ -4,21 +4,21 @@ use Illuminate\Database\Seeder;
 use TheRogg\Domain\Office;
 use TheRogg\Domain\Party;
 use TheRogg\Domain\State;
+use TheRogg\Repositories\Comments\CommentRepositoryInterface as CommentRepo;
 use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class TestDataSeeder extends Seeder
 {
-    private $userRepo;
+    private $commentRepo;
     private $politicianRepo;
-    /**
-     * @var RatingRepo
-     */
     private $ratingRepo;
+    private $userRepo;
 
-    public function __construct(PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
+    public function __construct(CommentRepo $commentRepo, PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
     {
+        $this->commentRepo    = $commentRepo;
         $this->politicianRepo = $politicianRepo;
         $this->ratingRepo     = $ratingRepo;
         $this->userRepo       = $userRepo;
@@ -62,5 +62,9 @@ class TestDataSeeder extends Seeder
             'Tenth'   => 5,
         ];
         $this->ratingRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores);
+
+        Schema::drop('comments');
+
+        $this->commentRepo->make('1', '1', "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.");
     }
 }
