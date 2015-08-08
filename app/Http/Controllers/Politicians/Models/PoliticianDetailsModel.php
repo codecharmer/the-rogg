@@ -10,8 +10,9 @@ class PoliticianDetailsModel
     public $office;
     public $party;
     public $averageRating;
+    public $comments;
 
-    public function __construct($id, $name, $state, $office, $party, $averageRating)
+    public function __construct($id, $name, $state, $office, $party, $averageRating, $comments)
     {
         $this->id            = $id;
         $this->name          = $name;
@@ -19,5 +20,6 @@ class PoliticianDetailsModel
         $this->office        = $office;
         $this->party         = $party;
         $this->averageRating = $averageRating;
+        $this->comments      = $comments;
     }
 }

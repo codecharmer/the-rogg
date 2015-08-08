@@ -16,4 +16,11 @@ interface CommentRepositoryInterface extends RepositoryInterface
      * @return Comment
      */
     public function make($userId, $politicianId, $text, $id = null);
+
+    /**
+     * @param $politicianId
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function getByPoliticianId($politicianId);
 }

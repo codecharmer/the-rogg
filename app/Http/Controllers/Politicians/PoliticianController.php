@@ -6,26 +6,31 @@ use Illuminate\Database\Eloquent\Collection;
 use InvalidArgumentException;
 use Request;
 use Response;
+use TheRogg\Domain\Comment;
 use TheRogg\Domain\Politician;
 use TheRogg\Domain\PoliticianRating;
 use TheRogg\Http\Controllers\Controller;
+use TheRogg\Http\Controllers\Politicians\Models\PoliticianCommentModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
+use TheRogg\Repositories\Comments\CommentRepositoryInterface as CommentRepo;
 use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class PoliticianController extends Controller
 {
+    private $commentRepo;
     private $politicianRepo;
     private $ratingRepo;
     private $userRepo;
 
-    public function __construct(PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
+    public function __construct(CommentRepo $commentRepo, PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
     {
         // TODO: Authentication.
         // TODO: CSRF token.
 
+        $this->commentRepo    = $commentRepo;
         $this->politicianRepo = $politicianRepo;
         $this->ratingRepo     = $ratingRepo;
         $this->userRepo       = $userRepo;
@@ -63,13 +68,20 @@ class PoliticianController extends Controller
         $ratings = $this->ratingRepo->getByPoliticianId($politician->getId());;
         $averageRating = $this->calculateAverageRating($ratings);
 
+        $comments      = $this->commentRepo->getByPoliticianId($politician->getId());
+        $commentModels = [];
+        /** @var Comment $comment */
+        foreach ($comments as $comment)
+            $commentModels[] = new PoliticianCommentModel($comment->getUserId(), $comment->getText(), $comment->getTimestamp());
+
         $model = new PoliticianDetailsModel(
             $politician->getId(),
             $politician->getName(),
             $politician->getState(),
             $politician->getOffice(),
             $politician->getParty(),
-            $averageRating
+            $averageRating,
+            $commentModels
         );
 
         return Response::json($model);

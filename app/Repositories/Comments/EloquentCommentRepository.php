@@ -58,8 +58,16 @@ class EloquentCommentRepository implements CommentRepositoryInterface
     public function findBy($field, $value, $fields = [])
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $comment = Comment::where('$field', $value)->project($fields)->first();
+        $comment = Comment::where('field', $value)->project($fields)->first();
 
         return $comment;
+    }
+
+    public function getByPoliticianId($politicianId)
+    {
+        /** @noinspection PhpUndefinedMethodInspection */
+        $comments = Comment::where('politicianId', $politicianId)->orderBy('updated_at')->get();
+
+        return $comments;
     }
 }

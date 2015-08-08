@@ -39,4 +39,6 @@ class Comment extends Entity
 
         $this->attributes['text'] = $text;
     }
+
+    public function getTimestamp() { return $this->updated_at->getTimestamp(); }
 }
