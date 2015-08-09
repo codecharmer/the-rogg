@@ -73,12 +73,18 @@ class Politician extends Entity
     public function getPhoto() { return $this->attributes['photo']; }
     public function setPhoto($photo)
     {
+        if (!is_string($photo) && $photo != null)
+            throw new InvalidArgumentException('Photo must be a string or null.');
+
         $this->attributes['photo'] = $photo;
     }
 
     public function getMessage() { return $this->attributes['message']; }
     public function setMessage($message)
     {
+        if (!is_string($message) && $message != null)
+            throw new InvalidArgumentException('Message must be a string or null.');
+
         $this->attributes['message'] = $message;
     }
 

@@ -3,6 +3,7 @@
 namespace TheRogg\Http\Controllers\Politicians;
 
 use Exception;
+use InvalidArgumentException;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
@@ -87,12 +88,20 @@ class AdminPoliticianController extends Controller
         if (!empty($politician))
             throw new Exception($name . ' already exists.');
 
-        $politician = $this->politicianRepo->make($name, $state, $office, $party);
-        $politician->setPhoto($photo);
-        $politician->setMessage($message);
-        $politician->setIsPresidentialCandidate($isPresidentialCandidate);
-        $this->politicianRepo->save(($politician));
+        try
+        {
+            $politician = $this->politicianRepo->make($name, $state, $office, $party);
+            $politician->setPhoto($photo);
+            $politician->setMessage($message);
+            $politician->setIsPresidentialCandidate($isPresidentialCandidate);
+            $this->politicianRepo->save(($politician));
 
-        return Response::json($politician->getId());
+            return Response::json($politician->getId());
+        }
+        catch (Exception $e)
+        {
+            $this->politicianRepo->delete($politician->getId());
+            throw $e;
+        }
     }
 }
