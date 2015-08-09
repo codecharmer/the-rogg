@@ -3,7 +3,6 @@
 namespace TheRogg\Http\Controllers\Politicians;
 
 use Exception;
-use InvalidArgumentException;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
@@ -103,5 +102,12 @@ class AdminPoliticianController extends Controller
             $this->politicianRepo->delete($politician->getId());
             throw $e;
         }
+    }
+
+    public function deleteDeletePolitician()
+    {
+        $id = Request::get('id');
+
+        $this->politicianRepo->delete([$id]);
     }
 }
