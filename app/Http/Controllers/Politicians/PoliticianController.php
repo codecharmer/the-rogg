@@ -58,7 +58,7 @@ class PoliticianController extends Controller
         return Response::json($viewModels);
     }
 
-    public function getGetPolitician()
+    public function getGetDetails()
     {
         $id = Request::get('id');
 
