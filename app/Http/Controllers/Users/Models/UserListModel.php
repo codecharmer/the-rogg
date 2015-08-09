@@ -5,15 +5,15 @@ namespace TheRogg\Http\Controllers\Users\Models;
 class UserListModel
 {
     public $id;
-    public $name;
+    public $username;
     public $email;
     public $party;
 
-    public function __construct($id, $name, $email, $party)
+    public function __construct($id, $username, $email, $party)
     {
-        $this->id    = $id;
-        $this->name  = $name;
-        $this->email = $email;
-        $this->party = $party;
+        $this->id       = $id;
+        $this->username = $username;
+        $this->email    = $email;
+        $this->party    = $party;
     }
 }

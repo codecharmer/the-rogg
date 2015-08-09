@@ -10,7 +10,7 @@ use TheRogg\Http\Controllers\Users\Models\UserDetailsModel;
 use TheRogg\Http\Controllers\Users\Models\UserListModel;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
-class UserControllers extends Controller
+class UserController extends Controller
 {
     private $userRepo;
 
@@ -21,7 +21,7 @@ class UserControllers extends Controller
 
     public function getGetList()
     {
-        $users  = $this->userRepo->getAll(['_id', 'name', 'email', 'party']);
+        $users  = $this->userRepo->getAll(['_id', 'username', 'email', 'party']);
         $models = [];
 
         /** @var User $user */
@@ -39,7 +39,7 @@ class UserControllers extends Controller
         return Response::json($models);
     }
 
-    public function getGetUser()
+    public function getGetDetails()
     {
         $id = Request::get('id');
 
