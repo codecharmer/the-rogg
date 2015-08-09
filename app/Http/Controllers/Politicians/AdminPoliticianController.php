@@ -79,18 +79,19 @@ class AdminPoliticianController extends Controller
         $state                   = $model->get('state');
         $office                  = $model->get('office');
         $party                   = $model->get('party');
-        $isPresidentialCandidate = $model->get('isPresidentialCandidate');
+        $photo                   = $model->get('photo') ? $model->get('photo') : null;
+        $message                 = $model->get('message') ? $model->get('message') : null;
+        $isPresidentialCandidate = $model->get('isPresidentialCandidate') ? true : false;
 
         $politician = $this->politicianRepo->findBy('name', $name);
         if (!empty($politician))
-            throw new Exception($name . ' already exists in the system.');
+            throw new Exception($name . ' already exists.');
 
         $politician = $this->politicianRepo->make($name, $state, $office, $party);
-        if ($isPresidentialCandidate)
-        {
-            $politician->setIsPresidentialCandidate(true);
-            $this->politicianRepo->save($politician);
-        }
+        $politician->setPhoto($photo);
+        $politician->setMessage($message);
+        $politician->setIsPresidentialCandidate($isPresidentialCandidate);
+        $this->politicianRepo->save(($politician));
 
         return Response::json($politician->getId());
     }

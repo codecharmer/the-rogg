@@ -14,9 +14,9 @@ class Politician extends Entity
     protected $office;
     /** @var  Party */
     protected $party;
-    /** @var  string */
+    /** @var  string|null */
     protected $photo;
-    /** @var  string */
+    /** @var  string|null */
     protected $message;
     /** @var  bool */
     protected $isPresidentialCandidate;
@@ -79,9 +79,6 @@ class Politician extends Entity
     public function getMessage() { return $this->attributes['message']; }
     public function setMessage($message)
     {
-        if ($this->stringIsNullOrEmpty($message))
-            throw new InvalidArgumentException('Message cannot be empty.');
-
         $this->attributes['message'] = $message;
     }
 
