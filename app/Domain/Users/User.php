@@ -64,8 +64,6 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
     }
 
     public function isAdmin() { return $this->attributes['isAdmin']; }
-    public function makeAdmin()
-    {
-        $this->attributes['isAdmin'] = true;
-    }
+    public function makeAdmin() { $this->attributes['isAdmin'] = true; }
+    public function revokeAdmin() { $this->attributes['isAdmin'] = false; }
 }
