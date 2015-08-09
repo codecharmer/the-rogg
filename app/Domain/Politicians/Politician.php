@@ -37,6 +37,9 @@ class Politician extends Entity
     public function getState() { return $this->attributes['state']; }
     public function setState($state)
     {
+        if ($this->stringIsNullOrEmpty($state))
+            throw new InvalidArgumentException('State cannot be empty.');
+
         if (!State::isValidValue($state))
             throw new InvalidArgumentException($state . ' is not a valid state.');
 
@@ -46,6 +49,9 @@ class Politician extends Entity
     public function getOffice() { return $this->attributes['office']; }
     public function setOffice($office)
     {
+        if ($this->stringIsNullOrEmpty($office))
+            throw new InvalidArgumentException('Office cannot be empty.');
+
         if (!Office::isValidValue($office))
             throw new InvalidArgumentException($office . ' is not a valid political office.');
 
@@ -55,6 +61,9 @@ class Politician extends Entity
     public function getParty() { return $this->attributes['party']; }
     public function setParty($party)
     {
+        if ($this->stringIsNullOrEmpty($party))
+            throw new InvalidArgumentException('Party cannot be empty.');
+
         if (!Party::isValidValue($party))
             throw new InvalidArgumentException($party . ' is not a valid political party.');
 
