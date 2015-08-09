@@ -6,8 +6,8 @@ use Request;
 use Response;
 use TheRogg\Domain\User;
 use TheRogg\Http\Controllers\Controller;
+use TheRogg\Http\Controllers\Users\Models\AdminUserDetailsModel;
 use TheRogg\Http\Controllers\Users\Models\AdminUserListModel;
-use TheRogg\Http\Controllers\Users\Models\UserDetailsModel;
 use TheRogg\Http\Controllers\Users\Models\UserListModel;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
@@ -41,18 +41,19 @@ class AdminUserController extends Controller
         return Response::json($models);
     }
 
-    public function getGetUser()
+    public function getGetDetails()
     {
         $id = Request::get('id');
 
         /** @var User $user */
         $user = $this->userRepo->find($id);
 
-        $model = new UserDetailsModel(
+        $model = new AdminUserDetailsModel(
             $user->getId(),
             $user->getUsername(),
             $user->getEmail(),
-            $user->getParty()
+            $user->getParty(),
+            $user->isAdmin()
         );
 
         return Response::json($model);
