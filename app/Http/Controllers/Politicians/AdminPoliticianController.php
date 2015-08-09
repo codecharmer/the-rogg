@@ -2,6 +2,7 @@
 
 namespace TheRogg\Http\Controllers\Politicians;
 
+use Exception;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
@@ -69,5 +70,28 @@ class AdminPoliticianController extends Controller
         );
 
         return Response::json($viewModel);
+    }
+
+    public function putAddPolitician()
+    {
+        $model                   = Request::json();
+        $name                    = $model->get('name');
+        $state                   = $model->get('state');
+        $office                  = $model->get('office');
+        $party                   = $model->get('party');
+        $isPresidentialCandidate = $model->get('isPresidentialCandidate');
+
+        $politician = $this->politicianRepo->findBy('name', $name);
+        if (!empty($politician))
+            throw new Exception($name . ' already exists in the system.');
+
+        $politician = $this->politicianRepo->make($name, $state, $office, $party);
+        if ($isPresidentialCandidate)
+        {
+            $politician->setIsPresidentialCandidate(true);
+            $this->politicianRepo->save($politician);
+        }
+
+        return Response::json($politician->getId());
     }
 }
