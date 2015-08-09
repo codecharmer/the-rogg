@@ -72,7 +72,7 @@ class AdminPoliticianController extends Controller
         return Response::json($viewModel);
     }
 
-    public function putAddPolitician()
+    public function postAddPolitician()
     {
         $model                   = Request::json();
         $name                    = $model->get('name');
@@ -102,6 +102,38 @@ class AdminPoliticianController extends Controller
             $this->politicianRepo->delete($politician->getId());
             throw $e;
         }
+    }
+
+    public function putUpdatePolitician()
+    {
+        $model = Request::json();
+        $id    = $model->get('id');
+
+        if (empty($id))
+            throw new Exception('A politician ID must be supplied.');
+
+        $name                    = $model->get('name');
+        $state                   = $model->get('state');
+        $office                  = $model->get('office');
+        $party                   = $model->get('party');
+        $photo                   = $model->get('photo') ? $model->get('photo') : null;
+        $message                 = $model->get('message') ? $model->get('message') : null;
+        $isPresidentialCandidate = $model->get('isPresidentialCandidate') ? true : false;
+
+        /** @var Politician $politician */
+        $politician = $this->politicianRepo->find($id);
+        if (empty($politician))
+            throw new Exception('Politician ' . $id . ' does not exist.');
+
+        $politician->setName($name);
+        $politician->setState($state);
+        $politician->setOffice($office);
+        $politician->setParty($party);
+        $politician->setPhoto($photo);
+        $politician->setMessage($message);
+        $politician->setIsPresidentialCandidate($isPresidentialCandidate);
+
+        $this->politicianRepo->save($politician);
     }
 
     public function deleteDeletePolitician()
