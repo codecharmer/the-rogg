@@ -2,16 +2,11 @@
 
 namespace TheRogg\Http\Controllers\Politicians;
 
-use Illuminate\Database\Eloquent\Collection;
-use InvalidArgumentException;
 use Request;
 use Response;
-use TheRogg\Domain\Comment;
 use TheRogg\Domain\Politician;
-use TheRogg\Domain\PoliticianRating;
 use TheRogg\Http\Controllers\Controller;
-use TheRogg\Http\Controllers\Politicians\Models\PoliticianCommentModel;
-use TheRogg\Http\Controllers\Politicians\Models\PoliticianDetailsModel;
+use TheRogg\Http\Controllers\Politicians\Models\AdminPoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
 use TheRogg\Repositories\Comments\CommentRepositoryInterface as CommentRepo;
 use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
@@ -60,6 +55,19 @@ class AdminPoliticianController extends Controller
 
     public function getGetDetails()
     {
+        $id = Request::get('id');
 
+        /** @var Politician $politician */
+        $politician = $this->politicianRepo->find($id);
+
+        $viewModel = new AdminPoliticianDetailsModel(
+            $politician->getId(),
+            $politician->getName(),
+            $politician->getState(),
+            $politician->getOffice(),
+            $politician->getParty()
+        );
+
+        return Response::json($viewModel);
     }
 }
