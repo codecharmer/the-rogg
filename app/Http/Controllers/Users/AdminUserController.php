@@ -89,4 +89,11 @@ class AdminUserController extends Controller
             throw $e;
         }
     }
+
+    public function deleteDeleteUser()
+    {
+        $id = Request::get('id');
+
+        $this->userRepo->delete([$id]);
+    }
 }
