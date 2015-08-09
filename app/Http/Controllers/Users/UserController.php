@@ -19,26 +19,6 @@ class UserController extends Controller
         $this->userRepo = $userRepo;
     }
 
-    public function getGetList()
-    {
-        $users  = $this->userRepo->getAll(['_id', 'username', 'email', 'party']);
-        $models = [];
-
-        /** @var User $user */
-        foreach ($users as $user)
-        {
-            $model    = new UserListModel(
-                $user->getId(),
-                $user->getUsername(),
-                $user->getEmail(),
-                $user->getParty()
-            );
-            $models[] = $model;
-        }
-
-        return Response::json($models);
-    }
-
     public function getGetDetails()
     {
         $id = Request::get('id');
