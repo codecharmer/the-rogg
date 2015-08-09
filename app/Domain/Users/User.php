@@ -17,11 +17,14 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
     protected $party;
     /** @var  string */
     protected $username;
+    /** @var  bool */
+    protected $isAdmin;
 
     protected $hidden = ['password', 'remember_token'];
 
     protected $attributes = [
-        'party' => null,
+        'party'   => null,
+        'isAdmin' => false,
     ];
 
     public function getUsername() { return $this->attributes['username']; }
@@ -30,7 +33,7 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
         if ($this->stringIsNullOrEmpty($username))
             throw new InvalidArgumentException('Username cannot be empty.');
 
-        $this->attributes['name'] = $username;
+        $this->attributes['username'] = $username;
     }
 
     public function getEmail() { return $this->attributes['email']; }
@@ -58,5 +61,11 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
             throw new InvalidArgumentException($party . ' is not a valid political party.');
 
         $this->attributes['party'] = $party;
+    }
+
+    public function isAdmin() { return $this->attributes['isAdmin']; }
+    public function makeAdmin()
+    {
+        $this->attributes['isAdmin'] = true;
     }
 }

@@ -29,6 +29,9 @@ class TestDataSeeder extends Seeder
         Schema::drop('users');
 
         $christopherLamm = $this->userRepo->make('theantichris', 'chris@theantichris.com', 'password', Party::Independent, '1');
+        $christopherLamm->makeAdmin();
+        $christopherLamm->save();
+
         $this->userRepo->make('syoung', 'suzanne@veil22.com', 'password', null, '2');
 
         Schema::drop('politicians');
