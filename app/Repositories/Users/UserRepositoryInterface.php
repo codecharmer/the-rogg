@@ -8,7 +8,7 @@ use TheRogg\Repositories\RepositoryInterface;
 interface UserRepositoryInterface extends RepositoryInterface
 {
     /**
-     * @param string      $name
+     * @param string      $username
      * @param string      $email
      * @param string      $password
      * @param string|null $party
@@ -16,7 +16,7 @@ interface UserRepositoryInterface extends RepositoryInterface
      *
      * @return User
      */
-    public function make($name, $email, $password, $party = null, $id = null);
+    public function make($username, $email, $password, $party = null, $id = null);
 
     /**
      * @param string $userId

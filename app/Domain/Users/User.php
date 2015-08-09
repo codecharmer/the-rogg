@@ -15,6 +15,8 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
 
     /** @var  Party */
     protected $party;
+    /** @var  string */
+    protected $username;
 
     protected $hidden = ['password', 'remember_token'];
 
@@ -22,13 +24,13 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
         'party' => null,
     ];
 
-    public function getName() { return $this->attributes['name']; }
-    public function setName($name)
+    public function getUsername() { return $this->attributes['username']; }
+    public function setUsername($username)
     {
-        if ($this->stringIsNullOrEmpty($name))
-            throw new InvalidArgumentException('Name cannot be empty.');
+        if ($this->stringIsNullOrEmpty($username))
+            throw new InvalidArgumentException('Username cannot be empty.');
 
-        $this->attributes['name'] = $name;
+        $this->attributes['name'] = $username;
     }
 
     public function getEmail() { return $this->attributes['email']; }

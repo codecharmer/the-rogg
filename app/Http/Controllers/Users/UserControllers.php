@@ -29,7 +29,7 @@ class UserControllers extends Controller
         {
             $model    = new UserListModel(
                 $user->getId(),
-                $user->getName(),
+                $user->getUsername(),
                 $user->getEmail(),
                 $user->getParty()
             );
@@ -48,7 +48,7 @@ class UserControllers extends Controller
 
         $model = new UserDetailsModel(
             $user->getId(),
-            $user->getName(),
+            $user->getUsername(),
             $user->getEmail(),
             $user->getParty()
         );
