@@ -6,3 +6,6 @@
 .env
 Homestead.yaml
 _ide_helper.php
+
+public/assets/css
+build
