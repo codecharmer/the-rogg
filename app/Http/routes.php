@@ -6,7 +6,8 @@ Route::group(['prefix' => 'api'], function ()
     Route::controller('users', 'Users\UserController');
 });
 
-Route::group(['prefix' => 'admin'], function(){
+Route::group(['prefix' => 'admin'], function ()
+{
     Route::controller('politicians', 'Politicians\AdminPoliticianController');
     Route::controller('users', 'Users\AdminUserController');
 });
