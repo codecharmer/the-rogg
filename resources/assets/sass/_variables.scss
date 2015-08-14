@@ -1,6 +1,8 @@
-$red: #B01B2E;
-$blue: #022E80;
+$primary: #B01B2E;
+$secondary: #022E80;
+$navBackground: #BEC3C7;
 
 // Bootstrap overriders
 
-$link-color: $blue;
+$link-color: $secondary;
+$nav-link-hover-bg: $navBackground;
