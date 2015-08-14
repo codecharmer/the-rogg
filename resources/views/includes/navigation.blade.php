@@ -9,13 +9,13 @@
                     Raw and unedited - That's the ROGG!</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row Nav-row">
             <div class="col-md-12">
                 <ul class="nav nav-pills nav-justified">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Politicians</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Mission</a></li>
+                    <li class="Nav-item"><a href="#">Home</a></li>
+                    <li class="Nav-item"><a href="#">Politicians</a></li>
+                    <li class="Nav-item"><a href="#">Contact</a></li>
+                    <li class="Nav-item"><a href="#">Mission</a></li>
                 </ul>
             </div>
         </div>

@@ -1,5 +1,6 @@
 .Navigation {
   margin-top: 40px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #343434;
 }
 
@@ -9,11 +10,32 @@
   padding: 5px 10px;
   background-color: $blue;
   text-align: center;
+  text-transform: uppercase;
   font-size: 24px;
   color: #ffffff;
 
   &:hover {
     text-decoration: none;
     color: #ffffff;
+  }
+}
+
+.Nav-row {
+  margin-top: 10px;
+}
+
+.Nav-item {
+  padding-left: 10px;
+  text-transform: uppercase;
+
+  &:nth-child(1){
+  padding-left: 0;
+}
+
+  a {
+    height: 60px;
+    //margin-left: 5px;
+    border: 1px solid #BEC3C7;
+    font-size: 24px;
   }
 }
