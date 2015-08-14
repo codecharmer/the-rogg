@@ -12,11 +12,12 @@ interface UserRepositoryInterface extends RepositoryInterface
      * @param string      $email
      * @param string      $password
      * @param string|null $party
+     * @param string|null $photo
      * @param string|null $id
      *
      * @return User
      */
-    public function make($username, $email, $password, $party = null, $id = null);
+    public function make($username, $email, $password, $party = null, $photo = null, $id = null);
 
     /**
      * @param string $userId

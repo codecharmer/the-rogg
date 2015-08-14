@@ -22,7 +22,7 @@ class AdminUserController extends Controller
 
     public function getGetList()
     {
-        $users  = $this->userRepo->getAll(['_id', 'username', 'email', 'party', 'isAdmin']);
+        $users  = $this->userRepo->getAll(['_id', 'username', 'email', 'party', 'isAdmin', 'photo']);
         $models = [];
 
         /** @var User $user */
@@ -33,7 +33,8 @@ class AdminUserController extends Controller
                 $user->getUsername(),
                 $user->getEmail(),
                 $user->getParty(),
-                $user->isAdmin()
+                $user->isAdmin(),
+                $user->getPhoto()
             );
             $models[] = $model;
         }
@@ -53,7 +54,8 @@ class AdminUserController extends Controller
             $user->getUsername(),
             $user->getEmail(),
             $user->getParty(),
-            $user->isAdmin()
+            $user->isAdmin(),
+            $user->getPhoto()
         );
 
         return Response::json($model);
@@ -67,6 +69,7 @@ class AdminUserController extends Controller
         $password = $model->get('password');
         $party    = $model->get('party') ? $model->get('party') : null;
         $isAdmin  = $model->get('isAdmin');
+        $photo    = $model->get('photo') ? $model->get('photo') : null;
 
         $user = $this->userRepo->findBy('username', $username);
         if (!empty($user))
@@ -74,7 +77,8 @@ class AdminUserController extends Controller
 
         try
         {
-            $user = $this->userRepo->make($username, $email, $password, $party);
+            $user = $this->userRepo->make($username, $email, $password, $party, $photo);
+
             if ($isAdmin)
             {
                 $user->makeAdmin();

@@ -19,6 +19,8 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
     protected $username;
     /** @var  bool */
     protected $isAdmin;
+    /** @var string */
+    protected $photo;
 
     protected $hidden = ['password', 'remember_token'];
 
@@ -66,4 +68,10 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
     public function isAdmin() { return $this->attributes['isAdmin']; }
     public function makeAdmin() { $this->attributes['isAdmin'] = true; }
     public function revokeAdmin() { $this->attributes['isAdmin'] = false; }
+
+    public function getPhoto() { return $this->attributes['photo']; }
+    public function setPhoto($photo)
+    {
+        $this->attributes['photo'] = $photo;
+    }
 }

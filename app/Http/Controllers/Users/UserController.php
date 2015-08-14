@@ -30,7 +30,8 @@ class UserController extends Controller
             $user->getId(),
             $user->getUsername(),
             $user->getEmail(),
-            $user->getParty()
+            $user->getParty(),
+            $user->getPhoto()
         );
 
         return Response::json($model);
