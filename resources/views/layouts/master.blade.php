@@ -11,6 +11,17 @@
 @include('includes.header')
 @include('includes.navigation')
 
+<div class="container Content-container">
+    <div class="row">
+        <div class="col-md-8">
+            @yield('main')
+        </div>
+        <div class="col-md-4">
+            @yield('sidebar')
+        </div>
+    </div>
+</div>
+
 @include('includes.footer')
 
 </body>
