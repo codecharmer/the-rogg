@@ -11,7 +11,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <ul>
+                <ul class="nav nav-pills nav-justified">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Politicians</a></li>
                     <li><a href="#">Contact</a></li>
