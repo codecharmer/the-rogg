@@ -2,6 +2,10 @@
   margin-top: 40px;
   padding-bottom: 20px;
   border-bottom: 2px solid #343434;
+
+  .nav > li > a:hover {
+    background-color: #BEC3C7;
+  }
 }
 
 .Navigation-registerButton {
@@ -34,7 +38,6 @@
 
   a {
     height: 60px;
-    //margin-left: 5px;
     border: 1px solid #BEC3C7;
     font-size: 24px;
   }
