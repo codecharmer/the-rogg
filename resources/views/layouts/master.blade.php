@@ -9,34 +9,7 @@
 <body>
 
 @include('includes.header')
-
-<div class="Navigation">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <a class="Navigation-registerButton" href="#" role="button">Create Your Free Account</a>
-            </div>
-            <div class="col-md-9">
-                <p>A resource where your void can truly be heard. Rate, share, and comment on any government official.
-                    Raw and unedited - That's the ROGG!</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <a href="#">Home</a>
-            </div>
-            <div class="col-md-3">
-                <a href="#">Politicians</a>
-            </div>
-            <div class="col-md-3">
-                <a href="#">Contact</a>
-            </div>
-            <div class="col-md-3">
-                <a href="#">Our Mission</a>
-            </div>
-        </div>
-    </div>
-</div>
+@include('includes.navigation')
 
 </body>
 </html>
