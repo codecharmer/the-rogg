@@ -11,5 +11,7 @@
 @include('includes.header')
 @include('includes.navigation')
 
+@include('includes.footer')
+
 </body>
 </html>
