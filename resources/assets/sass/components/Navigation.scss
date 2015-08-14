@@ -1,0 +1,22 @@
+.Navigation {
+  border-bottom: 2px solid #343434;
+}
+
+.Navigation-row {
+  padding: 40px 0;
+}
+
+.Navigation-registerButton {
+  display: block;
+  width: 230px;
+  padding: 5px 10px;
+  background-color: $blue;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
