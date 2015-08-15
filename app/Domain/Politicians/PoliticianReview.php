@@ -5,7 +5,7 @@ namespace TheRogg\Domain;
 use InvalidArgumentException;
 use TheRogg\Domain\Politicians\Amendment;
 
-class PoliticianRating extends Entity
+class PoliticianReview extends Entity
 {
     /** @var  string */
     protected $userId;
@@ -13,6 +13,8 @@ class PoliticianRating extends Entity
     protected $politicianId;
     /** @var int[] */
     protected $scores;
+    /** @var string */
+    protected $comment;
 
     public function getUserId() { return $this->attributes['userId']; }
     public function setUserId($userId)
@@ -70,6 +72,14 @@ class PoliticianRating extends Entity
 
         return $average;
     }
+
+    public function getComment() { return $this->attributes['comment']; }
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
+    }
+
+    public function getTimestamp() { return $this->updated_at->getTimestamp(); }
 
     private function isValidScore($number)
     {
