@@ -4,7 +4,9 @@
     <h2>Your Review Awaits</h2>
     <p>Here are some suggestions to get you started.</p>
     <ul class="Home-CommentList">
+        <?php foreach($reviews as $review) : ?>
 
+        <?php endforeach; ?>
     </ul>
 @endsection
 

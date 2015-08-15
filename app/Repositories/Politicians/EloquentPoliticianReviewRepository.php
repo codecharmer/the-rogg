@@ -14,6 +14,14 @@ class EloquentPoliticianReviewRepository implements PoliticianReviewRepositoryIn
         return $reviews;
     }
 
+    public function get($count, $fields = [])
+    {
+        /** @noinspection PhpUndefinedMethodInspection */
+        $reviews = PoliticianReview::orderBy('updated_at')->project($fields)->take($count)->get();
+
+        return $reviews;
+    }
+
     public function save($document)
     {
         $document->save();

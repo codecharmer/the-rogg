@@ -2,6 +2,7 @@
 
 namespace TheRogg\Repositories\Politicians;
 
+use Jenssegers\Mongodb\Collection;
 use TheRogg\Domain\PoliticianReview;
 use TheRogg\Repositories\RepositoryInterface;
 
@@ -17,6 +18,14 @@ interface PoliticianReviewRepositoryInterface extends RepositoryInterface
      * @return PoliticianReview
      */
     public function make($userId, $politicianId, $scores, $comment, $id = null);
+
+    /**
+     * @param int      $count
+     * @param string[] $fields
+     *
+     * @return Collection
+     */
+    public function get($count, $fields = []);
 
     /**
      * @param string $politicianId
