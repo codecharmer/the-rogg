@@ -132,6 +132,7 @@ return [
         TheRogg\Providers\AppServiceProvider::class,
         TheRogg\Providers\EventServiceProvider::class,
         TheRogg\Providers\RouteServiceProvider::class,
+        TheRogg\Providers\ComposerServiceProvider::class,
 
         /*
          * Third Party Service Providers
