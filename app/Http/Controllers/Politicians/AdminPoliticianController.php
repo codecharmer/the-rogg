@@ -9,27 +9,18 @@ use TheRogg\Domain\Politician;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Http\Controllers\Politicians\Models\AdminPoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
-use TheRogg\Repositories\Comments\CommentRepositoryInterface as CommentRepo;
-use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
-use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class AdminPoliticianController extends Controller
 {
-    private $commentRepo;
     private $politicianRepo;
-    private $ratingRepo;
-    private $userRepo;
 
-    public function __construct(CommentRepo $commentRepo, PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
+    public function __construct(PoliticianRepo $politicianRepo)
     {
         // TODO: Authentication.
         // TODO: CSRF token.
 
-        $this->commentRepo    = $commentRepo;
         $this->politicianRepo = $politicianRepo;
-        $this->ratingRepo     = $ratingRepo;
-        $this->userRepo       = $userRepo;
     }
 
     public function getGetList()

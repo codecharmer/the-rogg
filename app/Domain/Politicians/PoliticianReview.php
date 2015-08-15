@@ -76,10 +76,14 @@ class PoliticianReview extends Entity
     public function getComment() { return $this->attributes['comment']; }
     public function setComment($comment)
     {
-        $this->comment = $comment;
+        $this->attributes['comment'] = $comment;
     }
 
-    public function getTimestamp() { return $this->updated_at->getTimestamp(); }
+    public function getTimestamp()
+    {
+        /** @noinspection PhpUndefinedFieldInspection */
+        return $this->updated_at->getTimestamp();
+    }
 
     private function isValidScore($number)
     {

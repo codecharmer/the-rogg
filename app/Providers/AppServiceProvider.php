@@ -28,18 +28,13 @@ class AppServiceProvider extends ServiceProvider
             $this->app->register('Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider');
 
         $this->app->bind(
-            'TheRogg\Repositories\Comments\CommentRepositoryInterface',
-            'TheRogg\Repositories\Comments\EloquentCommentRepository'
-        );
-
-        $this->app->bind(
             'TheRogg\Repositories\Politicians\PoliticianRepositoryInterface',
             'TheRogg\Repositories\Politicians\EloquentPoliticianRepository'
         );
 
         $this->app->bind(
-            'TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface',
-            'TheRogg\Repositories\Politicians\EloquentPoliticianRatingRepository'
+            'TheRogg\Repositories\Politicians\PoliticianReviewRepositoryInterface',
+            'TheRogg\Repositories\Politicians\EloquentPoliticianReviewRepository'
         );
 
         $this->app->bind(

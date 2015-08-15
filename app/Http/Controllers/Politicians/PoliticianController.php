@@ -6,33 +6,28 @@ use Illuminate\Database\Eloquent\Collection;
 use InvalidArgumentException;
 use Request;
 use Response;
-use TheRogg\Domain\Comment;
 use TheRogg\Domain\Politician;
-use TheRogg\Domain\PoliticianRating;
+use TheRogg\Domain\PoliticianReview;
 use TheRogg\Http\Controllers\Controller;
-use TheRogg\Http\Controllers\Politicians\Models\PoliticianCommentModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
-use TheRogg\Repositories\Comments\CommentRepositoryInterface as CommentRepo;
-use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
+use TheRogg\Repositories\Politicians\PoliticianReviewRepositoryInterface as ReviewRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class PoliticianController extends Controller
 {
-    private $commentRepo;
     private $politicianRepo;
-    private $ratingRepo;
+    private $reviewRepo;
     private $userRepo;
 
-    public function __construct(CommentRepo $commentRepo, PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
+    public function __construct(PoliticianRepo $politicianRepo, ReviewRepo $reviewRepo, UserRepo $userRepo)
     {
         // TODO: Authentication.
         // TODO: CSRF token.
 
-        $this->commentRepo    = $commentRepo;
         $this->politicianRepo = $politicianRepo;
-        $this->ratingRepo     = $ratingRepo;
+        $this->reviewRepo     = $reviewRepo;
         $this->userRepo       = $userRepo;
     }
 
@@ -65,20 +60,15 @@ class PoliticianController extends Controller
         /** @var Politician $politician */
         $politician = $this->politicianRepo->find($id);
 
-        $ratings = $this->ratingRepo->getByPoliticianId($politician->getId());;
-        if ($ratings->isEmpty())
+        $reviews = $this->reviewRepo->getByPoliticianId($politician->getId());;
+        if ($reviews->isEmpty())
             $averageRating = 0;
         else
-            $averageRating = $this->calculateAverageRating($ratings);
+            $averageRating = $this->calculateAverageRating($reviews);
 
-        $comments      = $this->commentRepo->getByPoliticianId($politician->getId());
-        $commentModels = [];
-        /** @var Comment $comment */
-        foreach ($comments as $comment)
-        {
-            $commentModel    = new PoliticianCommentModel($comment->getUserId(), $comment->getText(), $comment->getTimestamp());
-            $commentModels[] = $commentModel;
-        }
+        $comments = [];
+        foreach ($reviews as $review)
+            $comments[] = $review->getComment();
 
         $viewModel = new PoliticianDetailsModel(
             $politician->getId(),
@@ -87,58 +77,48 @@ class PoliticianController extends Controller
             $politician->getOffice(),
             $politician->getParty(),
             $averageRating,
-            $commentModels
+            $comments
         );
 
         return Response::json($viewModel);
     }
 
-    public function putRatePolitician()
+    public function putReviewPolitician()
     {
         $model        = Request::json();
         $politicianId = $model->get('politicianId');
         $userId       = $model->get('userId');
         $scores       = $model->get('scores');
+        $comment      = $model->get('comment');
 
         $this->validateIds($userId, $politicianId);
 
-        $rating = $this->ratingRepo->findByUserAndPolitician($userId, $politicianId);
+        $review = $this->reviewRepo->findByUserAndPolitician($userId, $politicianId);
 
-        if (empty($rating))
-            $this->ratingRepo->make($userId, $politicianId, $scores);
+        if (empty($review))
+            $this->reviewRepo->make($userId, $politicianId, $scores, $comment);
         else
         {
-            $rating->setScores($scores);
-            $this->ratingRepo->save($rating);
+            $review->setScores($scores);
+            $review->setComment($comment);
+            $this->reviewRepo->save($review);
         }
     }
 
-    public function putCommentOnPolitician()
-    {
-        $model        = Request::json();
-        $politicianId = $model->get('politicianId');
-        $userId       = $model->get('userId');
-        $text         = $model->get('text');
-
-        $this->validateIds($userId, $politicianId);
-
-        $this->commentRepo->make($userId, $politicianId, $text);
-    }
-
     /**
-     * @param Collection $ratings
+     * @param Collection $reviews
      *
      * @return float
      */
-    private function calculateAverageRating($ratings)
+    private function calculateAverageRating($reviews)
     {
         $averages = 0;
 
-        /** @var PoliticianRating $rating */
-        foreach ($ratings as $rating)
-            $averages += $rating->getAverageScore();
+        /** @var PoliticianReview $review */
+        foreach ($reviews as $review)
+            $averages += $review->getAverageScore();
 
-        $averageRating = $averages / $ratings->count();
+        $averageRating = $averages / $reviews->count();
 
         return $averageRating;
     }

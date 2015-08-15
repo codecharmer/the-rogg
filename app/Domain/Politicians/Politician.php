@@ -95,6 +95,4 @@ class Politician extends Entity
     {
         $this->attributes['isPresidentialCandidate'] = $isPresidentialCandidate;
     }
-
-    public function getComments() { return $this->attributes['comments']; }
 }

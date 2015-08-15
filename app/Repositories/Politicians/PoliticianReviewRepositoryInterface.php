@@ -2,20 +2,21 @@
 
 namespace TheRogg\Repositories\Politicians;
 
-use TheRogg\Domain\PoliticianRating;
+use TheRogg\Domain\PoliticianReview;
 use TheRogg\Repositories\RepositoryInterface;
 
-interface PoliticianRatingRepositoryInterface extends RepositoryInterface
+interface PoliticianReviewRepositoryInterface extends RepositoryInterface
 {
     /**
      * @param string      $userId
      * @param string      $politicianId
      * @param int[]       $scores
+     * @param string      $comment
      * @param string|null $id
      *
-     * @return PoliticianRating
+     * @return PoliticianReview
      */
-    public function make($userId, $politicianId, $scores, $id = null);
+    public function make($userId, $politicianId, $scores, $comment, $id = null);
 
     /**
      * @param string $politicianId
@@ -28,7 +29,7 @@ interface PoliticianRatingRepositoryInterface extends RepositoryInterface
      * @param string $userId
      * @param string $politicianId
      *
-     * @return PoliticianRating|null
+     * @return PoliticianReview|null
      */
     public function findByUserAndPolitician($userId, $politicianId);
 }

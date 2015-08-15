@@ -4,23 +4,20 @@ use Illuminate\Database\Seeder;
 use TheRogg\Domain\Office;
 use TheRogg\Domain\Party;
 use TheRogg\Domain\State;
-use TheRogg\Repositories\Comments\CommentRepositoryInterface as CommentRepo;
-use TheRogg\Repositories\Politicians\PoliticianRatingRepositoryInterface as RatingRepo;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
+use TheRogg\Repositories\Politicians\PoliticianReviewRepositoryInterface as ReviewRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class TestDataSeeder extends Seeder
 {
-    private $commentRepo;
     private $politicianRepo;
-    private $ratingRepo;
+    private $reviewRepo;
     private $userRepo;
 
-    public function __construct(CommentRepo $commentRepo, PoliticianRepo $politicianRepo, RatingRepo $ratingRepo, UserRepo $userRepo)
+    public function __construct(PoliticianRepo $politicianRepo, ReviewRepo $reviewRepo, UserRepo $userRepo)
     {
-        $this->commentRepo    = $commentRepo;
         $this->politicianRepo = $politicianRepo;
-        $this->ratingRepo     = $ratingRepo;
+        $this->reviewRepo     = $reviewRepo;
         $this->userRepo       = $userRepo;
     }
 
@@ -40,9 +37,9 @@ class TestDataSeeder extends Seeder
         Schema::drop('politicians');
 
         $lamarAlexander = $this->politicianRepo->make('Lamar Alexander', State::Tennessee, Office::Senate, Party::Republican, '1');
-        $lamarAlexander->setPhoto('alexander-lamar.jpg');
         $lamarAlexander->save();
-        $this->politicianRepo->make('Bob Corker', State::Tennessee, Office::Senate, Party::Republican, '2');
+
+        $bobCorker = $this->politicianRepo->make('Bob Corker', State::Tennessee, Office::Senate, Party::Republican, '2');
         $this->politicianRepo->make('David Roe', State::Tennessee, Office::Representatives, Party::Republican, '3');
         $this->politicianRepo->make('John J. Duncan', State::Tennessee, Office::Representatives, Party::Republican, '4');
         $this->politicianRepo->make('Charles Fleischmann', State::Tennessee, Office::Representatives, Party::Republican, '5');
@@ -53,7 +50,7 @@ class TestDataSeeder extends Seeder
         $this->politicianRepo->make('Stephen Fincher', State::Tennessee, Office::Representatives, Party::Republican, '10');
         $this->politicianRepo->make('Steven Cohen', State::Tennessee, Office::Representatives, Party::Democrat, '11');
 
-        Schema::drop('politician_ratings');
+        Schema::drop('politician_reviews');
 
         $scores = [
             'First'   => 1,
@@ -67,11 +64,11 @@ class TestDataSeeder extends Seeder
             'Ninth'   => 4,
             'Tenth'   => 5,
         ];
-        $this->ratingRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores);
 
-        Schema::drop('comments');
+        $comment1 = "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.";
+        $comment2 = "Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.";
 
-        $this->commentRepo->make('1', '1', "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.");
-        $this->commentRepo->make('1', '1', "Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.");
+        $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores, $comment1);
+        $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores, $comment2);
     }
 }
