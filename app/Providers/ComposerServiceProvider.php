@@ -10,7 +10,7 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer(
-            'home', 'TheRogg\Http\ViewComposers\HomeComposer'
+            'home', 'TheRogg\Http\ViewComposers\Home\HomeComposer'
         );
     }
 

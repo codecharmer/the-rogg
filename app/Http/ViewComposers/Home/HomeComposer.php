@@ -1,6 +1,6 @@
 <?php
 
-namespace TheRogg\Http\ViewComposers;
+namespace TheRogg\Http\ViewComposers\Home;
 
 use Illuminate\Contracts\View\View;
 use TheRogg\Repositories\Comments\CommentRepositoryInterface as CommentRepo;
