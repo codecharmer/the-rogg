@@ -1,8 +1,8 @@
 <?php
 
-namespace TheRogg\Http\ViewComposers\Home;
+namespace TheRogg\Http\ViewComposers\Home\Models;
 
-class PoliticianReviewModel
+class HomePoliticianReviewModel
 {
     public $user;
     public $politician;

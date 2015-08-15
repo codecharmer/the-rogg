@@ -6,6 +6,9 @@ use Illuminate\Contracts\View\View;
 use TheRogg\Domain\Politician;
 use TheRogg\Domain\PoliticianReview;
 use TheRogg\Domain\User;
+use TheRogg\Http\ViewComposers\Home\Models\HomePoliticianModel;
+use TheRogg\Http\ViewComposers\Home\Models\HomePoliticianReviewModel;
+use TheRogg\Http\ViewComposers\Home\Models\HomeUserModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Politicians\PoliticianReviewRepositoryInterface as ReviewRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
@@ -36,18 +39,10 @@ class HomeComposer
             /** @var Politician $politician */
             $politician = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name']);
 
-            $userModel = [
-                'id'       => $user->getId(),
-                'username' => $user->getUsername(),
-                'photo'    => $user->getPhoto(),
-            ];
+            $userModel       = new HomeUserModel($user->getId(), $user->getUsername(), $user->getPhoto());
+            $politicianModel = new HomePoliticianModel($politician->getId(), $politician->getName());
 
-            $politicianModel = [
-                'id'   => $politician->getId(),
-                'name' => $politician->getName(),
-            ];
-
-            $model    = new PoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getTimestamp());
+            $model    = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getTimestamp());
             $models[] = $model;
         }
 

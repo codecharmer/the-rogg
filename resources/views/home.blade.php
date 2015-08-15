@@ -6,7 +6,7 @@
     <ul class="Home-CommentList">
         <?php foreach($reviews as $review) : ?>
             <li>
-                <div><img src="assets/images/user-photos/<?= $review->user['photo'] ?>"></div>
+                <div><img src="assets/images/user-photos/<?= $review->user->photo ?>"></div>
             </li>
         <?php endforeach; ?>
     </ul>
