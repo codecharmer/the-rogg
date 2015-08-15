@@ -5,7 +5,9 @@
     <p>Here are some suggestions to get you started.</p>
     <ul class="Home-CommentList">
         <?php foreach($reviews as $review) : ?>
-
+            <li>
+                <div><img src="assets/images/user-photos/<?= $review->user['photo'] ?>"></div>
+            </li>
         <?php endforeach; ?>
     </ul>
 @endsection
