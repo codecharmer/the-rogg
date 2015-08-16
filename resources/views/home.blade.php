@@ -17,7 +17,7 @@
                             wrote a review for <a href="#">{{ $review->politician->name }}</a></span>
                         </div>
                         <div class="Review--rating">
-                            {{ $review->rating }} on {{ $review->timestamp }}
+                            {{ $review->rating }} on @date($review->timestamp)
                         </div>
                         <div class="Review--comment">{{ $review->comment }}</div>
                     </div>
