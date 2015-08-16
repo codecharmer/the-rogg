@@ -40,6 +40,15 @@ class EloquentPoliticianReviewRepository implements PoliticianReviewRepositoryIn
         return $review;
     }
 
+    public function getRandom($fields = [])
+    {
+        $reviews      = PoliticianReview::all($fields);
+        $rand         = rand(0, $reviews->count() - 1);
+        $randomReview = $reviews->get($rand);
+
+        return $randomReview;
+    }
+
     public function findBy($field, $value, $fields = [])
     {
         /** @noinspection PhpUndefinedMethodInspection */

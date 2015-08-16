@@ -41,4 +41,11 @@ interface PoliticianReviewRepositoryInterface extends RepositoryInterface
      * @return PoliticianReview|null
      */
     public function findByUserAndPolitician($userId, $politicianId);
+
+    /**
+     * @param string[] $fields
+     *
+     * @return PoliticianReview
+     */
+    public function getRandom($fields = []);
 }

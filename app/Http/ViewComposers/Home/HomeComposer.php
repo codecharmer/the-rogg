@@ -30,22 +30,43 @@ class HomeComposer
     {
         $reviews = $this->reviewRepo->get(3);
 
-        $models = [];
+        $recentReviews = $this->getRecentReviews($reviews);
+        $randomReview  = $this->getRandomReview();
+
+        $view->with(['recentReviews' => $recentReviews, 'randomReview' => $randomReview]);
+    }
+
+    private function getRecentReviews($reviews)
+    {
+        $recentReviews = [];
+
         /** @var PoliticianReview $review */
         foreach ($reviews as $review)
         {
             /** @var User $user */
             $user = $this->userRepo->find($review->getUserId(), ['_id', 'photo', 'username']);
             /** @var Politician $politician */
-            $politician = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name']);
-
+            $politician      = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name']);
             $userModel       = new HomeUserModel($user->getId(), $user->getUsername(), $user->getPhoto());
             $politicianModel = new HomePoliticianModel($politician->getId(), $politician->getName());
-
-            $model    = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
-            $models[] = $model;
+            $model           = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
+            $recentReviews[] = $model;
         }
 
-        $view->with('reviews', $models);
+        return $recentReviews;
+    }
+
+    private function getRandomReview()
+    {
+        $review = $this->reviewRepo->getRandom();
+        /** @var User $user */
+        $user = $this->userRepo->find($review->getUserId(), ['_id', 'photo', 'username']);
+        /** @var Politician $politician */
+        $politician      = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name']);
+        $userModel       = new HomeUserModel($user->getId(), $user->getUsername(), $user->getPhoto());
+        $politicianModel = new HomePoliticianModel($politician->getId(), $politician->getName());
+        $randomReview    = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
+
+        return $randomReview;
     }
 }
