@@ -1,0 +1,24 @@
+.Review {
+  border-bottom: 1px solid $grey;
+  padding: 20px 20px 100px 20px;
+
+  &:first-child {
+    border-bottom: 1px solid $grey;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.Review--names {
+  margin-bottom: 5px;
+}
+
+.Review--rating {
+  margin-bottom: 5px;
+}
+
+.Review--comment {
+  
+}
