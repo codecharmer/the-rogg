@@ -42,7 +42,7 @@ class HomeComposer
             $userModel       = new HomeUserModel($user->getId(), $user->getUsername(), $user->getPhoto());
             $politicianModel = new HomePoliticianModel($politician->getId(), $politician->getName());
 
-            $model    = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getTimestamp());
+            $model    = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
             $models[] = $model;
         }
 
