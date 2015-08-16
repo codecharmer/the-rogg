@@ -70,5 +70,7 @@ class TestDataSeeder extends Seeder
 
         $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores, $comment1);
         $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores, $comment2);
+        $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores, $comment1);
+        $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores, $comment2);
     }
 }
