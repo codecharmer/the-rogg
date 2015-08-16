@@ -2,7 +2,7 @@
 
 @section('main')
     <h2>Your Review Awaits</h2>
-    <p>Here are some suggestions to get you started.</p>
+    <p>Here the most recent reviews to get you started.</p>
     <ul class="ReviewList">
         @foreach($recentReviews as $review)
             <li>
@@ -13,6 +13,7 @@
 @endsection
 
 @section('sidebar')
+    <h4>Review of the Moment</h4>
     <?php $review = $randomReview; ?>
     @include('components.reviewSidebar')
 @endsection

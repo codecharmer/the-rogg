@@ -17,7 +17,6 @@
                                     <img class="Review--bell" src="assets/images/liberty-bell-dark.png">
                                 @endfor
                             </span>
-            <span class="Review--date"> on @date($review->timestamp)</span>
         </div>
         <div class="Review--comment">{{ $review->comment }}</div>
     </div>

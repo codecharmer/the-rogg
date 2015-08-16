@@ -4,14 +4,11 @@
 @import "resources/assets/sass/views/includes/Navigation";
 @import "resources/assets/sass/views/includes/Footer";
 @import "resources/assets/sass/views/Home";
+@import "resources/assets/sass/components/ProfilePhoto";
 @import "resources/assets/sass/components/ReviewList";
 @import "resources/assets/sass/components/Review";
 
 .Content-container {
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-.ProfilePhoto {
-  border-radius: 5px;
 }
