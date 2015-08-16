@@ -9,12 +9,12 @@
                 wrote a review for <a href="#">{{ $review->politician->name }}</a></span>
         </div>
         <div class="Review--rating">
-            <span class="Review--bells">
+            <span class="Review--bells" title="{{ $review->rating }}">
             @for($i = 0; $i < $review->rating; $i++)
-                <img class="Review--bell" src="assets/images/liberty-bell.png" alt="{{ $review->rating }}">
+                <img class="Review--bell" src="assets/images/liberty-bell.png">
             @endfor
             @for($i = 0; $i < 5 - $review->rating; $i++)
-                <img class="Review--bell" src="assets/images/liberty-bell-dark.png" alt="{{ $review->rating }}">
+                <img class="Review--bell" src="assets/images/liberty-bell-dark.png">
             @endfor
             </span>
         </div>
