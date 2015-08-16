@@ -20,6 +20,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	config.vm.provision "shell", path: "create-mongodb.sh"
 	config.vm.network "forwarded_port", guest: 27017, host: 27017
 
+	config.vm.provision "shell", path: "create-ruby.sh"
+
 	if File.exists? afterScriptPath then
 		config.vm.provision "shell", path: afterScriptPath
 	end
