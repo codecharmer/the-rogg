@@ -12,15 +12,20 @@
     <ul class="Home-CommentList">
         <?php foreach($reviews as $review) : ?>
         <li>
-            <div><img src="assets/images/user-photos/<?= $review->user->photo ?>"></div>
-            <div>
-                <div>
-                    <span><?= $review->user->username; ?> wrote a review for <?= $review->politician->name; ?></span>
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="assets/images/user-photos/<?= $review->user->photo ?>">
                 </div>
-                <div>
-                    <?= $review->rating; ?> on <?= $review->timestamp; ?>
+                <div class="col-md-10">
+                    <div>
+                        <span><?= $review->user->username; ?>
+                            wrote a review for <?= $review->politician->name; ?></span>
+                    </div>
+                    <div>
+                        <?= $review->rating; ?> on <?= $review->timestamp; ?>
+                    </div>
+                    <div><?= $review->comment; ?></div>
                 </div>
-                <div><?= $review->comment; ?></div>
             </div>
         </li>
         <?php endforeach; ?>
