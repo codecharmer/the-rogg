@@ -2,7 +2,7 @@
 
 @section('main')
     <h2>Your Review Awaits</h2>
-    <p>Here the most recent reviews to get you started.</p>
+    <p>Here are some recent reviews to get you started.</p>
     <ul class="ReviewList">
         @foreach($recentReviews as $review)
             <li>
