@@ -52,7 +52,7 @@ class TestDataSeeder extends Seeder
 
         Schema::drop('politician_reviews');
 
-        $scores = [
+        $scores1 = [
             'First'   => 1,
             'Second'  => 2,
             'Third'   => 3,
@@ -65,12 +65,25 @@ class TestDataSeeder extends Seeder
             'Tenth'   => 5,
         ];
 
+        $scores2 = [
+            'First'   => 4,
+            'Second'  => 2,
+            'Third'   => 5,
+            'Fourth'  => 3,
+            'Fifth'   => 3,
+            'Sixth'   => 2,
+            'Seventh' => 4,
+            'Eighth'  => 5,
+            'Ninth'   => 2,
+            'Tenth'   => 1,
+        ];
+
         $comment1 = "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.";
         $comment2 = "Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.";
 
-        $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores, $comment1);
-        $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores, $comment2);
-        $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores, $comment1);
-        $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores, $comment2);
+        $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores1, $comment1);
+        $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores1, $comment2);
+        $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores2, $comment1);
+        $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores2, $comment2);
     }
 }
