@@ -11,17 +11,17 @@
     <p>Here are some suggestions to get you started.</p>
     <ul class="Home-CommentList">
         <?php foreach($reviews as $review) : ?>
-        <li>
+        <li class="Home-CommentList--item">
             <div class="row">
                 <div class="col-md-2">
-                    <img src="assets/images/user-photos/<?= $review->user->photo ?>">
+                    <a href="#"><img class="ProfilePhoto" src="assets/images/user-photos/<?= $review->user->photo ?>"></a>
                 </div>
                 <div class="col-md-10">
-                    <div>
-                        <span><?= $review->user->username; ?>
-                            wrote a review for <?= $review->politician->name; ?></span>
+                    <div class="Home-CommentList--names">
+                        <span><a href="#"><?= $review->user->username; ?></a>
+                            wrote a review for <a href="#"><?= $review->politician->name; ?></a></span>
                     </div>
-                    <div>
+                    <div class="Home-CommentList--rating">
                         <?= $review->rating; ?> on <?= $review->timestamp; ?>
                     </div>
                     <div><?= $review->comment; ?></div>
