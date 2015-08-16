@@ -11,14 +11,19 @@
   }
 }
 
-.Review--names {
-  margin-bottom: 5px;
+.Review--names, .Review--rating {
+  margin-bottom: 10px;
 }
 
-.Review--rating {
-  margin-bottom: 5px;
+.Review--bells {
+  margin-right: 5px;
+}
+
+.Review--bell {
+  width: 25px;
+  height: 25px;
 }
 
 .Review--comment {
-  
+
 }
