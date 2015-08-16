@@ -68,7 +68,7 @@ class PoliticianReview extends Entity
         foreach ($this->attributes['scores'] as $score)
             $total += $score;
 
-        $average = $total / 10;
+        $average = round($total / 10);
 
         return $average;
     }
