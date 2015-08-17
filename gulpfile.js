@@ -1,7 +1,11 @@
 var elixir = require('laravel-elixir');
 
 elixir(function (mix) {
-    mix.scripts(['../../../node_modules/angular/angular.js'], 'public/assets/js/all.js');
+    mix.scripts([
+            '../../../node_modules/angular/angular.js',
+            'politician-list/app.module.js'
+        ],
+        'public/assets/js/all.js');
 });
 
 elixir(function (mix) {
