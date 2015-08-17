@@ -17,7 +17,7 @@
             @yield('main')
         </div>
         <div class="col-md-4 Sidebar">
-            @yield('sidebar')
+            @include('components.sidebar')
         </div>
     </div>
 </div>

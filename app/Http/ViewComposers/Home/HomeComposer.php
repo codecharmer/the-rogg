@@ -28,12 +28,10 @@ class HomeComposer
 
     public function compose(View $view)
     {
-        $reviews = $this->reviewRepo->get(3);
+        $reviews      = $this->reviewRepo->get(3);
+        $reviewModels = $this->getRecentReviews($reviews);
 
-        $recentReviews = $this->getRecentReviews($reviews);
-        $randomReview  = $this->getRandomReview();
-
-        $view->with(['recentReviews' => $recentReviews, 'randomReview' => $randomReview]);
+        $view->with(['reviews' => $reviewModels]);
     }
 
     private function getRecentReviews($reviews)
@@ -54,19 +52,5 @@ class HomeComposer
         }
 
         return $recentReviews;
-    }
-
-    private function getRandomReview()
-    {
-        $review = $this->reviewRepo->getRandom();
-        /** @var User $user */
-        $user = $this->userRepo->find($review->getUserId(), ['_id', 'photo', 'username']);
-        /** @var Politician $politician */
-        $politician      = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name']);
-        $userModel       = new HomeUserModel($user->getId(), $user->getUsername(), $user->getPhoto());
-        $politicianModel = new HomePoliticianModel($politician->getId(), $politician->getName());
-        $randomReview    = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
-
-        return $randomReview;
     }
 }

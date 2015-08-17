@@ -15,7 +15,7 @@
                     <li class="Nav-item"><a href="#">Home</a></li>
                     <li class="Nav-item"><a href="#">Politicians</a></li>
                     <li class="Nav-item"><a href="#">Contact</a></li>
-                    <li class="Nav-item"><a href="#">Mission</a></li>
+                    <li class="Nav-item"><a href="mission">Mission</a></li>
                 </ul>
             </div>
         </div>
