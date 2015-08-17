@@ -1,9 +1,9 @@
 (function (module) {
     'use strict';
 
-    module.directive('politicianList', politicianList);
+    module.directive('politicianList', directive);
 
-    function politicianList() {
+    function directive() {
         return {
             templateUrl: '/assets/templates/politician-list/politician-list.html',
             restrict: 'E',
@@ -12,7 +12,15 @@
         }
     }
 
-    function Controller() {
+    Controller.$inject = ['$scope', 'politicianService'];
 
+    function Controller($scope, politicianService) {
+        init();
+
+        function init() {
+            politicianService.getList().then(function (results) {
+                $scope.politicians = results.data;
+            });
+        }
     }
 })(angular.module('PoliticianList'));
