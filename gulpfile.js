@@ -1,9 +1,13 @@
 var elixir = require('laravel-elixir');
 
-elixir(function(mix) {
+elixir(function (mix) {
+    mix.scripts(['../../../node_modules/angular/angular.js'], 'public/assets/js/all.js');
+});
+
+elixir(function (mix) {
     mix.sass('app.scss', 'public/assets/css');
 });
 
-elixir(function(mix){
-    mix.version('assets/css/app.css');
+elixir(function (mix) {
+    mix.version(['assets/css/app.css', 'assets/js/all.js']);
 });

@@ -24,5 +24,7 @@
 
 @include('includes.footer')
 
+<script src="{{ elixir('assets/js/all.js') }}"></script>
+
 </body>
 </html>
