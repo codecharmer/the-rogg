@@ -12,9 +12,9 @@
         <div class="row Nav-row">
             <div class="col-md-12">
                 <ul class="nav nav-pills nav-justified">
-                    <li class="Nav-item"><a href="#">Home</a></li>
-                    <li class="Nav-item"><a href="#">Politicians</a></li>
-                    <li class="Nav-item"><a href="#">Contact</a></li>
+                    <li class="Nav-item"><a href="/">Home</a></li>
+                    <li class="Nav-item"><a href="politicians">Politicians</a></li>
+                    <li class="Nav-item"><a href="contact">Contact</a></li>
                     <li class="Nav-item"><a href="mission">Mission</a></li>
                 </ul>
             </div>
