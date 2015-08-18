@@ -5,7 +5,7 @@
 
     function directive() {
         return {
-            templateUrl: '/assets/templates/politician-list/politician-list.html',
+            templateUrl: '/build/assets/js/templates/politician-list.html',
             restrict: 'E',
             controller: Controller,
             scope: {}

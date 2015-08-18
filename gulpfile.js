@@ -10,5 +10,6 @@ elixir(function (mix) {
             'politician-list/services/dataService.js',
             'politician-list/directives/politician-list.js'
         ], 'public/assets/js/all.js')
+        .copy('resources/assets/js/politician-list/templates', 'public/build/assets/js/templates')
         .version(['assets/css/app.css', 'assets/js/all.js']);
 });
