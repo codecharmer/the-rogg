@@ -90,7 +90,7 @@ class Politician extends Entity
         $this->attributes['message'] = $message;
     }
 
-    public function IsPresidentialCandidate() { return $this->isPresidentialCandidate; }
+    public function IsPresidentialCandidate() { return $this->attributes['isPresidentialCandidate']; }
     public function setIsPresidentialCandidate($isPresidentialCandidate)
     {
         $this->attributes['isPresidentialCandidate'] = $isPresidentialCandidate;
