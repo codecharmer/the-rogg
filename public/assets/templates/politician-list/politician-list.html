@@ -1,5 +1,37 @@
-<ul class="PoliticianList">
-    <li ng-repeat="politician in politicians">
+<div class="row form-inline PoliticianList--controls">
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for="Name">Name</label><br>
+            <select id="Name" class="form-control" ng-model="filterByName">
+                <option value="Lamar Alexander">Lamar Alexander</option>
+                <option value="Bob Corker">Bob Corker</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="State">State</label><br>
+        <select id="State" class="form-control" ng-model="filterByState">
+            <option value="North Carolina">North Carolina</option>
+            <option value="Tennessee">Tennessee</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Party">Party</label><br>
+        <select id="Party" class="form-control" ng-model="filterByParty">
+            <option value="Democrat">Democrat</option>
+            <option value="Republican">Republican</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="SortBy">Sort By</label><br>
+        <select id="SortBy" class="form-control" ng-model="sortBy">
+            <option value="az">Name A-Z</option>
+        </select>
+    </div>
+</div>
+
+<ul class="PoliticianList--list">
+    <li class="PoliticianList--item" ng-repeat="politician in politicians">
         {{ politician.name }}
     </li>
 </ul>
