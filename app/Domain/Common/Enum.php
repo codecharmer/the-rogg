@@ -27,13 +27,15 @@ abstract class Enum
         return in_array($value, $values, $strict = true);
     }
 
-    private static function getConstants()
+    public static function getConstants()
     {
         if (self::$constCacheArray == null)
         {
             self::$constCacheArray = [];
         }
+
         $calledClass = get_called_class();
+
         if (!array_key_exists($calledClass, self::$constCacheArray))
         {
             $reflect                             = new ReflectionClass($calledClass);
