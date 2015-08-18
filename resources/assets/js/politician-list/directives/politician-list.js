@@ -22,6 +22,10 @@
                 $scope.states = results.data;
             });
 
+            dataService.getParties().then(function (results){
+                $scope.parties = results.data;
+            });
+
             politicianService.getList().then(function (results) {
                 $scope.politicians = results.data;
             });

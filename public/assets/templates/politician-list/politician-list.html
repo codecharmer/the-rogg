@@ -21,8 +21,8 @@
         <div class="form-group">
             <label for="Party">Party</label><br>
             <select id="Party" class="form-control" ng-model="filterByParty">
-                <option value="Democrat">Democrat</option>
-                <option value="Republican">Republican</option>
+                <option value="" selected>All</option>
+                <option ng-repeat="party in parties" value="{{ party }}">{{ party }}</option>
             </select>
         </div>
     </div>
@@ -30,6 +30,7 @@
         <div class="form-group">
             <label for="OrderBy">Sort By</label><br>
             <select id="OrderBy" class="form-control" ng-model="orderBy">
+                <option value="" selected>None</option>
                 <option value="name">Name A-Z</option>
             </select>
         </div>
@@ -37,7 +38,7 @@
 </div>
 
 <ul class="PoliticianList--list">
-    <li class="PoliticianList--item" ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | orderBy: orderBy">
+    <li class="PoliticianList--item" ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | orderBy: orderBy">
         {{ politician.name }}
     </li>
 </ul>
