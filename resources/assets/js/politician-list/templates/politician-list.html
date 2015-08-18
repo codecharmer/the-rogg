@@ -57,7 +57,7 @@
     </div>
 </div>
 
-<div class="PoliticianList--list clearfix">
+<div class="PoliticianList--list">
     <div class="PoliticianList--item"
          ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
         <div class="PoliticianList--photoContainer">
