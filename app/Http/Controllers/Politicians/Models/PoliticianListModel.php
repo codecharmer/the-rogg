@@ -9,13 +9,15 @@ class PoliticianListModel
     public $state;
     public $office;
     public $party;
+    public $isPresidentialCandidate;
 
-    public function __construct($id, $name, $state, $office, $party)
+    public function __construct($id, $name, $state, $office, $party, $isPresidentialCandidate)
     {
-        $this->id     = $id;
-        $this->name   = $name;
-        $this->state  = $state;
-        $this->office = $office;
-        $this->party  = $party;
+        $this->id                      = $id;
+        $this->name                    = $name;
+        $this->state                   = $state;
+        $this->office                  = $office;
+        $this->party                   = $party;
+        $this->isPresidentialCandidate = $isPresidentialCandidate;
     }
 }
