@@ -4,7 +4,8 @@
             <label for="Name">Name</label><br>
             <select id="Name" class="form-control" ng-model="filterByName">
                 <option value="" selected>--</option>
-                <option ng-repeat="politician in politicians" value="{{ politician.name }}">{{ politician.name }}</option>
+                <option ng-repeat="politician in politicians" value="{{ politician.name }}">{{ politician.name }}
+                </option>
             </select>
         </div>
     </div>
@@ -56,8 +57,16 @@
     </div>
 </div>
 
-<ul class="PoliticianList--list">
-    <li class="PoliticianList--item" ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
-        {{ politician.name }} - {{ politician.isPresidentialCandidate }}
-    </li>
-</ul>
+<div class="PoliticianList--list clearfix">
+    <div class="PoliticianList--item"
+         ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
+        <div class="PoliticianList--photoContainer">
+            <img class="PoliticianList--photo" ng-src="assets/images/politician-photos/{{ politician.photo }}">
+        </div>
+        <div class="PoliticianList--infoContainer">
+            <div class="PoliticianList--name">{{ politician.name }}</div>
+            <div class="PoliticianList--office">{{ politician.office }}</div>
+            <div class="PoliticianList--district" ng-if="politician.district">{{ politician.district }}</div>
+        </div>
+    </div>
+</div>

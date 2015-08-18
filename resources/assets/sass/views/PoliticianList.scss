@@ -2,6 +2,14 @@
   margin-bottom: 20px;
 }
 
-.PoliticianList--list {
-  list-style: none;
+.PoliticianList--item {
+  display: inline-block;
+  width: 33%;
+  margin-right: 3px;
+  margin-bottom: 42px;
+  border: 1px solid red;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 }
