@@ -1,32 +1,39 @@
-<div class="row form-inline PoliticianList--controls">
+<div class="row form PoliticianList--controls">
     <div class="col-md-3">
         <div class="form-group">
             <label for="Name">Name</label><br>
             <select id="Name" class="form-control" ng-model="filterByName">
+                <option value="" selected>All</option>
                 <option value="Lamar Alexander">Lamar Alexander</option>
                 <option value="Bob Corker">Bob Corker</option>
             </select>
         </div>
     </div>
-    <div class="form-group">
-        <label for="State">State</label><br>
-        <select id="State" class="form-control" ng-model="filterByState">
-            <option value="North Carolina">North Carolina</option>
-            <option value="Tennessee">Tennessee</option>
-        </select>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for="State">State</label><br>
+            <select id="State" class="form-control" ng-model="filterByState">
+                <option value="North Carolina">North Carolina</option>
+                <option value="Tennessee">Tennessee</option>
+            </select>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="Party">Party</label><br>
-        <select id="Party" class="form-control" ng-model="filterByParty">
-            <option value="Democrat">Democrat</option>
-            <option value="Republican">Republican</option>
-        </select>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for="Party">Party</label><br>
+            <select id="Party" class="form-control" ng-model="filterByParty">
+                <option value="Democrat">Democrat</option>
+                <option value="Republican">Republican</option>
+            </select>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="OrderBy">Sort By</label><br>
-        <select id="OrderBy" class="form-control" ng-model="orderBy">
-            <option value="name">Name A-Z</option>
-        </select>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for="OrderBy">Sort By</label><br>
+            <select id="OrderBy" class="form-control" ng-model="orderBy">
+                <option value="name">Name A-Z</option>
+            </select>
+        </div>
     </div>
 </div>
 
