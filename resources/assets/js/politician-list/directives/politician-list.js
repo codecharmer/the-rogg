@@ -18,12 +18,8 @@
         init();
 
         function init() {
-            dataService.getStates().then(function (results) {
-                $scope.states = results.data;
-            });
-
-            dataService.getParties().then(function (results){
-                $scope.parties = results.data;
+            dataService.getAll().then(function (results) {
+                $scope.data = results.data;
             });
 
             politicianService.getList().then(function (results) {

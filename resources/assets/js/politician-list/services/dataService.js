@@ -7,11 +7,8 @@
 
     function service($http) {
         return {
-            getStates: function () {
-                return $http.get('/api/data/get-states');
-            },
-            getParties: function () {
-                return $http.get('/api/data/get-parties');
+            getAll: function () {
+                return $http.get('/api/data/get-all');
             }
         }
     }
