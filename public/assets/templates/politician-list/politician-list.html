@@ -23,15 +23,15 @@
         </select>
     </div>
     <div class="form-group">
-        <label for="SortBy">Sort By</label><br>
-        <select id="SortBy" class="form-control" ng-model="sortBy">
-            <option value="az">Name A-Z</option>
+        <label for="OrderBy">Sort By</label><br>
+        <select id="OrderBy" class="form-control" ng-model="orderBy">
+            <option value="name">Name A-Z</option>
         </select>
     </div>
 </div>
 
 <ul class="PoliticianList--list">
-    <li class="PoliticianList--item" ng-repeat="politician in politicians">
+    <li class="PoliticianList--item" ng-repeat="politician in politicians | orderBy: orderBy">
         {{ politician.name }}
     </li>
 </ul>
