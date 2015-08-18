@@ -4,8 +4,7 @@
             <label for="Name">Name</label><br>
             <select id="Name" class="form-control" ng-model="filterByName">
                 <option value="" selected>All</option>
-                <option value="Lamar Alexander">Lamar Alexander</option>
-                <option value="Bob Corker">Bob Corker</option>
+                <option ng-repeat="politician in politicians" value="{{ politician.name }}">{{ politician.name }}</option>
             </select>
         </div>
     </div>
