@@ -12,12 +12,16 @@
         }
     }
 
-    Controller.$inject = ['$scope', 'politicianService'];
+    Controller.$inject = ['$scope', 'politicianService', 'dataService'];
 
-    function Controller($scope, politicianService) {
+    function Controller($scope, politicianService, dataService) {
         init();
 
         function init() {
+            dataService.getStates().then(function (results) {
+                $scope.states = results.data;
+            });
+
             politicianService.getList().then(function (results) {
                 $scope.politicians = results.data;
             });
