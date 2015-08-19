@@ -17,7 +17,25 @@
     function Controller($scope, politicianService, dataService) {
         init();
 
+        $scope.showHouse = function () {
+            $scope.filterByOffice = 'House';
+            $scope.filterByCandidate = false;
+        };
+
+        $scope.showSenate = function () {
+            $scope.filterByOffice = 'Senate';
+            $scope.filterByCandidate = false;
+        };
+
+        $scope.showCandidates = function () {
+            $scope.filterByOffice = '';
+            $scope.filterByCandidate = true;
+        };
+
         function init() {
+            $scope.filterByOffice = "House";
+            $scope.filterByCandidate = false;
+
             dataService.getAll().then(function (results) {
                 $scope.data = results.data;
             });
