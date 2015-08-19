@@ -20,6 +20,8 @@ class Politician extends Entity
     protected $message;
     /** @var  bool */
     protected $isPresidentialCandidate;
+    /** @var string */
+    protected $district;
 
     protected $attributes = [
         'photo'                   => null,
@@ -94,5 +96,11 @@ class Politician extends Entity
     public function setIsPresidentialCandidate($isPresidentialCandidate)
     {
         $this->attributes['isPresidentialCandidate'] = $isPresidentialCandidate;
+    }
+
+    public function getDistrict() { return $this->attributes['district']; }
+    public function setDistrict($district)
+    {
+        $this->attributes['district'] = $district;
     }
 }
