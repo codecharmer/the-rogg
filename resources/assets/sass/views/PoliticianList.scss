@@ -40,9 +40,17 @@
   width: 33%;
   margin-right: 3px;
   margin-bottom: 42px;
-  border: 1px solid red;
 
   &:nth-child(3) {
     margin-right: 0;
   }
+}
+
+.PoliticianList--photoContainer {
+  float: left;
+  margin-right: 10px;
+}
+
+.PoliticianList--name {
+  font-size: 18px;
 }
