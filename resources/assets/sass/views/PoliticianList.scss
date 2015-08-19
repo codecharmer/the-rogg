@@ -44,6 +44,36 @@
   &:nth-child(3) {
     margin-right: 0;
   }
+
+  &.Democrat {
+    .PoliticianList--photo {
+      border: 2px solid $democratBlue;
+    }
+
+    .PoliticianList--name {
+      color: $democratBlue;
+    }
+  }
+
+  &.Independent {
+    .PoliticianList--photo {
+      border: 2px solid $grey;
+    }
+
+    .PoliticianList--name {
+      color: $grey;
+    }
+  }
+
+  &.Republican {
+    .PoliticianList--photo {
+      border: 2px solid $republicanRed;
+    }
+
+    .PoliticianList--name {
+      color: $republicanRed;
+    }
+  }
 }
 
 .PoliticianList--photoContainer {
@@ -51,6 +81,11 @@
   margin-right: 10px;
 }
 
+.PoliticianList--photo {
+
+}
+
 .PoliticianList--name {
   font-size: 18px;
+  font-weight: bold;
 }
