@@ -4,6 +4,33 @@
   color: $blue;
 }
 
+.PoliticianList--tab {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 2px solid $red;
+    background-color: $grey;
+
+    &:after {
+      position: absolute;
+      top: 100%;
+      left: 45%;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: solid 10px $red;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent;
+    }
+  }
+
+  &:hover {
+    background-color: $grey;
+  }
+}
+
 .PoliticianList--controls {
   margin-bottom: 20px;
 }

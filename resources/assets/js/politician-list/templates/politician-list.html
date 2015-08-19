@@ -1,7 +1,7 @@
 <div class="row PoliticianList--tabs">
-    <div class="col-md-4 text-center" ng-click="showHouse()">House</div>
-    <div class="col-md-4 text-center" ng-click="showSenate()">Senate</div>
-    <div class="col-md-4 text-center" ng-click="showCandidates()">Presidential Candidates</div>
+    <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'House'}" ng-click="showHouse()">House</div>
+    <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'Senate'}" ng-click="showSenate()">Senate</div>
+    <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === ''}" ng-click="showCandidates()">Presidential Candidates</div>
 </div>
 
 <div class="row form PoliticianList--controls">
