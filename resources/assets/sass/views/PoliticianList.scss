@@ -50,7 +50,7 @@
       border: 2px solid $democratBlue;
     }
 
-    .PoliticianList--name {
+    .PoliticianList--name, .PoliticianList--district{
       color: $democratBlue;
     }
   }
@@ -60,7 +60,7 @@
       border: 2px solid $grey;
     }
 
-    .PoliticianList--name {
+    .PoliticianList--name, .PoliticianList--district {
       color: $grey;
     }
   }
@@ -70,7 +70,7 @@
       border: 2px solid $republicanRed;
     }
 
-    .PoliticianList--name {
+    .PoliticianList--name, .PoliticianList--district {
       color: $republicanRed;
     }
   }
@@ -81,11 +81,11 @@
   margin-right: 10px;
 }
 
-.PoliticianList--photo {
-
-}
-
 .PoliticianList--name {
   font-size: 18px;
+  font-weight: bold;
+}
+
+.PoliticianList--district {
   font-weight: bold;
 }

@@ -53,7 +53,10 @@
         <div class="PoliticianList--infoContainer">
             <div class="PoliticianList--name">{{ politician.name }}</div>
             <div class="PoliticianList--office">{{ politician.office }}</div>
-            <div class="PoliticianList--district" ng-if="politician.district">{{ politician.district }}</div>
+            <div class="PoliticianList--district" ng-class="politician.party">
+                <span>{{ politician.party | limitTo:1}} - {{ politician.state }}</span>
+                <span ng-if="politician.district">{{ politician.district }}</span>
+            </div>
         </div>
     </div>
 </div>
