@@ -29,9 +29,10 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
     protected $hidden = ['password', 'remember_token'];
 
     protected $attributes = [
-        'party'     => null,
-        'isAdmin'   => false,
-        'confirmed' => false,
+        'party'          => null,
+        'isAdmin'        => false,
+        'confirmed'      => false,
+        'remember_token' => null,
     ];
 
     public function getUsername() { return $this->attributes['username']; }
