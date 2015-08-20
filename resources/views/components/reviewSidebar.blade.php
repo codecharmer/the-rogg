@@ -1,7 +1,7 @@
 <div class="row Review">
     <div class="col-md-2">
         <a href="#"><img class="ProfilePhoto"
-                         src="assets/images/user-photos/{{ $review->user->photo }}"></a>
+                         src="/assets/images/user-photos/{{ $review->user->photo }}"></a>
     </div>
     <div class="col-md-10">
         <div class="Review--names">
@@ -11,10 +11,10 @@
         <div class="Review--rating">
             <span class="Review--bells" title="{{ $review->rating }}">
             @for($i = 0; $i < $review->rating; $i++)
-                <img class="Review--bell" src="assets/images/liberty-bell.png">
+                <img class="Review--bell" src="/assets/images/liberty-bell.png">
             @endfor
             @for($i = 0; $i < 5 - $review->rating; $i++)
-                <img class="Review--bell" src="assets/images/liberty-bell-dark.png">
+                <img class="Review--bell" src="/assets/images/liberty-bell-dark.png">
             @endfor
             </span>
         </div>

@@ -1,2 +1,2 @@
-<h4>Review of the Moment</h4>
+<h4>Random Review</h4>
 @include('components.reviewSidebar')
