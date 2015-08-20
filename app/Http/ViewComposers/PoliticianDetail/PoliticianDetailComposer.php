@@ -5,6 +5,7 @@ namespace TheRogg\Http\ViewComposers\PoliticianDetail;
 use Illuminate\Contracts\View\View;
 use TheRogg\Domain\Politician;
 use TheRogg\Http\ViewComposers\PoliticianDetail\Models\PoliticianDetailModel;
+use TheRogg\Http\ViewComposers\PoliticianDetail\Models\PoliticianModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 
 class PoliticianDetailComposer
@@ -21,11 +22,21 @@ class PoliticianDetailComposer
         /** @noinspection PhpUndefinedMethodInspection */
         $slug = $view->getData()['slug'];
 
-        $fields = ['_id', 'name', 'photo', 'bio'];
         /** @var Politician $politician */
-        $politician = $this->politicianRepo->findBy('slug', $slug, $fields);
+        $politician = $this->politicianRepo->findBy('slug', $slug);
 
-        $politicianDetail = new PoliticianDetailModel($politician->getId(), $politician->getName(), $politician->getPhoto(), $politician->getBio());
+        $politicianModel = new PoliticianModel(
+            $politician->getId(),
+            $politician->getName(),
+            $politician->getOffice(),
+            $politician->getParty(),
+            $politician->getState(),
+            $politician->getPhoto(),
+            $politician->getBio(),
+            $politician->getDistrict()
+        );
+
+        $politicianDetail = new PoliticianDetailModel($politicianModel);
 
         $view->with('politicianDetail', $politicianDetail);
     }

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    - {{ $politicianDetail->name }}
+    - {{ $politicianDetail->politician->name }}, {{ substr($politicianDetail->politician->party, 0, 1) }} - {{ $politicianDetail->politician->state }} {{ $politicianDetail->politician->district }}
 @endsection
 
 @section('content')

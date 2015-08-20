@@ -4,16 +4,10 @@ namespace TheRogg\Http\ViewComposers\PoliticianDetail\Models;
 
 class PoliticianDetailModel
 {
-    public $id;
-    public $name;
-    public $photo;
-    public $bio;
+    public $politician;
 
-    public function __construct($id, $name, $photo, $bio)
+    public function __construct($politician)
     {
-        $this->id    = $id;
-        $this->name  = $name;
-        $this->photo = $photo;
-        $this->bio   = $bio;
+        $this->politician = $politician;
     }
 }
