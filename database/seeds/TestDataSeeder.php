@@ -38,7 +38,10 @@ class TestDataSeeder extends Seeder
         $politicianPhoto = 'cat100.jpg';
 
         $lamarAlexander = $this->politicianRepo->make('Lamar Alexander', State::Tennessee, Office::Senate, Party::Republican, $politicianPhoto, null, '1');
-        $bobCorker      = $this->politicianRepo->make('Bob Corker', State::Tennessee, Office::Senate, Party::Republican, $politicianPhoto, null, '2');
+        $lamarAlexander->setBio("Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.");
+        $lamarAlexander->save();
+
+        $bobCorker = $this->politicianRepo->make('Bob Corker', State::Tennessee, Office::Senate, Party::Republican, $politicianPhoto, null, '2');
 
         $this->politicianRepo->make('David Roe', State::Tennessee, Office::Representatives, Party::Republican, $politicianPhoto, '1st', '3');
         $this->politicianRepo->make('John J. Duncan', State::Tennessee, Office::Representatives, Party::Republican, $politicianPhoto, '2nd', '4');
