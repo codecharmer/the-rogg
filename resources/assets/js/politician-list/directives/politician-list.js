@@ -33,8 +33,9 @@
         };
 
         function init() {
-            $scope.filterByOffice = "House";
+            $scope.filterByOffice = 'House';
             $scope.filterByCandidate = false;
+            $scope.orderBy = 'name';
 
             dataService.getAll().then(function (results) {
                 $scope.data = results.data;

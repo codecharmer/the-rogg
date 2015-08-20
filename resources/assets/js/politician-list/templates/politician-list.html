@@ -5,7 +5,7 @@
 </div>
 
 <div class="row form PoliticianList--controls">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="form-group">
             <label for="Name">Name</label><br>
             <select id="Name" class="form-control" ng-model="filterByName">
@@ -15,7 +15,7 @@
             </select>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="form-group">
             <label for="State">State</label><br>
             <select id="State" class="form-control" ng-model="filterByState">
@@ -24,21 +24,12 @@
             </select>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
         <div class="form-group">
             <label for="Party">Party</label><br>
             <select id="Party" class="form-control" ng-model="filterByParty">
                 <option value="" selected>--</option>
                 <option ng-repeat="party in data.parties" value="{{ party }}">{{ party }}</option>
-            </select>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="form-group">
-            <label for="OrderBy">Sort By</label><br>
-            <select id="OrderBy" class="form-control" ng-model="orderBy">
-                <option value="" selected>--</option>
-                <option value="name">Name A-Z</option>
             </select>
         </div>
     </div>
