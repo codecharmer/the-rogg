@@ -2,7 +2,7 @@
 
 namespace TheRogg\Http\Controllers\Auth;
 
-use TheRogg\User;
+use TheRogg\Domain\User;
 use Validator;
 use TheRogg\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -23,11 +23,6 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
-    /**
-     * Create a new authentication controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'getLogout']);
@@ -48,12 +43,6 @@ class AuthController extends Controller
         ]);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return User
-     */
     protected function create(array $data)
     {
         return User::create([
