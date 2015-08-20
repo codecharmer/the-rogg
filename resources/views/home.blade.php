@@ -3,6 +3,13 @@
 @section('content')
     <div class="row">
         <div class="col-md-8 Main">
+
+            @if(Session::has('message'))
+                <div class="alert alert-info">
+                    {{Session::get('message')}}
+                </div>
+            @endif
+
             <h2>Your Review Awaits</h2>
 
             <p>Here are some recent reviews to get you started.</p>

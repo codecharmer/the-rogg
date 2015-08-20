@@ -13,12 +13,6 @@
                 </div>
             @endif
 
-            @if(Session::has('message'))
-                <div class="alert alert-info">
-                    {{Session::get('message')}}
-                </div>
-            @endif
-
             <form method="POST" action="/auth/register">
 
                 <div class="form-group">
