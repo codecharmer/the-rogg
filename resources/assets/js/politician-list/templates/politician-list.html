@@ -1,12 +1,12 @@
 <div class="row PoliticianList--tabs">
     <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'House'}"
-         ng-click="showHouse()">House
+            ng-click="showHouse()">House
     </div>
     <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'Senate'}"
-         ng-click="showSenate()">Senate
+            ng-click="showSenate()">Senate
     </div>
     <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === ''}"
-         ng-click="showCandidates()">Presidential Candidates
+            ng-click="showCandidates()">Presidential Candidates
     </div>
 </div>
 
@@ -43,14 +43,15 @@
 
 <div class="PoliticianList--list">
     <div class="PoliticianList--item clearfix" ng-class="politician.party"
-         ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
+            ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
         <div class="PoliticianList--photoContainer">
-            <a href="politicians/{{ politician.slug }}"><img class="PoliticianList--photo"
-                                                             ng-src="assets/images/politician-photos/{{ politician.photo }}"></a>
+            <a href="politicians/{{ politician.slug }}">
+                <img class="PoliticianList--photo" ng-src="assets/images/politician-photos/{{ politician.photo }}">
+            </a>
         </div>
         <div class="PoliticianList--infoContainer">
             <div class="PoliticianList--name">
-                <a href="politicians/{{ politician.slug }}">{{ politician.name }}</a>
+                <a class="PoliticianList--detailLink" href="politicians/{{ politician.slug }}">{{ politician.name }}</a>
             </div>
             <div class="PoliticianList--office">{{ politician.office }}</div>
             <div class="PoliticianList--district" ng-class="politician.party">
