@@ -12,8 +12,9 @@ class PoliticianListModel
     public $isPresidentialCandidate;
     public $photo;
     public $district;
+    public $slug;
 
-    public function __construct($id, $name, $state, $office, $party, $isPresidentialCandidate, $photo, $district)
+    public function __construct($id, $name, $state, $office, $party, $isPresidentialCandidate, $photo, $district, $slug)
     {
         $this->id                      = $id;
         $this->name                    = $name;
@@ -23,5 +24,6 @@ class PoliticianListModel
         $this->isPresidentialCandidate = $isPresidentialCandidate;
         $this->photo                   = $photo;
         $this->district                = $district;
+        $this->slug                    = $slug;
     }
 }

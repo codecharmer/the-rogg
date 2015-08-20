@@ -103,4 +103,6 @@ class Politician extends Entity
     {
         $this->attributes['district'] = $district;
     }
+
+    public function getSlug() { return strtolower(str_replace(' ', '-', $this->attributes['name'])); }
 }

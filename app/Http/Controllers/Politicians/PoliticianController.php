@@ -47,7 +47,8 @@ class PoliticianController extends Controller
                 $politician->getParty(),
                 $politician->IsPresidentialCandidate(),
                 $politician->getPhoto(),
-                $politician->getDistrict()
+                $politician->getDistrict(),
+                $politician->getSlug()
             );
 
             $viewModels[] = $model;
