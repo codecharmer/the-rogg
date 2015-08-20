@@ -1,13 +1,7 @@
 You received a message from TheRogg.com:
 
-<p>
-    Name: {{ $name }}
-</p>
+<p>Name: {{ $name }}</p>
 
-<p>
-    {{ $email }}
-</p>
+<p>Email: {{ $email }}</p>
 
-<p>
-    {{ $user_message }}
-</p>
+<p>Message: {{ $user_message }}</p>

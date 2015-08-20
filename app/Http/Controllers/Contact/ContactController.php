@@ -9,7 +9,12 @@ use TheRogg\Http\Controllers\Controller;
 
 class ContactController extends Controller
 {
-    public function postStore()
+    public function getIndex()
+    {
+        return View('contact');
+    }
+
+    public function postIndex()
     {
         Mail::send('emails.contact',
             [
@@ -22,6 +27,6 @@ class ContactController extends Controller
                 $message->to('contact@therogg.com', 'Admin')->subject('The Rogg Feedback');
             });
 
-        return Redirect::route('contact')->with('message', 'Thanks for contacting us!');
+        return Redirect::back()->with('message', 'Thanks for contacting us!');
     }
 }
