@@ -7,9 +7,15 @@ Route::group(['prefix' => 'api'], function ()
     Route::controller('users', 'Users\UserController');
 });
 
-Route::get('/contact', ['as' => 'contact', function(){
-    return view('contact');
-}]);
+Route::get('register/verify/{confirmationCode}', 'Users\RegistrationController@confirm');
+Route::controller('register', 'Users\RegistrationController');
+
+Route::get('/contact', [
+    'as' => 'contact', function ()
+    {
+        return view('contact');
+    }
+]);
 
 Route::post('/contact', 'Contact\ContactController@postStore');
 

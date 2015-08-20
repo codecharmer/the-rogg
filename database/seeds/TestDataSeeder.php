@@ -27,11 +27,7 @@ class TestDataSeeder extends Seeder
 
         $userPhoto = 'horse100.jpg';
 
-        $christopherLamm = $this->userRepo->make('theantichris', 'chris@theantichris.com', 'password', Party::Independent, $userPhoto, '1');
-        $christopherLamm->makeAdmin();
-        $christopherLamm->save();
-
-        $suzanne = $this->userRepo->make('syoung', 'suzanne@veil22.com', 'password', null, $userPhoto, '2');
+        $suzanne = $this->userRepo->make('syoung', 'suzanne@veil22.com', 'password', null, null, $userPhoto, '2');
 
         Schema::drop('politicians');
 
@@ -84,9 +80,7 @@ class TestDataSeeder extends Seeder
         $comment1 = "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.";
         $comment2 = "Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.";
 
-        $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores1, $comment1);
         $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores1, $comment2);
-        $this->reviewRepo->make($christopherLamm->getId(), $lamarAlexander->getId(), $scores2, $comment1);
         $this->reviewRepo->make($suzanne->getId(), $bobCorker->getId(), $scores2, $comment2);
     }
 }

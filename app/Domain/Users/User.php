@@ -21,12 +21,17 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
     protected $isAdmin;
     /** @var string */
     protected $photo;
+    /** @var  bool */
+    protected $confirmed;
+    /** @var  string */
+    protected $confirmationCode;
 
     protected $hidden = ['password', 'remember_token'];
 
     protected $attributes = [
-        'party'   => null,
-        'isAdmin' => false,
+        'party'     => null,
+        'isAdmin'   => false,
+        'confirmed' => false,
     ];
 
     public function getUsername() { return $this->attributes['username']; }
@@ -74,4 +79,12 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
     {
         $this->attributes['photo'] = $photo;
     }
+
+    public function getConfirmationCode() { return $this->attributes['confirmationCode']; }
+    public function setConfirmationCode($confirmationCode)
+    {
+        $this->attributes['confirmationCode'] = $confirmationCode;
+    }
+
+    public function Confirm() { $this->attributes['confirmed'] = true; }
 }

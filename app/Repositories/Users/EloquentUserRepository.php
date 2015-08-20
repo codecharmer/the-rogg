@@ -39,7 +39,7 @@ class EloquentUserRepository implements UserRepositoryInterface
         return $user;
     }
 
-    public function make($username, $email, $password, $party = null, $photo = null, $id = null)
+    public function make($username, $email, $password, $confirmationCode, $party = null, $photo = null, $id = null)
     {
         $user = new User();
 
@@ -49,6 +49,7 @@ class EloquentUserRepository implements UserRepositoryInterface
         $user->setUsername($username);
         $user->setEmail($email);
         $user->setPassword($password);
+        $user->setConfirmationCode($confirmationCode);
 
         if (!empty($party))
             $user->setParty($party);
