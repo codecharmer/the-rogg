@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => TheRogg\User::class,
+    'model' => TheRogg\Domain\User::class,
 
     /*
     |--------------------------------------------------------------------------
