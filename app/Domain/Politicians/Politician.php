@@ -25,7 +25,7 @@ class Politician extends Entity
 
     protected $attributes = [
         'photo'                   => null,
-        'message'                 => null,
+        'bio'                     => null,
         'isPresidentialCandidate' => false,
     ];
 

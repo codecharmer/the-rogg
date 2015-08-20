@@ -1,0 +1,1 @@
+{{ $politicianDetail->name }}
