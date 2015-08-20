@@ -2,7 +2,7 @@
 
 namespace TheRogg\Repositories\Politicians;
 
-use Jenssegers\Mongodb\Collection;
+use Jenssegers\Mongodb\Eloquent\Collection;
 use TheRogg\Domain\PoliticianReview;
 use TheRogg\Repositories\RepositoryInterface;
 
@@ -30,7 +30,7 @@ interface PoliticianReviewRepositoryInterface extends RepositoryInterface
     /**
      * @param string $politicianId
      *
-     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     * @return Collection|static[]
      */
     public function getByPoliticianId($politicianId);
 
