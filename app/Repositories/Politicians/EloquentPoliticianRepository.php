@@ -47,6 +47,7 @@ class EloquentPoliticianRepository implements PoliticianRepositoryInterface
             $politician->setId($id);
 
         $politician->setName($name);
+        $politician->setSlug();
         $politician->setState($state);
         $politician->setOffice($office);
         $politician->setParty($party);
