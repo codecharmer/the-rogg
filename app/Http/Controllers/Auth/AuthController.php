@@ -2,10 +2,13 @@
 
 namespace TheRogg\Http\Controllers\Auth;
 
+use Auth;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Http\Request;
 use Mail;
 use Session;
+use TheRogg\Domain\User;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 use Validator;
@@ -60,5 +63,46 @@ class AuthController extends Controller
                 ->to($email, $username)
                 ->subject('The Rogg - Verify your email address');
         });
+    }
+
+    public function postLogin(Request $request)
+    {
+        $this->validate($request, [
+            $this->loginUsername() => 'required', 'password' => 'required',
+        ]);
+
+        $throttles = $this->isUsingThrottlesLoginsTrait();
+
+        if ($throttles && $this->hasTooManyLoginAttempts($request))
+            return $this->sendLockoutResponse($request);
+
+        $credentials = $this->getCredentials($request);
+
+        if (Auth::attempt($credentials, $request->has('remember')))
+        {
+            /** @var User $user */
+            $user = Auth::user();
+            if (!$user->isActive())
+            {
+                Auth::logout();
+
+                return redirect($this->loginPath())
+                    ->withInput($request->only($this->loginUsername(), 'remember'))
+                    ->withErrors([
+                        'notConfirmed' => 'Please check your email for your confirmation link and verify your account.',
+                    ]);
+            }
+
+            return $this->handleUserWasAuthenticated($request, $throttles);
+        }
+
+        if ($throttles)
+            $this->incrementLoginAttempts($request);
+
+        return redirect($this->loginPath())
+            ->withInput($request->only($this->loginUsername(), 'remember'))
+            ->withErrors([
+                $this->loginUsername() => $this->getFailedLoginMessage(),
+            ]);
     }
 }

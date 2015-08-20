@@ -2,7 +2,6 @@
 
 namespace TheRogg\Domain;
 
-use Hash;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
@@ -88,4 +87,6 @@ class User extends Entity implements AuthenticatableContract, CanResetPasswordCo
     }
 
     public function Confirm() { $this->attributes['confirmed'] = true; }
+
+    public function isActive() { return $this->attributes['confirmed']; }
 }
