@@ -49,8 +49,8 @@ class PoliticianDetailComposer
 
         $reviews = $this->reviewRepo->getByPoliticianId($politician->getId());
 
-        $rating        = $this->getAverageScore($reviews);
-        $recentReviews = $this->getRecentReviews($reviews);
+        $rating        = $reviews->count() > 0 ? $this->getAverageScore($reviews) : 0;
+        $recentReviews = $reviews->count() > 0 ?$this->getRecentReviews($reviews) : null;
 
         $politicianDetail = new PoliticianDetailModel($politicianModel, $rating, $recentReviews);
 

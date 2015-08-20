@@ -30,11 +30,15 @@
             <div class="PoliticianDetail--reviews">
                 <h3>Latest Reviews</h3>
                 <ul class="ReviewList">
-                    @foreach($politicianDetail->recentReviews as $review)
-                        <li>
-                            @include('components.reviewMain')
-                        </li>
-                    @endforeach
+                    @if (!empty($politicianDetail->recentReviews))
+                        @foreach($politicianDetail->recentReviews as $review)
+                            <li>
+                                @include('components.reviewMain')
+                            </li>
+                        @endforeach
+                    @else
+                        <li>There are no ratings for {{ $politicianDetail->politician->name }}.</li>
+                    @endif
                 </ul>
             </div>
         </div>
