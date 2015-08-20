@@ -1,11 +1,16 @@
 <div class="row Review">
     <div class="col-md-2">
         <a href="#"><img class="ProfilePhoto"
-                         src="/assets/images/user-photos/{{ $review->user->photo }}"></a>
+                    src="/assets/images/user-photos/{{ $review->user->photo }}"></a>
     </div>
     <div class="col-md-10">
         <div class="Review--names">
-            <span><a href="#">{{ $review->user->username }}</a> wrote a review for <a href="#">{{ $review->politician->name }}</a></span>
+            <span>
+                <a href="#">{{ $review->user->username }}</a>
+                @if(isset($review->politician))
+                    wrote a review for <a href="#">{{ $review->politician->name }}</a>
+                @endif
+            </span>
         </div>
         <div class="Review--rating">
             <span class="Review--bells" title="{{ $review->rating }}">

@@ -28,7 +28,14 @@
                 </div>
             </div>
             <div class="PoliticianDetail--reviews">
-
+                <h3>Latest Reviews</h3>
+                <ul class="ReviewList">
+                    @foreach($politicianDetail->recentReviews as $review)
+                        <li>
+                            @include('components.reviewMain')
+                        </li>
+                    @endforeach
+                </ul>
             </div>
         </div>
         <div class="col-md-4 Sidebar">
