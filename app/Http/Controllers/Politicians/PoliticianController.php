@@ -2,14 +2,11 @@
 
 namespace TheRogg\Http\Controllers\Politicians;
 
-use Illuminate\Database\Eloquent\Collection;
 use InvalidArgumentException;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
-use TheRogg\Domain\PoliticianReview;
 use TheRogg\Http\Controllers\Controller;
-use TheRogg\Http\Controllers\Politicians\Models\PoliticianDetailsModel;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Politicians\PoliticianReviewRepositoryInterface as ReviewRepo;
@@ -57,36 +54,6 @@ class PoliticianController extends Controller
         return Response::json($viewModels);
     }
 
-    public function getGetDetails()
-    {
-        $id = Request::get('id');
-
-        /** @var Politician $politician */
-        $politician = $this->politicianRepo->find($id);
-
-        $reviews = $this->reviewRepo->getByPoliticianId($politician->getId());;
-        if ($reviews->isEmpty())
-            $averageRating = 0;
-        else
-            $averageRating = $this->calculateAverageRating($reviews);
-
-        $comments = [];
-        foreach ($reviews as $review)
-            $comments[] = $review->getComment();
-
-        $viewModel = new PoliticianDetailsModel(
-            $politician->getId(),
-            $politician->getName(),
-            $politician->getState(),
-            $politician->getOffice(),
-            $politician->getParty(),
-            $averageRating,
-            $comments
-        );
-
-        return Response::json($viewModel);
-    }
-
     public function putReviewPolitician()
     {
         $model        = Request::json();
@@ -107,24 +74,6 @@ class PoliticianController extends Controller
             $review->setComment($comment);
             $this->reviewRepo->save($review);
         }
-    }
-
-    /**
-     * @param Collection $reviews
-     *
-     * @return float
-     */
-    private function calculateAverageRating($reviews)
-    {
-        $averages = 0;
-
-        /** @var PoliticianReview $review */
-        foreach ($reviews as $review)
-            $averages += $review->getAverageScore();
-
-        $averageRating = $averages / $reviews->count();
-
-        return $averageRating;
     }
 
     private function validateIds($userId, $politicianId)
