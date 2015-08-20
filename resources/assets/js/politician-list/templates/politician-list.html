@@ -46,7 +46,7 @@
             ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
         <div class="PoliticianList--photoContainer">
             <a href="politicians/{{ politician.slug }}">
-                <img class="PoliticianList--photo" ng-src="assets/images/politician-photos/{{ politician.photo }}">
+                <img class="PoliticianList--photo" ng-src="assets/images/politician-photos/{{ politician.slug }}.jpg">
             </a>
         </div>
         <div class="PoliticianList--infoContainer">

@@ -9,7 +9,7 @@
         <div class="col-md-8 Main">
             <div class="row PoliticianDetail--profile">
                 <div class="col-md-3">
-                    <img src="/assets/images/politician-photos/{{ $politicianDetail->politician->photo }}">
+                    <img class="PoliticianDetail--photo" src="/assets/images/politician-photos/{{ $politicianDetail->politician->slug }}.jpg">
                 </div>
                 <div class="col-md-9">
                     <div><h2 class="PoliticianDetail--name">{{ $politicianDetail->politician->name }}</h2></div>

@@ -44,7 +44,8 @@ class PoliticianDetailComposer
             $politician->getState(),
             $politician->getPhoto(),
             $politician->getBio(),
-            $politician->getDistrict()
+            $politician->getDistrict(),
+            $politician->getSlug()
         );
 
         $reviews = $this->reviewRepo->getByPoliticianId($politician->getId());
