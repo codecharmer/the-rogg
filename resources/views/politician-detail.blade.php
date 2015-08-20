@@ -7,7 +7,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-8 Main">
-            <div class="row PoliticianDetail">
+            <div class="row PoliticianDetail--profile">
                 <div class="col-md-3">
                     <img src="/assets/images/politician-photos/{{ $politicianDetail->politician->photo }}">
                 </div>
@@ -26,6 +26,9 @@
                     </div>
                     <div>{{ $politicianDetail->politician->bio }}</div>
                 </div>
+            </div>
+            <div class="PoliticianDetail--reviews">
+
             </div>
         </div>
         <div class="col-md-4 Sidebar">

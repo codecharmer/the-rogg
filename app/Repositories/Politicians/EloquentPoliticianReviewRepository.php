@@ -60,7 +60,7 @@ class EloquentPoliticianReviewRepository implements PoliticianReviewRepositoryIn
     public function getByPoliticianId($politicianId)
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $reviews = PoliticianReview::where('politicianId', $politicianId)->get();
+        $reviews = PoliticianReview::where('politicianId', $politicianId)->orderBy('updated_at')->get();
 
         return $reviews;
     }

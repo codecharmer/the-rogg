@@ -6,23 +6,26 @@ use Illuminate\Contracts\View\View;
 use Jenssegers\Mongodb\Eloquent\Collection;
 use TheRogg\Domain\Politician;
 use TheRogg\Domain\PoliticianReview;
+use TheRogg\Domain\User;
 use TheRogg\Http\ViewComposers\PoliticianDetail\Models\PoliticianDetailModel;
 use TheRogg\Http\ViewComposers\PoliticianDetail\Models\PoliticianModel;
+use TheRogg\Http\ViewComposers\PoliticianDetail\Models\PoliticianReviewModel;
+use TheRogg\Http\ViewComposers\PoliticianDetail\Models\UserModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Politicians\PoliticianReviewRepositoryInterface as ReviewRepo;
+use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 
 class PoliticianDetailComposer
 {
     private $politicianRepo;
-    /**
-     * @var ReviewRepo
-     */
     private $reviewRepo;
+    private $userRepo;
 
-    public function __construct(PoliticianRepo $politicianRepo, ReviewRepo $reviewRepo)
+    public function __construct(PoliticianRepo $politicianRepo, ReviewRepo $reviewRepo, UserRepo $userRepo)
     {
         $this->politicianRepo = $politicianRepo;
         $this->reviewRepo     = $reviewRepo;
+        $this->userRepo       = $userRepo;
     }
 
     public function compose(View $view)
@@ -46,9 +49,10 @@ class PoliticianDetailComposer
 
         $reviews = $this->reviewRepo->getByPoliticianId($politician->getId());
 
-        $rating = $this->getAverageScore($reviews);
+        $rating        = $this->getAverageScore($reviews);
+        $recentReviews = $this->getRecentReviews($reviews);
 
-        $politicianDetail = new PoliticianDetailModel($politicianModel, $rating);
+        $politicianDetail = new PoliticianDetailModel($politicianModel, $rating, $recentReviews);
 
         $view->with('politicianDetail', $politicianDetail);
     }
@@ -67,5 +71,29 @@ class PoliticianDetailComposer
             $totalScore += $review->getAverageScore();
 
         return round($totalScore / $reviews->count());
+    }
+
+    /**
+     * @param Collection $reviews
+     *
+     * @return PoliticianReview[]
+     */
+    private function getRecentReviews($reviews)
+    {
+        $count = $reviews->count() >= 5 ? 5 : $reviews->count();
+
+        $recentReviews = [];
+        for ($i = 0; $i < $count; $i++)
+        {
+            /** @var PoliticianReview $review */
+            $review = $reviews->get($i);
+            /** @var User $user */
+            $user            = $this->userRepo->find($review->getUserId());
+            $userModel       = new UserModel($user->getId(), $user->getUsername(), $user->getPhoto());
+            $reviewModel     = new PoliticianReviewModel($userModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
+            $recentReviews[] = $reviewModel;
+        }
+
+        return $recentReviews;
     }
 }
