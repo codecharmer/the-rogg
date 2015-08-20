@@ -13,6 +13,10 @@
                 <div class="help-block">{{ $errors->first() }}</div>
             @endif
 
+            @if(Session::get('message'))
+                <div class="help-block">{{ Session::get('message') }}</div>
+            @endif
+
             <form method="post" action="/register" class="form">
                 <div class="form-group">
                     <label for="username">Username</label>
