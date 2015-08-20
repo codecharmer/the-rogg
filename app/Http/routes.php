@@ -28,6 +28,11 @@ Route::get('/policies', function ()
     return view('policy');
 });
 
+Route::get('/politicians/{slug}', function ($slug)
+{
+    return view('politician-detail')->with('slug', $slug);
+});
+
 Route::get('/politicians', function ()
 {
     return view('politicians');
