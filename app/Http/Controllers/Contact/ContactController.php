@@ -18,8 +18,8 @@ class ContactController extends Controller
                 'user_message' => Request::get('message'),
             ], function ($message)
             {
-                $message->from('chris@theantichris.com');
-                $message->to('chris@theantichris.com', 'Admin')->subject('The Rogg Feedback');
+                $message->from('contact@therogg.com');
+                $message->to('contact@therogg.com', 'Admin')->subject('The Rogg Feedback');
             });
 
         return Redirect::route('contact')->with('message', 'Thanks for contacting us!');
