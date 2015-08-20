@@ -5,9 +5,9 @@
                 <img src="/assets/images/logo.png">
             </div>
             <div class="col-md-6">
-                <form class="form-horizontal">
-                    <input class="form-control" type="text" placeholder="Search">
-                </form>
+                {{--<form class="form-horizontal">--}}
+                    {{--<input class="form-control" type="text" placeholder="Search">--}}
+                {{--</form>--}}
             </div>
             <div class="col-md-2">
                 <a class="btn btn-default" href="#" role="button">My Login</a>
