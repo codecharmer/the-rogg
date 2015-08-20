@@ -17,7 +17,7 @@ class Politician extends Entity
     /** @var  string|null */
     protected $photo;
     /** @var  string|null */
-    protected $message;
+    protected $bio;
     /** @var  bool */
     protected $isPresidentialCandidate;
     /** @var string */
@@ -83,13 +83,13 @@ class Politician extends Entity
         $this->attributes['photo'] = $photo;
     }
 
-    public function getMessage() { return $this->attributes['message']; }
-    public function setMessage($message)
+    public function getBio() { return $this->attributes['bio']; }
+    public function setBio($bio)
     {
-        if (!is_string($message) && $message != null)
-            throw new InvalidArgumentException('Message must be a string or null.');
+        if (!is_string($bio) && $bio != null)
+            throw new InvalidArgumentException('Bio must be a string or null.');
 
-        $this->attributes['message'] = $message;
+        $this->attributes['bio'] = $bio;
     }
 
     public function IsPresidentialCandidate() { return $this->attributes['isPresidentialCandidate']; }
