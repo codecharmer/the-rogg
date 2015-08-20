@@ -7,9 +7,11 @@ Route::group(['prefix' => 'api'], function ()
     Route::controller('users', 'Users\UserController');
 });
 
-Route::get('/contact', function(){
+Route::get('/contact', ['as' => 'contact', function(){
     return view('contact');
-});
+}]);
+
+Route::post('/contact', 'Contact\ContactController@postStore');
 
 Route::get('/mission', function ()
 {
