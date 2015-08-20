@@ -4,11 +4,10 @@ Route::group(['prefix' => 'api'], function ()
 {
     Route::controller('data', 'Common\DataController');
     Route::controller('politicians', 'Politicians\PoliticianController');
-    Route::controller('users', 'Users\UserController');
 });
 
-Route::get('register/verify/{confirmationCode}', 'Users\RegistrationController@confirm');
-Route::controller('register', 'Users\RegistrationController');
+//Route::get('register/verify/{confirmationCode}', 'Users\RegistrationController@confirm');
+//Route::controller('register', 'Users\RegistrationController');
 
 Route::get('/contact', [
     'as' => 'contact', function ()
