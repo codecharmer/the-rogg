@@ -1,6 +1,6 @@
 <?php
 
-namespace TheRogg\Http\Controllers\Users;
+namespace TheRogg\Http\Controllers\Auth;
 
 use Hash;
 use Input;
