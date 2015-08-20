@@ -21,8 +21,11 @@ Route::group(['prefix' => 'auth'], function ()
     Route::post('login', 'Auth\AuthController@postLogin');
     Route::get('logout', 'Auth\AuthController@getLogout');
 
+    Route::get('register/verify/{confirmationCode}', 'Auth\VerificationController@getConfirm');
     Route::get('register', 'Auth\AuthController@getRegister');
     Route::post('register', 'Auth\AuthController@postRegister');
 });
+
+
 
 Route::get('/', function () { return view('home'); });

@@ -4,11 +4,8 @@ namespace TheRogg\Http\Controllers\Auth;
 
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
-use InvalidArgumentException;
 use Mail;
-use Redirect;
 use Session;
-use TheRogg\Domain\User;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
 use Validator;
@@ -63,25 +60,5 @@ class AuthController extends Controller
                 ->to($email, $username)
                 ->subject('The Rogg - Verify your email address');
         });
-    }
-
-    public function confirm($confirmationCode)
-    {
-        if (!$confirmationCode)
-            throw new InvalidArgumentException('You must submit a confirmation code.');
-
-        /** @var User $user */
-        $user = $this->userRepo->findBy('confirmationCode', $confirmationCode);
-
-        if (!$user)
-            throw new InvalidArgumentException('The confirmation code was invalid.');
-
-        $user->Confirm();
-        $user->setConfirmationCode(null);
-        $this->userRepo->save($user);
-
-        Session::flash('message', 'You have successfully verified your account.');
-
-        return Redirect::to('/');
     }
 }

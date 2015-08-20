@@ -10,7 +10,7 @@
     <p>Thanks for creating an account with the Rogg.</p>
 
     <p>Please follow the link below to verify your email address</p>
-    {{ URL::to('register/verify/' . $confirmationCode) }}<br/>
+    {{ URL::to('auth/register/verify/' . $confirmationCode) }}<br/>
 </div>
 
 </body>
