@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a class="Navigation-registerButton" href="/register" role="button">Create Your Free Account</a>
+                <a class="btn Navigation-registerButton" href="/auth/register" role="button">Create Your Free Account</a>
             </div>
             <div class="col-md-9">
                 <p>A resource where your void can truly be heard. Rate, share, and comment on any government official.

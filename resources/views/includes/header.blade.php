@@ -10,7 +10,7 @@
                 {{--</form>--}}
             </div>
             <div class="col-md-2">
-                <a class="btn btn-default" href="#" role="button">My Login</a>
+                <a class="btn btn-default" href="/auth/login" role="button">My Login</a>
             </div>
         </div>
     </div>
