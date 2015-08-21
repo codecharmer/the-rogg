@@ -1,4 +1,4 @@
-set :application, 'the-rogg.theantichris.com'
+set :application, 'the-rogg'
 set :repo_url, 'git@github-the-rogg:theantichris/the-rogg.git'
 
 set :branch, :master
