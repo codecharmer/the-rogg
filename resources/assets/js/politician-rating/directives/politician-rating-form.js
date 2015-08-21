@@ -8,18 +8,26 @@
             templateUrl: '/build/assets/js/templates/politician-rating-form.html',
             restrict: 'E',
             controller: Controller,
-            scope: {}
+            scope: {
+                userId: '=',
+                politicianId: '='
+            }
         }
     }
 
-    Controller.$inject = ['$scope'];
+    Controller.$inject = ['$scope', 'politicianRatingService'];
 
-    function Controller($scope) {
+    function Controller($scope, politicianRatingService) {
         init();
 
         $scope.toggleAmendment = function (amendment, rating) {
             $scope.amendments[amendment].rating = rating;
         };
+
+        $scope.submit = function(){
+
+        };
+
 
         function init() {
             var descriptions = [
