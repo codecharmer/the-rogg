@@ -8,12 +8,11 @@ Route::group(['prefix' => 'api'], function ()
 
 Route::controller('contact', 'Contact\ContactController');
 
-Route::get('mission', function () { return view('mission'); });
-
-Route::get('policies', function () { return view('policy'); });
-
-Route::get('politicians/{slug}', function ($slug) { return view('politician-detail')->with('slug', $slug); });
-Route::get('politicians', function () { return view('politicians'); });
+Route::group(['prefix' => 'politicians'], function ()
+{
+    Route::get('/{slug}', function ($slug) { return view('politician-detail')->with('slug', $slug); });
+    Route::get('/', function () { return view('politicians'); });
+});
 
 Route::group(['prefix' => 'auth'], function ()
 {
@@ -34,6 +33,10 @@ Route::group(['prefix' => 'password'], function ()
     Route::get('reset/{token}', 'Auth\PasswordController@getReset');
     Route::post('reset', 'Auth\PasswordController@postReset');
 });
+
+Route::get('mission', function () { return view('mission'); });
+
+Route::get('policies', function () { return view('policy'); });
 
 Route::get('home', function () { return Redirect::to('/'); });
 Route::get('/', function () { return view('home'); });
