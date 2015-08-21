@@ -21,8 +21,8 @@ namespace :deploy do
   end
   task :permissions do
       on roles(:app), in: :sequence, wait: 5 do
-         sudo :chmod, "-R o+w /usr/share/nginx/html/the-rogg.theantichris.com/current/storage/"
-         sudo :chmod, "-R o+w /usr/share/nginx/html/the-rogg.theantichris.com/current/bootstrap/cache/"
+         sudo :chmod, "-R o+w /usr/share/nginx/html/the-rogg/current/storage/"
+         sudo :chmod, "-R o+w /usr/share/nginx/html/the-rogg/current/bootstrap/cache/"
       end
   end
 end
