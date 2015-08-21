@@ -1,17 +1,18 @@
 .PoliticianList--tabs {
   margin-bottom: 40px;
   font-size: 24px;
-  color: $blue;
+  color: #ffffff;
 }
 
 .PoliticianList--tab {
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
+  background-color: #D4D4D4;
 
   &.active {
     border-bottom: 2px solid $red;
-    background-color: $grey;
+    background-color: #d4d4d4;
 
     &:after {
       position: absolute;
@@ -20,7 +21,7 @@
       content: '';
       width: 0;
       height: 0;
-      border-top: solid 10px $red;
+      border-top: solid 10px #E91D0E;
       border-left: solid 10px transparent;
       border-right: solid 10px transparent;
     }
@@ -50,7 +51,7 @@
       border: 2px solid $democratBlue;
     }
 
-    .PoliticianList--name, .PoliticianList--district, .PoliticianList--detailLink{
+    .PoliticianList--name, .PoliticianList--district, .PoliticianList--detailLink {
       color: $democratBlue;
     }
   }
@@ -67,7 +68,7 @@
 
   &.Republican {
     .PoliticianList--photo {
-      border: 2px solid $republicanRed;
+      border: 0 solid $republicanRed;
     }
 
     .PoliticianList--name, .PoliticianList--district, .PoliticianList--detailLink {
@@ -82,13 +83,13 @@
 }
 
 .PoliticianList--photo {
-  width: 100px;
+  width: 180px;
   height: auto;
 }
 
 .PoliticianList--name {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .PoliticianList--district {

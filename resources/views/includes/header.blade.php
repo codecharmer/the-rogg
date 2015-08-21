@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <img src="/assets/images/logo.png">
+                <img class="Header--logo" src="/assets/images/logo.png">
             </div>
             <div class="col-md-6">
                 {{--<form class="form-horizontal">--}}
