@@ -2,50 +2,54 @@
 
 <small>Hover the amendment to get a description.</small>
 
-<div class="PoliticianRatingForm--amendments">
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[0] }}">1st Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleFirst(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[1] }}">2nd Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleSecond(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[2] }}">3rd Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleThird(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[3] }}">4th Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleFourth(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[4] }}">5th Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleFifth(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[5] }}">6th Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleSixth(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[6] }}">7th Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleSeventh(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[7] }}">8th Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleEighth(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[8] }}">9th Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleNinth(n)">
-    </div>
-    <div class="form-group">
-        <span class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[9] }}">10th Amendment:</span>
-        <img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleTenth(n)">
-    </div>
-</div>
+<table class="PoliticianRatingForm--amendments">
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[0] }}">1st Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleFirst(n)"></td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[1] }}">2nd Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleSecond(n)">
+        </td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[2] }}">3rd Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleThird(n)"></td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[3] }}">4th Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleFourth(n)">
+        </td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[4] }}">5th Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleFifth(n)"></td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[5] }}">6th Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleSixth(n)"></td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[6] }}">7th Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleSeventh(n)">
+        </td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[7] }}">8th Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleEighth(n)">
+        </td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[8] }}">9th Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleNinth(n)"></td>
+    </tr>
+    <tr>
+        <td class="PoliticianRatingForm--amendmentDescription" title="{{ descriptions[9] }}">10th Amendment:</td>
+        <td><img ng-repeat="n in [1,2,3,4,5]" src="/assets/images/liberty-bell-dark.png" ng-click="toggleTenth(n)"></td>
+    </tr>
+</table>
 
-<div class="form-group">
+<div>
     <textarea class="form-control PoliticianRatingForm--comment" rows="8" ng-model="comment"></textarea>
 </div>
 

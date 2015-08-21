@@ -16,11 +16,21 @@
   margin-bottom: 10px;
 }
 
+.PoliticianRatingForm--amendments {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  td {
+    padding: 5px;
+  }
+}
+
 .PoliticianRatingForm--amendmentDescription {
   font-size: 18px;
 }
 
 .PoliticianRatingForm--comment {
+  margin-bottom: 20px;
   resize: none;
   background-color: $red;
 }
@@ -29,7 +39,7 @@
   background-color: $red;
   color: #ffffff;
 
-  &:hover{
+  &:hover {
     color: #ffffff;
   }
 }
