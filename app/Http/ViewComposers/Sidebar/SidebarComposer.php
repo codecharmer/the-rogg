@@ -38,9 +38,9 @@ class SidebarComposer
         /** @var User $user */
         $user = $this->userRepo->find($review->getUserId(), ['_id', 'photo', 'username']);
         /** @var Politician $politician */
-        $politician      = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name']);
+        $politician      = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name', 'slug']);
         $userModel       = new SidebarUserModel($user->getId(), $user->getUsername(), $user->getPhoto());
-        $politicianModel = new SidebarPoliticianModel($politician->getId(), $politician->getName());
+        $politicianModel = new SidebarPoliticianModel($politician->getId(), $politician->getName(), $politician->getSlug());
         $randomReview    = new SidebarPoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
 
         return $randomReview;

@@ -44,9 +44,9 @@ class HomeComposer
             /** @var User $user */
             $user = $this->userRepo->find($review->getUserId(), ['_id', 'photo', 'username']);
             /** @var Politician $politician */
-            $politician      = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name']);
+            $politician      = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name', 'slug']);
             $userModel       = new HomeUserModel($user->getId(), $user->getUsername(), $user->getPhoto());
-            $politicianModel = new HomePoliticianModel($politician->getId(), $politician->getName());
+            $politicianModel = new HomePoliticianModel($politician->getId(), $politician->getName(), $politician->getSlug());
             $model           = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
             $recentReviews[] = $model;
         }
