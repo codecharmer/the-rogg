@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    - Login
+    - Reset Password
 @endsection
 
 @section('content')
@@ -14,28 +14,26 @@
                 </div>
             @endif
 
-            <form method="POST" action="/auth/login">
-
+            <form method="POST" action="/password/reset">
                 {!! csrf_field() !!}
+                <input type="hidden" name="token" value="{{ $token }}">
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required>
+                    <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}">
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" value="{{ old('email') }}" required>
+                    <input type="password" class="form-control" id="password" name="password">
                 </div>
 
                 <div class="form-group">
-                    <label>
-                        <input type="checkbox" name="remember"> Remember Me
-                    </label>
+                    <label for="password_confirmation">Confirm Password</label>
+                    <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
                 </div>
 
-                <button type="submit" class="btn btn-primary">Login</button>
-                <a href="/password/email" class="btn btn-link">Forgot Password?</a>
+                <button type="submit" class="btn btn-primary">Reset Password</button>
             </form>
 
         </div>

@@ -26,5 +26,14 @@ Route::group(['prefix' => 'auth'], function ()
     Route::post('register', 'Auth\AuthController@postRegister');
 });
 
+Route::group(['prefix' => 'password'], function ()
+{
+    Route::get('email', 'Auth\PasswordController@getEmail');
+    Route::post('email', 'Auth\PasswordController@postEmail');
+
+    Route::get('reset/{token}', 'Auth\PasswordController@getReset');
+    Route::post('reset', 'Auth\PasswordController@postReset');
+});
+
 Route::get('home', function () { return Redirect::to('/'); });
 Route::get('/', function () { return view('home'); });
