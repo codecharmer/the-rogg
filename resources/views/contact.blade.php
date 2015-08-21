@@ -34,7 +34,9 @@
             </form>
         </div>
         <div class="col-md-4 Sidebar">
-            @include('components.sidebar')
+            <h3>Advertise On The Rogg</h3>
+            <p>Contact "The Rogg" for more information on ads.</p>
+            <p>If you're pissed off about a comment, then don't contact us.</p>
         </div>
     </div>
 @endsection
