@@ -28,6 +28,8 @@ class TestDataSeeder extends Seeder
         $userPhoto = 'horse100.jpg';
 
         $suzanne = $this->userRepo->make('syoung', 'suzanne@veil22.com', 'password', null, null, $userPhoto, '2');
+        $suzanne->Confirm();
+        $suzanne->save();
 
         Schema::drop('politicians');
 
