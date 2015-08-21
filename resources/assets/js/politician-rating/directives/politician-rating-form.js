@@ -31,7 +31,7 @@
         ];
 
         function init() {
-
+            $scope.ratings = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
         }
     }
 })(angular.module('PoliticianRating'));
