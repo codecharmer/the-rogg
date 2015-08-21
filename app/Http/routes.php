@@ -3,6 +3,7 @@
 Route::group(['prefix' => 'api'], function ()
 {
     Route::controller('data', 'Common\DataController');
+    Route::post('politicians/review-politician', ['middleware' => 'auth', 'uses' => 'Politicians\PoliticianController@postReviewPolitician']);
     Route::controller('politicians', 'Politicians\PoliticianController');
 });
 

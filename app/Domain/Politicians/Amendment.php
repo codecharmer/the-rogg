@@ -13,7 +13,7 @@ abstract class Amendment extends Enum
     const Fifth   = 'Fifth';
     const Sixth   = 'Sixth';
     const Seventh = 'Seventh';
-    const Eighth  = 'Eight';
+    const Eighth  = 'Eighth';
     const Ninth   = 'Ninth';
     const Tenth   = 'Tenth';
 }

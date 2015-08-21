@@ -15,19 +15,33 @@
         }
     }
 
-    Controller.$inject = ['$scope', 'politicianRatingService'];
+    Controller.$inject = ['$scope', '$window', 'politicianRatingService'];
 
-    function Controller($scope, politicianRatingService) {
+    function Controller($scope, $window, politicianRatingService) {
         init();
 
         $scope.toggleAmendment = function (amendment, rating) {
             $scope.amendments[amendment].rating = rating;
         };
 
-        $scope.submit = function(){
+        $scope.submit = function () {
+            var ratings = [];
 
+            $scope.amendments.forEach(function (amendment) {
+                ratings.push(amendment.rating);
+            });
+
+            var model = {
+                userId: $scope.userId,
+                politicianId: $scope.politicianId,
+                comment: $scope.comment,
+                ratings: ratings
+            };
+
+            politicianRatingService.reviewPolitician(model).then(function () {
+                $window.location.reload();
+            });
         };
-
 
         function init() {
             var descriptions = [
@@ -55,8 +69,6 @@
                 {name: '9th Amendment', description: descriptions[8], rating: 1},
                 {name: '10th Amendment', description: descriptions[9], rating: 1}
             ];
-
-            $scope.ratings = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
         }
     }
 })(angular.module('PoliticianRating'));

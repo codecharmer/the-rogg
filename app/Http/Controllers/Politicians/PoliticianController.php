@@ -6,6 +6,7 @@ use InvalidArgumentException;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
+use TheRogg\Domain\Politicians\Amendment;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
@@ -20,9 +21,6 @@ class PoliticianController extends Controller
 
     public function __construct(PoliticianRepo $politicianRepo, ReviewRepo $reviewRepo, UserRepo $userRepo)
     {
-        // TODO: Authentication.
-        // TODO: CSRF token.
-
         $this->politicianRepo = $politicianRepo;
         $this->reviewRepo     = $reviewRepo;
         $this->userRepo       = $userRepo;
@@ -54,25 +52,32 @@ class PoliticianController extends Controller
         return Response::json($viewModels);
     }
 
-    public function putReviewPolitician()
+    public function postReviewPolitician()
     {
-        $model        = Request::json();
-        $politicianId = $model->get('politicianId');
-        $userId       = $model->get('userId');
-        $scores       = $model->get('scores');
-        $comment      = $model->get('comment');
+        $model        = Request::json('model');
+        $userId       = strval($model['userId']);
+        $politicianId = strval($model['politicianId']);
 
         $this->validateIds($userId, $politicianId);
 
         $review = $this->reviewRepo->findByUserAndPolitician($userId, $politicianId);
 
         if (empty($review))
-            $this->reviewRepo->make($userId, $politicianId, $scores, $comment);
-        else
         {
-            $review->setScores($scores);
-            $review->setComment($comment);
-            $this->reviewRepo->save($review);
+            $ratings = [
+                Amendment::First   => $model['ratings'][0],
+                Amendment::Second  => $model['ratings'][1],
+                Amendment::Third   => $model['ratings'][2],
+                Amendment::Fourth  => $model['ratings'][3],
+                Amendment::Fifth   => $model['ratings'][4],
+                Amendment::Sixth   => $model['ratings'][5],
+                Amendment::Seventh => $model['ratings'][6],
+                Amendment::Eighth  => $model['ratings'][7],
+                Amendment::Ninth   => $model['ratings'][8],
+                Amendment::Tenth   => $model['ratings'][9],
+            ];
+
+            $this->reviewRepo->make($userId, $politicianId, $ratings, $model['comment']);
         }
     }
 
