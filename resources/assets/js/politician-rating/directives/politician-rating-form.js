@@ -44,6 +44,7 @@
         };
 
         function init() {
+            console.log($scope.politicianId);
             var descriptions = [
                 'Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.',
                 'A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed.',

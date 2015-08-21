@@ -107,7 +107,7 @@ class Politician extends Entity
     public function getSlug() { return $this->attributes['slug']; }
     public function setSlug()
     {
-        $slug = strtolower(str_replace(' ', '-', $this->attributes['name']));
+        $slug = strtolower(str_replace([' ', "'"], '-', $this->attributes['name']));
         $slug = str_replace('.', '', $slug);
 
         $this->attributes['slug'] = $slug;

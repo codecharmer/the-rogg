@@ -55,8 +55,8 @@ class PoliticianController extends Controller
     public function postReviewPolitician()
     {
         $model        = Request::json('model');
-        $userId       = strval($model['userId']);
-        $politicianId = strval($model['politicianId']);
+        $userId       = $model['userId'];
+        $politicianId = $model['politicianId'];
 
         $this->validateIds($userId, $politicianId);
 

@@ -35,6 +35,10 @@ class SidebarComposer
     private function getRandomReview()
     {
         $review = $this->reviewRepo->getRandom();
+
+        if (empty($review))
+            return null;
+
         /** @var User $user */
         $user = $this->userRepo->find($review->getUserId(), ['_id', 'photo', 'username']);
         /** @var Politician $politician */

@@ -5,7 +5,7 @@
     <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'Senate'}"
             ng-click="showSenate()">Senate
     </div>
-    <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === ''}"
+    <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'Unelected'}"
             ng-click="showCandidates()">Presidential Candidates
     </div>
 </div>
@@ -46,7 +46,7 @@
             ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
         <div class="PoliticianList--photoContainer">
             <a href="politicians/{{ politician.slug }}">
-                <img class="PoliticianList--photo" ng-src="assets/images/politician-photos/{{ politician.slug }}.jpg">
+                <img class="PoliticianList--photo" ng-src="{{ 'assets/images/politician-photos/' + politician.slug + '.jpg' || 'assets/images/generic-profile.png' }}">
             </a>
         </div>
         <div class="PoliticianList--infoContainer">
