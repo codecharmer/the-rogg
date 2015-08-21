@@ -6,7 +6,7 @@
     <tr ng-repeat="x in [0,1,2,3,4,5,6,7,8,9]">
         <td class="PoliticianRatingForm--amendmentDescription" title="{{ amendments[x].description }}">{{ amendments[x].name }}:</td>
         <td>
-            <img ng-repeat="y in [1,2,3,4,5]" ng-src="{{ amendments[x].rating == y && '/assets/images/liberty-bell.png' || '/assets/images/liberty-bell-dark.png' }}" ng-click="toggleAmendment(x, y)">
+            <img ng-repeat="y in [1,2,3,4,5]" ng-src="{{ amendments[x].rating >= y && '/assets/images/liberty-bell.png' || '/assets/images/liberty-bell-dark.png' }}" ng-click="toggleAmendment(x, y)">
         </td>
     </tr>
 </table>
