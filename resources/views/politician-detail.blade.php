@@ -27,6 +27,13 @@
                     <div>{{ $politicianDetail->politician->bio }}</div>
                 </div>
             </div>
+
+            @if(Auth::check() || Auth::viaRemember())
+                <div ng-app="PoliticianRating">
+                    <politician-rating-form></politician-rating-form>
+                </div>
+            @endif
+
             <div class="PoliticianDetail--reviews">
                 <h3>Latest Reviews</h3>
                 <ul class="ReviewList">
