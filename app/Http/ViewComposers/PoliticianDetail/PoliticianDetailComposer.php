@@ -54,7 +54,10 @@ class PoliticianDetailComposer
         $rating        = $reviews->count() > 0 ? $this->getAverageScore($reviews) : 0;
         $recentReviews = $reviews->count() > 0 ? $this->getRecentReviews($reviews) : null;
 
-        $alreadyRated = $this->alreadyRated($politician->getId());
+        if (Auth::check() || Auth::viaRemember())
+            $alreadyRated = $this->alreadyRated($politician->getId());
+        else
+            $alreadyRated = false;
 
         $politicianDetail = new PoliticianDetailModel($politicianModel, $rating, $recentReviews, $alreadyRated);
 
