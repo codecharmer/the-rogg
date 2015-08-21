@@ -1,6 +1,11 @@
+.PoliticianDetail--profile {
+  margin-bottom: 20px;
+}
+
 .PoliticianDetail--photo {
   width: 100px;
   height: 100px;
+  border-radius: 5px;
 }
 
 .PoliticianDetail--name {
@@ -9,4 +14,18 @@
 
 .PoliticianDetail--rating {
   margin-bottom: 10px;
+}
+
+.PoliticianRatingForm--comment {
+  resize: none;
+  background-color: $red;
+}
+
+.PoliticianRatingForm--button {
+  background-color: $red;
+  color: #ffffff;
+
+  &:hover{
+    color: #ffffff;
+  }
 }

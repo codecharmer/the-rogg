@@ -29,7 +29,7 @@
             </div>
 
             @if(Auth::check() || Auth::viaRemember())
-                <div ng-app="PoliticianRating">
+                <div class="PoliticianRating" ng-app="PoliticianRating">
                     <politician-rating-form></politician-rating-form>
                 </div>
             @endif
