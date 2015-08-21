@@ -2,6 +2,7 @@
 
 namespace TheRogg\Http\ViewComposers\PoliticianDetail;
 
+use Auth;
 use Illuminate\Contracts\View\View;
 use Jenssegers\Mongodb\Eloquent\Collection;
 use TheRogg\Domain\Politician;
@@ -51,9 +52,11 @@ class PoliticianDetailComposer
         $reviews = $this->reviewRepo->getByPoliticianId($politician->getId());
 
         $rating        = $reviews->count() > 0 ? $this->getAverageScore($reviews) : 0;
-        $recentReviews = $reviews->count() > 0 ?$this->getRecentReviews($reviews) : null;
+        $recentReviews = $reviews->count() > 0 ? $this->getRecentReviews($reviews) : null;
 
-        $politicianDetail = new PoliticianDetailModel($politicianModel, $rating, $recentReviews);
+        $alreadyRated = $this->alreadyRated($politician->getId());
+
+        $politicianDetail = new PoliticianDetailModel($politicianModel, $rating, $recentReviews, $alreadyRated);
 
         $view->with('politicianDetail', $politicianDetail);
     }
@@ -96,5 +99,14 @@ class PoliticianDetailComposer
         }
 
         return $recentReviews;
+    }
+
+    private function alreadyRated($politicianId)
+    {
+        $currentUser = Auth::user();
+
+        $review = $this->reviewRepo->findByUserAndPolitician($currentUser->getId(), $politicianId);
+
+        return !empty($review);
     }
 }
