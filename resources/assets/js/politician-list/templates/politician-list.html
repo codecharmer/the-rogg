@@ -41,9 +41,14 @@
     </div>
 </div>
 
+<div ng-show="(politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate}).length === 0">
+    No politicians found.
+</div>
+
 <div class="PoliticianList--list">
     <div class="PoliticianList--item clearfix" ng-class="politician.party"
             ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
+
         <div class="PoliticianList--photoContainer">
             <a href="politicians/{{ politician.slug }}">
                 <img class="PoliticianList--photo" ng-src="{{ 'assets/images/politician-photos/' + politician.slug + '.jpg' }}">
@@ -59,5 +64,6 @@
                 <span ng-if="politician.district">{{ politician.district }}</span>
             </div>
         </div>
+        <div class="PoliticianList--noItems">No politicians found.</div>
     </div>
 </div>
