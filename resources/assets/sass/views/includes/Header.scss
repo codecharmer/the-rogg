@@ -1,9 +1,22 @@
 .Header {
-  padding: 40px 0;
   background-color: #003b74;
 }
 
 .Header--logo {
   width: 300px;
   height: auto;
+}
+
+.Header--buttonContainer {
+  line-height: 100px;
+}
+
+.Header--link {
+  margin-top: -25px;
+  display: block;
+  color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+  }
 }

@@ -3,6 +3,7 @@
    color: #ffffff;
 
    &:hover {
+     background-color: darken($red, 5%);
      color: #ffffff;
    }
  }
