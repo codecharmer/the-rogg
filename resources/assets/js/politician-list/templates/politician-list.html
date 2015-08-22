@@ -41,13 +41,14 @@
     </div>
 </div>
 
-<div ng-show="(politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate}).length === 0">
-    No politicians found.
-</div>
-
 <div class="PoliticianList--list">
+    <div class="PoliticianList--notFound" ng-show="filteredPoliticians.length === 0">
+        <div><i class="fa fa-exclamation-triangle fa-2x"></i></div>
+        <div>No politicians found.</div>
+    </div>
+
     <div class="PoliticianList--item clearfix" ng-class="politician.party"
-            ng-repeat="politician in politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy">
+            ng-repeat="politician in filteredPoliticians = (politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy)">
 
         <div class="PoliticianList--photoContainer">
             <a href="politicians/{{ politician.slug }}">
