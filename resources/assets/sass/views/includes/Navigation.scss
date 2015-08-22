@@ -26,5 +26,9 @@
     height: 60px;
     border: 1px solid $grey;
     font-size: 24px;
+
+    &:hover {
+      color: $blue;
+    }
   }
 }
