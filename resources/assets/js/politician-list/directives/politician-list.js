@@ -28,8 +28,8 @@
         };
 
         $scope.showCandidates = function () {
-            $scope.filterByOffice = 'Unelected';
-            $scope.filterByCandidate = false;
+            $scope.filterByOffice = '';
+            $scope.filterByCandidate = true;
         };
 
         function init() {
