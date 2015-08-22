@@ -21,15 +21,15 @@
                     <input id="name" name="name" type="text" class="form-control" placeholder="Your name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Your E-mail Address</label>
-                    <input id="email" name="email" type="email" class="form-control" placeholder="Your e-mail address" required>
+                    <label for="email">Your Email Address</label>
+                    <input id="email" name="email" type="email" class="form-control" placeholder="Your email address" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" class="form-control" placeholder="Your message" required></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Contact Us!</button>
+                    <button type="submit" class="btn btn-red">Contact Us!</button>
                 </div>
             </form>
         </div>
