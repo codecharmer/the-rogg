@@ -6,7 +6,17 @@
                 <a href="#" class="Navigation--menuIcon closed"><i class="fa fa-bars fa-2x"></i></a>
             </div>
             <div class="col-md-9 col-xs-10">
-                <p class="Navigation--tagLine">The Rogg, your voice, your vote!</p>
+                <h1 class="Navigation--pageTitle">
+                    @if(Request::path() == '/')
+                        The Rogg, your voice, your vote!
+                    @elseif(Request::path() == 'politicians')
+                        Rate and Comment on any Politician
+                    @elseif(Request::path() == 'contact')
+                        Contact The Rogg
+                    @elseif(Request::path() == 'mission')
+                        The Rogg's Mission
+                    @endif
+                </h1>
             </div>
         </div>
 

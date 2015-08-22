@@ -13,8 +13,6 @@
                 </div>
             @endif
 
-            <h2>Contact</h2>
-
             <form method="post" action="/contact" class="form">
                 <div class="form-group">
                     <label for="name">Your Name</label>
