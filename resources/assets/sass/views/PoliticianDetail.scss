@@ -3,7 +3,7 @@
 }
 
 .PoliticianDetail--photo {
-  width: 100px;
+  width: 150px;
   height: auto;
   border-radius: 5px;
 }
@@ -31,8 +31,10 @@
 
 .PoliticianRatingForm--comment {
   margin-bottom: 20px;
+  border-color: #bec3c7;
   resize: none;
   background-color: $red;
+  font-family: monospace;
   color: #ffffff;
 }
 

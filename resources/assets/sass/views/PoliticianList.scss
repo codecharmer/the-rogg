@@ -48,7 +48,7 @@
 
   &.Democrat {
     .PoliticianList--photo {
-      border: 2px solid $democratBlue;
+
     }
 
     .PoliticianList--name, .PoliticianList--district, .PoliticianList--detailLink {
@@ -58,7 +58,7 @@
 
   &.Independent {
     .PoliticianList--photo {
-      border: 2px solid $grey;
+
     }
 
     .PoliticianList--name, .PoliticianList--district, .PoliticianList--detailLink {
@@ -68,7 +68,7 @@
 
   &.Republican {
     .PoliticianList--photo {
-      border: 0 solid $republicanRed;
+
     }
 
     .PoliticianList--name, .PoliticianList--district, .PoliticianList--detailLink {
