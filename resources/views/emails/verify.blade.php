@@ -9,8 +9,11 @@
 <div>
     <p>Thanks for creating an account with the Rogg.</p>
 
-    <p>Please follow the link below to verify your email address</p>
-    {{ URL::to('auth/register/verify/' . $confirmationCode) }}<br/>
+    <p>Please follow the link below to verify your email address.</p>
+
+    <p>
+        <a href="{{ URL::to('auth/register/verify/' . $confirmationCode) }}">{{ URL::to('auth/register/verify/' . $confirmationCode) }}</a>
+    </p>
 </div>
 
 </body>
