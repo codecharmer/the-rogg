@@ -5,10 +5,18 @@
 .Header--logo {
   width: 300px;
   height: auto;
+
+  @media (max-width: $screen-xs-max) {
+    width: 220px;
+  }
 }
 
 .Header--buttonContainer {
   line-height: 100px;
+
+  @media (max-width: $screen-xs-max) {
+    line-height: 80px;
+  }
 }
 
 .Header--link {

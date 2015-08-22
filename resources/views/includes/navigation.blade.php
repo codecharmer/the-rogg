@@ -2,12 +2,15 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-9">
+            <div class="visible-xs col-xs-1">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="col-md-9 col-xs-10">
                 <p class="Navigation--tagLine">The Rogg, your voice, your vote!</p>
             </div>
         </div>
 
-        <div class="row Nav-row">
+        <div class="row Nav-row hidden-xs">
             <div class="col-md-12">
                 <ul class="nav nav-pills nav-justified">
                     <li class="Nav-item {{ Request::path() == '/' ? 'active' : '' }}"><a href="/">Home</a></li>
