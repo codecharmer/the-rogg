@@ -11,16 +11,16 @@
         </div>
 
         <div class="Navigation--mobile">
-            <a href="/">
+            <a class="{{ Request::path() == '/' ? 'active' : '' }}" href="/">
                 <div>Home</div>
             </a>
-            <a href="/politicians">
+            <a class="{{ Request::path() == 'politicians' ? 'active' : '' }}" href="/politicians">
                 <div>Politicians</div>
             </a>
-            <a href="/contact">
+            <a class="{{ Request::path() == 'contact' ? 'active' : '' }}" href="/contact">
                 <div>Contact</div>
             </a>
-            <a href="/mission">
+            <a class="{{ Request::path() == 'mission' ? 'active' : '' }}" href="/mission">
                 <div>Mission</div>
             </a>
         </div>
