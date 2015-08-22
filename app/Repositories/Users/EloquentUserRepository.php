@@ -50,12 +50,8 @@ class EloquentUserRepository implements UserRepositoryInterface
         $user->setEmail($email);
         $user->setPassword($password);
         $user->setConfirmationCode($confirmationCode);
-
-        if (!empty($party))
-            $user->setParty($party);
-
-        if (!empty($photo))
-            $user->setPhoto($photo);
+        $user->setParty($party);
+        $user->setPhoto($photo);
 
         $user->save();
 
