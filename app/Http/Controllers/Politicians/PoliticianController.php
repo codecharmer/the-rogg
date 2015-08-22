@@ -6,6 +6,7 @@ use InvalidArgumentException;
 use Request;
 use Response;
 use TheRogg\Domain\Politician;
+use TheRogg\Domain\PoliticianReview;
 use TheRogg\Domain\Politicians\Amendment;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
@@ -34,6 +35,23 @@ class PoliticianController extends Controller
         /** @var Politician $politician */
         foreach ($politicians as $politician)
         {
+            $reviews = $this->reviewRepo->getByPoliticianId($politician->getId());
+
+            if ($reviews->isEmpty())
+            {
+                $rating = 1;
+            }
+            else
+            {
+                $count = 0;
+                $total = 0;
+                /** @var PoliticianReview $review */
+                foreach ($reviews as $review)
+                    $total += $review->getAverageScore();
+
+                $rating = $total / $count;
+            }
+
             $model = new PoliticianListModel(
                 $politician->getId(),
                 $politician->getName(),
@@ -43,7 +61,8 @@ class PoliticianController extends Controller
                 $politician->IsPresidentialCandidate(),
                 $politician->getPhoto(),
                 $politician->getDistrict(),
-                $politician->getSlug()
+                $politician->getSlug(),
+                $rating
             );
 
             $viewModels[] = $model;

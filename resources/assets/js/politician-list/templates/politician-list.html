@@ -64,7 +64,9 @@
                 <span>{{ politician.party | limitTo:1}} - {{ politician.state }}</span>
                 <span ng-if="politician.district">{{ politician.district }}</span>
             </div>
+            <div>
+                <img ng-repeat="y in [1,2,3,4,5]" ng-src="{{ politician.rating >= y && '/assets/images/liberty-bell.png' || '/assets/images/liberty-bell-dark.png' }}">
+            </div>
         </div>
-        <div class="PoliticianList--noItems">No politicians found.</div>
     </div>
 </div>
