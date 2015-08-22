@@ -42,6 +42,11 @@
   margin-right: 3px;
   margin-bottom: 42px;
 
+  @media (max-width: $screen-xs-max) {
+    float: left;
+    width: 100%;
+  }
+
   &:nth-child(3) {
     margin-right: 0;
   }
@@ -85,6 +90,10 @@
 .PoliticianList--photo {
   width: 180px;
   height: auto;
+
+  @media (max-width: $screen-xs-max) {
+    width: 130px;
+  }
 }
 
 .PoliticianList--name {
