@@ -1,40 +1,40 @@
 <div class="row PoliticianList--tabs">
-    <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'House'}"
+    <div class="col-md-4 col-xs-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'House'}"
             ng-click="showHouse()">House
     </div>
-    <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'Senate'}"
+    <div class="col-md-4 col-xs-4 text-center PoliticianList--tab" ng-class="{'active': filterByOffice === 'Senate'}"
             ng-click="showSenate()">Senate
     </div>
-    <div class="col-md-4 text-center PoliticianList--tab" ng-class="{'active': filterByCandidate === true}"
-            ng-click="showCandidates()">Presidential Candidates
+    <div class="col-md-4 col-xs-4 text-center PoliticianList--tab" ng-class="{'active': filterByCandidate === true}"
+            ng-click="showCandidates()">Candidates
     </div>
 </div>
 
 <div class="row form PoliticianList--controls">
-    <div class="col-md-4">
+    <div class="col-md-4 col-xs-4">
         <div class="form-group">
             <label for="Name">Name</label><br>
             <select id="Name" class="form-control" ng-model="filterByName">
-                <option value="" selected>--</option>
+                <option value="" selected>All</option>
                 <option ng-repeat="politician in politicians" value="{{ politician.name }}">{{ politician.name }}
                 </option>
             </select>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-xs-4">
         <div class="form-group">
             <label for="State">State</label><br>
             <select id="State" class="form-control" ng-model="filterByState">
-                <option value="" selected>--</option>
+                <option value="" selected>All</option>
                 <option ng-repeat="state in data.states" value="{{ state }}">{{ state }}</option>
             </select>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-xs-4">
         <div class="form-group">
             <label for="Party">Party</label><br>
             <select id="Party" class="form-control" ng-model="filterByParty">
-                <option value="" selected>--</option>
+                <option value="" selected>All</option>
                 <option ng-repeat="party in data.parties" value="{{ party }}">{{ party }}</option>
             </select>
         </div>
