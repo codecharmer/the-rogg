@@ -5,19 +5,9 @@
   border-bottom: 2px solid rgba(159, 158, 158, 0.9);
 }
 
-.Navigation-registerButton {
-  display: block;
-  width: 230px;
-  padding: 5px 10px;
-  background-color: $blue;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  &:hover, :focus {
-    text-decoration: none;
-    color: #ffffff;
-  }
+.Navigation--tagLine {
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .Nav-row {

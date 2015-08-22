@@ -1,17 +1,11 @@
 <div class="Navigation">
     <div class="container">
 
-        @if(Auth::guest())
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="btn Navigation-registerButton" href="/auth/register" role="button">Create Your Free Account</a>
-                </div>
-                <div class="col-md-9">
-                    <p>A resource where your void can truly be heard. Rate, share, and comment on any government official.
-                        Raw and unedited - That's the ROGG!</p>
-                </div>
+        <div class="row">
+            <div class="col-md-9">
+                <p class="Navigation--tagLine">The Rogg, your voice, your vote!</p>
             </div>
-        @endif
+        </div>
 
         <div class="row Nav-row">
             <div class="col-md-12">
