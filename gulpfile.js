@@ -5,6 +5,7 @@ elixir(function (mix) {
         .sass('app.scss', 'public/assets/css')
         .scripts([
             '../../../node_modules/angular/angular.js',
+            'mobile-navigation.js',
             'politician-list/app.module.js',
             'politician-list/services/politicianService.js',
             'politician-list/services/dataService.js',

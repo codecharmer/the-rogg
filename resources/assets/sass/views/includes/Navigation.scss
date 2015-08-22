@@ -10,6 +10,49 @@
   }
 }
 
+.Navigation--menuIcon {
+  text-decoration: none;
+  z-index: 9;
+}
+
+.fade {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+}
+
+.Navigation--mobile {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+  text-align: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: 1px solid #555555;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+      background: #3c3c3c;
+    }
+  }
+}
+
 .Navigation--tagLine {
   font-size: 30px;
   font-weight: 100;
