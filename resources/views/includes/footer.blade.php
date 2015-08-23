@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="/" title="Home"><img class="Footer--logo" src="/assets/images/logo-cropped.png"></a>
+                <a href="/" title="Home"><img class="Footer--logo" src="/assets/images/logo.png"></a>
 
                 <div class="Footer--copyright">&copy; 2015 The Rogg</div>
             </div>
