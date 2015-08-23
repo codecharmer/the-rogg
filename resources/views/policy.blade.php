@@ -5,8 +5,6 @@
 @endsection
 
 @section('content')
-    <h2>Policies</h2>
-
     <h3>Comment Rules</h3>
 
     <ul>

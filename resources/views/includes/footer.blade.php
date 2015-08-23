@@ -2,41 +2,24 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
+                <a href="/" title="Home"><img class="Footer--logo" src="/assets/images/logo-cropped.png"></a>
+
+                <div class="Footer--copyright">&copy; 2015 The Rogg</div>
+            </div>
+            <div class="col-md-3">
                 <h4 class="Footer-sectionHeader">About The Rogg</h4>
-                <a href="/mission" title="The Rogg's Mission">Mission</a>
+
+                <ul class="Footer--nav">
+                    <li><a href="/contact" title="Contact The Rogg">Contact</a></li>
+                    <li><a href="/mission" title="The Rogg's Mission">Mission</a></li>
+                </ul>
             </div>
             <div class="col-md-3">
-                <h4 class="Footer-sectionHeader">Resources</h4>
-                <a href="/contact" title="Contact The Rogg">Contact</a>
-            </div>
-            <div class="col-md-3">
-                <h4 class="Footer-sectionHeader">My Login</h4>
-                @if(Auth::guest())
-                    <form method="POST" action="/auth/login">
+                <h4 class="Footer-sectionHeader">Policy</h4>
 
-                        {!! csrf_field() !!}
-
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="password" name="password" value="{{ old('email') }}" placeholder="password" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>
-                                <input type="checkbox" name="remember"> Remember Me
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-block">Login</button>
-                    </form>
-                @endif
-
-                @if(Auth::check() || Auth::viaRemember())
-                    <a href="/auth/logout" title="Logout" class="btn btn-primary btn-block">Logout</a>
-                @endif
+                <ul class="Footer--nav">
+                    <li><a href="/policies" title="The Rogg's Policies">Policies and Terms of Use</a></li>
+                </ul>
             </div>
             <div class="col-md-3">
                 <h4 class="Footer-sectionHeader">Follow the Rogg</h4>

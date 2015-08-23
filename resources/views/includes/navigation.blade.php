@@ -15,6 +15,8 @@
                         Contact The Rogg
                     @elseif(Request::path() == 'mission')
                         The Rogg's Mission
+                    @elseif(Request::path() == 'policies')
+                        The Rogg's Policies and Terms
                     @endif
                 </h1>
             </div>
