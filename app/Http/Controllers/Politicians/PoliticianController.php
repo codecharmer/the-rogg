@@ -43,13 +43,12 @@ class PoliticianController extends Controller
             }
             else
             {
-                $count = 0;
                 $total = 0;
                 /** @var PoliticianReview $review */
                 foreach ($reviews as $review)
                     $total += $review->getAverageScore();
 
-                $rating = $total / $count;
+                $rating = $total / $reviews->count();
             }
 
             $model = new PoliticianListModel(
