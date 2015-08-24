@@ -21,7 +21,10 @@
         init();
 
         $scope.toggleAmendment = function (amendment, rating) {
-            $scope.amendments[amendment].rating = rating;
+            if ($scope.existingReview)
+                return null;
+
+            $scope.review.scores[amendment] = rating;
         };
 
         $scope.submit = function () {
@@ -31,6 +34,7 @@
                 ratings.push(amendment.rating);
             });
 
+            // TODO: Make model inside service.
             var model = {
                 userId: $scope.userId,
                 politicianId: $scope.politicianId,
@@ -44,6 +48,16 @@
         };
 
         function init() {
+            $scope.existingReview = false;
+            politicianRatingService.getReview($scope.userId, $scope.politicianId).then(function (result) {
+                $scope.review = result.data;
+
+                if ($scope.review.id)
+                    $scope.existingReview = true;
+            });
+
+            // TODO: Move this out of directive and into a service.
+            // TODO: Or at least clean it up.
             var descriptions = [
                 'Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.',
                 'A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed.',
@@ -57,18 +71,42 @@
                 'The powers not delegated to the United States by the Constitution, nor prohibited by it to the states, are reserved to the states respectively, or to the people.'
             ];
 
-            $scope.amendments = [
-                {name: '1st Amendment', description: descriptions[0], rating: 1},
-                {name: '2nd Amendment', description: descriptions[1], rating: 1},
-                {name: '3rd Amendment', description: descriptions[2], rating: 1},
-                {name: '4th Amendment', description: descriptions[3], rating: 1},
-                {name: '5th Amendment', description: descriptions[4], rating: 1},
-                {name: '6th Amendment', description: descriptions[5], rating: 1},
-                {name: '7th Amendment', description: descriptions[6], rating: 1},
-                {name: '8th Amendment', description: descriptions[7], rating: 1},
-                {name: '9th Amendment', description: descriptions[8], rating: 1},
-                {name: '10th Amendment', description: descriptions[9], rating: 1}
-            ];
+            $scope.amendments = {};
+
+            $scope.amendments['First'] = {name: '1st Amendment', description: descriptions[0]};
+            $scope.amendments['Second'] = {name: '2nd Amendment', description: descriptions[1]};
+            $scope.amendments['Third'] = {
+                name: '3rd Amendment',
+                description: descriptions[2]
+            };
+            $scope.amendments['Fourth'] = {
+                name: '4th Amendment',
+                description: descriptions[3]
+            };
+            $scope.amendments['Fifth'] = {
+                name: '5th Amendment',
+                description: descriptions[4]
+            };
+            $scope.amendments['Sixth'] = {
+                name: '6th Amendment',
+                description: descriptions[5]
+            };
+            $scope.amendments['Seventh'] = {
+                name: '7th Amendment',
+                description: descriptions[6]
+            };
+            $scope.amendments['Eighth'] = {
+                name: '8th Amendment',
+                description: descriptions[7]
+            };
+            $scope.amendments['Ninth'] = {
+                name: '9th Amendment',
+                description: descriptions[8]
+            };
+            $scope.amendments['Tenth'] = {
+                name: '10th Amendment',
+                description: descriptions[9]
+            };
         }
     }
 })(angular.module('PoliticianRating'));

@@ -7,6 +7,9 @@
 
     function service($http) {
         return {
+            getReview: function (userId, politicianId) {
+                return $http.get('/api/politicians/get-review', {params: {userId: userId, politicianId: politicianId}});
+            },
             reviewPolitician: function (model) {
                 return $http.post('/api/politicians/review-politician', {model: model});
             }

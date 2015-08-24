@@ -10,6 +10,7 @@ use TheRogg\Domain\PoliticianReview;
 use TheRogg\Domain\Politicians\Amendment;
 use TheRogg\Http\Controllers\Controller;
 use TheRogg\Http\Controllers\Politicians\Models\PoliticianListModel;
+use TheRogg\Http\Controllers\Politicians\Models\PoliticianReviewModel;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 use TheRogg\Repositories\Politicians\PoliticianReviewRepositoryInterface as ReviewRepo;
 use TheRogg\Repositories\Users\UserRepositoryInterface as UserRepo;
@@ -25,6 +26,21 @@ class PoliticianController extends Controller
         $this->politicianRepo = $politicianRepo;
         $this->reviewRepo     = $reviewRepo;
         $this->userRepo       = $userRepo;
+    }
+
+    public function getGetReview()
+    {
+        $userId       = Request::get('userId');
+        $politicianId = Request::get('politicianId');
+
+        $review = $this->reviewRepo->findByUserAndPolitician($userId, $politicianId);
+
+        if (empty($review))
+            $model = new PoliticianReviewModel('', [], '');
+        else
+            $model = new PoliticianReviewModel($review->getId(), $review->getScores(), $review->getComment());
+
+        return Response::json($model);
     }
 
     public function getGetList()

@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            @if((Auth::check() || Auth::viaRemember()) && !$politicianDetail->alreadyRated)
+            @if(Auth::check() || Auth::viaRemember())
                 <div class="PoliticianRating" ng-app="PoliticianRating">
                     <politician-rating-form user-id="'{{ Auth::user()->getId() }}'" politician-id="'{{ $politicianDetail->politician->id }}'"></politician-rating-form>
                 </div>

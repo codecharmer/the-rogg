@@ -34,6 +34,8 @@ class PoliticianReview extends Entity
         $this->attributes['politicianId'] = $politicianId;
     }
 
+    public function getScores() { return $this->attributes['scores']; }
+
     public function setScore($amendment, $score)
     {
         if (!Amendment::isValidValue($amendment))
