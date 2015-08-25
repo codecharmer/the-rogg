@@ -36,6 +36,10 @@
   background-color: $red;
   font-family: monospace;
   color: #ffffff;
+
+  &.form-control[disabled] {
+    background-color: $red;
+  }
 }
 
 .PoliticianRatingForm--button {

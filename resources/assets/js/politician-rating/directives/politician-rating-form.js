@@ -30,16 +30,16 @@
         $scope.submit = function () {
             var ratings = [];
 
-            $scope.amendments.forEach(function (amendment) {
+            angular.forEach($scope.amendments, (function (amendment) {
                 ratings.push(amendment.rating);
-            });
+            }));
 
             // TODO: Make model inside service.
             var model = {
                 userId: $scope.userId,
                 politicianId: $scope.politicianId,
-                comment: $scope.comment,
-                ratings: ratings
+                comment: $scope.review.comment,
+                ratings: $scope.review.scores
             };
 
             politicianRatingService.reviewPolitician(model).then(function () {
@@ -49,11 +49,31 @@
 
         function init() {
             $scope.existingReview = false;
+
             politicianRatingService.getReview($scope.userId, $scope.politicianId).then(function (result) {
                 $scope.review = result.data;
 
-                if ($scope.review.id)
+                if ($scope.review.id !== '') {
                     $scope.existingReview = true;
+                    if ($scope.review.comment === '')
+                        $scope.review.comment = 'No comment given.';
+
+                }
+                else {
+                    $scope.review.comment = '';
+                    $scope.review.scores = {
+                        'First': 1,
+                        'Second': 1,
+                        'Third': 1,
+                        'Fourth': 1,
+                        'Fifth': 1,
+                        'Sixth': 1,
+                        'Seventh': 1,
+                        'Eighth': 1,
+                        'Ninth': 1,
+                        'Tenth': 1
+                    };
+                }
             });
 
             // TODO: Move this out of directive and into a service.

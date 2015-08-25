@@ -2,6 +2,7 @@
 
 namespace TheRogg\Http\Controllers\Politicians;
 
+use Auth;
 use InvalidArgumentException;
 use Request;
 use Response;
@@ -99,16 +100,16 @@ class PoliticianController extends Controller
         if (empty($review))
         {
             $ratings = [
-                Amendment::First   => $model['ratings'][0],
-                Amendment::Second  => $model['ratings'][1],
-                Amendment::Third   => $model['ratings'][2],
-                Amendment::Fourth  => $model['ratings'][3],
-                Amendment::Fifth   => $model['ratings'][4],
-                Amendment::Sixth   => $model['ratings'][5],
-                Amendment::Seventh => $model['ratings'][6],
-                Amendment::Eighth  => $model['ratings'][7],
-                Amendment::Ninth   => $model['ratings'][8],
-                Amendment::Tenth   => $model['ratings'][9],
+                Amendment::First   => $model['ratings']['First'],
+                Amendment::Second  => $model['ratings']['Second'],
+                Amendment::Third   => $model['ratings']['Third'],
+                Amendment::Fourth  => $model['ratings']['Fourth'],
+                Amendment::Fifth   => $model['ratings']['Fifth'],
+                Amendment::Sixth   => $model['ratings']['Sixth'],
+                Amendment::Seventh => $model['ratings']['Seventh'],
+                Amendment::Eighth  => $model['ratings']['Eighth'],
+                Amendment::Ninth   => $model['ratings']['Ninth'],
+                Amendment::Tenth   => $model['ratings']['Tenth'],
             ];
 
             $this->reviewRepo->make($userId, $politicianId, $ratings, $model['comment']);
@@ -122,5 +123,8 @@ class PoliticianController extends Controller
 
         if (!$this->politicianRepo->isValidPolitician($politicianId))
             throw new InvalidArgumentException($politicianId . ' is not a valid politician.');
+
+        if (Auth::user()->getId() != $userId)
+            throw new InvalidArgumentException('Invalid user');
     }
 }
