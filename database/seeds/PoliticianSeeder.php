@@ -24,7 +24,7 @@ class PoliticianSeeder extends Seeder
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Hillary Clinton', State::NewYork, Office::Senate, Party::Democrat);
+        $politician = $this->politicianRepo->make('Hillary Clinton', State::NewYork, Office::Unelected, Party::Democrat);
         $politician->setBio("Hillary Clinton is a Democratic candidate for the office of President of the United States in 2016. Clinton's run was announced by campaign chairman John Podesta in an email to donors on April 12, 2015, and followed shortly by an official campaign video entitled \"Getting Started\".  Clinton served as thesecretary of state of the United States of America from January 21, 2009, to February 1, 2013, and as a senator fromNew York from 2001 to 2009. She lost the Democraticpresidential primary nomination to Barack Obamain 2008. Clinton also served as first lady during her husband, President Bill Clinton's, two terms. She is the first former first lady to serve both in the U.S. Senate and in a president's cabinet . When the U . S . was in its formative years, a secretary of state ascending to the presidency was commonplace, but the last secretary of state to be elected to the nation's highest office was James Buchanan in 1856. In recent candidate ankings, Crowdpac ranked Clinton as a 6.5L (L being liberal) on a scale ranging from 10L to 10C, making her the third most liberal Democratic presidential candidate.");
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
@@ -39,7 +39,7 @@ class PoliticianSeeder extends Seeder
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
 
-        $politician = $politician = $this->politicianRepo->make('Jim Webb', State::Virginia, Office::Senate, Party::Democrat);
+        $politician = $politician = $this->politicianRepo->make('Jim Webb', State::Virginia, Office::Unelected, Party::Democrat);
         $politician->setBio("Jim Webb is a Democratic candidate for the office of President of the United States in 2016. Webb was a U.S. senator from Virginia from January 3, 2007, to January 3, 2013. Webb served as the secretary of the Navy from 1987 to 1988 and in the United States Marines from 1968 to 1972. On July 2, 2015, Webb declared his candidacy for president in an email to supporters. He wrote, \"We need a President who understands leadership, who has a proven record of actual accomplishments, who can bring about bipartisan solutions, who can bring people from both sides to the table to get things done.\" In November 2014, Webb announced, \"I have decided to launch an Exploratory Committee to examine whether I should run for President in 2016. I made this decision after reflecting on numerous political commentaries and listening to many knowledgeable people. I look forward to listening and talking with more people in the coming months as I decide whether or not to run.\" Sixteen senators have been elected to the presidency, including President Barack Obama (D). In recent candidate rankings, Crowdpac ranked Webb as a 5.4L (L being liberal) on a scale ranging from 10L to 10C, making him the fifth most liberal Democratic presidential candidate.");
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
@@ -59,7 +59,7 @@ class PoliticianSeeder extends Seeder
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Chris Christie', State::NewJersey, Office::Unelected, Party::Republican);
+        $politician = $this->politicianRepo->make('Chris Christie', State::NewJersey, Office::Governor, Party::Republican);
         $politician->setBio("Chris Christie is a Republican candidate for the office of President of the United States in 2016. On June 30, 2015, Christie made his announcement at Livingston High School, which he graduated from in 1980. Christie is the current governor of New Jersey. He was first elected in 2009. Prior to his gubernatorial bid, Christie served as the U.S. attorney for New Jersey from 2002 to 2008. When asked on August 14, 2014, whether he would enter the presidential race in 2016, Christie stated, \"I'm thinking about it . It is an enormous decision to make not only for me, but my family . Probably by the end of this year or the beginning of next I’ll decide . \" In 2012, Christie made visits to key states, including Iowa,New Hampshire and South Carolina. He also appeared at a national fundraising event in New York City on September 23, 2013. There have been 17 presidents who previously served as governors. In recent candidate rankings, Crowdpac ranked Christie as a 3.4C (C being conservative) on a scale ranging from 10L to 10C, making him the third least conservative Republican presidential candidate. Christie received a grade of a \"C -/70\" from the Leadership Project for America PAC, a conservative political action committee.");
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
@@ -94,7 +94,7 @@ class PoliticianSeeder extends Seeder
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
 
-        $politician = $this->politicianRepo->make('George Pataki', State::NewHampshire, Office::Governor, Party::Republican);
+        $politician = $this->politicianRepo->make('George Pataki', State::NewYork, Office::Unelected, Party::Republican);
         $politician->setBio("George Pataki is a Republican candidate for the office of President of the United States in 2016. On May 28, 2015, Pataki announced his presidential bid via a video posted on his campaign website, before speaking to a crowd of supporters in New Hampshire. Pataki served as the governor of New York for three terms between 1995 and 2007. Pataki has since worked for the law firm, Chadbourne & Parke LLP, and founded a consulting firm with his former Chief of Staff John Cahill. Pataki made several trips to New Hampshire at the end of 2014, stating he was \"very seriously\" considering a run for president. In recent candidate rankings, Crowdpac ranked Pataki as a 1.1C (C being conservative) on a scale ranging from 10L to 10C, making him the second least conservative Republican presidential candidate. He received a grade of \"D -/61\" from the Leadership Project for America PAC, a conservative political action committee.");
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
@@ -104,7 +104,7 @@ class PoliticianSeeder extends Seeder
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Rick Perry', State::Texas, Office::Governor, Party::Republican);
+        $politician = $this->politicianRepo->make('Rick Perry', State::Texas, Office::Unelected, Party::Republican);
         $politician->setBio("Rick Perry is a Republican candidate for the office of President of the United States in 2016. Rick Perry served as the governor of Texas from December 2000 to January 2015. Perry also ran for the Republican nomination for president of the United States in the 2012 presidential election . Perry announced his candidacy on June 4, 2015, via a video posted to his campaign website . On September 11, 2014, Perry responded to a question about his candidacy in 2016, stating, \"I may not run in 2016, but I've spent the last 20 - plus months preparing . If I don't run, it won't be because I'm not prepared . \"  Prior to the 2016 election, there were 17 presidents who previously served as governors . In recent candidate rankings, Crowdpac ranked Perry as a 7.0C(C being conservative) on a scale ranging from 10L to 10C, making him the fifth most conservative Republican presidential candidate . Perry received a grade of a \"B / 84\" from the Leadership Project for America PAC, a conservative political action committee . ");
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
@@ -114,7 +114,7 @@ class PoliticianSeeder extends Seeder
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Rick Santorum', State::Pennsylvania, Office::Representatives, Party::Republican);
+        $politician = $this->politicianRepo->make('Rick Santorum', State::Pennsylvania, Office::Unelected, Party::Republican);
         $politician->setBio("Rick Santorum is a candidate for the office of President of the United States in 2016. On May 27, 2015, Santorum announced his presidential run in Butler, Pennsylvania . Santorum served as a U . S . senator from Pennsylvania from January 3, 1995, to January 3, 2007. He also served as a member of the United States House of Representatives from Pennsylvania's 18th Congressional District from January 3, 1991, to January 3, 1995.[3] He ran for the Republican presidential nomination in 2012, but he ended his campaign on April 10, 2012. During a December 2014 interview with The Washington Post, Santorum indicated that he would run in 2016. He said, \"America loves an underdog . We're definitely the underdog in this race . \" Sixteen senators have been elected to the presidency, including President Barack Obama. In recent candidate rankings, Crowdpac ranked Santorum as a 4.8C (C being conservative) on a scale ranging from 10L to 10C, making him the eleventh most conservative Republican presidential candidate. Santorum received a grade of a \"B -/81\" from the Leadership Project for America PAC, a conservative political action committee. ,'18th'");
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
@@ -139,7 +139,7 @@ class PoliticianSeeder extends Seeder
         $politician->setBio("Robert Aderholt, a Representative from Alabama; born in Haleyville, Winston County, Ala ., July 22, 1965; B . A ., Birmingham Southern College, Birmingham, Ala ., 1987; J . D ., Samford University, Birmingham, Ala ., 1990; lawyer, private practice; Haleyville, Ala ., municipal judge, 1992 - 1995; staff, Alabama Governor Fob James, 1995 - 1996; elected as a Republican to the One Hundred Fifth and to the nine succeeding Congresses(January 3, 1997 - present).");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Rick Allen', State::Tennessee, Office::Representatives, Party::Republican, '12st');
+        $politician = $this->politicianRepo->make('Rick Allen', State::Georgia, Office::Representatives, Party::Republican, '12st');
         $politician->setBio("Rick Allen, a Representative from Georgia; born in Augusta, Richmond County, Ga ., November 7, 1951; graduated from Evans High School, Evans, Ga ., 1969; B . S ., Auburn University, Auburn, Ala ., 1973; business owner; elected as a Republican to the One Hundred Fourteenth Congress(January 3, 2015 - present).");
         $politician->save();
 
@@ -177,27 +177,27 @@ class PoliticianSeeder extends Seeder
 
         /* House Democrat */
 
-        $politician = $this->politicianRepo->make('Alma Adams', State::Tennessee, Office::Representatives, Party::Democrat, '12th');
+        $politician = $this->politicianRepo->make('Alma Adams', State::NorthCarolina, Office::Representatives, Party::Democrat, '12th');
         $politician->setBio("ADAMS, Alma, a Representative from North Carolina; born in High Point, Guilford County, N . C ., May 27, 1946; graduated from West Side High School, Newark, N . J ., 1964; B . S ., North Carolina Agricultural and Technical State University, Greensboro, N . C ., 1968; M . S ., North Carolina Agricultural and Technical State University, Greensboro, N . C ., 1972; Ph . D ., Ohio State University, Columbus, Ohio, 1981; artist; faculty, Bennett College, Greensboro, N . C ., 1972 - 2012; member of the Greensboro, N . C ., school board, 1984 - 1986; member of the Greensboro, N . C ., city council, 1987 - 1994; member of the North Carolina state house of representatives, 1994 - 2014; elected simultaneously as a Democrat to the One Hundred Thirteenth and One Hundred Fourteenth Congresses, by special election, to fill the vacancy caused by the resignation of United States Representative Melvin L . Watt(November 4, 2014 - present). ");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Pete Aguilar', State::Tennessee, Office::Representatives, Party::Democrat, '31st');
+        $politician = $this->politicianRepo->make('Pete Aguilar', State::California, Office::Representatives, Party::Democrat, '31st');
         $politician->setBio("AGUILAR, Peter Rey, a Representative from California; born in Fontana, San Bernadino County, Calif ., June 19, 1979; B . S ., University of Redlands, Redlands, Calif ., 2001; business owner; interim director & deputy director, Inland Empire regional office of the Governor of California, 2001; member of the Redlands, Calif ., city council, 2006 - 2014; Mayor of Redlands, Calif ., 2010 - 2014; elected as a Democrat to the One Hundred Fourteenth Congress(January 3, 2015 - present). ");
         $politician->save();
 
-        $politician = $politician = $this->politicianRepo->make('Brad Ashford', State::Tennessee, Office::Representatives, Party::Democrat, '2nd');
+        $politician = $politician = $this->politicianRepo->make('Brad Ashford', State::Nebraska, Office::Representatives, Party::Democrat, '2nd');
         $politician->setBio("ASHFORD, John Bradley, a Representative from Nebraska; born in Omaha, Douglas County, Nebr ., November 10, 1949; graduated from Westside High School, Omaha, Nebr ., 1967; B . A ., Colgate University, Hamilton, N . Y ., 1971; J . D ., Creighton University, Omaha, Nebr ., 1974; staff, United States Senator Roman Hruska of Nebraska; lawyer, private practice; business executive; attorney, Federal Highway Administration, 1974 - 1975; hearing examiner, Nebr . department of education, 1983 - 1984; judge, Nebr . court of industrial relations, 1984 - 1986; member of the Nebraska state legislature, 1987 - 1994; chief executive officer, Omaha, Nebr ., housing authority, 1998 - 2003; member of the Nebraska state legislature, 2006 - 2014; elected as a Democrat to the One Hundred Fourteenth Congress(January 3, 2015) ");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Karen Bass', State::Tennessee, Office::Representatives, Party::Democrat, '37th');
+        $politician = $this->politicianRepo->make('Karen Bass', State::California, Office::Representatives, Party::Democrat, '37th');
         $politician->setBio("BASS, Karen, a Representative from California; born in Los Angeles, Los Angeles County, California, October 3, 1953; graduated from Hamilton High School, Los Angeles, Calif .; B . S ., California State University, Dominguez Hills, Calif ., 1990; P . A ., University of Southern California, Los Angeles, Calif .; physician's assistant; faculty, University of Southern California, Los Angeles, Calif .; member of the California state assembly, 2005 - 2010; speaker, California state assembly, 2008 - 2010; elected as a Democrat to the One Hundred Twelfth and to the two succeeding Congresses(January 3, 2011 - present). ");
         $politician->save();
 
-        $politician = $politician = $this->politicianRepo->make('Joyce Beatty', State::Tennessee, Office::Representatives, Party::Democrat, '3rd');
+        $politician = $politician = $this->politicianRepo->make('Joyce Beatty', State::Ohio, Office::Representatives, Party::Democrat, '3rd');
         $politician->setBio("BEATTY, Joyce, a Representative from Ohio; born in Dayton, Montgomery County, Ohio, March 12, 1950; graduated from Nettie Lee Roth High School, Dayton, Ohio; B . A ., Central State University, Wilberforce, Ohio, 1972; M . S ., Wright State University, Fairborn, Ohio, 1974; attended University of Cincinnati, Cincinnati, Ohio; Montgomery County, Ohio, executive director, human services; professor; businesswoman; member of the Ohio state house of representatives, 1999 - 2008; delegate to the Democratic National Convention, 1996, 2000, 2004, 2008, 2012; administrator, The Ohio State University, Columbus, Ohio, 2008 - 2012; elected as a Democrat to the One Hundred Thirteenth and to the succeeding Congress(January 3, 2013 - present). ");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Xavier Becerra', State::Tennessee, Office::Representatives, Party::Democrat, '34th');
+        $politician = $this->politicianRepo->make('Xavier Becerra', State::California, Office::Representatives, Party::Democrat, '34th');
         $politician->setBio("BECERRA, Xavier, a Representative from California; born in Sacramento, Sacramento County, Calif ., January 26, 1958; B . A ., Stanford University, Stanford, Calif ., 1980; J . D ., Stanford University, Stanford ., Calif ., 1984; lawyer, private practice; staff, California state senator Art Torres, 1986; deputy attorney general, Office of the Attorney General, State of California, 1987 - 1990; member of the California state assembly, 1990 - 1992; elected as a Democrat to the One Hundred Third and to the eleven succeeding Congresses(January 3, 1993 - present); chair, House Democratic Caucus(One Hundred Thirteenth and One Hundred Fourteenth Congresses).");
         $politician->save();
 
@@ -211,45 +211,45 @@ class PoliticianSeeder extends Seeder
         $politician->setBio("CORKER, Robert(Bob), a Senator from Tennessee; born in Orangeburg, S . C ., August 24, 1952; attended the public schools in Chattanooga, Tenn .; graduated with a bachelor of science degree in industrial management, University of Tennessee 1974; commercial real estate developer; construction company owner; unsuccessful candidate for the United States Senate 1994; commissioner, Tennessee Finance and Administration Department 1995 - 1996; mayor of Chattanooga 2001 - 2005; elected as a Republican to the United States Senate in 2006 for the term commencing January 3, 2007; reelected in 2012 for the term ending January 3, 2019; chair, Committee on Foreign Relations(One Hundred Fourteenth Congress).");
         $politician->save();
 
-        $politician = $politician = $this->politicianRepo->make('Kelly Ayotte', State::Tennessee, Office::Senate, Party::Republican);
+        $politician = $politician = $this->politicianRepo->make('Kelly Ayotte', State::NewHampshire, Office::Senate, Party::Republican);
         $politician->setBio("AYOTTE, Kelly, a Senator from New Hampshire; born in Nashua, N . H ., June 27, 1968; graduated Pennsylvania State University, B . A ., 1990; graduated Villanova University, J . D ., 1993; law clerk to New Hampshire Supreme Court Justice Sherman Horton; lawyer; prosecutor, New Hampshire attorney general's office 1998 - 2000; staff, New Hampshire attorney general 2000 - 2003; counsel to New Hampshire Governor Craig Benson 2003; deputy attorney general of New Hampshire 2003 - 2004; attorney general of New Hampshire 2004 - 2009; elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017.");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('John Barrasso', State::Tennessee, Office::Senate, Party::Republican);
+        $politician = $this->politicianRepo->make('John Barrasso', State::Wyoming, Office::Senate, Party::Republican);
         $politician->setBio("BARRASSO, John A ., a Senator from Wyoming; born on July 21, 1952, in Reading, Penn .; graduated Georgetown University, Washington, D . C ., B . S . 1974; graduated Georgetown University School of Medicine, M . D . 1978; residency at Yale Medical School, New Haven, Conn .; orthopedic surgeon, private practice; chief of staff of the Wyoming Medical Center, Casper, Wyo .; Wyoming State senate 2002 - 2007; appointed to the United States Senate on June 22, 2007, to fill the vacancy caused by the death of Craig L . Thomas; took the oath of office on June 25, 2007; elected in 2008 in a special election for the term ending January 3, 2013; reelected in 2012 for the term ending January 3, 2019; vice - chair, Republican Conference(2010 - 2012); chair, Republican Policy Committee(2012 -); chair, Committee on Indian Affairs(One Hundred Fourteenth Congress).");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Roy Blunt', State::Tennessee, Office::Senate, Party::Republican);
+        $politician = $this->politicianRepo->make('Roy Blunt', State::Missouri, Office::Senate, Party::Republican);
         $politician->setBio("BLUNT, Roy, a Senator and a Representative from Missouri; born in Niangua, Webster County, Mo ., January 10, 1950; graduated Southwest Baptist University, Bolivar, Mo ., B . A ., 1970; graduated Missouri State University, Springfield, Mo ., M . A ., 1972; high school history teacher; clerk and chief election officer, Greene County, Mo . 1973 - 1984; Missouri state secretary of state 1984 - 1993; president, Southwest Baptist University, Bolivar, Mo . 1993 - 1996; elected as a Republican to the One Hundred Fifth and to the six succeeding Congresses(January 3, 1997 - January 3, 2011); majority whip(One Hundred Eighth through One Hundred Ninth Congresses); acting majority leader(One Hundred Ninth Congress, September 28, 2005 - February 2, 2006); minority whip(One Hundred Tenth Congress); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017; vice - chair, Republican Conference(2012 -); chair, Committee on Rules and Administration(One Hundred Fourteenth Congress).");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('John Boozman', State::Tennessee, Office::Senate, Party::Republican);
+        $politician = $this->politicianRepo->make('John Boozman', State::Arkansas, Office::Senate, Party::Republican);
         $politician->setBio("BOOZMAN, John, a Senator and a Representative from Arkansas; born in Shreveport, La ., December 10, 1950; graduated from Northside High School, Fort Smith, Ark .; attended the University of Arkansas, Fayetteville, Ark ., 1969 - 1972; graduated Southern College of Optometry, 1977; optometrist; business owner; rancher; member of the Rogers, Ark ., school board; elected as a Republican to the One Hundred Seventh Congress by special election to fill the vacancy caused by the resignation of United States Representative Asa Hutchinson; re - elected to the four succeeding Congresses(November 20, 2001 - January 3, 2011); was not a candidate for re - election to the House of Representatives but was elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017.");
         $politician->save();
 
         /* Senate Democrat */
 
-        $politician = $this->politicianRepo->make('Tammy Baldwin', State::Tennessee, Office::Senate, Party::Democrat);
+        $politician = $this->politicianRepo->make('Tammy Baldwin', State::Wisconsin, Office::Senate, Party::Democrat);
         $politician->setBio("BALDWIN, Tammy, a Senator and a Representative from Wisconsin; born in Madison, Dane County, Wis ., February 11, 1962; graduated from Madison West High School, Madison, Wis ., 1980; A . B ., Smith College, Northampton, Mass ., 1984; J . D ., University of Wisconsin Law School, Madison, Wis ., 1989; lawyer, private practice; Dane County, Wis ., board of supervisors, 1986 - 1994; member of the Wisconsin state assembly, 1993 - 1999; elected as a Democrat to the One Hundred Sixth and to the six succeeding Congresses(January 3, 1999 - January 3, 2013); was not a candidate for reelection to the House of Representatives but was elected as a Democrat to the United States Senate in 2012 for the term ending January 3, 2019.");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Michael Bennet', State::Tennessee, Office::Senate, Party::Democrat);
+        $politician = $this->politicianRepo->make('Michael Bennet', State::Colorado, Office::Senate, Party::Democrat);
         $politician->setBio("BENNET, Michael F ., a Senator from Colorado; born in New Delhi, India, November 28, 1964; B . A ., Wesleyan University, Middletown, Conn ., 1987; J . D ., Yale Law School, 1993, editor - in - chief of the Yale Law Journal; counsel to U . S . deputy attorney general 1995 - 1997; special assistant U . S . attorney, Conn ., 1997; managing director, Anschutz Investment Co . 1997 - 2003; chief of staff to mayor of Denver, Colo ., 2003 - 2005; superintendent, Denver Public Schools 2005 - 2009; appointed January 21, 2009, to the United States Senate for the term ending January 3, 2011, to fill the vacancy caused by the resignation of Kenneth L . Salazar; took the oath of office on January 22, 2009; elected to the U . S . Senate in 2010 for the term ending January 3, 2017; chair, Democratic Senatorial Campaign Committee(2013 - 2014) . ");
         $politician->save();
 
-        $politician = $politician = $this->politicianRepo->make('Richard Blumenthal', State::Tennessee, Office::Senate, Party::Democrat);
+        $politician = $politician = $this->politicianRepo->make('Richard Blumenthal', State::Connecticut, Office::Senate, Party::Democrat);
         $politician->setBio("BLUMENTHAL, Richard, a Senator from Connecticut; born in Brooklyn, N . Y ., February 13, 1946; graduated Harvard University, B . A ., 1967; attended Cambridge University, 1967 - 1968; graduated Yale University, J . D ., 1973; editor - in - chief of the Yale Law Journal; served in the United States Marine Corps Reserves 1970 - 1976; White House aide 1969 - 1970; law clerk to United States Supreme Court Justice Harry A . Blackmun 1974 - 1975; administrative assistant to Senator Abraham Ribicoff 1975 - 1976; United States Attorney for Connecticut 1977 - 1981; lawyer; member of the Connecticut state house of representatives 1984 - 1987; member of the Connecticut state senate 1987 - 1990; attorney general of Connecticut 1991 - 2010; elected as a Democrat to the United States Senate in 2010 for the term ending January 3, 2017.");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Cory Booker', State::Tennessee, Office::Senate, Party::Democrat);
+        $politician = $this->politicianRepo->make('Cory Booker', State::NewJersey, Office::Senate, Party::Democrat);
         $politician->setBio("BOOKER, Cory Anthony, a Senator from New Jersey; born on April 27, 1969, in Washington, D . C .; graduated Northern Valley Regional High School, Old Tappan, N . J ., 1987; B . A ., Stanford University, 1991; M . A ., Stanford University, 1992; attended The Queen's College, University of Oxford, Oxford, England, as a Rhodes Scholar and received a graduate degree in 1994; J . D ., Yale Law School, 1997; worked as an attorney in the non - profit sector; Newark City Council 1998 - 2002; Mayor of Newark, N . J . 2006 - 2013; elected as a Democrat to the United States Senate in a special election on October 16, 2013, to fill the vacancy caused by the death of Frank Lautenberg, a seat subsequently held by appointed senator Jeffrey Chiesa, and took the oath of office on October 31, 2013; reelected in 2014 for the term ending January 3, 2021.");
         $politician->save();
 
-        $politician = $politician = $this->politicianRepo->make('Barbara Boxer', State::Tennessee, Office::Senate, Party::Democrat);
+        $politician = $politician = $this->politicianRepo->make('Barbara Boxer', State::California, Office::Senate, Party::Democrat);
         $politician->setBio("BOXER, Barbara, a Senator and a Representative from California; born Barbara Levy in Brooklyn, Kings County, N . Y ., November 11, 1940; attended public schools in Brooklyn; graduated, Wingate High School 1958; B . A ., Brooklyn College 1962; stockbroker 1962 - 1965; newspaper editor 1972 - 1974; congressional aide 1974 - 1976; elected member, Board of Supervisors, Marin County, Calif . 1976 - 1982; delegate, California State Democratic convention 1983; elected as a Democrat to the Ninety - eighth and to the four succeeding Congresses(January 3, 1983 - January 3, 1993); was not a candidate for reelection to the House of Representatives in 1992; elected to the United States Senate in 1992; reelected in 1998, 2004, and again in 2010 for term ending January 3, 2017; chair, Committee on Environment and Public Works(One Hundred Tenth to One Hundred Thirteenth Congresses), Select Committee on Ethics(One Hundred Tenth to One Hundred Thirteenth Congresses).");
         $politician->save();
 
-        $politician = $this->politicianRepo->make('Sherrod Brown', State::Tennessee, Office::Senate, Party::Democrat);
+        $politician = $this->politicianRepo->make('Sherrod Brown', State::Ohio, Office::Senate, Party::Democrat);
         $politician->setBio("BROWN, Sherrod, a Senator and a Representative from Ohio; born in Mansfield, Richland County, Ohio, November 9, 1952; B . A ., Yale University, New Haven, Conn ., 1974; M . A ., Ohio State University, Ohio, 1981; member of the faculty, Ohio State University, Mansfield, Ohio, 1979 - 1981; member of the Ohio State house of representatives, 1975 - 1982; Ohio secretary of state, 1983 - 1991; elected as a Democrat to the One Hundred Third and to the six succeeding Congresses(January 3, 1993 - January 3, 2007); not a candidate for reelection to the House of Representatives but was elected as a Democrat to the United States Senate in 2006; reelected in 2012 for the term ending January 3, 2019.");
         $politician->save();
 
