@@ -32,6 +32,11 @@
                 <div class="PoliticianRating" ng-app="PoliticianRating">
                     <politician-rating-form user-id="'{{ Auth::user()->getId() }}'" politician-id="'{{ $politicianDetail->politician->id }}'"></politician-rating-form>
                 </div>
+            @else
+                <div class="PoliticianRating" ng-app="PoliticianRating">
+                    <politician-rating-form user-id="" politician-id=""></politician-rating-form>
+                    <p>You must be logged in to submit a review.</p>
+                </div>
             @endif
 
             <div class="PoliticianDetail--reviews">

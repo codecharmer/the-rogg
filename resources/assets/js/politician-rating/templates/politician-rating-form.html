@@ -8,7 +8,7 @@
 
 <p class="hidden-xs">Hover over the amendment name to get a description.</p>
 <p class="visible-xs">Touch the amendment name to get a description.</p>
-<p ng-show="existingReview">You have already reviewed this politician. Here is what you said.</p>
+<p ng-show="formDisabled">You have already reviewed this politician. Here is what you said.</p>
 
 <table class="PoliticianRatingForm--amendments" ng-init="isDisabled = existingReview">
     <tr ng-repeat="x in ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth']">
@@ -20,7 +20,7 @@
 </table>
 
 <div>
-    <textarea ng-disabled="existingReview" class="form-control PoliticianRatingForm--comment" rows="8" ng-model="review.comment" placeholder="Write your comments or review."></textarea>
+    <textarea ng-disabled="formDisabled" class="form-control PoliticianRatingForm--comment" rows="8" ng-model="review.comment" placeholder="Write your comments or review."></textarea>
 </div>
 
-<button ng-disabled="existingReview" class="btn PoliticianRatingForm--button" ng-click="submit()">Submit</button>
+<button ng-disabled="formDisabled" class="btn PoliticianRatingForm--button" ng-click="submit()">Submit</button>

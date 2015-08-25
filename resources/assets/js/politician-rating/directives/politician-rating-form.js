@@ -21,9 +21,6 @@
         init();
 
         $scope.toggleAmendment = function (amendment, rating) {
-            if ($scope.existingReview)
-                return null;
-
             $scope.review.scores[amendment] = rating;
         };
 
@@ -48,13 +45,13 @@
         };
 
         function init() {
-            $scope.existingReview = false;
+            $scope.formDisabled = typeof $scope.userId === 'undefined';
 
             politicianRatingService.getReview($scope.userId, $scope.politicianId).then(function (result) {
                 $scope.review = result.data;
 
                 if ($scope.review.id !== '') {
-                    $scope.existingReview = true;
+                    $scope.formDisabled = true;
                     if ($scope.review.comment === '')
                         $scope.review.comment = 'No comment given.';
 
