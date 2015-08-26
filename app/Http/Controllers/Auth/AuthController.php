@@ -3,8 +3,6 @@
 namespace TheRogg\Http\Controllers\Auth;
 
 use Auth;
-use Exception;
-use File;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Http\Request;
@@ -34,6 +32,22 @@ class AuthController extends Controller
         $this->request  = $request;
     }
 
+    public function postRegister(Request $request)
+    {
+        $validator = $this->validator($request->all());
+
+        if ($validator->fails())
+        {
+            $this->throwValidationException(
+                $request, $validator
+            );
+        }
+
+        $this->create($request->all());
+
+        return redirect($this->redirectPath());
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -56,37 +70,28 @@ class AuthController extends Controller
         $filename     = null;
         $userPhotoDir = public_path() . '/assets/images/user-photos';
 
-        try
+        $confirmationCode = str_random(30);
+        $user             = $this->userRepo->make($data['username'], $data['email'], $data['password'], $confirmationCode, $data['party']);
+
+        if (array_key_exists('photo', $data))
         {
-            if (array_key_exists('photo', $data))
+            /** @var UploadedFile $photo */
+            $photo = $data['photo'];
+
+            if ($photo->isValid())
             {
-                /** @var UploadedFile $photo */
-                $photo = $data['photo'];
-
-                if ($photo->isValid())
-                {
-                    $filename = $data['username'] . '.' . $photo->getClientOriginalExtension();
-
-                    $photo->move($userPhotoDir, $filename);
-                }
+                $filename = $data['username'] . '.' . $photo->getClientOriginalExtension();
+                $photo->move($userPhotoDir, $filename);
+                $user->setPhoto($filename);
+                $this->userRepo->save($user);
             }
-
-            $confirmationCode = str_random(30);
-            $user             = $this->userRepo->make($data['username'], $data['email'], $data['password'], $confirmationCode, $data['party'], $filename);
-
-            $this->sendValidation($confirmationCode, $data['email'], $data['username']);
-
-            Session::flash('message', 'Thanks for signing up! Please check your email for a verification link.');
-
-            return $user;
-        }
-        catch (Exception $e)
-        {
-            if (File::exists($userPhotoDir . '/' . $filename))
-                File::delete($userPhotoDir . '/' . $filename);
         }
 
-        return null;
+        $this->sendValidation($confirmationCode, $data['email'], $data['username']);
+
+        Session::flash('message', 'Thanks for signing up! Please check your email for a verification link.');
+
+        return $user;
     }
 
     private function sendValidation($confirmationCode, $email, $username)
