@@ -33,8 +33,8 @@
         </div>
         <div class="col-md-4 Sidebar">
             <h3>Advertise On The Rogg</h3>
-            <p>Contact "The Rogg" for more information on ads.</p>
-            <p>If you're pissed off about a comment, then don't contact us.</p>
+            <p>Contact "The Rogg" for more information on ads. Or, if you would like to write your own profile as an office holder or candidate.</p>
+            <p>If you're upset about a comment, then don't contact us.</p>
         </div>
     </div>
 @endsection
