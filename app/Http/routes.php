@@ -35,7 +35,7 @@ Route::group(['prefix' => 'password'], function ()
     Route::post('reset', 'Auth\PasswordController@postReset');
 });
 
-Route::get('mission', function () { return view('mission'); });
+Route::get('purpose', function () { return view('purpose'); });
 
 Route::get('policies', function () { return view('policy'); });
 

@@ -13,8 +13,8 @@
                         Rate and Comment on any Politician
                     @elseif(Request::path() == 'contact')
                         Contact The Rogg
-                    @elseif(Request::path() == 'mission')
-                        The Rogg's Mission
+                    @elseif(Request::path() == 'purpose')
+                        The Rogg's Purpose
                     @elseif(Request::path() == 'policies')
                         The Rogg's Policies and Terms
                     @endif
@@ -32,8 +32,8 @@
             <a class="{{ Request::path() == 'contact' ? 'active' : '' }}" href="/contact">
                 <div>Contact</div>
             </a>
-            <a class="{{ Request::path() == 'mission' ? 'active' : '' }}" href="/mission">
-                <div>Mission</div>
+            <a class="{{ Request::path() == 'purpose' ? 'active' : '' }}" href="/purpose">
+                <div>Purpose</div>
             </a>
         </div>
 
@@ -45,8 +45,8 @@
                         <a href="/politicians">Politicians</a></li>
                     <li class="Nav-item {{ Request::path() == 'contact' ? 'active' : '' }}">
                         <a href="/contact">Contact</a></li>
-                    <li class="Nav-item {{ Request::path() == 'mission' ? 'active' : '' }}">
-                        <a href="/mission">Mission</a></li>
+                    <li class="Nav-item {{ Request::path() == 'purpose' ? 'active' : '' }}">
+                        <a href="/purpose">Purpose</a></li>
                 </ul>
             </div>
         </div>
