@@ -32,15 +32,7 @@
                     ratings.push(amendment.rating);
             }));
 
-            // TODO: Make model inside service.
-            var model = {
-                userId: $scope.userId,
-                politicianId: $scope.politicianId,
-                comment: $scope.review.comment,
-                ratings: $scope.review.scores
-            };
-
-            politicianRatingService.reviewPolitician(model).then(function () {
+            politicianRatingService.reviewPolitician($scope.userId, $scope.politicianId, $scope.review.comment, $scope.review.scores).then(function () {
                 $window.location.reload();
             });
         };

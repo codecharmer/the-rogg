@@ -10,7 +10,14 @@
             getReview: function (userId, politicianId) {
                 return $http.get('/api/politicians/get-review', {params: {userId: userId, politicianId: politicianId}});
             },
-            reviewPolitician: function (model) {
+            reviewPolitician: function (userId, politicianId, comment, scores) {
+                var model = {
+                    userId: userId,
+                    politicianId: politicianId,
+                    comment: comment,
+                    ratings: scores
+                };
+
                 return $http.post('/api/politicians/review-politician', {model: model});
             },
             getAmendments: function () {
