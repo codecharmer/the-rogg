@@ -6,5 +6,7 @@ abstract class Party extends Enum
 {
     const Democrat    = 'Democrat';
     const Republican  = 'Republican';
-    const Independent = 'Independent';
+    const Independent = 'Libertarian';
+    const Green       = 'Green';
+    const Other       = 'Other';
 }
