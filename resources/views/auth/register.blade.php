@@ -13,7 +13,7 @@
                 </div>
             @endif
 
-            <form method="POST" action="/auth/register">
+            <form method="POST" action="/auth/register" enctype="multipart/form-data">
 
                 <div class="form-group">
                     <label for="username">Username</label>
@@ -42,6 +42,12 @@
                             <option value="{{ $party }}">{{ $party }}</option>
                         @endforeach
                     </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Upload your photo</label>
+                    <input type="file" id="photo" name="photo" class="form-control">
+                    <p>Photos must be a JPG, GIF, or PNG image. And under 100kb in size.</p>
                 </div>
 
                 <div class="form-group">
