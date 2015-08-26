@@ -9,4 +9,6 @@ _ide_helper.php
 
 public/assets/css
 public/assets/js
+public/assets/images/user-photos
+!public/assets/images/user-photos/.gitkeep
 build
