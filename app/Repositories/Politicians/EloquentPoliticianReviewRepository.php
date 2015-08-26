@@ -17,7 +17,7 @@ class EloquentPoliticianReviewRepository implements PoliticianReviewRepositoryIn
     public function get($count, $fields = [])
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $reviews = PoliticianReview::orderBy('updated_at')->project($fields)->take($count)->get();
+        $reviews = PoliticianReview::orderBy('updated_at', 'desc')->project($fields)->take($count)->get();
 
         return $reviews;
     }
@@ -60,7 +60,7 @@ class EloquentPoliticianReviewRepository implements PoliticianReviewRepositoryIn
     public function getByPoliticianId($politicianId)
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $reviews = PoliticianReview::where('politicianId', $politicianId)->orderBy('updated_at')->get();
+        $reviews = PoliticianReview::where('politicianId', $politicianId)->orderBy('updated_at', 'desc')->get();
 
         return $reviews;
     }
