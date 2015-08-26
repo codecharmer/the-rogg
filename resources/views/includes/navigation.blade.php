@@ -10,7 +10,7 @@
                     @if(Request::path() == '/')
                         The Rogg, your voice, your vote!
                     @elseif(Request::path() == 'politicians')
-                        Rate and Comment on any Politician
+                        Rate and Comment on any Congressman, Senator, or Presidential Candidate
                     @elseif(Request::path() == 'contact')
                         Contact The Rogg
                     @elseif(Request::path() == 'purpose')
