@@ -45,7 +45,7 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         $confirmationCode = str_random(30);
-        $user             = $this->userRepo->make($data['username'], $data['email'], $data['password'], $confirmationCode);
+        $user             = $this->userRepo->make($data['username'], $data['email'], $data['password'], $confirmationCode, $data['party']);
 
         $this->sendValidation($confirmationCode, $data['email'], $data['username']);
 

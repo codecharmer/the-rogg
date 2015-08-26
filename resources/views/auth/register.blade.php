@@ -36,6 +36,15 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="party">Choose your party affiliation:</label>
+                    <select id="party" name="party" class="form-control">
+                        @foreach($parties as $party)
+                            <option value="{{ $party }}">{{ $party }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="form-group">
                     <button type="submit" class="btn btn-primary">Register</button>
                 </div>
 

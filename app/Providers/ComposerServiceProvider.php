@@ -20,6 +20,10 @@ class ComposerServiceProvider extends ServiceProvider
         View::composer(
             'politician-detail', 'TheRogg\Http\ViewComposers\PoliticianDetail\PoliticianDetailComposer'
         );
+
+        View::composer(
+            'auth.register', 'TheRogg\Http\ViewComposers\Auth\RegisterComposer'
+        );
     }
 
     public function register()
