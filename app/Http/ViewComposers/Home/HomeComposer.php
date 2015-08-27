@@ -28,10 +28,10 @@ class HomeComposer
 
     public function compose(View $view)
     {
-        $reviews      = $this->reviewRepo->get(3);
-        $reviewModels = $this->getRecentReviews($reviews);
+        $recentReviews      = $this->reviewRepo->get(3);
+        $recentReviewModels = $this->getRecentReviews($recentReviews);
 
-        $view->with(['reviews' => $reviewModels]);
+        $view->with(['recentReviews' => $recentReviewModels]);
     }
 
     private function getRecentReviews($reviews)
