@@ -11,7 +11,7 @@
             @endif
 
             <ul class="ReviewList">
-                @foreach($topFirstReviews as $review)
+                @foreach($topReviews[0] as $review)
                     <li>
                         @include('components.reviewMain')
                     </li>

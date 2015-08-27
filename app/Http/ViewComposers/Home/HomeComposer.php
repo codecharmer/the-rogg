@@ -29,9 +29,20 @@ class HomeComposer
     public function compose(View $view)
     {
         $recentReviewModels = $this->getRecentReviews();
-        $topFirstReviews    = $this->getTopReviewsByAmendment('First');
+        $topReviews         = [
+            $this->getTopReviewsByAmendment('First'),
+            $this->getTopReviewsByAmendment('Second'),
+            $this->getTopReviewsByAmendment('Third'),
+            $this->getTopReviewsByAmendment('Fourth'),
+            $this->getTopReviewsByAmendment('Fifth'),
+            $this->getTopReviewsByAmendment('Sixth'),
+            $this->getTopReviewsByAmendment('Seventh'),
+            $this->getTopReviewsByAmendment('Eighth'),
+            $this->getTopReviewsByAmendment('Ninth'),
+            $this->getTopReviewsByAmendment('Tenth'),
+        ];
 
-        $view->with(['recentReviews' => $recentReviewModels, 'topFirstReviews' => $topFirstReviews]);
+        $view->with(['recentReviews' => $recentReviewModels, 'topReviews' => $topReviews]);
     }
 
     private function getRecentReviews()
@@ -54,7 +65,7 @@ class HomeComposer
 
         return $recentReviews;
     }
-    
+
     private function getTopReviewsByAmendment($amendment)
     {
         $reviewModels = [];
