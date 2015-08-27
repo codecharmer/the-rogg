@@ -14,9 +14,9 @@
     <div class="col-md-4 col-xs-4">
         <div class="form-group">
             <label for="Name">Name</label><br>
-            <select id="Name" class="form-control" ng-model="filterByName">
+            <select id="Name" class="form-control" ng-model="selectedPolitician" ng-change="showPolitician()">
                 <option value="" selected>All</option>
-                <option ng-repeat="politician in politicians" value="{{ politician.name }}">{{ politician.name }}
+                <option ng-repeat="politician in politicians" value="{{ politician }}">{{ politician.name }}
                 </option>
             </select>
         </div>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="PoliticianList--item clearfix" ng-class="politician.party"
-            ng-repeat="politician in filteredPoliticians = (politicians | filter: filterByName | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy)">
+            ng-repeat="politician in filteredPoliticians = (politicians | filter:{name:filterByName} | filter:{state:filterByState} | filter:{party:filterByParty} | filter:{office:filterByOffice} | filter:{isPresidentialCandidate:filterByCandidate} | orderBy: orderBy)">
 
         <div class="PoliticianList--photoContainer">
             <a href="politicians/{{ politician.slug }}">

@@ -32,6 +32,20 @@
             $scope.filterByCandidate = true;
         };
 
+        $scope.showPolitician = function () {
+            var selectedPolitician = JSON.parse($scope.selectedPolitician);
+            $scope.filterByName = selectedPolitician.name;
+
+            if (selectedPolitician.isPresidentialCandidate) {
+                $scope.filterByCandidate = true;
+                $scope.filterByOffice = '';
+            } else {
+                $scope.filterByCandidate = false;
+                $scope.filterByOffice = selectedPolitician.office;
+            }
+
+        };
+
         function init() {
             $scope.filterByOffice = 'House';
             $scope.filterByCandidate = false;
