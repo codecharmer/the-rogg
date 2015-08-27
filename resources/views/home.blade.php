@@ -19,7 +19,6 @@
             </ul>
 
             <h2>Recent Activity</h2>
-
             <ul class="ReviewList">
                 @foreach($recentReviews as $review)
                     <li>
@@ -27,9 +26,12 @@
                     </li>
                 @endforeach
             </ul>
+
         </div>
+
         <div class="col-md-4 Sidebar">
             @include('components.sidebar')
         </div>
+
     </div>
 @endsection
