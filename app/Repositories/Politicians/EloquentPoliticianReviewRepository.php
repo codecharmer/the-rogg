@@ -96,4 +96,12 @@ class EloquentPoliticianReviewRepository implements PoliticianReviewRepositoryIn
             throw $e;
         }
     }
+
+    public function getTopReviewsByAmendment($amendment)
+    {
+        /** @noinspection PhpUndefinedMethodInspection */
+        $reviews = PoliticianReview::where("scores.{$amendment}", 5)->orderBy('updated_at', 'desc')->take(3)->get();
+
+        return $reviews;
+    }
 }

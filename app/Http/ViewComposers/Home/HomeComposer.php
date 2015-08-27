@@ -29,8 +29,9 @@ class HomeComposer
     public function compose(View $view)
     {
         $recentReviewModels = $this->getRecentReviews();
+        $topFirstReviews    = $this->getTopReviewsByAmendment('First');
 
-        $view->with(['recentReviews' => $recentReviewModels]);
+        $view->with(['recentReviews' => $recentReviewModels, 'topFirstReviews' => $topFirstReviews]);
     }
 
     private function getRecentReviews()
@@ -52,5 +53,26 @@ class HomeComposer
         }
 
         return $recentReviews;
+    }
+    
+    private function getTopReviewsByAmendment($amendment)
+    {
+        $reviewModels = [];
+        $reviews      = $this->reviewRepo->getTopReviewsByAmendment($amendment);
+
+        /** @var PoliticianReview $review */
+        foreach ($reviews as $review)
+        {
+            /** @var User $user */
+            $user = $this->userRepo->find($review->getUserId(), ['_id', 'photo', 'username']);
+            /** @var Politician $politician */
+            $politician      = $this->politicianRepo->find($review->getPoliticianId(), ['_id', 'name', 'slug']);
+            $userModel       = new HomeUserModel($user->getId(), $user->getUsername(), $user->getPhoto());
+            $politicianModel = new HomePoliticianModel($politician->getId(), $politician->getName(), $politician->getSlug());
+            $model           = new HomePoliticianReviewModel($userModel, $politicianModel, $review->getAverageScore(), $review->getComment(), $review->getUpdatedAt());
+            $reviewModels[]  = $model;
+        }
+
+        return $reviewModels;
     }
 }

@@ -10,6 +10,14 @@
                 </div>
             @endif
 
+            <ul class="ReviewList">
+                @foreach($topFirstReviews as $review)
+                    <li>
+                        @include('components.reviewMain')
+                    </li>
+                @endforeach
+            </ul>
+
             <h2>Recent Activity</h2>
 
             <ul class="ReviewList">

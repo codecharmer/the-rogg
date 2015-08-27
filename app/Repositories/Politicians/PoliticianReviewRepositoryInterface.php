@@ -48,4 +48,11 @@ interface PoliticianReviewRepositoryInterface extends RepositoryInterface
      * @return PoliticianReview
      */
     public function getRandom($fields = []);
+
+    /**
+     * @param string $amendment
+     *
+     * @return Collection
+     */
+    public function getTopReviewsByAmendment($amendment);
 }
