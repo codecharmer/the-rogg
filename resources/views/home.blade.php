@@ -55,7 +55,7 @@
                         <div class="tab-pane" id="ninth">
                             Ninth
                         </div>
-                        <div class="tab-pane" id="Tenth">
+                        <div class="tab-pane" id="tenth">
                             Tenth
                         </div>
                     </div>
