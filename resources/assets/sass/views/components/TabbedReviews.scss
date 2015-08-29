@@ -23,11 +23,13 @@
     margin: 0;
     border: 0;
     border-radius: 0;
+    color: #ffffff;
   }
 
   .nav-tabs > li > a:hover {
     border: 0;
     background-color: #ffffff;
+    color: $blue;
   }
 
   .tab-pane {
@@ -40,7 +42,7 @@
 .TabbedReviews--linkContainer {
   border: 1px solid $grey;
   border-right: 0;
-  background: $grey;
+  background: $red;
 
   &.active {
     background-color: #ffffff;
