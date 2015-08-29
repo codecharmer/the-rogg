@@ -10,6 +10,8 @@
                 </div>
             @endif
 
+            <h2>Nonpartisan, Rate and Comment</h2>
+
             <div class="row TabbedReviews">
                 <div class="col-md-12">
                     <div class="tabbable">

@@ -11,6 +11,7 @@ set :pty, true
 set :gulp_flags, '--production'
 
 set :linked_files, %w{.env}
+set :linked_dirs, %w{public/assets/images/user-photos}
 
 namespace :deploy do
   task :restart do
