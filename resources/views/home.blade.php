@@ -11,7 +11,7 @@
             @endif
 
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="tabbable">
                         <ul class="nav nav-tabs nav-stacked col-md-3">
                             <li><a href="#first" data-toggle="tab">1st Amendment</a></li>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <h2>Recent Activity</h2>
                     <ul class="ReviewList">
                         @foreach($recentReviews as $review)
