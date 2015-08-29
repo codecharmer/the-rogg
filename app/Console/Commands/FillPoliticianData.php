@@ -47,6 +47,7 @@ class FillPoliticianData extends Command
      */
     public function handle()
     {
-        //
+        $this->info('');
+        $this->error('');
     }
 }
