@@ -22,6 +22,8 @@ class Politician extends Entity
     protected $isPresidentialCandidate;
     /** @var string */
     protected $district;
+    protected $bioGuideId;
+    protected $govTrackId;
 
     protected $attributes = [
         'photo'                   => null,
@@ -41,12 +43,6 @@ class Politician extends Entity
     public function getState() { return $this->attributes['state']; }
     public function setState($state)
     {
-        if ($this->stringIsNullOrEmpty($state))
-            throw new InvalidArgumentException('State cannot be empty.');
-
-        if (!State::isValidValue($state))
-            throw new InvalidArgumentException($state . ' is not a valid state.');
-
         $this->attributes['state'] = $state;
     }
 
@@ -111,5 +107,17 @@ class Politician extends Entity
         $slug = str_replace('.', '', $slug);
 
         $this->attributes['slug'] = $slug;
+    }
+
+    public function getBioGuideId() { return $this->attributes['bioGuideId']; }
+    public function setBioGuideId($bioGuideId)
+    {
+        $this->attributes['bioGuideId'] = $bioGuideId;
+    }
+
+    public function getGovTrackId() { return $this->attributes['govTrackId']; }
+    public function setGovTrackId($govTrackId)
+    {
+        $this->attributes['govTrackId'] = $govTrackId;
     }
 }

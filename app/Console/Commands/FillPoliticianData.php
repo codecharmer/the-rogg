@@ -2,6 +2,7 @@
 
 namespace TheRogg\Console\Commands;
 
+use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface;
 
@@ -40,13 +41,11 @@ class FillPoliticianData extends Command
         $this->politicianRepo = $politicianRepo;
     }
 
-    /**
-     * Execute the console command.
-     *
-     * @return mixed
-     */
     public function handle()
     {
-        $this->info('Butts');
+        $client = new Client();
+
+        $response = $client->get('https://www.govtrack.us/api/v2/role?current=true&limit=600');
+        $json = json_decode($response->getBody());
     }
 }

@@ -3,6 +3,7 @@
 namespace TheRogg\Http\Controllers\Politicians;
 
 use Auth;
+use GuzzleHttp\Client;
 use InvalidArgumentException;
 use Request;
 use Response;
@@ -126,5 +127,36 @@ class PoliticianController extends Controller
 
         if (Auth::user()->getId() != $userId)
             throw new InvalidArgumentException('Invalid user');
+    }
+
+    public function getTest()
+    {
+        $client = new Client();
+
+        $response = $client->get('https://www.govtrack.us/api/v2/role?current=true&limit=600');
+        $json     = json_decode($response->getBody())->objects;
+
+        foreach ($json as $politicianJson)
+        {
+            $firstName  = $politicianJson->person->firstname;
+            $middleName = $politicianJson->person->middlename;
+            $lastName   = $politicianJson->person->lastname;
+
+            if (empty($middleName))
+                $name = $firstName . ' ' . $lastName;
+            else
+                $name = $firstName . ' ' . $middleName . ' ' . $lastName;
+
+            $district      = $politicianJson->district;
+            $party         = $politicianJson->party;
+            $roleTypeLabel = $politicianJson->role_type_label;
+            $state         = $politicianJson->state;
+            $bioGuideId    = $politicianJson->person->bioguideid;
+            $govTrackId    = $politicianJson->person->id;
+
+            $this->politicianRepo->make($name, $state, $roleTypeLabel, $party, $district, $bioGuideId, $govTrackId);
+        }
+
+        return Response::json('Done');
     }
 }

@@ -12,13 +12,14 @@ interface PoliticianRepositoryInterface extends RepositoryInterface
      * @param string      $state
      * @param string      $office
      * @param string      $party
-     * @param string|null $photo
      * @param string|null $district
+     * @param string|null $bioGuideId
+     * @param string|null $govTrackId
      * @param string|null $id
      *
      * @return Politician
      */
-    public function make($name, $state, $office, $party, $photo = null, $district = null, $id = null);
+    public function make($name, $state, $office, $party, $district = null, $bioGuideId = null, $govTrackId = null, $id = null);
 
     /**
      * @param string $politicianId
