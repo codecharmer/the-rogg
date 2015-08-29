@@ -5,6 +5,7 @@ elixir(function (mix) {
         .sass('app.scss', 'public/assets/css')
         .scripts([
             '../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
+            '../../../node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
             '../../../node_modules/angular/angular.js',
             'mobile-navigation.js',
             'politician-list/app.module.js',
