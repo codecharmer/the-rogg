@@ -13,30 +13,30 @@
             <div class="row TabbedReviews">
                 <div class="col-md-12">
                     <div class="tabbable">
-                        <ul class="nav nav-tabs nav-stacked col-md-3">
+                        <ul class="nav nav-tabs nav-stacked col-md-3 col-xs-3">
                             <li class="TabbedReviews--linkContainer active">
-                                <a href="#first" data-toggle="tab">1st Amendment</a></li>
+                                <a href="#first" data-toggle="tab">1st <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#second" data-toggle="tab">2nd Amendment</a></li>
+                                <a href="#second" data-toggle="tab">2nd <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#third" data-toggle="tab">3rd Amendment</a></li>
+                                <a href="#third" data-toggle="tab">3rd <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#fourth" data-toggle="tab">4th Amendment</a></li>
+                                <a href="#fourth" data-toggle="tab">4th <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#fifth" data-toggle="tab">5th Amendment</a></li>
+                                <a href="#fifth" data-toggle="tab">5th <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#sixth" data-toggle="tab">6th Amendment</a></li>
+                                <a href="#sixth" data-toggle="tab">6th <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#seventh" data-toggle="tab">7th Amendment</a></li>
+                                <a href="#seventh" data-toggle="tab">7th <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#eighth" data-toggle="tab">8th Amendment</a></li>
+                                <a href="#eighth" data-toggle="tab">8th <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#ninth" data-toggle="tab">9th Amendment</a></li>
+                                <a href="#ninth" data-toggle="tab">9th <span class="hidden-xs">Amendment</span></a></li>
                             <li class="TabbedReviews--linkContainer">
-                                <a href="#tenth" data-toggle="tab">10th Amendment</a></li>
+                                <a href="#tenth" data-toggle="tab">10th <span class="hidden-xs">Amendment</span></a></li>
                         </ul>
 
-                        <div class="tab-content col-md-9">
+                        <div class="tab-content col-md-9 col-xs-9">
                             <div class="tab-pane active" id="first">
                                 <ul class="ReviewList">
                                     @foreach($topReviews[0] as $review)
