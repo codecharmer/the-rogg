@@ -1,0 +1,46 @@
+.TabbedReviews {
+  .col-md-3 {
+    padding-right: 0;
+  }
+
+  .col-md-9 {
+    padding-left: 0;
+  }
+
+  .nav-stacked > li + li {
+    margin: 0;
+  }
+
+  .nav-tabs > li.active > a {
+    border: 0;
+    background-color: inherit;
+    color: $blue;
+  }
+
+  .nav-tabs > li > a {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .nav-tabs > li > a:hover {
+    border: 0;
+    background-color: #ffffff;
+  }
+
+  .tab-pane {
+    min-height: 500px;
+    border: 1px solid $grey;
+    padding: 10px;
+  }
+}
+
+.TabbedReviews--linkContainer {
+  border: 1px solid $grey;
+  border-right: 0;
+  background: $grey;
+
+  &.active {
+    background-color: #ffffff;
+  }
+}
