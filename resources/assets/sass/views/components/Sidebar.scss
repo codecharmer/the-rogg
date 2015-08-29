@@ -1,0 +1,18 @@
+.Sidebar--logo {
+  width: 350px;
+  height: auto;
+
+  @media (max-width: $screen-xs-max) {
+    width: 280px;
+    height: auto;
+  }
+}
+
+.Sidebar--tagline {
+  font-weight: bold;
+  font-size: 33px;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 26px;
+  }
+}
