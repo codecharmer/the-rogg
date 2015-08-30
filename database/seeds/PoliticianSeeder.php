@@ -402,6 +402,14 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 400089,
             'bio'        => "CULBERSON, John, a Representative from Texas; born in Houston, Harris County, Tex., August 24, 1956; graduated from Lamar High School, Houston, Tex., 1975; B.A., Southern Methodist University, Dallas, Tex., 1981; J.D., South Texas College of Law, Houston, Tex.; member of the Texas state house of representatives, 1986-2001; elected as a Republican to the One Hundred Seventh and to the seven succeeding Congresses (January 3, 2001-present)."
         ],
+        [
+            'govTrackId' => 400108,
+            'bio'        => "DIAZ-BALART, Mario, (brother of Lincoln Diaz-Balart), a Representative from Florida; born in Fort Lauderdale, Broward County, Fla., September 25, 1961; attended the University of South Florida, Tampa, Fla.; marketing executive; member of the Florida state house of representatives, 1988-1992, 2000-2002; member of the Florida state senate, 1992-2000; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400116,
+            'bio'        => "DUNCAN, John J., Jr., (son of John James Duncan), a Representative from Tennessee; born in Lebanon, Wilson County, Tenn., July 21, 1947; graduated from Holston High School, Knoxville, Tenn.; B.S., University of Tennessee, Knoxville, Tenn., 1969; J.D., National Law Center, George Washington University, Washington, D.C., 1973; lawyer, private practice; Army National Guard, 1970-1987; United States Army Reserve, 1970-1987; state trial judge, Knox County, Tenn., 1981-1988; elected as a Republican to the One Hundredth Congress, by special election, to fill the vacancy caused by the death of his father, John J. Duncan, and simultaneously elected to the One Hundred First Congress; reelected to the One Hundred Second and to the twelve succeeding Congresses (November 8, 1988-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
