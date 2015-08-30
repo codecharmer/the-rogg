@@ -1174,6 +1174,66 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412581,
             'bio'        => "STEWART, Chris, a Representative from Utah; born in Logan, Cache County, Utah, July 15, 1960; graduated from Sky View High School, Smithfield, Utah, 1978; B.S., Utah State University, Logan, Utah, 1984; United States Air Force, 1984-1998; author; business executive; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
         ],
+        [
+            'govTrackId' => 412596,
+            'bio'        => "SMITH, Jason, a Representative from Missouri; born in St. Louis, Mo., on June 16, 1980; graduated from Salem High School, Salem, Mo., 1998; B.S., University of Missouri, Columbia, Mo., 2001; J.D., Oklahoma City University School of Law, Oklahoma City, Oklahoma, 2004; farmer; lawyer, private practice; member of the Missouri state house of representatives, 2005-2013; elected as a Republican to the One Hundred Thirteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Jo Ann Emerson, and reelected to the succeeding Congress (June 4, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412601,
+            'bio'        => "BYRNE, Bradley, a Representative from Alabama; born in Mobile, Mobile County, Ala., February 16, 1955; graduated from University Military School, Mobile, Ala., 1973; B.A., Duke University, Durham, N.C., 1977; J.D., University of Alabama School of Law, Tuscaloosa, Ala., 1980; lawyer, private practice; member of the Alabama state board of education, 1994-2002; member of the Alabama state senate, 2002-2007; chancellor of the Alabama department of postsecondary education, 2007-2009; unsuccessful candidate for nomination for governor of Alabama in 2010; elected as a Republican, by special election, to the One Hundred Thirteenth Congress to fill the vacancy caused by the resignation of United States Representative Josiah Robins (Jo) Bonner, Jr., and to the succeeding Congress (December 17, 2013-Present)."
+        ],
+        [
+            'govTrackId' => 412603,
+            'bio'        => "JOLLY, David W., elected as a Representative from Florida; born in Dunedin, Pinellas County, Florida, on October 31, 1972; graduated from Pasco High School, Dade City, Fla., 1990; B.A., Emory University, Atlanta, Ga., 1994; J.D., George Mason University School of Law, Arlington, Va., 2001; staff, Representative Charles William (Bill) Young of Florida, 1994-2006; lawyer, private practice; elected as a Republican to the One Hundred Thirteenth Congress, by special election, to fill a vacancy caused by the death of Representative Charles William (Bill) Young of Florida, and reelected to the succeeding Congress (March 11, 2014-present)."
+        ],
+        [
+            'govTrackId' => 412604,
+            'bio'        => "CLAWSON, Curt, a Representative from Florida; born on September 28, 1959; graduated from Batesville High School, Batesville, Ind., 1978; attended University of Utah, Salt Lake City, Utah, 1978-1979; B.A., Purdue University, West Lafayette, Ind., 1984; B.S., Krannert School of Management, Purdue University, West Lafayette, Ind., 1984; M.B.A., Harvard University, Cambridge, Mass., 1990; manufacturer, businessman; elected as a Republican to the One Hundred Thirteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Trey Radel, and reelected to the succeeding Congress (June 24, 2014-present)."
+        ],
+        [
+            'govTrackId' => 412605,
+            'bio'        => "BRAT, David A., a Representative from Virginia; born in Detroit, Wayne County, Mich., July 27, 1964; graduated from Park Center Senior High School, Brooklyn, Minn., 1982; B.A., Hope College, Holland, Mich., 1986; M.Div., Princeton Theological Seminary, Princeton, N.J., 1990; Ph.D., American University, Washington, D.C., 1995; accountant; professor, Randolph-Macon College, Ashland, Va., 1996-present; elected simultaneously as a Republican to the One Hundred Thirteenth and One Hundred Fourteenth Congresses, by special election, to fill the vacancy caused by the resignation of United States Representative Eric Cantor (November 4, 2014-present)."
+        ],
+        [
+            'govTrackId' => 412608,
+            'bio'        => "PALMER, Gary James, a Representative from Alabama; born in Haleyville, Winston County, Ala., May 14, 1954; graduated from Hackleburg High School, Hackleburg, Ala., 1972; attended Northwest Alabama Junior College, Phil Campbell, Ala., 1972-1974; B.S., University of Alabama, Tuscaloosa, Ala., 1977; engineer; professional advocate; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412609,
+            'bio'        => "HILL, French, a Representative from Arkansas; born in Little Rock, Pulaski County, Ark., December 5, 1956; graduated from Little Rock Catholic High School, Little Rock, Ark., 1975; B.S., Vanderbilt University, Nashville, Tenn., 1979; banker; businessman; staff, United States Senate Committee on Banking, Housing, and Urban Affairs, 1982-1984; deputy assistant, United States Treasury, 1989-1991; special assistant to the President and Executive Secretary of Economic Policy Council, 1991-1993; senior advisor, Governor Mike Huckabee of Arkansas, 2008; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412610,
+            'bio'        => "WESTERMAN, Bruce Eugene, a Representative from Arkansas; born in Hot Springs, Hot Springs County, Ark., November 18, 1967; graduated from Fountain Lake High School, Hot Springs, Ark., 1986; B.S., University of Arkansas, Fayetteville, Ark., 1990; M.F., Yale Forestry School, New Haven, Conn., 2001; engineer; member of the Fountain Lake, Ark., school board, 2006-2010; member of the Arkansas state house of representatives 2010-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412611,
+            'bio'        => "McSALLY, Martha, a Representative from Arizona; born in Warwick, Kent County, R.I., March 22, 1966; B.S., United States Air Force Academy, Colorado Springs, Colo., 1988; M.P.P., John F. Kennedy School of Government, Harvard University, Cambridge, Mass., 1990; United States Air Force, 1988-2010; fighter pilot; professor; unsuccessful candidate for nomination to the United States House of Representatives in 2012; unsuccessful candidate for election to the United States House of Representatives in 2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412614,
+            'bio'        => "KNIGHT, Steve, a Representative from California; born in Edwards Air Force Base, Edwards, Kern County, Calif., December 17, 1966; graduated from Palmdale High School; A.A., Antelope Valley College, Lancaster, Calif., 2006; United States Army; police officer; member of the Palmdale, Calif., city council, 2005-2008; member of the California state assembly, 2008-2012; assistant minority leader, California state assembly, 2010-2012; vice mayor of Palmdale, Calif.; member of the California state senate, 2012-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412618,
+            'bio'        => "WALTERS, Mimi, a Representative from California; born in Pasadena, Los Angeles County, Calif., May 14, 1962; B.A., University of California, Los Angeles, Calif., 1984; sales representative; business executive; member of the Laguna Niguel, Calif., city council, 1996-2004; Mayor of Laguna Niguel, Calif., 2000; member of the California state assembly, 2005-2008; member of the California state senate, 2008-2015; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412619,
+            'bio'        => "BUCK, Kenneth Robert, a Representative from Colorado; born in Ossining, Westchester County, N.Y., February 16, 1959; graduated from Ossining High School, Ossining, N.Y., 1977; A.B., Princeton University, Princeton, N.J., 1981; J.D., University of Wyoming, Laramie, Wyo., 1985; business executive; staff, United States House of Representatives Select Committee to Investigate Covert Arms Transactions with Iran, 1986-1987; attorney, United States Department of Justice, 1987-1990; attorney, Office of the United States Attorney, District of Colorado, 1990-2002; Weld County Colorado, district attorney, 2005-2014; unsuccessful candidate for election to the United States Senate in 2010; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412621,
+            'bio'        => "CURBELO, Carlos, a Representative from Florida; born in Miami, Miami-Dade County, Fla., March 1, 1980; graduated from Belen Jesuit Preparatory School, Miami, Fla., 1998; B.A., University of Miami, Coral Gables, Fla., 2002; M.A., University of Miami, Coral Gables, Fla., 2011; businessman; staff, United States Senator George LeMieux of Florida, 2009-2011; member of the Miami-Dade County school board, 2010; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412622,
+            'bio'        => "CARTER, Buddy, a Representative from Georgia; born in Port Wentworth, Chatham County, Ga., September 6, 1957; graduated from Robert W. Groves High School, Garden City, Ga., 1975; A.A., Young Harris College, Young Harris, Ga., 1977; B.S., University of Georgia, Athens, Ga., 1980; pharmacist; business owner; member of the Pooler, Ga., city council, 1994-1995; mayor of Pooler, Ga., 1996-2004; member of the Georgia state house of representatives, 2005-2009; member of the Georgia state senate, 2009-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412623,
+            'bio'        => "HICE, Jody Brownlow, a Representative from Georgia; born in Atlanta, Fulton County, Ga., April 22, 1960; graduated from Tucker High School, Tucker, Ga., 1978; B.A., Asbury College, Wilmore, Ky., 1982; M.Div., Southwestern Baptist Theological Seminary, Fort Worth, Tex., 1986; D.Min., Luther Rice University and Seminary, Lithonia, Ga., 1988; pastor; talk radio host; unsuccessful candidate for nomination to the United States House of Representatives in 2010; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
