@@ -1350,6 +1350,42 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412662,
             'bio'        => "MOONEY, Alex X., a Representative from West Virginia; born in Washington, D.C., June 5, 1971; graduated from Frederick High School, Frederick, Md.; A.B., Dartmouth College, Hanover, N.H., 1993; unsuccessful candidate for the New Hampshire state house of representatives, 1992; staff, United States Representative Roscoe Bartlett of Maryland, 1993-1995; member of the Maryland state house of delegates, 1999-2010; chairman, Maryland Republican Party, 2010-2013; member, Republican National Committee, 2011-2013; staff, House Republican Conference, 1995; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
         ],
+        [
+            'govTrackId' => 412663,
+            'bio'        => "JENKINS, Evan H., a Representative from West Virginia; born in Huntington, Cabell County, W.Va., September 12, 1960; B.S., University of Florida, Gainesville, Fla., 1983; J.D., Cumberland School of Law, Samford University, Birmingham, Ala., 1987; lawyer, private practice; businessman; instructor, Marshall University, Huntington, W.Va.; member of the West Virginia state house of delegates, 1994-1998; member of the West Virginia state senate, 2002-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412664,
+            'bio'        => "RADEWAGEN, Aumua Amata Coleman, a Delegate from American Samoa; born on December 29, 1947; attended Sacred Hearts Academy, Honolulu, Hawaii; B.S., University of Guam, 1975; attended George Mason University, Fairfax, Va.; attended Loyola Marymount University, Los Angeles, Calif.; journalist; staff, United States Representative Philip Crane of Illinois, 1997-1999; staff, United States Representative Julius Caesar (J.C.) Watts, Jr. of Oklahoma, 1999-2003; staff, House Republican Conference, 2003-2005; unsuccessful candidate for nomination to the United States House of Representatives in 1996 and 2000; unsuccessful candidate for election to the United States House of Representatives in 1994, 1998, 2002, 2004, 2006, 2008, 2010, 2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412665,
+            'bio'        => "SULLIVAN, Daniel Scott, a Senator from Alaska; born in Fairview Park, Cuyahoga County, Ohio, November 13, 1964; graduated Culver Military Academy, Culver, Ind., 1983; B.A., Harvard University, 1987; M.F.S. and J.D., Georgetown University, 1993; United States Marine Corps 1993-1997; United States Marine Corps Reserves 1997-present, attaining the rank of lieutenant colonel; lawyer; White House aide and director on the National Security Council staff during the George W. Bush administration; assistant U.S. secretary of state for economic, energy and business affairs 2006-2009; attorney general of Alaska 2009-2010; commissioner of Alaska Department of Natural Resources 2010-2013; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412666,
+            'bio'        => "PERDUE, David Alfred, Jr., a Senator from Georgia; born in Macon, Bibb County, Ga., December 10, 1949; B.S., Georgia Institute of Technology, 1972; M.S., Georgia Institute of Technology, 1976; management consultant; company executive; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412667,
+            'bio'        => "ERNST, Joni, a Senator from Iowa; born in Red Oak, Montgomery County, Iowa, July 1, 1970; B.A., Iowa State University, 1992; M.P.A., Columbus College (now Columbus State University), Columbus, Ga., 1995; United States Army Reserves, 1993-2001; Iowa Army National Guard, 2001-present, attaining the rank of lieutenant colonel; auditor of Montgomery County, Iowa, 2005-2011; member of the Iowa state senate 2011-2014; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412668,
+            'bio'        => "TILLIS, Thomas Roland (Thom), a Senator from North Carolina; born in Jacksonville, Duval County, Fla., August 30, 1960; B.A., University of Maryland University College, 1997; management consultant; member of the Cornelius (N.C.) board of commissioners 2003-2005; member of the North Carolina house of representatives 2007-2014, serving as speaker of the house 2011-2014; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412669,
+            'bio'        => "ROUNDS, Marion Michael (Mike), a Senator from South Dakota; born in Huron, Beadle County, S. Dak., October 24, 1954; B.S., South Dakota State University, 1977; insurance and real estate executive; member of the South Dakota state senate 1991-2000, serving as majority leader 1995-2000; governor of South Dakota 2003-2011; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412672,
+            'bio'        => "DONOVAN, Daniel M., Jr., a Representative from New York; born in Staten Island, Richmond County, N.Y., November 6, 1956; graduated from Monsignor Farrell High School, Staten Island, N.Y., 1974; B.A., St. John’s University, New York, N.Y., 1978; J.D., Fordham University, New York, N.Y., 1988; detective investigator; youth counselor; Manhattan, N.Y. assistant district attorney, 1989-1996; staff, Staten Island, N.Y. borough president Guy V. Molinari, 1996-2002; Staten Island, N.Y. deputy borough president, 2002-2003; Richmond County, N.Y. district attorney, 2003-2015; elected as a Republican to the One Hundred Fourteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Michael G. Grimm (May 5, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412673,
+            'bio'        => "KELLY, Trent, a Representative from Mississippi; born March 1, 1966; B.A., University of Mississippi, University, Miss.; J.D., University of Mississippi, Oxford, Miss.; M.A., United States Army War College, Carlisle, Penn.; United States Army National Guard; lawyer, private practice; prosecutor, Tupelo, Miss., 1999-2011; district attorney, 2012-2015; elected as a Republican to the One Hundred Fourteenth Congress, by special election, to fill the vacancy caused by the death of United States Representative Alan S. Nunnelee (June 2, 2015-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
