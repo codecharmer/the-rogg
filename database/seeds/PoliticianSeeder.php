@@ -1234,6 +1234,54 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412623,
             'bio'        => "HICE, Jody Brownlow, a Representative from Georgia; born in Atlanta, Fulton County, Ga., April 22, 1960; graduated from Tucker High School, Tucker, Ga., 1978; B.A., Asbury College, Wilmore, Ky., 1982; M.Div., Southwestern Baptist Theological Seminary, Fort Worth, Tex., 1986; D.Min., Luther Rice University and Seminary, Lithonia, Ga., 1988; pastor; talk radio host; unsuccessful candidate for nomination to the United States House of Representatives in 2010; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
         ],
+        [
+            'govTrackId' => 412624,
+            'bio'        => "LOUDERMILK, Barry D., a Representative from Georgia; born in Riverdale, Clayton County, Ga., December 22, 1963; A.A., U.S. Air Force Community College, 1987; B.S., Wayland Baptist University, Plainview, Tex., 1992; United States Air Force, 1984-1992; chairman, Bartow County, Ga., Republican party, 2001-2004; business owner; member of the Georgia state house of representatives, 2005-2010; member of the Georgia state senate, 2011-2013; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412625,
+            'bio'        => "ALLEN, Rick W., a Representative from Georgia; born in Augusta, Richmond County, Ga., November 7, 1951; graduated from Evans High School, Evans, Ga., 1969; B.S., Auburn University, Auburn, Ala., 1973; business owner; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412627,
+            'bio'        => "BLUM, Rod, a Representative from Iowa; born in Dubuque, Dubuque County, Iowa, April 26, 1955; graduated from Dubuque Senior High School, Dubuque, Iowa, 1973; B.A., Loras College, Dubuque, Iowa, 1977; M.B.A., University of Dubuque, Dubuque, Iowa, 1989; business executive; unsuccessful candidate for election to the United States House of Representatives in 2011; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412628,
+            'bio'        => "YOUNG, David, a Representative from Iowa; born in Van Meter, Dallas County, Iowa, May 11, 1968; graduated from Johnston High School, Johnston, Iowa, 1986; B.A., Drake University, Des Moines, Iowa, 1991; businessman; staff, United States Senator Hank Brown of Colorado, 1993-1996; staff, campaign manager, United States Senator James Bunning of Kentucky, 1998-2006; Chief of Staff, United States Senator Charles Grassley of Iowa, 2006-2013; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412629,
+            'bio'        => "BOST, Mike, a Representative from Illinois; born in Murphysboro, Jackson County, Ill., December 30, 1960; graduated from Murphysboro High School, Murphysboro, Ill., 1979; Certified Firefighter II Academy, University of Illinois, 1993; United Sates Marine Corps, 1979-1982; truck manager; firefighter; business owner; member of the Jackson County Board, Ill., 1984-1988; treasurer of the Murphysboro Township, Ill., 1989-1992; trustee of the Murphysboro Township, Ill., 1993-1995; elected to the Illinois state house of representatives, 1995-present; elected as a Republican to the One Hundred and Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412630,
+            'bio'        => "ABRAHAM, Ralph, a Representative from Louisiana; born in Alto, Richland Parish, La., September 16, 1954; graduated from Mangham High School, Mangham, La., 1972; B.A., Louisiana State University, Baton Rouge, La., 1980; D.V.M., Louisiana State University School of Veterinary Medicine, Baton Rouge, La., 1980; M.D., Louisiana State University School of Medicine, New Orleans, La., 1994; Mississippi National Guard Special Forces, 1986-1989; flight instructor; general family practitioner; aviation medical examiner; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412631,
+            'bio'        => "GRAVES, Garret, a Representative from Louisiana; born in Baton Rouge, East Baton Rouge Parish, Louisiana, on January 31, 1972; graduated from Catholic High School, Baton Rouge, La., 1990; attended the University of Alabama, Tuscaloosa, Ala., Louisiana Tech University, Ruston, La., and American University, Washington, D.C.; staff, United States Senator John Breaux of Louisiana; staff, United States Representative Billy Tauzin of Louisiana; staff, United States Senator David Vitter of Louisiana; staff, United States Senate Committee on Commerce; staff, United States Senate Committee on Science and Transportation; staff, United States House Committee on Energy and Commerce; appointed to National Resource Damage Assessment, Gulf Coast; chair, the Coastal Protection and Restoration Authority of Louisiana; vice chair of the Gulf Coast Ecosystem Restoration Task Force, U.S. Environmental Protection Agency; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412633,
+            'bio'        => "POLIQUIN, Bruce Lee, a Representative from Maine; born in Waterville, Kennebec County, Maine, November 1, 1953; graduated from Phillips Exeter Academy, Exeter, New Hampshire, 1972; A.B., Harvard University, Cambridge, Mass., 1976; businessman; unsuccessful candidate for Governor of Maine in 2010; state treasurer of Maine, 2010-2012; unsuccessful candidate for election to the United States Senate in 2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412634,
+            'bio'        => "MOOLENAAR, John, a Representative from Michigan; born in Midland, Midland County, Mich., May 8, 1961; graduated from Herbert Henry Dow High School, Midland, Mich.; B.S., Hope College, Holland, Mich., 1983; M.P.A., Harvard University, Cambridge, Mass., 1989; chemist; businessman; school administrator; member of the Midland, Mich., city council, 1997-2000; member of the Michigan state house of representatives, 2003-2008; member of the Michigan state senate, 2011-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412635,
+            'bio'        => "BISHOP, Michael Dean, a Representative from Michigan; born in Almont, Lapeer County, Mich., March 18, 1967; graduated from Rochester Adams High School, Rochester Hills, Mich.; A.B., University of Michigan, Ann Arbor, Mich., 1989; J.D., Detroit College of Law (now Michigan State College of Law), East Lansing, Mich., 1993; lawyer, private practice; realtor; business owner; member of the Michigan state house of representatives, 1999-2002; member of the Michigan state senate, 2003-2010; majority leader, Michigan state senate, 2007-2010; unsuccessful candidate for nomination for Michigan state attorney general, 2010; unsuccessful candidate for election as Oakland County, Mich., prosecutor, 2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412636,
+            'bio'        => "TROTT, David A., a Representative from Michigan; born in Birmingham, Oakland County, Mich., October 16, 1960; graduated from the Cranbrook Schools, Bloomfield Township, Mich.; A.B., University of Michigan, Ann Arbor, Mich., 1981; J.D., Duke University, Durham, N.C., 1985; lawyer, private practice; business owner; member of the Bingham Farms, Mich., village council, 1987-1988; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412639,
+            'bio'        => "EMMER, Thomas Earl II, a Representative from Minnesota; born in South Bend, St. Joseph County, Ind., March 3, 1961; graduated from St. Thomas Academy, Mendota Heights, Minn.; B.A., University of Alaska, Fairbanks, Alaska, 1984; J.D., Mitchell College of Law, St. Paul, Minn., 1988; radio host; lawyer, private practice; member of the Independence, Minn., city council, 1995-2002; member of the Delano, Minn., city council, 2003-2004; member of the Minnesota state house of representatives, 2004-2010; deputy minority leader, Minnesota state house of representatives, 2007-2008; unsuccessful candidate for Governor of Minnesota in 2004; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
