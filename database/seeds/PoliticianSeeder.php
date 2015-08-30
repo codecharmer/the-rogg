@@ -250,6 +250,74 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 402675,
             'bio'        => "COATS, Daniel Ray, a Senator and a Representative from Indiana; born in Jackson, Jackson County, Mich., May 16, 1943; attended the public schools; graduated Jackson High School, 1961; graduated Wheaton College, Wheaton, Ill., B.A., 1965; graduated Indiana University School of Law, Indianapolis, J.D., 1971; admitted to the Indiana bar in 1972 and commenced practice in Fort Wayne; served in the United States Army 1966-1968; district representative, United States Congressman J. Danforth Quayle 1976-1980; elected as a Republican to the Ninety-seventh and to the three succeeding Congresses (January 3, 1981-January 3, 1989); elected to the One Hundred First Congress but did not serve; appointed on December 12, 1988, to the United States Senate to fill the vacancy caused by the election of J. Danforth Quayle as Vice President, and took the oath of office on January 3, 1989; elected by special election in 1990 to the remainder of the term; reelected for a full term in 1992, and served from January 3, 1989, to January 3, 1999; was not a candidate for reelection in 1998; special counsel, law firm of Verner, Liipfert, Bernhard, MacPherson and Hand; U.S. Ambassador to the Federal Republic of Germany 2001-2005; again elected to the United States Senate in 2010 for the term ending January 3, 2017."
         ],
+        [
+            'govTrackId' => 412491,
+            'bio'        => "RUBIO, Marco, a Senator from Florida; born in Miami, Fla., May 28, 1971; graduated University of Florida, B.S., 1993; graduated University of Miami, J.D., 1996; lawyer; West Miami City Commission 1998-2000; member of the Florida house of representatives 2000-2008; majority leader 2003-2006; speaker 2006-2008; elected as a Republican to the United States Senate for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 412492,
+            'bio'        => "PAUL, Rand, (son of Ronald Ernest Paul), a Senator from Kentucky; born in Pittsburgh, Pa., January 7, 1963; attended Baylor University, 1981-1984; graduated Duke University, M.D., 1988; ophthalmologist; elected as a Republican to the United States Senate for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 412493,
+            'bio'        => "AYOTTE, Kelly, a Senator from New Hampshire; born in Nashua, N.H., June 27, 1968; graduated Pennsylvania State University, B.A., 1990; graduated Villanova University, J.D., 1993; law clerk to New Hampshire Supreme Court Justice Sherman Horton; lawyer; prosecutor, New Hampshire attorney general’s office 1998-2000; staff, New Hampshire attorney general 2000-2003; counsel to New Hampshire Governor Craig Benson 2003; deputy attorney general of New Hampshire 2003-2004; attorney general of New Hampshire 2004-2009; elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 412494,
+            'bio'        => "HOEVEN, John, a Senator from North Dakota; born in Bismarck, N.D., March 13, 1957; graduated Dartmouth College, B.A., 1979; graduated Northwestern University, M.B.A., 1981; bank president and CEO; governor of North Dakota 2000-2010; elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 412495,
+            'bio'        => "LEE, Mike, a Senator from Utah; born in Mesa, Ariz., June 4, 1971; graduated Brigham Young University, B.A., 1994; graduated Brigham Young University, J.D., 1997; law clerk to 3rd Circuit Court of Appeals Justice Samuel Alito 1998; lawyer; assistant U.S. attorney 2002-2005; counsel to Utah Governor John Huntsman 2005-2006; law clerk to United States Supreme Court Justice Samuel Alito 2006-2007; lawyer; elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 412496,
+            'bio'        => "JOHNSON, Ron, a Senator from Wisconsin; born on April 8, 1955, in Mankato, Minn.; graduated University of Minnestota, B.S., 1977; studied business administration, University of Minnesota, 1977-1979; plastics manufacturer; accountant; elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017; chair, Committee on Homeland Security and Governmental Affairs (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400432,
+            'bio'        => "WICKER, Roger F., a Senator and a Representative from Mississippi; born in Pontotoc, Pontotoc County, Miss., July 5, 1951; graduated Pontotoc High School, Pontotoc, Miss., 1969; B.A., University of Mississippi, University, Miss., 1973; J.D., University of Mississippi, University, Miss. 1975; Air Force Reserve Officer Training Corps; United States Air Force 1976-1980; United States Air Force Reserve 1980-2003; staff for United States Representative Trent Lott of Mississippi, House Committee on Rules 1980-1982; Tupelo, Miss., judge pro tem; Lee County, Miss., public defender 1984-1987; member of the Mississippi state senate 1988-1994; elected as a Republican to the One Hundred Fourth and to the six succeeding Congresses (January 3, 1995-December 31, 2007); resigned on December 31, 2007, to accept appointment to the Senate; appointed to the U.S. Senate on December 31, 2007, to fill the seat left vacant by the resignation of Chester Trent Lott; took oath of office on December 31, 2007; elected in 2008 in a special election for the term ending January 3, 2013; reelected in 2012 for the term ending January 3, 2019; chair, National Republican Senatorial Committee (2015-)."
+        ],
+        [
+            'govTrackId' => 412573,
+            'bio'        => "CRUZ, Rafael Edward (Ted), a Senator from Texas; born in Calgary, Alberta, Canada, December 22, 1970; graduated Princeton University, B.A., 1992; graduated Harvard University, J.D., 1995; law clerk to Chief Justice of the United States William Rehnquist; associate deputy attorney general, U.S. Department of Justice; director of the Office of Policy Planning, Federal Trade Commission; solicitor general of Texas 2003-2008; lawyer; elected as a Republican to the United States Senate in 2012 for the term ending January 3, 2019."
+        ],
+        [
+            'govTrackId' => 412556,
+            'bio'        => "FISCHER, Debra (Deb), a Senator from Nebraska; born in Lincoln, Neb., March 1, 1951; graduated University of Nebraska, B.S., 1988; rancher; Valentine Rural High School Board of Education 1990-2004; Nebraska Coordinating Commission for Postsecondary Education 2000-2004; Nebraska Unicameral Legislature 2005-2012; elected as a Republican to the United States Senate in 2012 for the term ending January 3, 2019."
+        ],
+        [
+            'govTrackId' => 412251,
+            'bio'        => "BARRASSO, John A., a Senator from Wyoming; born on July 21, 1952, in Reading, Penn.; graduated Georgetown University, Washington, D.C., B.S. 1974; graduated Georgetown University School of Medicine, M.D. 1978; residency at Yale Medical School, New Haven, Conn.; orthopedic surgeon, private practice; chief of staff of the Wyoming Medical Center, Casper, Wyo.; Wyoming State senate 2002-2007; appointed to the United States Senate on June 22, 2007, to fill the vacancy caused by the death of Craig L. Thomas; took the oath of office on June 25, 2007; elected in 2008 in a special election for the term ending January 3, 2013; reelected in 2012 for the term ending January 3, 2019; vice-chair, Republican Conference (2010-2012); chair, Republican Policy Committee (2012-); chair, Committee on Indian Affairs (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 412248,
+            'bio'        => "CORKER, Robert (Bob), a Senator from Tennessee; born in Orangeburg, S.C., August 24, 1952; attended the public schools in Chattanooga, Tenn.; graduated with a bachelor of science degree in industrial management, University of Tennessee 1974; commercial real estate developer; construction company owner; unsuccessful candidate for the United States Senate 1994; commissioner, Tennessee Finance and Administration Department 1995-1996; mayor of Chattanooga 2001-2005; elected as a Republican to the United States Senate in 2006 for the term commencing January 3, 2007; reelected in 2012 for the term ending January 3, 2019; chair, Committee on Foreign Relations (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 412218,
+            'bio'        => "HELLER, Dean, a Senator and a Representative from Nevada; born in Castro Valley, Alameda County, Calif., May 10, 1960; graduated from Carson High School, Carson City, Nev.; B.S., University of Southern California, Los Angeles, Calif., 1985; member of the Nevada state assembly 1990-1994; Nevada secretary of state 1995-2007; elected as a Republican to the One Hundred Tenth and to the two succeeding Congresses, and served from January 3, 2007, to May 9, 2011, when he resigned to become a U.S. senator; appointed May 3, 2011, to the United States Senate for the term ending January 3, 2013, to fill the vacancy caused by the resignation of John E. Ensign; took the oath of office on May 9, 2011; subsequently elected in 2012 for the term ending January 3, 2019."
+        ],
+        [
+            'govTrackId' => 300052,
+            'bio'        => "HATCH, Orrin Grant, a Senator from Utah; born in Homestead Park, Allegheny County, Pa., March 22, 1934; received early education in the public schools of Pittsburgh, Pa.; graduated, Brigham Young University 1959; graduated, University of Pittsburgh Law School 1962; admitted to the Pennsylvania bar in 1963 and commenced practice in Pittsburgh; moved to Utah in 1969 and continued practicing law; elected as a Republican to the United States Senate in 1976; reelected in 1982, 1988, 1994, 2000, 2006, and again in 2012 for the term ending January 3, 2019; president pro tempore (2015-); chairman, Committee on Labor and Human Resources (Ninety-seventh to Ninety-ninth Congresses), Committee on the Judiciary (One Hundred Fourth to One Hundred Sixth Congresses; One Hundred Seventh Congress [January 20, 2001-June 6, 2001], One Hundred Eighth Congress), Committee on Finance (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400134,
+            'bio'        => "FLAKE, Jeff, a Senator and a Representative from Arizona; born in Snowflake, Navajo County, Ariz., December 31, 1962; graduated from Brigham Young University, Provo, Utah, 1986; M.A. Brigham Young University, Provo, Utah, 1987; elected as a Republican to the One Hundred Seventh and to the five succeeding Congresses (January 3, 2001-January 3, 2013); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2012 for the term ending January 3, 2019."
+        ],
+        [
+            'govTrackId' => 300023,
+            'bio'        => "COCHRAN, William Thad, a Senator and a Representative from Mississippi; born in Pontotoc, Pontotoc County, Miss., December 7, 1937; educated in the public schools of Mississippi; graduated, University of Mississippi, Oxford 1959 and the University of Mississippi Law School 1965; studied international law and jurisprudence at Trinity College, University of Dublin, Ireland 1963-1964; served in the United States Navy 1959-1961; admitted to the Mississippi bar in 1965 and commenced practice in Jackson; elected as a Republican to the Ninety-third Congress in 1972; reelected to the Ninety-fourth and Ninety-fifth Congresses and served from January 3, 1973, until his resignation on December 26, 1978; was not a candidate for reelection to the House of Representatives, but was elected in 1978 to the United States Senate for the term commencing January 3, 1979; subsequently appointed by the Governor, December 27, 1978, to fill the vacancy caused by the resignation of James O. Eastland for the term ending January 3, 1979; reelected in 1984, 1990, 1996, 2002, 2008, and again in 2014 for the term ending January 3, 2021; chair, Senate Republican Conference (1991-1997), Committee on Agriculture, Nutrition, and Forestry (One Hundred Eighth Congress); Committee on Appropriations (One Hundred Ninth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 300025,
+            'bio'        => "COLLINS, Susan Margaret, a Senator from Maine; born in Caribou, Aroostook County, Maine, December 7, 1952; graduated from St. Lawrence University, Canton, NY 1975; worked for United States Senator William S. Cohen 1975-1987, serving as staff director of the Senate Governmental Affairs Subcommittee on the Oversight of Government Management 1981-1987; commissioner of the Maine Department of Professional and Financial Regulation 1987-1992; New England regional director, United States Small Business Administration 1992; served as deputy state treasurer of Massachusetts, 1993; won an eight-way Republican primary to become the first woman nominated for governor of Maine in 1994, but lost general election; elected as a Republican to the United States Senate in 1996; reelected in 2002, 2008, and again in 2014 for the term ending January 3, 2021; chair, Committee on Governmental Affairs (One Hundred Eighth Congress), Committee on Homeland Security and Governmental Affairs (One Hundred Ninth Congress); Special Committee on Aging (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 300027,
+            'bio'        => "CORNYN, John, a Senator from Texas; born in Houston, Texas, on February 2, 1952; B.A., Trinity University 1973; J.D., St. Mary’s School of Law 1977; LLM, University of Virginia 1995; attorney; Bexar County district court judge 1984-1990; Texas supreme court 1990-1997; Texas state attorney general 1999-2002; elected as a Republican to the U.S. Senate in 2002; subsequently appointed to the remainder of the term left vacant by the resignation of William Philip Gramm, and took the oath of office on December 2, 2002; reelected in 2008, and again in 2014 for the term ending January 3, 2021; Republican Conference vice-chair (2007-2009); chair, National Republican Senatorial Committee (2009-2012); Republican party whip (2013-)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
