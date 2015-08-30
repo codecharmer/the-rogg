@@ -1082,6 +1082,98 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412531,
             'bio'        => "COLLINS, Doug, a Representative from Georgia; born in Gainesville, Hall County, Ga., August 16, 1966; graduated from North Hall High School, Gainesville, Ga.; B.A., North Georgia College, Dahlonega, Ga., 1988; M.Div., New Orleans Theological Seminary, New Orleans, La., 1996; J.D., John Marshall Law School, Atlanta, Ga., 2008; United States Air Force Reserve, 2007-present; pastor; lawyer, private practice; businessman; member of the Georgia state house of representatives, 2007-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
         ],
+        [
+            'govTrackId' => 412536,
+            'bio'        => "DAVIS, Rodney, a Representative from Illinois; born in Des Moines, Polk County, Iowa, January 5, 1970; attended the public schools in Taylorville, Ill.; B.A., Millikin University, Decatur, Ill., 1992; staff, Illinois secretary of state, 1992-1996; unsuccessful candidate for the Illinois state house of representatives in 1996; staff, United States Representative John Shimkus of Illinois, 1997-2012; unsuccessful candidate for mayor of Taylorville, Ill., in 2001; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412538,
+            'bio'        => "WALORSKI, Jackie, a Representative from Indiana; born in South Bend, St. Joseph County, Ind., August 17, 1963; graduated from James Whitcomb Riley High School, South Bend, Ind., 1981; B.A., Taylor University, Upland, Ind., 1985; journalist; philanthropist; member of the Indiana state house of representatives, 2004-2010; unsuccessful candidate for election to the United States House of Representatives in 2010; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412539,
+            'bio'        => "BROOKS, Susan, a Representative from Indiana; born in Auburn, Dekalb County, Ind., August 25, 1960; B.A., Miami University, Oxford, Ohio, 1982; J.D., Indiana University, Indianapolis, Ind., 1985; lawyer, private practice; Indianapolis, Ind., deputy mayor, 1998-1999; U.S. attorney for the Southern District of Indiana, 2001-2007; administrator, Ivy Tech Community College, Indianapolis, Ind.; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412540,
+            'bio'        => "MESSER, Luke, a Representative from Indiana; born in Evansville, Vanderburgh County, Ind., February, 27, 1969; graduated from Greensburg Community High School, Greensburg, Ind., 1987; B.A., Wabash College, Crawfordsville, Ind., 1991; J.D., Vanderbilt University, Nashville, Tenn., 1994; lawyer, private practice; staff, United States Representative John J. Duncan, Jr., of Tennessee, 1997; staff, United States Representative Ed Bryant of Tennessee, 1998; staff, United States House of Representatives Committee on Government Reform, 1999; executive director, Indiana Republican Party, 2001-2005; member of the Indiana state house of representatives, 2003-2006; unsuccessful candidate for nomination to the United States House of Representatives in 2000; unsuccessful candidate for nomination to the United States House of Representatives in 2010; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412541,
+            'bio'        => "BARR, Garland H. (Andy) IV, a Representative from Kentucky; born in Lexington, Fayette County, Ky., July 24, 1973; graduated from Henry Clay High School, Lexington, Ky., 1992; B.A., University of Virginia, Charlottesville ,Va., 1996; J.D., University of Kentucky College of Law, Lexington, Ky., 2001; attorney, private practice; staff, United States Representative Jim Talent, 1996-1998; instructor, Morehead State University, Morehead, Ky.; unsuccessful candidate for election to the United States House of Representatives in 2010; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412548,
+            'bio'        => "WAGNER, Ann, a Representative from Missouri; born in St. Louis, Mo., September 13, 1962; B.S.B.A., University of Missouri, Columbia, Mo., 1984; businesswoman; chair, Missouri Republican Party, 1999-2005; co-chair, Republican National Committee, 2001-2005; United States Ambassador to Luxembourg, 2005-2009; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412549,
+            'bio'        => "DAINES, Steve, a Senator and a Representative from Montana; born in Van Nuys, Los Angeles County, Calif., August 20, 1962; graduated from Bozeman High School, Bozeman, Mont.; B.S., Montana State University, Bozeman, Mont., 1984; businessman; delegate, Republican National Convention, 1984; unsuccessful candidate for lieutenant governor of Montana in 2008; elected as a Republican to the One Hundred Thirteenth Congress (January 3, 2013-January 3, 2015); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412550,
+            'bio'        => "HUDSON, Richard, a Representative from North Carolina; born in Franklin, Va., November 4, 1971; graduated from Myers Park High School, Charlotte, N.C., 1990; B.A., University of North Carolina, Charlotte, 1996; communications director, North Carolina Republican party; business owner; staff, United States Representative Robert (Robin) Hayes of North Carolina, 2000-2005; staff, United States Representative Virginia Ann Foxx of North Carolina, 2005-2006; staff, United States Representative John R. Carter of Texas, 2006-2009; staff, United States Representative K. Michael Conaway of Texas, 2009-2011; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412551,
+            'bio'        => "PITTENGER, Robert, a Representative from North Carolina; born in Dallas, Dallas County, Tex., August 15, 1948; B.A., University of Texas, Austin, Tex., 1970; campus ministry organizer; business owner; member of the North Carolina state senate, 2003-2008; unsuccessful candidate for lieutenant governor of North Carolina in 2008; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412552,
+            'bio'        => "MEADOWS, Mark, a Representative from North Carolina; born in Verdun, France, July 28, 1959; attended, Florida State University, Tallahassee, Fla.; B.A., University of South Florida, Tampa, Fla.; public relations director; business owner; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412553,
+            'bio'        => "HOLDING, George E.B., a Representative from North Carolina; born in Raleigh, Wake County, N.C., April 17, 1968; B.A., Wake Forest University, Winston-Salem, N.C.; J.D., Wake Forest University, Winston-Salem, N.C., 1996; lawyer, private practice; staff, United States Senator Jesse Helms of North Carolina, 1998-2002; assistant United States attorney, Eastern District of North Carolina, 2002-2006; United States attorney, Eastern District of North Carolina, 2006-2011; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412555,
+            'bio'        => "CRAMER, Kevin, a Representative from North Dakota; born in Rolla, Rolette County, N.Dak., January 21, 1961; graduated from Kindred High School, Kindred, N.Dak., 1979; B.A., Concordia College, Moorhead, Minn., 1983; M.A., University of Mary, Bismarck, N.Dak., 2003; chairman, North Dakota Republican Party, 1991-1993; North Dakota state tourism director, 1993-1997; unsuccessful candidate for United States House of Representatives in 1996; North Dakota state economic development and finance director, 1997-2000; unsuccessful candidate for United States House of Representatives in 1998; North Dakota public service commissioner, 2003-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412563,
+            'bio'        => "COLLINS, Chris, a Representative from New York; born in Schenectady, Schenectady County, N.Y., May 20, 1950; B.S., North Carolina State University, Raleigh, N.C., 1972; M.B.A., University of Alabama, Birmingham, Ala., 1975; businessman; Erie County, N.Y. executive, 2007-2011; unsuccessful candidate for election to the United States House of Representatives in 1998; elected as a Republican to the One Hundred Thirteenth Congress and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412564,
+            'bio'        => "WENSTRUP, Brad, a Representative from Ohio; born in Cincinnati, Hamilton County, Ohio, June 17, 1958; graduated from St. Xavier High School, Finneytown, Ohio, 1976; B.A., University of Cincinnati, Cincinnati, Ohio, 1980; B.S. and D.P.M., William M. Scholl College of Podiatric Medicine, Chicago, Ill., 1985; United States Army Reserve, 1998-present; physician; unsuccessful candidate for mayor of Cincinnati, Ohio, in 2009; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412566,
+            'bio'        => "JOYCE, David, a Representative from Ohio; born in Cleveland, Cuyahoga County, Ohio, March 17, 1957; graduated from West Geauga High School, Chesterland, Ohio, 1976; B.S., University of Dayton, Dayton, Ohio, 1979; J.D., University of Dayton, Dayton, Ohio, 1982; Cuyahoga County, Ohio, public defender, 1983-1984; Geauga County, Ohio, public defender, 1985-1988; Geauga County, Ohio, prosecutor, 1988-2013; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412567,
+            'bio'        => "BRIDENSTINE, Jim, a Representative from Oklahoma; born in Ann Arbor, Washtenaw County, Mich., June 15, 1975; graduated from Jenks High School, Tulsa, Okla., 1993; B.A., Rice University, Houston, Texas, 1998; M.B.A., Cornell University, Ithaca, N.Y., 2009; United States Navy, 1998-2007; United States Navy Reserve, 2010-present; defense consultant; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412568,
+            'bio'        => "MULLIN, Markwayne, a Representative from Oklahoma; born in Tulsa, Tulsa County, Okla., July 26, 1977; graduated from Stillwell High School, Stillwell, Okla.; attended Missouri Valley College, Marshall, Mo., 1996; A.A.S., Oklahoma State University Institute of Technology, Okmulgee, Okla., 2010; business owner; plumber; rancher; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412569,
+            'bio'        => "PERRY, Scott, a Representative from Pennsylvania; born in San Diego, San Diego County, Calif., May 27, 1962; B.S., Pennsylvania State University, University Park, Pa., 1991; Pennsylvania Army National Guard, 1980-present; business owner; member of the Pennsylvania state house of representatives, 2007-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412570,
+            'bio'        => "ROTHFUS, Keith, a Representative from Pennsylvania; born in Endicott, Broome County, N.Y., April 25, 1962; graduated from West Seneca West Senior High School, West Seneca, N.Y., 1980; B.S., State University of New York-Buffalo State, 1984; J.D., University of Notre Dame, Notre Dame, Ind., 1990; lawyer, private practice; staff, United States Department of Homeland Security, 2006-2007; unsuccessful candidate for election to the United States House of Representatives in 2010; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412572,
+            'bio'        => "RICE, Tom, a Representative from South Carolina; born in Myrtle Beach, Horry County, S.C., August 4, 1957; B.S., University of South Carolina, Columbia, S.C., 1979; M.A., University of South Carolina, Columbia, S.C., 1982; J.D., University of South Carolina, Columbia, S.C., 1982; lawyer, private practice; accountant; chairman of the Horry County, S.C., council, 2010-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412574,
+            'bio'        => "WEBER, Randy, a Representative from Texas; born in Pearland, Brazoria County, Tex., July 2, 1953; attended Alvin Community College in Alvin, Tex., 1971-1974; B.S., University of Houston-Clear Lake, Houston, Tex., 1977; business owner; member of the Pearland, Tex., city council, 1990-1996; member of the Texas state house of representatives, 2008-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412578,
+            'bio'        => "WILLIAMS, Roger, a Representative from Texas; born in Evanston, Cook County, Ill., September 13, 1949; graduated from Arlington Heights High School, Fort Worth, Tex.; B.A., Texas Christian University, Fort Worth, Tex., 1972; athletic coach; business owner; Texas secretary of state, 2005-2007; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412581,
+            'bio'        => "STEWART, Chris, a Representative from Utah; born in Logan, Cache County, Utah, July 15, 1960; graduated from Sky View High School, Smithfield, Utah, 1978; B.S., Utah State University, Logan, Utah, 1984; United States Air Force, 1984-1998; author; business executive; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
