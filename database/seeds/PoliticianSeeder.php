@@ -490,12 +490,140 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 400285,
             'bio'        => "MURPHY, Timothy, a Representative from Pennsylvania; born in Cleveland, Cuyahoga County, Ohio, on September 11, 1952; graduated from Walsh Jesuit High School, Cuyahoga Falls, Ohio; B.S., Wheeling Jesuit University, Wheeling, W.Va., 1974; M.S., Cleveland State University, Cleveland, Ohio, 1976; Ph.D., University of Pittsburgh, Pittsburgh, Pa., 1979; assistant professor of pediatrics, University of Pittsburgh School of Medicine, Pittsburgh, Pa.; associate professor (adjuct), University of Pittsburgh School of Public Health, Pittsburgh, Pa.; psychologist; member of the Pennsylvania state senate, 1996-2002; United States Navy Reserve Medical Service Corps, 2009-present; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
         ],
+        [
+            'govTrackId' => 400297,
+            'bio'        => "NUNES, Devin, a Representative from California; born in Tulare County, Calif., October 1, 1973; A.A., College of the Sequoias, Visalia, Calif.; B.S., California Polytechnic, San Luis Obispo, Calif., 1995; M.S., California Polytechnic, San Luis Obispo, Calif., 1996; farmer; businessman; appointed director of the United States Department of Agriculture Rural Development, 2001; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present); chair, Permanent Select Committee on Intelligence (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400313,
+            'bio'        => "PEARCE, Stevan, a Representative from New Mexico; born in Lamesa, Dawson County, Tex., August 24, 1947; attended Hobbs High School, Hobbs, N.Mex.; B.A., New Mexico State University, Las Cruces, N.Mex., 1970; M.B.A., Eastern New Mexico University, Portales, N.Mex., 1991; United States Air Force, 1970-1976; businessman; member of the New Mexico state house of representatives, 1997-2000; elected as a Republican to the One Hundred Eighth and to the two succeeding Congresses (January 3, 2003-January 3, 2009); was not a candidate for reelection in 2008, but was an unsuccessful candidate for the United States Senate; elected as a Republican to the One Hundred Twelfth and to the succeeding two Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 400320,
+            'bio'        => "PITTS, Joseph R., a Representative from Pennsylvania; born in Lexington, Fayette County, Ky., October 10, 1939; B.A., Asbury College, Wilmore, Ky., 1961; M.Ed., West Chester University of Pennsylvania, West Chester, Pa., 1972; United States Air Force, 1963-1969; business owner; teacher; member of the Pennsylvania state house of representatives, 1973-1997; elected as a Republican to the One Hundred Fifth and to the nine succeeding Congresses (January 3, 1997-present)."
+        ],
+        [
+            'govTrackId' => 400340,
+            'bio'        => "ROGERS, Harold Dallas (Hal), a Representative from Kentucky; born in Barrier, Wayne County, Ky., December 31, 1937; graduated from Wayne County High School, Monticello, Ky., 1955; attended Western Kentucky University, Bowling Green, Ky., 1956-1957; A.B., University of Kentucky, Lexington, Ky., 1962; LL.B., University of Kentucky Law School, Lexington, Ky., 1964; staff sergeant, Kentucky and North Carolina Army National Guard, 1956-1963; lawyer, private practice; commonwealth attorney, Pulaski and Rockcastle Counties, Ky., 1969-1980; delegate, Republican National Conventions, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, and 2008; elected as a Republican to the Ninety-seventh and to the seventeen succeeding Congresses (January 3, 1981-present); chair, Committee on Appropriations (One Hundred Twelfth through One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400341,
+            'bio'        => "ROGERS, Mike Dennis, a Representative from Alabama; born in Hammond, Lake County, Ind., July 16, 1958; graduated from Saks High School, Anniston, Ala., 1976; B.A., Jacksonville State University, Jacksonville, Ala., 1981; M.P.A., Jacksonville State University, Jacksonville, Ala., 1984; J.D., Birmingham School of Law, Birmingham, Ala., 1991; member of the Calhoun County, Ala., commission, 1987-1990; member of the Alabama state house of representatives, 1994-2002; and minority leader, 1998-2000; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400343,
+            'bio'        => "ROHRABACHER, Dana, a Representative from California; born in Coronado, San Diego County, Calif., June 21, 1947; graduated from Palos Verdes High School, Palos Verdes Estates, Calif., 1965; attended Los Angeles Harbor College, Los Angeles, Calif., 1965-1967; B.A., California State University, Long Beach, Calif., 1969; M.A., University of Southern California, Los Angeles, Calif., 1971; journalist; assistant press secretary to the Ronald Reagan presidential campaigns of 1976 and 1980; speechwriter and special assistant to President Ronald Reagan, 1981-1988; elected as a Republican to the One Hundred First and to the thirteen succeeding Congresses (January 3, 1989-present)."
+        ],
+        [
+            'govTrackId' => 400344,
+            'bio'        => "ROS-LEHTINEN, Ileana, a Representative from Florida; born Ileana Ros in Havana, Cuba, July 15, 1952; A.A., Miami-Dade Community College, Miami, Fla., 1972; B.A., Florida International University, Miami, Fla., 1975; M.S., Florida International University, Miami, Fla., 1987; Ed.D., University of Miami, Coral Gables, Fla., 2004; founder, Eastern Academy; member of the Florida state house of representatives, 1982-1986; member of the Florida state senate, 1986-1989; elected as a Republican to the One Hundred First Congress, by special election, to fill the vacancy caused by the death of United States Representative Claude D. Pepper, and reelected to the thirteen succeeding Congresses (August 29, 1989-present); chair, Committee on Foreign Affairs (One Hundred Twelfth Congress)."
+        ],
+        [
+            'govTrackId' => 400348,
+            'bio'        => "ROYCE, Edward Randall, a Representative from California; born in Los Angeles, Los Angeles County, Calif., October 12, 1951; B.A., California State University, Fullerton, Calif., 1977; business owner; corporate tax manager; member of the California state senate, 1983-1993; elected as a Republican to the One Hundred Third and to the eleven succeeding Congresses (January 3, 1993-present); chair, Committee on Foreign Affairs (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400351,
+            'bio'        => "RYAN, Paul, a Representative from Wisconsin; born in Janesville, Rock County, Wis., January 29, 1970; graduated from Joseph A. Craig High School, Janesville, Wis., 1988; B.A., Miami University, Oxford, Ohio, 1992; construction business; staff, United States Senator Robert Kasten of Wisconsin, 1992; staff assistant, Empower America, 1993-1995; staff, United States Senator Sam Brownback of Kansas, 1995-1997; elected as a Republican to the One Hundred Sixth and to the eight succeeding Congresses (January 3, 1999-present); chair, Committee on the Budget (One Hundred Twelfth and One Hundred Thirteenth Congresses); chair, Committee on Ways and Means (One Hundred Fourteenth Congress); unsuccessful Republican candidate for Vice President of the United States in 2012."
+        ],
+        [
+            'govTrackId' => 400365,
+            'bio'        => "SENSENBRENNER, Frank James, Jr., a Representative from Wisconsin; born in Chicago, Cook County, Ill., June 14, 1943; graduated from Milwaukee Country Day School, 1961; A.B., Stanford University, Stanford, Calif., 1965; J.D., University of Wisconsin Law School, Madison, Wis., 1968; staff, United States Representative J. Arthur Younger of California, 1965; lawyer, private practice; member of the Wisconsin state assembly, 1969-1975; member of the Wisconsin state senate, 1975-1979, assistant minority leader, 1977-1979; delegate, Wisconsin state Republican conventions, 1965-2015; elected as a Republican to the Ninety-sixth and to the nineteen succeeding Congresses (January 3, 1979-present); one of the managers appointed by the House of Representatives in 1989 to conduct the impeachment proceedings against Walter L. Nixon, judge of the United States District Court for the District Court of Mississippi; one of the managers appointed by the House of Representatives in 1998 to conduct the impeachment proceedings of President William Jefferson Clinton; one of the managers appointed by the House of Representatives in 2009 to conduct the impeachment proceedings of Samuel B. Kent, judge of the United States District Court for the Southern District of Texas; one of the managers appointed by the House of Representatives in 2010 to conduct the impeachment proceedings of G. Thomas Porteous, Jr., judge of the United States District Court for the Eastern District of Louisiana; chair, Committee on Science (One Hundred Fifth and One Hundred Sixth Congresses); chair, Committee on the Judiciary (One Hundred Seventh through the One Hundred Ninth Congresses)."
+        ],
+        [
+            'govTrackId' => 400367,
+            'bio'        => "SESSIONS, Pete, a Representative from Texas; born in Waco, McLennan County, Tex., March 22, 1955; B.S., Southwestern University, Georgetown, Tex., 1978; business executive; professional advocate; elected as a Republican to the One Hundred Fifth and to the nine succeeding Congresses (January 3, 1997-present); chair, Committee on Rules (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400373,
+            'bio'        => "SHIMKUS, John M., a Representative from Illinois; born in Collinsville, Madison County, Ill., February 21, 1958; graduated from Collinsville High School, Collinsville, Ill.; B.S., West Point Military Academy, West Point, N.Y., 1980; teaching certificate, Christ College, Irvine, Calif., 1990; M.B.A., Southern Illinois University, Edwardsville, Ill., 1997; United States Army, 1980-1986; United States Army Reserve, 1986-2008; Collinsville Township, Ill., trustee, 1989-1993; Madison County, Ill., treasurer, 1990-1996; elected as a Republican to the One Hundred Fifth and to the nine succeeding Congresses (January 3, 1997-present)."
+        ],
+        [
+            'govTrackId' => 400376,
+            'bio'        => "SIMPSON, Michael K., a Representative from Idaho; born in Burley, Cassia County, Idaho, September 8, 1950; graduated from Blackfoot High School, Blackfoot, Idaho, 1968; graduated from Utah State University, Logan, Utah, 1972; D.M.D., Washington University School of Dental Medicine, St. Louis, Mo., 1978; dentist; member of the Idaho state house of representatives, 1984-1998, speaker, 1993-1998; elected as a Republican to the One Hundred Sixth and to the eight succeeding Congresses (January 3, 1999-present)."
+        ],
+        [
+            'govTrackId' => 400380,
+            'bio'        => "SMITH, Christopher Henry, a Representative from New Jersey; born in Rahway, Union County, N.J., March 4, 1953; graduated from St. Mary’s High School, Perth Amboy, N.J., 1971; B.S., Trenton State College, Ewing, N.J., 1975; attended Worcester College, Worcester, England, 1974; businessman, family sporting goods company; legislative agent for New Jersey state legislature, 1979; unsuccessful candidate for election to the Ninety-sixth Congress in 1978; elected as a Republican to the Ninety-seventh and to the seventeen succeeding Congresses (January 3, 1981-present); chair, Committee on Veterans Affairs (One Hundred Seventh through One Hundred Eighth Congresses)."
+        ],
+        [
+            'govTrackId' => 400381,
+            'bio'        => "SMITH, Lamar Seeligson, a Representative from Texas; born in San Antonio, Bexar County, Tex., November 19, 1947; graduated from Texas Military Institute, San Antonio, Tex., 1965; B.A., Yale University, New Haven, Conn., 1969; J.D., Southern Methodist University School of Law, Dallas, Tex., 1975; journalist; lawyer, private practice; member of the Texas state house of representatives, 1981-1982; Bexar County, Tex., commissioner, 1982-1985; elected as a Republican to the One Hundredth and to the fourteen succeeding Congresses (January 3, 1987-present); chair, Committee on Standards of Official Conduct (One Hundred Sixth Congress); chair, Committee on the Judiciary (One Hundred Twelfth Congress); chair, Committee on Science, Space, and Technology (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400404,
+            'bio'        => "THORNBERRY, William McClellan (Mac), a Representative from Texas; born in Clarendon, Donley County, Tex., July 15, 1958; graduated from Clarendon High School, Clarendon, Tex., 1976; B.A., Texas Tech University, Lubbock, Tex., 1980; J.D., University of Texas School of Law, Austin, Tex., 1983; staff, United States Representative Thomas G. Loeffler of Texas, 1983-1985; staff, United States Representative Larry Combest of Texas, 1985-1988; deputy assistant Secretary of State for Legislative Affairs, United States Department of State, 1988-1989; rancher; lawyer, private practice; elected as a Republican to the One Hundred Fourth and to the ten succeeding Congresses (January 3, 1995-present); chair, Committee on Armed Services (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400406,
+            'bio'        => "TIBERI, Patrick (Pat), a Representative from Ohio; born in Columbus, Franklin County, Ohio, October 21, 1962; graduated from Northland High School, Columbus, Ohio, 1981; B.A., Ohio State University, Columbus, Ohio, 1985; member of the Ohio state house of representatives, 1992-2001; elected as a Republican to the One Hundred Seventh and to the seven succeeding Congresses (January 3, 2001-present)."
+        ],
+        [
+            'govTrackId' => 400411,
+            'bio'        => "TURNER, Michael R., a Representative from Ohio; born in Dayton, Montgomery County, Ohio, January 11, 1960; graduated from Belmont High School, Dayton, Ohio, 1978; B.A., Ohio Northern University, Ada, Ohio, 1982; J.D., Case Western Reserve University, Cleveland, Ohio, 1985; M.B.A., University of Dayton, Dayton, Ohio, 1992; lawyer, private practice; mayor of Dayton, Ohio, 1994-2002; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400414,
+            'bio'        => "UPTON, Frederick Stephen, a Representative from Michigan; born in St. Joseph, Berrien County, Mich., April 23, 1953; graduated from Shattuck School, Fairbault, Minn.; A.B., University of Michigan, Ann Arbor, Mich., 1975; staff, United States Representative David Stockman of Michigan, 1976-1980; staff, United States Office of Management and Budget, 1981-1985; elected as a Republican to the One Hundredth and to the fourteen succeeding Congresses (January 3, 1987-present); chair, Committee on Energy and Commerce (One Hundred Twelfth through One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400419,
+            'bio'        => "WALDEN, Greg, a Representative from Oregon; born in The Dalles, Wasco County, Ore., January 10, 1957; B.S., University of Oregon, Eugene, Ore., 1981; member of the Oregon state house of representatives, 1989-1995; member of the Oregon state senate, 1995-1997; elected as a Republican to the One Hundred Sixth and to the eight succeeding Congresses (January 3, 1999-present)."
+        ],
+        [
+            'govTrackId' => 400431,
+            'bio'        => "WHITFIELD, Wayne Edward (Ed), a Representative from Kentucky; born in Hopkinsville, Christian County, Ky., May 25, 1943; graduated from Madisonville High School, Madisonville, Ky., 1961; B.S., University of Kentucky, Lexington, Ky., 1965; attended Wesley Theological Seminary and American University, Washington, D.C.; J.D., University of Kentucky School of Law, Lexington, Ky., 1969; United States Army Reserve, 1967-1973; lawyer, private practice; business executive; business owner; attorney adviser to Chairman Edward J. Philbin of the Interstate Commerce Commission, 1991-1993; member of the Kentucky state house of representatives, 1973-1975; elected as a Republican to the One Hundred Fourth and to the ten succeeding Congresses (January 3, 1995-present)."
+        ],
+        [
+            'govTrackId' => 400433,
+            'bio'        => "WILSON, Addison Graves (Joe), a Representative from South Carolina; born in Charleston, S.C., July 31, 1947; graduated from the High School of Charleston, Charleston, S.C.; B.A., Washington and Lee University, Lexington, Va., 1969; J.D., University of South Carolina, Columbia, S.C., 1972; United States Army Reserve, 1972-1975; South Carolina Army National Guard; lawyer, private practice; deputy general counsel, United States Department of Energy, 1981-1982; staff, United States Senator Strom Thurmond of South Carolina; staff, United States Representative Floyd Spence of South Carolina; member of the South Carolina state senate, 1984-2001; elected as a Republican to the One Hundred Seventh Congress, by special election, to fill the vacancy caused by the death of United States Representative Floyd Spence, and reelected to the seven succeeding Congresses (December 18, 2001-present)."
+        ],
+        [
+            'govTrackId' => 400440,
+            'bio'        => "YOUNG, Donald Edwin, a Representative from Alaska; born in Meridian, Sutter County, Calif., June 9, 1933; A.A., Yuba Junior College, Marysville, Calif., 1952; B.A., California State University, Chico, Calif., 1958; United States Army, 1955-1957; teacher; Mayor of Fort Yukon, Alaska, 1960-1968; riverboat captain, 1968-1972; member of the Fort Yukon, Alaska, city council, 1960-1968; member of the Alaska state house of representatives, 1966-1970; member of the Alaska state senate, 1970-1973; delegate, Alaska state Republican conventions, 1964, 1966, 1968, and 1972; elected as a Republican to the Ninety-third Congress, by special election, to fill the vacancy caused by the death of United States Representative Nick Begich, and reelected to the twenty-one succeeding Congresses (March 6, 1973-present); chair, Committee on Resources (One Hundred Fourth through One Hundred Sixth Congresses); chair, Committee on Transportation and Infrastructure (One Hundred Seventh through One Hundred Ninth Congresses)."
+        ],
+        [
+            'govTrackId' => 400441,
+            'bio'        => "NEUGEBAUER, Randy, a Representative from Texas; born in St. Louis, St. Louis County, Mo., December 24, 1949; graduated from Coronado High School, Lubbock, Tex., 1968; graduated from Texas Tech University, Lubbock, Tex., 1972; businessman; member of the Lubbock, Tex., city council, 1992-1998; mayor pro tempore, Lubbock, Tex., 1994-1996; elected as a Republican to the One Hundred Eighth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Larry Combest, and reelected to the six succeeding Congresses (June 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400606,
+            'bio'        => "SALMON, Matthew James, a Representative from Arizona; born in Salt Lake City, Davis County, Utah, January 21, 1958; graduated Mesa High School, Mesa, Ariz., 1976; B.A., Arizona State University, Tempe, Ariz., 1981; M.P.A., Brigham Young University, Provo, Utah, 1986; telecommunications executive; community affairs manager; member of the Arizona state senate, 1991-1995; assistant majority leader, Arizona state senate, 1993-1995; elected as a Republican to the One Hundred Fourth and to the two succeeding Congresses (January 3, 1995-January 3, 2001); was not a candidate for reelection to the One Hundred Seventh Congress in 2000; unsuccessful candidate for Governor of Arizona in 2002; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 400607,
+            'bio'        => "SANFORD, Mark, a Representative from South Carolina; born in Fort Lauderdale, Broward County, Fla., May 28, 1960; attended high school in Beaufort, S.C.; B.A., Furman University, Greenville, S.C., 1983; M.B.A., University of Virginia, Charlottesville, Va., 1988; owner, real estate investment firm; farmer; elected as a Republican to the One Hundred Fourth and to the two succeeding Congresses (January 3, 1995-January 3, 2001); was not a candidate for reelection to the One Hundred Seventh Congress in 2000; Governor of South Carolina, 2003-2011; elected as a Republican to the One Hundred Thirteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Tim Scott, and reelected to the succeeding Congress (May 7, 2013-present)."
+        ],
+        [
+            'govTrackId' => 400626,
+            'bio'        => "PRICE, Tom, a Representative from Georgia; born in Lansing, Ingham County, Mich., October 8, 1954; graduated from Dearborn High School, Dearborn, Mich., 1972; A.B., University of Michigan, Ann Arbor, Mich., 1976; M.D., University of Michigan, Ann Arbor, Mich., 1979; physician; member of the Georgia state senate, 1997-2004; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present); chair, Committee on Budget (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400627,
+            'bio'        => "WESTMORELAND, Lynn A., a Representative from Georgia; born in Atlanta, Fulton County, Ga., April 2, 1950; graduated from Therrell High School, Atlanta, Ga., 1968; attended Georgia State University, Atlanta, Ga., 1969-1971; real estate developer; member of the Georgia state house of representatives, 1993-2004, and minority leader, 2000-2004; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
+        [
+            'govTrackId' => 400636,
+            'bio'        => "BOUSTANY, Charles W., a Representative from Louisiana; born in New Orleans, Orleans Parish, La., February 21, 1956; graduated Cathedral Carmel High School, Lafayette, La.; B.S., University of Southwestern Louisiana, Lafayette, La., 1978; M.D., Louisiana State University School of Medicine, New Orleans, La., 1982; surgeon; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
+        [
+            'govTrackId' => 400640,
+            'bio'        => "FORTENBERRY, Jeff, a Representative from Nebraska; born in Baton Rouge, East Baton Rouge Parish, La., December 27, 1960; B.A., Louisiana State University, Baton Rouge, La., 1982; M.P.P., Georgetown University, Washington, D.C., 1986; M.Th., Franciscan University, Steubenville, Ohio, 1996; member of the Lincoln, Nebr., city council, 1997-2001; publishing executive; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
+        [
+            'govTrackId' => 400643,
+            'bio'        => "FOXX, Virginia Ann, a Representative from North Carolina; born in New York, New York County, N.Y., June 29, 1943; graduated from Crossnore High School, Crossnore, N.C., 1961; A.B., University of North Carolina, Chapel Hill, N.C., 1968; M.A.C.T., University of North Carolina, Chapel Hill, N.C., 1972; Ed.D., University of North Carolina, Greensboro, N.C., 1985; instructor, Caldwell Community College, Hudson, N.C.; instructor, Appalachian State University, Boone, N.C.; assistant dean, Appalachian State University, Boone, N.C.; president, Mayland Community College, Spruce Pine, N.C., 1987-1994; landscape nursery owner; deputy secretary for management, North Carolina Department of Administration; member of the Watauga County, N.C., board of education, 1976-1988; member, North Carolina state senate, 1994-2004; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
+        [
+            'govTrackId' => 400644,
+            'bio'        => "McHENRY, Patrick T., a Representative from North Carolina; born in Charlotte, Mecklenburg County, N.C., October 22, 1975; graduated Ashbrook High School, Gastonia, N.C., 1994; attended North Carolina State University, Raleigh, N.C.; B.A., Belmont Abbey College, Belmont, N.C., 1999; realtor; appointed special assistant to the United States Secretary of Labor by President George W. Bush in 2001; member, North Carolina house of representatives, 2002- 2004; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
         $temp = [
         [
-            'govTrackId' => 400004,
+            'govTrackId' => 000,
             'bio'        => ""
         ],
     ];
