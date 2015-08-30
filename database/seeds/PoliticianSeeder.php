@@ -318,12 +318,96 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 300027,
             'bio'        => "CORNYN, John, a Senator from Texas; born in Houston, Texas, on February 2, 1952; B.A., Trinity University 1973; J.D., St. Mary’s School of Law 1977; LLM, University of Virginia 1995; attorney; Bexar County district court judge 1984-1990; Texas supreme court 1990-1997; Texas state attorney general 1999-2002; elected as a Republican to the U.S. Senate in 2002; subsequently appointed to the remainder of the term left vacant by the resignation of William Philip Gramm, and took the oath of office on December 2, 2002; reelected in 2008, and again in 2014 for the term ending January 3, 2021; Republican Conference vice-chair (2007-2009); chair, National Republican Senatorial Committee (2009-2012); Republican party whip (2013-)."
         ],
+        [
+            'govTrackId' => 300041,
+            'bio'        => "ENZI, Michael B., a Senator from Wyoming; born in Bremerton, Wash., February 1, 1944; attended public schools of Thermopolis and Sheridan, Wyo.; graduated, Sheridan High School 1962; received degree in accounting, George Washington University 1966; M.B.A. in retail marketing from Denver University 1968; served in Wyoming National Guard 1967-73; owned and operated family shoe stores in Gillette and Sheridan, Wyo., and Miles City, Mont.; accountant; Certified Professional in Human Resources, 1993-present; Mayor of Gillette 1975-1982; member, Wyoming house of representatives 1987-1991; member, Wyoming state senate 1991-1996; commissioner, Western Interstate Commission for Higher Education 1995-1996; elected as a Republican to the United States Senate in 1996; reelected in 2002, 2008, and again in 2014 for the term ending January 3, 2021; chair, Committee on Health, Education, Labor, and Pensions (One Hundred Ninth Congress), Committee on Budget (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 300047,
+            'bio'        => "GRAHAM, Lindsey O., a Senator and a Representative from South Carolina; born in Central, Pickens County, S.C., July 9, 1955; graduated from Daniel High School, Central, S.C. 1973; B.A., University of South Carolina, Columbia 1977; J.D., University of South Carolina School of Law 1981; United States Air Force 1982-1988; South Carolina Air National Guard 1989-1995; United States Air Force Reserves 1995-present; lawyer, private practice; assistant county attorney, Oconee County, S.C. 1988-1992; city attorney for Central, S.C. 1990-1994; member of the South Carolina state house of representatives 1992-1994; elected as a Republican to the House of Representatives for the One Hundred Fourth and to the three succeeding Congresses (January 3, 1995-January 3, 2003); one of the managers appointed by the House of Representatives in 1998 to conduct the impeachment proceedings against President William Clinton; was not a candidate for reelection in 2002, but was elected as a Republican to the U.S. Senate in 2002; reelected in 2008, and again in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 300055,
+            'bio'        => "INHOFE, James Mountain, a Senator and a Representative from Oklahoma; born in Des Moines, Iowa, November 17, 1934; attended public schools in Tulsa, Okla.; B.A., University of Tulsa 1973; served in the U.S. Army 1957-1958; president, Quaker Life Insurance Company; member, Oklahoma State house of representatives 1967-1969; State senate 1969-1977; unsuccessful candidate for Governor of Oklahoma 1974, and for the U. S. House of Representatives 1976; mayor of Tulsa 1978-1984; elected as a Republican to the One Hundredth and to the three succeeding Congresses and served from January 3, 1987, to November 15, 1994, when he resigned, having been elected to the United States Senate in the November 8, 1994, special election to the unexpired portion of the term ending January 3, 1997, left vacant by the resignation of David L. Boren; took the oath of office on November 17, 1994; elected for a full term in 1996; reelected in 2002, 2008, and again 2014 for the term ending January 3, 2021; chair, Committee on Environment and Public Works (One Hundred Eighth, One Hundred Ninth, and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 300072,
+            'bio'        => "McCONNELL, Addison Mitchell (Mitch), a Senator from Kentucky; born in Tuscumbia, Colbert County, Ala., February 20, 1942; attended Louisville, Ky. public schools; graduated, University of Louisville 1964; graduated, University of Kentucky Law School, Lexington 1967; admitted to the Kentucky bar in 1967; legislative assistant to Senator Marlow Cook 1968-1970; Deputy Assistant United States Attorney for Legislative Affairs 1974-1975; Acting Assistant Attorney General 1975; elected judge-executive of Jefferson County, Ky., 1978-1985; elected as a Republican to the United States Senate in 1984; reelected in 1990, 1996, 2002, 2008, and again in 2014 for the term ending January 3, 2021; Republican party whip (2003-2007); minority leader (2007-2015); majority leader (2015-); chair, Select Committee on Ethics (One Hundred Fourth Congress), National Republican Senatorial Campaign Committee (One Hundred Fifth through One Hundred Sixth Congresses), Committee on Rules and Administration (One Hundred Sixth Congress, One Hundred Seventh Congress [January 20, 2001-June 6, 2001])."
+        ],
+        [
+            'govTrackId' => 300083,
+            'bio'        => "ROBERTS, Charles Patrick (Pat), a Senator and a Representative from Kansas; born in Topeka, Kans., April 20, 1936; attended the public schools; graduated from Holton High School 1954; B.A., Kansas State University, Manhattan 1958; served in the U.S. Marine Corps as a captain 1958-1962; newspaper publisher, Litchfield Park, Ariz. 1962-1967; administrative assistant, United States Senator Frank Carlson 1967-1968; administrative assistant, United States Congressman Keith Sebelius 1968-1980; elected as a Republican to the Ninety-seventh and to the seven succeeding Congresses (January 3, 1981-January 2, 1997); chair, Committee on Agriculture (One Hundred Fourth Congress); not a candidate for reelection to the House of Representatives in 1996, but was elected as a Republican to the United States Senate in 1996; reelected in 2002, 2008, and again in 2014 for the term ending January 3, 2021; chair, Select Committee on Ethics (One Hundred Sixth and One Hundred Seventh Congresses [November 9, 1999-January 3, 2001; January 20, 2001-June 6, 2001]), Select Committee on Intelligence (One Hundred Eighth and One Hundred Ninth Congresses), Committee on Agriculture, Nutrition, and Forestry (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 300088,
+            'bio'        => "SESSIONS, Jefferson Beauregard III (Jeff), a Senator from Alabama; born in Hybart, Ala., December 24, 1946; attended the public schools; graduated from Huntingdon College, Montgomery 1969; graduated from University of Alabama School of Law, Tuscaloosa 1973; admitted to the Alabama bar in 1973, and engaged in the practice of law in Russellville 1973-1975; served in the U.S. Army reserves, attaining the rank of captain 1973-1977; practiced law in Mobile 1977-1981; United States Attorney for the Southern District of Alabama 1981-1993; Alabama Attorney General 1994-1996; elected as a Republican to the United States Senate in 1996; reelected in 2002, 2008, and again in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 400004,
+            'bio'        => "ADERHOLT, Robert, a Representative from Alabama; born in Haleyville, Winston County, Ala., July 22, 1965; B.A., Birmingham Southern College, Birmingham, Ala., 1987; J.D., Samford University, Birmingham, Ala., 1990; lawyer, private practice; Haleyville, Ala., municipal judge, 1992-1995; staff, Alabama Governor Fob James, 1995-1996; elected as a Republican to the One Hundred Fifth and to the nine succeeding Congresses (January 3, 1997-present)."
+        ],
+        [
+            'govTrackId' => 400018,
+            'bio'        => "BARTON, Joe Linus, a Representative from Texas; born in Waco, McLennan County, Tex., September 15, 1949; graduated from Waco High School, Waco, Tex., 1968; B.A., Texas A&M University, College Station, Tex., 1972; M.S., Purdue University, West Lafayette, Ind., 1973; business executive; White House Fellowship, served as aide to Secretary of Energy James B. Edwards, 1981-1982; elected as a Republican to the Ninety-ninth and to the fifteen succeeding Congresses (January 3, 1985-present); chair, Committee on Energy and Commerce (One Hundred Eighth and One Hundred Ninth Congresses)."
+        ],
+        [
+            'govTrackId' => 400029,
+            'bio'        => "BISHOP, Robert (Rob), a Representative from Utah; born in Kaysville, Utah, July 13, 1951; B.A., University of Utah, Salt Lake City, Utah, 1974; teacher; professional advocate; member of the Utah state house of representatives, 1979-1994, speaker, 1992-1994; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present); chair, Committee on Natural Resources (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400032,
+            'bio'        => "BLACKBURN, Marsha, a Representative from Tennessee; born in Laurel, Miss., June 6, 1952; graduated from Northeast Jones High School, Laurel, Miss.; B.S. Mississippi State University, Starkville, Miss., 1973; business owner; private advocate; unsuccessful candidate for election to the One Hundred Third Congress in 1992; member of the Tennessee state senate, 1998-2002; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400036,
+            'bio'        => "BOEHNER, John Andrew, a Representative from Ohio; born in Cincinnati, Hamilton County, Ohio, November 17, 1949; graduated from Moeller High School, Cincinnati, Ohio, 1968; B.S., Xavier University, Cincinnati, Ohio, 1977; United States Navy, 1968; businessman; business executive; member of the Union Township, Ohio, board of trustees, 1981, and president, 1984; member of the Ohio state house of representatives, 1985-1990; elected as a Republican to the One Hundred Second and to the twelve succeeding Congresses (January 3, 1991-present); House Republican Conference Chairman, 1995-1999; chair, Committee on Education and the Workforce (One Hundred Seventh through One Hundred Ninth Congresses); majority leader (One Hundred Ninth Congress); minority leader (One Hundred Tenth and One Hundred Eleventh Congress); Speaker of the House (One Hundred Twelfth through One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400046,
+            'bio'        => "BRADY, Kevin Patrick, a Representative from Texas; born in Vermillion, Clay County, S. Dak., April 11, 1955; graduated from Rapid City Central High School, Rapid City, S. Dak; B.A., University of South Dakota, Vermillion, S. Dak., 1990; member of the Texas state house of representatives, 1990-1996; elected as a Republican to the One Hundred Fifth and to the nine succeeding Congresses (January 3, 1997-present); chair, Joint Economic Committee (One Hundred Thirteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400052,
+            'bio'        => "BURGESS, Michael C., a Representative from Texas; born in Rochester, Olmsted County, Minn., December 23, 1950; graduated from Selwyn College Preparatory School, Denton, Tex., 1968; B.S., North Texas State University, Denton, Tex., 1972; M.S., North Texas State University, Denton, Tex., 1976; M.D., University of Texas Medical School, Houston, Tex., 1977; M.S., University of Texas, Dallas, Tex., 2000; physician; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400057,
+            'bio'        => "CALVERT, Ken, a Representative from California; born in Corona, Riverside County, Calif., June 8, 1953; graduated from Corona High School, Corona, Calif., 1971; A.A., Chaffey College, Rancho Cucamonga, Calif., 1973; B.A., San Diego State University, San Diego, Calif., 1975; restaurant manager; business owner; unsuccessful candidate for nomination to the Ninety-eighth Congress in 1982; chair, Riverside County, Calif., Republican Party, 1984-1988; elected as a Republican to the One Hundred Third and to the eleven succeeding Congresses (January 3, 1993-present)."
+        ],
+        [
+            'govTrackId' => 400061,
+            'bio'        => "CAPITO, Shelley Moore, (daughter of Arch Alfred Moore, Jr.), a Senator and a Representative from West Virginia; born in Glendale, Marshall County, W.Va., November 26, 1953; B.S., Duke University, Durham, N.C., 1975; M.Ed., University of Virginia, Charlottesville, Va., 1976; college counselor; member, West Virginia state house of representatives, 1997-2001; elected as a Republican to the One Hundred Seventh and to the six succeeding Congresses (January 3, 2001-January 3, 2015); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 400068,
+            'bio'        => "CARTER, John R., a Representative from Texas; born in Houston, Harris County, Tex., November 6, 1941; graduated from Bellaire High School, Houston, Tex., 1960; B.A., Texas Tech University, Lubbock, Tex., 1964; J.D., University of Texas Law School, Austin, Tex., 1969; lawyer, private practice; judge, District Court of Williamson County, Tex., 1981-2001; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400071,
+            'bio'        => "CHABOT, Steve, a Representative from Ohio; born in Cincinnati, Hamilton County, Ohio, January 22, 1953; graduated from LaSalle High School, Cincinnati, Ohio; B.A., College of William and Mary, Williamsburg, Va., 1975; J.D., Salmon P. Chase College of Law, Highland Heights, Ky., 1978; teacher, 1975-1976; member of the Cincinnati, Ohio, city council, 1985-1990; Hamilton County, Ohio, commissioner, 1990-1994; elected as a Republican to the One Hundred Fourth and to the six succeeding Congresses (January 3, 1995-January 3, 2009); one of the managers appointed by the House of Representatives in 1998 to conduct the impeachment proceedings of President William Jefferson Clinton; unsuccessful candidate for reelection to the One Hundred Eleventh Congress in 2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present); chair, Committee on Small Business (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 412670,
+            'bio'        => "WALKER, Bradley Mark, a Representative from North Carolina; born in Dothan, Houston County, Ala., May 20, 1969; attended Trinity Baptist College, Jacksonville, Fla., 1987-1988; B.A., Piedmont International University, Winston-Salem, N.C., 1999; businessman; minister; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 400077,
+            'bio'        => "COLE, Tom, a Representative from Oklahoma; born in Shreveport, Caddo Parish, La., on April 28, 1949; graduated from Moore High School, Moore, Okla., 1967; B.A., Grinnell College, Grinnell, Iowa, 1971; M.A., Yale University, New Haven, Conn., 1974; Ph.D., University of Oklahoma, Norman, Okla., 1984; consultant; faculty, University of Oklahoma, Norman, Okla.; faculty, Oklahoma Baptist University, Shawnee, Okla.; staff, United States Representative Marvin (Mickey) Edwards of Oklahoma, 1982-1984; chairman, Oklahoma Republican party, 1985-1989; private advocate; member of the Oklahoma state senate, 1988-1991; executive director, National Republican Congressional Committee, 1991-1993; Oklahoma secretary of state, 1995-1999; chief of staff, Republican National Committee, 1999-2001; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400086,
+            'bio'        => "CRENSHAW, Ander, a Representative from Florida; born in Jacksonville, Duval County, Fla., September 1, 1944; graduated from Robert E. Lee High School, Jacksonville, Fla., 1962; B.A., University of Georgia, Athens, Ga., 1966; J.D., University of Florida, Gainesville, Fla., 1969; member of the Florida state house of representatives, 1972-1978; member of the Florida state senate, 1986-1994; elected as a Republican to the One Hundred Seventh and to the seven succeeding Congresses (January 3, 2001-present)."
+        ],
+        [
+            'govTrackId' => 400089,
+            'bio'        => "CULBERSON, John, a Representative from Texas; born in Houston, Harris County, Tex., August 24, 1956; graduated from Lamar High School, Houston, Tex., 1975; B.A., Southern Methodist University, Dallas, Tex., 1981; J.D., South Texas College of Law, Houston, Tex.; member of the Texas state house of representatives, 1986-2001; elected as a Republican to the One Hundred Seventh and to the seven succeeding Congresses (January 3, 2001-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
         $temp = [
         [
-            'govTrackId' => 1,
+            'govTrackId' => 400004,
             'bio'        => ""
         ],
     ];
