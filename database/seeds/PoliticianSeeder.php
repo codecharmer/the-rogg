@@ -410,6 +410,86 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 400116,
             'bio'        => "DUNCAN, John J., Jr., (son of John James Duncan), a Representative from Tennessee; born in Lebanon, Wilson County, Tenn., July 21, 1947; graduated from Holston High School, Knoxville, Tenn.; B.S., University of Tennessee, Knoxville, Tenn., 1969; J.D., National Law Center, George Washington University, Washington, D.C., 1973; lawyer, private practice; Army National Guard, 1970-1987; United States Army Reserve, 1970-1987; state trial judge, Knox County, Tenn., 1981-1988; elected as a Republican to the One Hundredth Congress, by special election, to fill the vacancy caused by the death of his father, John J. Duncan, and simultaneously elected to the One Hundred First Congress; reelected to the One Hundred Second and to the twelve succeeding Congresses (November 8, 1988-present)."
         ],
+        [
+            'govTrackId' => 400137,
+            'bio'        => "FORBES, J. Randy, a Representative from Virginia; born in Chesapeake, Chesapeake County, Va., February 17, 1952; graduated from Great Bridge High School, Chesapeake, Va., 1970; B.A., Randolph-Macon College, Ashland, Va., 1974; J.D., University of Virginia, Charlottesville, Va., 1977; lawyer, private practice; chair, Republican Party of Virginia, 1996-2001; member of the Virginia state house of delegates, 1989-1997; member of the Virginia state senate, 1997-2001; elected as a Republican to the One Hundred Seventh Congress, by special election, to fill the vacancy caused by the death of United States Representative Norman Sisisky, and reelected to the seven succeeding Congresses (June 19, 2001-present)."
+        ],
+        [
+            'govTrackId' => 400141,
+            'bio'        => "FRANKS, Trent, a Representative from Arizona; born in Uravan, Montrose County, Colo., June 19, 1957; attended Ottawa University, Ottawa, Kans.; business owner; member of the Arizona state house of representatives, 1985-1987; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400142,
+            'bio'        => "FRELINGHUYSEN, Rodney P., (son of Peter Hood Ballantine Frelinghuysen, Jr., great-great grandson of Frederick Frelinghuysen, and great-great-great nephew of Theodore Frelinghuysen), a Representative from New Jersey; born in New York, N.Y., April 29, 1946; graduated from St. Albans School, Washington, D.C., 1964; B.A., Hobart College, Geneva, N.Y., 1969; graduate studies, Trinity College, Hartford, Conn.; United States Army, 1969-1971; state and federal aid coordinator and administrative assistant to board of chosen freeholders, Morris County, N.J., 1972; board of chosen freeholders, Morris County, N.J., 1974-1983, director, 1980; member, New Jersey commission on capital budgeting and planning; member of the New Jersey state general assembly, 1983-1994; member of the Morris County, N.J., Republican Committee; elected as a Republican to the One Hundred Fourth and to the ten succeeding Congresses (January 3, 1995-present)."
+        ],
+        [
+            'govTrackId' => 400145,
+            'bio'        => "GARRETT, Scott, a Representative from New Jersey; born in Englewood, Bergen County, N.J., July 9, 1959; graduated from High Point Regional High School, Sussex, N.J., 1977; B.A., Montclair State University, Montclair, N.J., 1981; J.D., Rutgers University Law School, Camden, N.J., 1984; lawyer, private practice; member of the New Jersey state general assembly, 1990-2002; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400154,
+            'bio'        => "GOODLATTE, Robert William, a Representative from Virginia; born in Holyoke, Hampden County, Mass., September 22, 1952; graduated from Classical High School, Springfield, Mass., 1970; B.A., Bates College, Lewiston, Maine, 1974; J.D., Washington and Lee University, Lexington, Va., 1977; lawyer, private practice; staff, United States Representative M. Caldwell Butler of Virginia, 1977-1979; elected as a Republican to the One Hundred Third and to the eleven succeeding Congresses (January 3, 1993-present); one of the managers appointed by the House of Representatives in 2009 to conduct the impeachment proceedings of Samuel B. Kent, judge of the United States District Court for the Southern District of Texas; chair, Committee on Agriculture (One Hundred Eighth and One Hundred Ninth Congresses); chair, Committee on the Judiciary (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400157,
+            'bio'        => "GRANGER, Kay, a Representative from Texas; born in Greenville, Hunt County, Tex., January 18, 1943; graduated from Eastern Hills High School, Fort Worth, Tex.; B.S. Texas Wesleyan University, Fort Worth, Tex., 1965; teacher; business owner; member of the Fort Worth, Tex., zoning commission, 1981-1989; member of the Fort Worth, Tex., city council, 1989-1991; mayor of Fort Worth, Tex., 1991-1995; elected as a Republican to the One Hundred Fifth and to the nine succeeding Congresses (January 3, 1997-present)."
+        ],
+        [
+            'govTrackId' => 400158,
+            'bio'        => "GRAVES, Samuel, a Representative from Missouri; born in Tarkio, Atchison County, Mo., November 7, 1963; graduated from Tarkio High School, Tarkio, Mo., 1982; B.A., University of Missouri, Columbia, Mo., 1986; member of the Missouri state house of representatives, 1992-1994; member of the Missouri state senate, 1994-2000; elected as a Republican to the One Hundred Seventh and to the seven succeeding Congresses (January 3, 2001-present); chair, Committee on Small Business (One Hundred Twelfth and One Hundred Thirteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400175,
+            'bio'        => "HENSARLING, Jeb, a Representative from Texas; born in Stephenville, Erath County, Tex., May 29, 1957; B.A., Texas A&M University, College Station, Tex., 1979; J.D., University of Texas, Austin, Tex., 1982; lawyer, private practice; staff, United States Senator Phil Gramm of Texas, 1985-1989; business executive; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present); chair, House Republican Conference (One Hundred Twelfth Congress); chair, Committee on Financial Services (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400196,
+            'bio'        => "ISSA, Darrell, a Representative from California; born in Cleveland, Cuyahoga County, Ohio, November 1, 1953; B.A., Siena Heights College, Adrian, Mich., 1976; United States Army, 1970-1980; business owner; elected as a Republican to the One Hundred Seventh and to the seven succeeding Congresses (January 3, 2001-present); chair, Committee on Oversight and Government Reform (One Hundred Twelfth and One Hundred Thirteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400206,
+            'bio'        => "JOHNSON, Sam, a Representative from Texas; born in San Antonio, Bexar County, Tex., October 11, 1930; graduated from Woodrow Wilson High School, Dallas, Tex.; B.B.A., Southern Methodist University, Dallas, Tex., 1951; M.S.I.A., George Washington University, Washington, D.C., 1974; United States Air Force, 1950-1979; prisoner of war during the Vietnam War, 1966-1973; decorated combat veteran, received two Silver Stars, two Legions of Merit, the Distinguished Flying Cross, one Bronze Star with Valor, two Purple Hearts, four Air Medals, and three outstanding unit awards; member of the Texas state house of representatives, 1985-1991; elected as a Republican to the One Hundred Second Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Steve Bartlett, and reelected to the One Hundred Third and to the eleven succeeding Congresses (May 8, 1991-present)."
+        ],
+        [
+            'govTrackId' => 400209,
+            'bio'        => "JONES, Walter Beaman, Jr., (son of Walter Beaman Jones, Sr.), a Representative from North Carolina; born in Farmville, Pitt County, N.C., February 10, 1943; graduated from Hargrave Military Academy, Chatham, Va., 1961; B.A., Atlantic Christian College (now Barton College), Wilson, N.C., 1966; North Carolina National Guard, 1967-1971; member of the North Carolina state house of representatives, 1983-1992; unsuccessful candidate for nomination to the One Hundred Third Congress in 1992; elected as a Republican to the One Hundred Fourth and to the ten succeeding Congresses (January 3, 1995-present)."
+        ],
+        [
+            'govTrackId' => 400219,
+            'bio'        => "KING, Peter T., a Representative from New York; born in New York, New York County, N.Y., April 5, 1944; B.A., St. Francis College, Brooklyn Heights, N.Y., 1965; J.D., Notre Dame University, Notre Dame, Ind., 1968; New York Army National Guard, 1968-1973; lawyer, private practice; Nassau County, N.Y. deputy attorney, 1972-1974; member of the Hempstead, N.Y., town council, 1977-1981; Nassau County, N.Y. comptroller, 1981-1993; elected as a Republican to the One Hundred Third and to the eleven succeeding Congresses (January 3, 1993-present); chair, Committee on Homeland Security (One Hundred Ninth and One Hundred Twelfth Congresses)."
+        ],
+        [
+            'govTrackId' => 400220,
+            'bio'        => "KING, Steve, a Representative from Iowa; born in Storm Lake, Buena Vista County, Iowa, May 28, 1949; graduated from Denison Community High School, Denison, Iowa; attended Northwest Missouri State University, Maryville, Mo., 1967-1970; business owner; member of the Iowa state senate, 1996-2002; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
+        [
+            'govTrackId' => 400224,
+            'bio'        => "KLINE, John, a Representative from Minnesota; born in Allentown, Lehigh County, Pa., September 6, 1947; B.A., Rice University, Houston, Tex., 1969; M.P.A., Shippensburg University of Pennsylvania, Shippensburg, Pa., 1988; United States Marine Corps, 1969-1994; leadership consultant; unsuccessful candidate for the One Hundred Sixth Congress in 1998; unsuccessful candidate for the One Hundred Seventh Congress in 2000; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present); chair, Committee on Education and the Workforce (One Hundred Twelfth through One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400244,
+            'bio'        => "LoBIONDO, Frank A., a Representative from New Jersey; born in Bridgeton, Cumberland County, N.J., May 12, 1946; graduated from Georgetown Preparatory School, Rockville, Md., 1964; B.A., St. Joseph’s University, Philadelphia, Pa., 1968; freeholder, Cumberland County, N.J., 1985-1988; member of the New Jersey state general assembly, 1988-1994; elected as a Republican to the One Hundred Fourth and to the ten succeeding Congresses (January 3, 1995-present)."
+        ],
+        [
+            'govTrackId' => 400247,
+            'bio'        => "LUCAS, Frank D., a Representative from Oklahoma; born in Cheyenne, Roger Mills County, Okla., January 6, 1960; B.S., Oklahoma State University, 1982; chairman, Roger Mills County, Okla., Republican party; staff, United States Senator Don Nickles of Oklahoma; member of the Oklahoma state house of representatives, 1988-1994; elected as a Republican to the One Hundred Third Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Glenn English and reelected to the eleven succeeding Congresses (May 10, 1994-present); chair, Committee on Agriculture (One Hundred Twelfth and One Hundred Thirteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400273,
+            'bio'        => "MICA, John L., (brother of Daniel Andrew Mica), a Representative from Florida; born in Binghamton, Broome County, N.Y., January 27, 1943; graduated from Miami-Edison High School, Miami, Fla.; A.A., Miami-Dade Community College, Miami, Fla., 1965; B.A., University of Florida, Gainesville, Fla., 1967; businessman; member of the Florida state house of representatives, 1977-1981; staff, United States Senator Paula F. Hawkins of Florida, 1981-1985; elected as a Republican to the One Hundred Third and to the eleven succeeding Congresses (January 3, 1993-present); chair, Committee on Transportation and Infrastructure (One Hundred Twelfth Congress)."
+        ],
+        [
+            'govTrackId' => 400276,
+            'bio'        => "MILLER, Candice S., a Representative from Michigan; born in Detroit, Wayne County, Mich., May 7, 1954; graduated from Lakeshore High School, St. Clair Shores, Mich.; attended Macomb County Community College, Warren, Mich.; attended Northwood Institute; trustee, Harrison Township Board, Harrison Township, Mich., 1979-1980; Harrison Township supervisor, Harrison Township, Mich., 1980-1992; treasurer, Macomb County, Mich., 1992-1994; Michigan secretary of state, 1994-2002; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present); chair, Committee on House Administration (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400279,
+            'bio'        => "MILLER, Jefferson B. (Jeff), a Representative from Florida; born in Pinellas County, Fla., June 27, 1959; B.A., University of Florida, Gainesville, Fla., 1984; real estate broker; sheriff’s deputy, Gilchrist County, Fla.; member of the Florida state house of representatives, 1998-2001; elected as a Republican to the One Hundred Seventh Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Joseph Scarborough and reelected to the seven succeeding Congresses (October 16, 2001-present); chair, Committee on Veterans’ Affairs (One Hundred Twelfth through One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400285,
+            'bio'        => "MURPHY, Timothy, a Representative from Pennsylvania; born in Cleveland, Cuyahoga County, Ohio, on September 11, 1952; graduated from Walsh Jesuit High School, Cuyahoga Falls, Ohio; B.S., Wheeling Jesuit University, Wheeling, W.Va., 1974; M.S., Cleveland State University, Cleveland, Ohio, 1976; Ph.D., University of Pittsburgh, Pittsburgh, Pa., 1979; assistant professor of pediatrics, University of Pittsburgh School of Medicine, Pittsburgh, Pa.; associate professor (adjuct), University of Pittsburgh School of Public Health, Pittsburgh, Pa.; psychologist; member of the Pennsylvania state senate, 1996-2002; United States Navy Reserve Medical Service Corps, 2009-present; elected as a Republican to the One Hundred Eighth and to the six succeeding Congresses (January 3, 2003-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
