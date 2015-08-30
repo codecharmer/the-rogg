@@ -1,5 +1,6 @@
 <?php
 
+use GuzzleHttp\Client;
 use Illuminate\Database\Seeder;
 use TheRogg\Domain\Office;
 use TheRogg\Domain\Party;
@@ -17,8 +18,14 @@ class PoliticianSeeder extends Seeder
 
     public function run()
     {
-        //Schema::drop('politicians');
+        Schema::drop('politicians');
 
+        $this->seedCandidates();
+        $this->seedCongress();
+    }
+
+    private function seedCandidates()
+    {
         $politician = $this->politicianRepo->make('Lincoln Chafee', State::RI, Office::Senator, Party::Democrat);
         $politician->setBio("Lincoln Chafee is Democratic candidate for the office of President of the United States in 2016. Chafee is the former Democratic Governor of Rhode Island. First elected to the governorship as an Independent on November 2, 2010, he became the only governor not to belong to one of the major parties when he was sworn in January 4, 2011. Chafee previously belonged to the Republican Party, serving in the U.S. Senate for seven years. Initially appointed to his father's seat upon John Chafee's death in 1999, he won a six-year term in 2000. In 2006, he lost his seat to Democrat Sheldon Whitehouse. The following year, Chafee left the Republican Party to become an Independent. Then, in anticipation of a possible re-election loss in 2014, as well as his affinity for his former U.S. Senate colleague, President Barack Obama, Chafee made his second party switch, formally joining the Democratic Party on May 30, 2013. In recent candidate rankings, Crowdpac ranked Chafee as a 0.3L (L being liberal) on a scale ranging from 10L to 10C, making him the least liberal Democratic presidential candidate.");
         $politician->setIsPresidentialCandidate(true);
@@ -128,5 +135,40 @@ class PoliticianSeeder extends Seeder
         $politician->setBio("Scott Walker is a candidate for the office of President of the United States in 2016. He announced his candidacy on July 13, 2015. Walker is the 45th Governor of Wisconsin and was first elected to the office in 2010. During his first term, Walker proposed Wisconsin Act 10, which restricted the ability of public workers to engage in public bargaining. The act drew massive protests, mainly organized by unions. Opponents of the measure successfully forced Walker to face a recall election on June 5, 2012. Walker survived the recall election, defeating Tom Barrett(D) 53 percent to 46 percent. In doing so, Walker became the first governor to survive a recall. He then won re - election on November 4, 2014. Prior to serving as governor, Walker was a member of the Wisconsin State Assembly from 1993 to 2002 and Milwaukee County Executive from 2002 to 2010. He attended Marquette University, but he did not earn his bachelor's degree, choosing instead to leave school for a job with the American Red Cross during his senior year. He explained the decision saying, \"The reason I went to college, in large part, was not just to get an education for an education's sake, but to get a job. Someday, maybe in the next few years, I'll embark on finishing my degree.” Walker filed paperwork with the Federal Election Commission on July 2, 2015. However, he did not officially announce his campaign until July 13, 2015. Walker released an early morning video on social media confirming his run for the presidency. Previously, when asked on December 1, 2013, if he was considering entering the presidential race, Walker said, \"I'm running for governor... we'll see what happens after that. I've got to look at my state... for now I'm focused on being governor.\" Then, on February 5, 2015, when Martha Raddatz asked if he will run for president, Walker said, \"I'll just tell you one thing. After three elections for governor in four years in a state that hasn't gone Republican since 1984 for president, I wouldn't bet against me on anything.\" In recent candidate rankings, Crowdpac ranked Walker as an 8.8C(C being conservative) on a scale ranging from 10L to 10C, making him the third most conservative Republican presidential candidate. Walker received a grade of a \"A-/91\" from the Leadership Project for America PAC, a conservative political action committee.");
         $politician->setIsPresidentialCandidate(true);
         $politician->save();
+    }
+
+    private function seedCongress()
+    {
+        $client = new Client();
+
+        $response = $client->get('https://www.govtrack.us/api/v2/role?current=true&limit=600');
+        $json     = json_decode($response->getBody())->objects;
+
+        foreach ($json as $politicianJson)
+        {
+            $firstName  = $politicianJson->person->firstname;
+            $middleName = $politicianJson->person->middlename;
+            $lastName   = $politicianJson->person->lastname;
+
+            if (empty($middleName))
+                $name = $firstName . ' ' . $lastName;
+            else
+                $name = $firstName . ' ' . $middleName . ' ' . $lastName;
+
+            $district      = $politicianJson->district;
+            $party         = $politicianJson->party;
+            $roleTypeLabel = $politicianJson->role_type_label;
+            $state         = $politicianJson->state;
+            $bioGuideId    = $politicianJson->person->bioguideid;
+            $govTrackId    = $politicianJson->person->id;
+
+            $politician = $this->politicianRepo->make($name, $state, $roleTypeLabel, $party, $district, $bioGuideId, $govTrackId);
+
+            if ($politician->getName() == 'Bernard Sanders' || $politician->getName() == 'Ted Cruz' || $politician->getName() == 'Lindsey O. Graham' || $politician->getName() == 'Rand Paul' || $politician->getName() == 'Marco Rubio')
+            {
+                $politician->setIsPresidentialCandidate(true);
+                $this->politicianRepo->save($politician);
+            }
+        }
     }
 }
