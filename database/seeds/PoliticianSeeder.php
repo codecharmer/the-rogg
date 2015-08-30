@@ -686,13 +686,97 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412226,
             'bio'        => "JORDAN, Jim, a Representative from Ohio; born in Troy, Miami County, Ohio, February 17, 1964; graduated from Graham High School, St. Paris, Ohio, 1982; B.S., University of Wisconsin, Madison, Wis., 1986; M.A., Ohio State University, Columbus, Ohio, 1991; J.D., Capital University, Columbus, Ohio, 2001; lawyer, private practice; member of the Ohio state house of representatives, 1995-2000; member of the Ohio state senate, 2001-2007; elected as a Republican to the One Hundred Tenth and to the four succeeding Congresses (January 3, 2007-present)."
         ],
+        [
+            'govTrackId' => 412250,
+            'bio'        => "BILIRAKIS, Gus, (son of Michael Bilirakis), a Representative from Florida; born in Gainesville, Alachua County, Fla., February 8, 1963; attended St. Petersburg Junior College, St. Petersburg, Fla., 1981-1983; B.A., University of Florida, Gainesville, Fla., 1986; J.D., Stetson University, St. Petersburg, Fla., 1989; lawyer, private practice; professor; member of the Florida state house of representatives, 1998-2006; elected as a Republican to the One Hundred Tenth and to the four succeeding Congresses (January 3, 2007-present)."
+        ],
+        [
+            'govTrackId' => 412255,
+            'bio'        => "WITTMAN, Robert J., a Representative from Virginia; born in Washington, D.C., February 3, 1959; B.S., Virginia Polytechnic Institute, Blacksburg, Va., 1981; M.P.H., University of North Carolina, Chapel Hill, N.C., 1990; Ph.D., Virginia Commonwealth University, Richmond, Va., 2002; shellfish sanitation; member of the Montross, Va., town council, 1986-1996; mayor of Montross, Va., 1992-1996; member of the Westmoreland County, Va., board of supervisors, 1996-2005; chairman of the Westmoreland County Va., board of supervisors, 2004-2005; member of the Virginia house of delegates, 2006-2007; elected as a Republican to the One Hundred Tenth Congress, by special election, to fill the vacancy caused by the death of United States Representative Jo Ann Davis, and to the four succeeding Congresses (December 11, 2007-present)."
+        ],
+        [
+            'govTrackId' => 412256,
+            'bio'        => "LATTA, Robert E., (son of Delbert L. Latta), a Representative from Ohio; born in Bluffton, Allen County, Ohio, April 18, 1956; B.A., Bowling Green State University, Bowling Green, Ohio, 1978; J.D., University of Toledo, Toledo, Ohio, 1981; lawyer, private practice; Wood County, Ohio, commissioner, 1991-1996; member of the Ohio state senate, 1997-2000; member of the Ohio state house of representatives, 2001-2007; elected as a Republican to the One Hundred Tenth Congress, by special election, to fill the vacancy caused by the death of United States Representative Paul Gillmor, and reelected to the four succeeding Congresses (December 11, 2007-present)."
+        ],
+        [
+            'govTrackId' => 412261,
+            'bio'        => "SCALISE, Steve, a Representative from Louisiana; born in New Orleans, Orleans Parish, La., October 6, 1965; graduated from Rummel High School; B.S., Louisiana State Univeristy, Baton Rouge, La.; software engineer; technology company marketing executive; member of the Louisiana state house of representatives, 1995-2007; member of the Louisiana state senate, 2008; elected as a Republican to the One Hundred Tenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Bobby Jindal, and reelected to the four succeeding Congresses (May 3, 2008-present); majority whip (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 412269,
+            'bio'        => "CASSIDY, Bill, a Senator and a Representative from Louisiana; born in Highland Park, Lake County, Ill., September 28, 1957; B.S., Louisiana State University, Baton Rouge, La., 1979; M.D., Louisiana State University Medical School, New Orleans, La., 1983; physician; member of the Louisiana state senate, 2006-2008; elected as a Republican to the One Hundred Eleventh and to the two succeeding Congresses (January 3, 2009-January 3, 2015); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412270,
+            'bio'        => "CHAFFETZ, Jason, a Representative from Utah; born in Los Gatos, Santa Clara County, Calif., March 26, 1967; B.A., Brigham Young University, Provo, Utah, 1989; business executive; staff, Utah Governor John Huntsman, 2004; member of the Utah Valley board of trustees, 2007-2008; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present); chair, Committee on Oversight and Government Reform (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 412271,
+            'bio'        => "COFFMAN, Mike, a Representative from Colorado; born in Fort Leonard Wood, Pulaski County, Mo., March 19, 1955; attended Aurora Central High School, Aurora, Colo.; received graduation equivalency degree through the United States Army; B.A., University of Colorado, Boulder, Colo., 1979; United States Army, 1972-1974; United States Army Reserve, 1975-1978; United States Marine Corps, 1979-1982; United States Marine Corps Reserve, 1983-1994, 2005-2006; small business owner; member of the Colorado state house of representatives, 1989-1994; member of the Colorado state senate, 1994-1998; Colorado state treasurer, 1999-2007; Colorado secretary of state, 2007-2008; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412275,
+            'bio'        => "FLEMING, John, (relative of Henry Clay and John Thomas Clay), a Representative from Louisiana; born in Meridian, Lauderdale County, Miss., July 5, 1951; B.S., University of Mississippi, Oxford, Miss., 1973; M.D., University of Mississippi, Jackson, Miss., 1976; United States Navy, 1976-1982; physician; entrepreneur; Webster Parish, La., coroner, 1996-2000; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009–present)."
+        ],
+        [
+            'govTrackId' => 412278,
+            'bio'        => "GUTHRIE, Brett, a Representative from Kentucky; born in Florence, Lauderdale County, Ala., February 18, 1964; graduated from Bradshaw High School, Florence, Ala., 1982; B.S., United States Military Academy, West Point, N.Y., 1987; M.P.P.M., Yale University, New Haven, Conn., 1997; United States Army, 1987-1990; United States Army Reserve, 1990-2002; business executive; member of the Kentucky state senate, 1999-2008; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412280,
+            'bio'        => "HARPER, Gregg, a Representative from Mississippi; born in Jackson, Hinds County, Miss., June 1, 1956; graduated from Pearl High School, Pearl, Miss., 1974; B.S., Mississippi College, Clinton, Miss., 1978; J.D., University of Mississippi, Oxford, Miss., 1981; lawyer, private practice; prosecutor, Brandon, Miss.; prosecutor, Richland, Miss.; chairman, Rankin County, Miss. Republican Party, 2000-2007; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present); chair, Joint Committee on the Library of Congress (One Hundred Thirteenth Congress)."
+        ],
+        [
+            'govTrackId' => 412283,
+            'bio'        => "HUNTER, Duncan Duane, (son of Duncan Lee Hunter), a Representative from California; born in San Diego, San Diego County, Calif., December 7, 1976; graduated from Granite Hills High School, El Cajon, Calif.; B.S., San Diego State University, San Diego, Calif., 2001; United States Marine Corps, 2002-2005; United States Marine Corps Reserve, 2005-present; real estate developer; businessman; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412284,
+            'bio'        => "JENKINS, Lynn, a Representative from Kansas; born in Holton, Jackson County, Kans., June 10, 1963; A.A., Kansas State University, Manhattan, Kans., 1985; B.S., Weber State University, Ogden, Utah, 1985; accountant; member of the Kansas state house of representatives, 1999-2001; member of the Kansas state senate, 2001-2003; Kansas state treasurer, 2003-2008; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412290,
+            'bio'        => "LANCE, Leonard, a Representative from New Jersey; born in Easton, Northampton County, Pa., June 25, 1952; graduated from North Hunterdon Regional High School, Annandale, N.J., 1970; B.A., Lehigh University, Bethlehem, Pa., 1974; J.D., Vanderbilt University, Nashville, Tenn., 1977; M.P.A., Princeton University, Princeton, N.J., 1982; judicial clerk; lawyer, private practice; member of the New Jersey state general assembly, 1991-2002; member of the New Jersey state senate, 2002-2009; minority leader of the New Jersey state senate, 2004-2008; unsuccessful candidate for election to the United States House of Representatives in 1996; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412292,
+            'bio'        => "LUETKEMEYER, Blaine, a Representative from Missouri; born in Jefferson City, Cole County, Mo., May 7, 1952; B.A., Lincoln University, Jefferson City, Mo., 1974; business owner; banker; rancher; member of the St. Elizabeth, Mo., board of trustees, 1978-1987; member of the Missouri state house of representatives, 1999-2005; director, tourism commission of Missouri, 2006-2008; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412294,
+            'bio'        => "LUMMIS, Cynthia M., a Representative from Wyoming; born in Cheyenne, Laramie County, Wyo., September 10, 1954; B.S., University of Wyoming, Laramie, Wyo., 1976; B.A., University of Wyoming, 1978; J.D., University of Wyoming College of Law, Laramie, Wyo., 1985; rancher; lawyer, private practice; staff, Wyoming Governor Jim Geringer, 1994-1996; member of Wyoming state house of representatives, 1979-1983, 1985-1993; member of Wyoming state senate, 1993-1995; Wyoming state treasurer, 1999-2007; Wyoming state lands and investment acting director, 1997-1998; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412295,
+            'bio'        => "McCLINTOCK, Tom, a Representative from California; born in Bronxville, Westchester County, N.Y., July 10, 1956; B.A., University of California, Los Angeles, Calif., 1988; journalist; public policy analyst; member of the California state assembly, 1982-1992, 1996-2000; member of the California state senate, 2000-2008; unsuccessful candidate for the United States House of Representatives in 1992; unsuccessful candidate for Governor of California in 2003; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412302,
+            'bio'        => "OLSON, Pete, a Representative from Texas; born in Fort Lewis, Pierce County, Wash., December 9, 1962; graduated from Clear Lake High School, Houston, Tex.; B.A., Rice University, Houston, Tex., 1985; J.D., University of Texas School of Law, Austin, Tex., 1988; United States Navy, 1988-1997; United States Naval Reserve, 1998-present; staff, United States Senator Phil Gramm of Texas, 1998-2002; staff, United States Senator John Cornyn of Texas, 2002-2007; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412303,
+            'bio'        => "PAULSEN, Erik, a Representative from Minnesota; born in Bakersfield, Kern County, Calif., May 14, 1965; graduated from Chaska High School, Chaska, Minn., 1983; B.A., St. Olaf College, Northfield, Minn., 1987; businessman; staff, United States Senator Rudy Boschwitz of Minnesota; member of the Minnesota state house of representatives, 1995-2008, majority leader, 2003-2007; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412671,
+            'bio'        => "SASSE, Benjamin Eric, a Senator from Nebraska; born in Plainview, Pierce County, Nebr., February 22, 1972; B.A., Harvard University, 1994; M.A., St. John’s College, Annapolis, Md., 1998; Ph.D., Yale University, 2004; management consultant; university professor; chief of staff to U.S. Representative Jeff Fortenberry; counselor to the secretary, U.S. Department of Health and Human Services; assistant secretary for planning and evaluation, U.S. Department of Health and Human Services; president of Midland University, Fremont, Nebr.; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412309,
+            'bio'        => "POSEY, Bill, a Representative from Florida; born in Washington, D.C., December 18, 1947; graduated from Cocoa High School, Cocoa, Fla., 1966; A.A., Brevard Junior College (now Brevard Community College), Cocoa, Fla., 1969; realtor; member of the Rockledge, Fla., city council, 1976-1986; member of the Florida state house of representatives, 1992-2000; member of the Florida state senate, 2000-2008; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412310,
+            'bio'        => "ROE, David P. (Phil), a Representative from Tennessee, born in Clarksville, Montgomery County, Tenn., July 21, 1945; B.S., Austin Peay State University, Clarksville, Tenn., 1967; M.D., University of Tennessee, Knoxville, Tenn., 1970; United States Army, 1973-1974; physician; unsuccessful candidate for nomination to the United States House of Representatives in 2006; member of the Johnson City, Tenn., board of commissioners, 2003-2008; vice mayor of Johnson City, Tenn., 2003-2007; mayor of Johnson City, Tenn., 2007-2009; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
         $temp = [
         [
             'govTrackId' => 000,
-            'bio'        => ""
+            'bio'        => "xxx"
         ],
     ];
 }
