@@ -618,6 +618,74 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 400644,
             'bio'        => "McHENRY, Patrick T., a Representative from North Carolina; born in Charlotte, Mecklenburg County, N.C., October 22, 1975; graduated Ashbrook High School, Gastonia, N.C., 1994; attended North Carolina State University, Raleigh, N.C.; B.A., Belmont Abbey College, Belmont, N.C., 1999; realtor; appointed special assistant to the United States Secretary of Labor by President George W. Bush in 2001; member, North Carolina house of representatives, 2002- 2004; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
         ],
+        [
+            'govTrackId' => 400646,
+            'bio'        => "FITZPATRICK, Michael G., a Representative from Pennsylvania; born in Philadelphia, Philadelphia County, Pa., June 28, 1963; B.A., St. Thomas University, Florida, 1985; J.D., Dickinson School of Law, Carlisle, Pa., 1988; lawyer, private practice; Bucks County, Pa. commissioner, 1995-2004; elected as a Republican to the One Hundred Ninth Congress (January 3, 2005-January 3, 2007); unsuccessful candidate for re-election to the One Hundred Tenth Congress in 2006; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 400648,
+            'bio'        => "DENT, Charles W., a Representative from Pennsylvania; born in Allentown, Lehigh County, Pa., May 24, 1960; graduated from William Allen High School, Allentown, Pa., 1978; B.A., Pennsylvania State University, University Park, Pa., 1982; M.P.A., Lehigh University, Bethlehem, Pa., 1993; staff, United States Representative Donald Ritter of Pennsylvania; college administrator; sales representative; hotel clerk; member of the Pennsylvania state house of representatives, 1991-1998; member of the Pennsylvania state senate, 1999-2004; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present); chair, Committee on Ethics (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400651,
+            'bio'        => "GOHMERT, Louie, a Representative from Texas; born in Pittsburg, Camp County, Tex., August 18, 1953; graduated from Mount Pleasant High School, Mount Pleasant, Tex., 1971; B.A., Texas A&M University, College Station, Tex., 1975; J.D., Baylor University, Waco, Tex., 1977; United States Army, 1978-1982; lawyer, private practice; district judge, Smith County, Tex., 1992-2002; chief justice, twelfth circuit court, 2002-2003; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
+        [
+            'govTrackId' => 400652,
+            'bio'        => "POE, Ted, a Representative from Texas; born in Temple, Bell County, Tex., September 10, 1948; B.A., Abilene Christian University, Abilene, Tex., 1970; J.D., University of Houston, Houston, Tex., 1973; United States Air Force Reserves, 1970-1976; teacher; lawyer, private practice; district attorney, Harris County, Houston, Tex., 1973-1981; district judge, Harris County, Houston, Tex., 1981-2003; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
+        [
+            'govTrackId' => 400654,
+            'bio'        => "McCAUL, Michael T., a Representative from Texas; born in Dallas, Dallas County, Tex., January 14, 1962; B.S., Trinity University, San Antonio, Tex., 1984; J.D., St. Mary’s University, San Antonio, Tex., 1987; lawyer, private practice; deputy attorney general, Office of the Attorney General, State of Texas; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present); chair, Committee on Homeland Security (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400655,
+            'bio'        => "CONAWAY, K. Michael, a Representative from Texas; born in Borger, Hutchinson County, Tex, June 11, 1948; graduated from Odessa Permian High School, Odessa, Tex., 1966; B.B.A., Texas Agricultural and Mechanical University-Commerce, Commerce, Tex., 1970; United States Army, 1970-1972; certified public accountant; bank executive; member of the Midland, Tex., school board, 1985-1988; unsuccessful candidate for special election for the United States House of Representatives in 2003; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present); chair, Committee on Ethics (One Hundred Thirteenth Congress); chair, Committee on Agriculture (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400656,
+            'bio'        => "MARCHANT, Kenny, a Representative from Texas; born in Bonham, Fannin County, Tex., February 23, 1951; B.A., South Nazarene University, Bethany, Okla., 1974; attended Nazarene Theological Seminary, Kansas City, Mo., 1975-1976; real estate developer; member of the Carrollton, Tex., city council, 1980-1984; mayor of Carrollton, Tex., 1984-1987; member of the Texas state house of representatives, 1987-2004; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
+        [
+            'govTrackId' => 400659,
+            'bio'        => "McMORRIS RODGERS, Cathy, a Representative from Washington; born in Salem, Marion County, Oreg., May 22, 1969; B.A., Pensacola Christian College, Pensacola, Fla., 1990; M.B.A., University of Washington, Seattle, Wash., 2002; family orchard business; member of the Washington state house of representatives, 1994-2004, minority leader, 2002-2003; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present); chair, House Republican Conference (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 400660,
+            'bio'        => "REICHERT, David G., a Representative from Washington; born in Detroit Lakes, Becker County, Minn., August 29, 1950; graduated, Kent Meridian High School, Kent, Wash., 1968; A.A., Concordia Lutheran College, Portland, Oreg., 1970; United States Air Force reserve, 1971-1976; United States Air Force, 1976; police officer, King County, Wash., 1972-1997; sheriff, King County, Wash., 1997- 2004; elected as a Republican to the One Hundred Ninth and to the five succeeding Congresses (January 3, 2005-present)."
+        ],
+        [
+            'govTrackId' => 409888,
+            'bio'        => "SHUSTER, William (Bill), (son of E. G. \"Bud\" Shuster), a Representative from Pennsylvania; born in McKeesport, Allegheny County, Pa., January 10, 1961; graduated from Everett High School, Everett. Pa.; B.A., Dickinson College, Carlisle, Pa., 1983; M.B.A., American University, Washington, D.C.; business owner; elected as a Republican to the One Hundred Seventh Congress, by special election, to fill the vacancy caused by the resignation of United States Representative E. G. “Bud” Shuster of Pennsylvania and reelected to the seven succeeding Congresses (May 15, 2001-present); chair, Committee on Transportation and Infrastructure (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 412190,
+            'bio'        => "MCCARTHY, Kevin, a Representative from California; born in Bakersfield, Kern County, Calif., January 26, 1965; attended Bakersfield College, Bakersfield. Calif., 1984-1985; B.S., California State University, Bakersfield, Calif., 1989; M.B.A., California State University, Bakersfield, Calif., 1994; staff, United States Representative William Thomas of California, 1987-2002; member of the California state assembly, 2002-2007; minority leader, California state assembly, 2004-2006; elected as a Republican to the One Hundred Tenth and to the four succeeding Congresses (January 3, 2007-present); majority whip (One Hundred Twelfth and One Hundred Thirteenth Congresses); majority leader (One Hundred Thirteenth and One Hundred Fourteenth Congresses)."
+        ],
+        [
+            'govTrackId' => 412191,
+            'bio'        => "LAMBORN, Doug, a Representative from Colorado; born in Leavenworth, Leavenworth County, Kans., May 24, 1954; graduated from Lansing High School, Lansing, Kans.; B.S., University of Kansas, Lawrence, Kans., 1978; J.D., University of Kansas, Lawrence, Kans., 1985; lawyer, private practice; member of the Colorado state house of representatives, 1995-1998; member of the Colorado state senate, 1998-2006, president pro tempore, 1999-2000; elected as a Republican to the One Hundred Tenth and to the four succeeding Congresses (January 3, 2007-present)."
+        ],
+        [
+            'govTrackId' => 412196,
+            'bio'        => "BUCHANAN, Vernon G., a Representative from Florida; born on May 8, 1951; B.B.A., Cleary University, Ann Arbor, Mich., 1975; M.B.A., University of Detroit, Detroit, Mich., 1986; Michigan Air National Guard, 1970-1976; businessman; campaign staff; elected as a Republican to the One Hundred Tenth and to the four succeeding Congresses (January 3, 2007-present)."
+        ],
+        [
+            'govTrackId' => 412202,
+            'bio'        => "ROSKAM, Peter, a Representative from Illinois; born in Hinsdale, DuPage County, Ill., September 13, 1961; B.A. University of Illinois, Urbana-Champaign, Ill., 1983; J.D., Illinois Institute of Technology, Chicago, Ill., 1989; lawyer, private practice; staff, United States Representative Tom DeLay of Texas, 1985-1986; staff, United States Representative Henry Hyde of Illinois, 1986-1987; teacher; businessman; member of the Illinois state house of representatives, 1993-1999; member of the Illinois state senate, 2000-2006; unsuccessful candidate for nomination to the United States House of Representatives in 1998; elected as a Republican to the One Hundred Tenth and to the four succeeding Congresses (January 3, 2007-present)."
+        ],
+        [
+            'govTrackId' => 412213,
+            'bio'        => "WALBERG, Tim, a Representative from Michigan; born in Chicago, Cook County, Ill., April 12, 1951; graduated from Thornton Fractional Township North High School, Calumet, Ill., 1969; attended Western Illinois University, Macomb, Ill., 1969-1970; attended Moody Bible College Institute, Chicago, Ill., 1970-1973; B.S. Fort Wayne Bible College, 1975; M.A., Wheaton College, Wheaton, Ill., 1978; minister; member of the Michigan state house of representatives, 1983-1998; unsuccessful candidate for nomination to the United States House of Representatives in 2004; elected as a Republican to the One Hundred Tenth Congress (January 3, 2007-January 3, 2009); unsuccessful candidate for reelection to the One Hundred Eleventh Congress in 2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412217,
+            'bio'        => "SMITH, Adrian, a Representative from Nebraska; born in Scottsbluff, Scottsbluff County, Nebr., December 19, 1970; graduated from Gering High School, Gering, Nebr., 1989; attended Liberty University, Lynchburg. Va., 1989-1990; B.S., University of Nebraska, Lincoln, Nebr., 1993; business owner; teacher; member of the Gering, Nebr., city council, 1994-1998; member of the Nebraska state legislature, 1999-2007; elected as a Republican to the One Hundred Tenth and to the four succeeding Congresses (January 3, 2007-present)."
+        ],
+        [
+            'govTrackId' => 412226,
+            'bio'        => "JORDAN, Jim, a Representative from Ohio; born in Troy, Miami County, Ohio, February 17, 1964; graduated from Graham High School, St. Paris, Ohio, 1982; B.S., University of Wisconsin, Madison, Wis., 1986; M.A., Ohio State University, Columbus, Ohio, 1991; J.D., Capital University, Columbus, Ohio, 2001; lawyer, private practice; member of the Ohio state house of representatives, 1995-2000; member of the Ohio state senate, 2001-2007; elected as a Republican to the One Hundred Tenth and to the four succeeding Congresses (January 3, 2007-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
