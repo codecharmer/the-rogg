@@ -770,6 +770,42 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412310,
             'bio'        => "ROE, David P. (Phil), a Representative from Tennessee, born in Clarksville, Montgomery County, Tenn., July 21, 1945; B.S., Austin Peay State University, Clarksville, Tenn., 1967; M.D., University of Tennessee, Knoxville, Tenn., 1970; United States Army, 1973-1974; physician; unsuccessful candidate for nomination to the United States House of Representatives in 2006; member of the Johnson City, Tenn., board of commissioners, 2003-2008; vice mayor of Johnson City, Tenn., 2003-2007; mayor of Johnson City, Tenn., 2007-2009; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
         ],
+        [
+            'govTrackId' => 412311,
+            'bio'        => "ROONEY, Thomas J., a Representative from Florida; born in Philadelphia, Philadelphia County, Pa., November 21, 1970; attended Syracuse University, Syracuse, N.Y., 1989; B.A., Washington and Jefferson College, Washington, Pa., 1993; M.A., University of Florida, Gainesville, Fla., 1996; J.D., University of Miami, Coral Gables, Fla., 1999; United States Army, 2000-2004; lawyer, private practice; assistant attorney general, Office of the Attorney General, State of Florida; professor, United States Military Academy, West Point, N.Y.; staff, United States Senator Connie Mack III of Florida; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412317,
+            'bio'        => "THOMPSON, Glenn, a Representative from Pennsylvania; born in Bellefonte, Centre County, Pa., July 27, 1959; B.S., Pennsylvania State University, University Park, Pa., 1981; M.Ed., Temple University, Philadelphia, Pa., 1988; rehabilitation therapist manager; member of the Bald Eagle, Pa., school board, 1990-1995; unsuccessful nominee for Pennsylvania state house of representatives in 1998 and 2000; chairman, Centre County Pa., Republican Party, 2002-2008; elected as a Republican to the One Hundred Eleventh and to the three succeeding Congresses (January 3, 2009-present)."
+        ],
+        [
+            'govTrackId' => 412322,
+            'bio'        => "RISCH, James, a Senator from Idaho; born in Milwaukee, Wis., May 3, 1943; B.A., attended the University of Wisconsin, Milwaukee, 1961-1963; B.S. in Forestry, University of Idaho, 1965; J.D., University of Idaho College of Law, 1968; Ada County, Idaho, prosecuting attorney, 1970-1974; Idaho State senator, 1974-1989 and 1995-2003, serving as majority leader (1976-1982), and as president pro tempore (1982-1989); lieutenant governor of Idaho, 2003-2006 and 2007-2009; governor of Idaho, 2006; elected as a Republican to the United States Senate in 2008; reelected in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412388,
+            'bio'        => "GRAVES, Tom, a Representative from Georgia; born in St. Petersburg, Pinellas County, Fla., February 3, 1970; graduated from Cass High School, Cartersville, Ga., 1988; B.B.A., University of Georgia, Athens, Ga., 1993; business owner; member of the Georgia state house of representatives, 2003-2010; elected as a Republican to the One Hundred Eleventh Congress, by special election, to fill the vacancy caused by the resignation of United States Representative John Nathan Deal and to the three succeeding Congresses (June 8, 2010-present)."
+        ],
+        [
+            'govTrackId' => 412392,
+            'bio'        => "STUTZMAN, Marlin, a Representative from Indiana; born in Sturgis, Saint Joseph County, Mich., August 31, 1976; graduated from Lake Area Christian High School, Sturgis, Mich., 1994; attended Trine State University, Angola, Ind.; attended Glen Oaks Community College, Centreville, Mich.; farmer; business owner; member of the Indiana state house of representatives, 2002-2008; member of the Indiana state senate, 2009-2010; unsuccessful candidate for nomination to the United States Senate in 2010; elected as a Republican to the One Hundred Eleventh Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Mark Souder, and simultaneously elected to the One Hundred Twelfth Congress; reelected to the two succeeding Congresses (November 2, 2010-present)."
+        ],
+        [
+            'govTrackId' => 412393,
+            'bio'        => "REED, Thomas W. II, a Representative from New York; born in Joliet, Will County, Ill., November 18, 1971; graduated from Horseheads High School, Horseheads, N.Y., 1989; B.A., Alfred University, Alfred, N.Y., 1993; J.D., Ohio Northern University, Ada, Ohio, 1996; lawyer, private practice; business owner; Mayor of Corning, N.Y., 2007-2010; elected as a Republican to the One Hundred Eleventh Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Eric J.J. Massa, and to the three succeeding Congresses (November 2, 2010-present)."
+        ],
+        [
+            'govTrackId' => 412394,
+            'bio'        => "ROBY, Martha, a Representative from Alabama; born in Montgomery, Montgomery County, Ala., July 27, 1976; B.M., New York University, New York, N. Y., 1998; J.D., Samford University, Birmingham, Ala., 2001; lawyer, private practice; member of the Montgomery, Ala., city council, 2003-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412395,
+            'bio'        => "BROOKS, Mo, a Representative from Alabama; born in Charleston, Charleston County, S.C., April 29, 1954; graduated from Grissom High School, Huntsville, Ala., 1972; B.A., Duke University, Durham, N.C., 1975; J.D., University of Alabama School of Law, Tuscaloosa, Ala., 1978; lawyer, private practice; Tuscaloosa County, Ala. prosecutor, 1978-1980; clerk, Circuit Court Judge John Snodgrass, 1980-1982; member of the Alabama house of representatives, 1982-1992; Madison County, Ala. district attorney, 1991-1993; special assistant attorney general, state of Alabama, 1995-2002; commissioner, Madison County, Ala., board of commissions, 1996-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412397,
+            'bio'        => "GOSAR, Paul, a Representative from Arizona; born in Rock Springs, Sweetwater County, Wyo., November 22, 1958; graduated from Pinedale High School, Pinedale, Wyo., 1977; B.S., Creighton University, Omaha, Nebr., 1981; D.D.S., Creighton University, Omaha, Nebr., 1985; dentist; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
