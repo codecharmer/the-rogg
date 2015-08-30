@@ -1018,6 +1018,70 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412482,
             'bio'        => "FARENTHOLD, Blake, a Representative from Texas; born in Corpus Christi, Nueces County, Tex., December 12, 1961; graduated from Incarnate Word High School, Corpus Christi, Tex.; B.S., University of Texas, Austin, Tex., 1985; J.D., St. Mary’s University School of Law, San Antonio, Tex., 1989; lawyer, private practice; business owner; radio commentator; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
         ],
+        [
+            'govTrackId' => 412483,
+            'bio'        => "RIGELL, E. Scott, a Representative from Virginia; born in Titusville, Brevard County, Fla., May 28, 1960; A.A., Brevard Community College, Cocoa, Fla., 1981; B.B.A., Mercer University, Macon, Ga., 1983; M.B.A., Regent University, Virginia Beach, Va., 1990; United States Marine Corps Reserve, 1978-1984; entrepreneur; member of the Virginia Motor Vehicle Dealer Board, 1995-1999; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412484,
+            'bio'        => "HURT, Robert, a Representative from Virginia; born in New York, New York County, N.Y., June 16, 1969; graduated from Episcopal High School, Alexandria, Va.; B.A., Hampden-Sydney College, Hampden-Sydney, Va., 1991; J.D., Mississippi College, Clinton, Miss., 1995; lawyer, private practice; deputy attorney, Pittsylvania County, Va.; member of the Chatham, Va., town council, 2000-2001; member of Virginia state house of delegates, 2002-2008; member of Virginia state senate, 2008-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412485,
+            'bio'        => "GRIFFITH, H. Morgan, a Representative from Virginia; born in Philadelphia, Philadelphia County, Pa., March 15, 1958; graduated from Andrew Lewis High School, Salem, Va.; B.A., Emory & Henry College, Emory, Va., 1980; J.D., Washington & Lee University School of Law, Lexington, Va., 1983; lawyer, private practice; member of Virginia state house of representatives, 1994-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412486,
+            'bio'        => "HERRERA BEUTLER, Jaime, a Representative from Washington; born in Glendale, Los Angeles County, Calif.; November 3, 1978; attended Seattle Pacific University, Seattle, Wash., 1996-1998; A.A., Bellevue Community College, Bellevue, Wash., 2003; B.A., University of Washington, Seattle, Wash., 2004; staff, United States Representative Cathy McMorris Rodgers of Washington, 2005-2007; member of Washington state house of representatives, 2007-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412487,
+            'bio'        => "McKINLEY, David, a Representative from West Virginia; born in Wheeling, Ohio County, W. Va., March 28, 1947; B.S.C.E., Purdue University, West Lafayette, Ind., 1969; civil engineer; business owner; member of the West Virginia state house of representatives, 1980-1995; chairman, West Virginia Republican Party, 1990-1994; unsuccessful candidate for the Republican nomination for governor of West Virginia in 1996; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412488,
+            'bio'        => "DUFFY, Sean, a Representative from Wisconsin; born in Hayward, Sawyer County, Wis., October 3, 1971; B.A., St. Mary’s College, Winona, Minn., 1994; J.D., William Mitchell College of Law, St. Paul, Minn., 1999; lawyer, private practice; prosecutor, Ashland County, Wis.; acting assistant district attorney and district attorney, Ashland County, Wis., 2002-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412489,
+            'bio'        => "RIBBLE, Reid, a Representative from Wisconsin; born in Neenah, Winnebago County, Wis., April 5, 1956; graduated from Appleton East High School, Appleton, Wis., 1974; attended Grand Rapids School of Bible and Music, Grand Rapids, Mich.; business owner; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412500,
+            'bio'        => "AMODEI, Mark E., a Representative from Nevada; born in Carson City, Carson City County, Nev., June 12, 1958; graduated from Carson High School, Carson City, Nev., 1976; B.A., University of Nevada, Reno, Nev., 1980; J.D., University of the Pacific, McGeorge School of Law, Sacramento, Calif., 1983; United States Army, 1984-1987; lawyer, private practice; member of the Nevada state assembly, 1997; member of the Nevada state senate, 1999-2011; president pro tempore, Nevada state senate, 2003-2005; elected as a Republican to the One Hundred Twelfth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Dean Heller, and reelected to the two succeeding Congresses (September 13, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412503,
+            'bio'        => "MASSIE, Thomas, a Representative from Kentucky; born in Huntington, Cabell County, W.Va., January 13, 1971; graduated from Lewis County High School, Vanceburg, Ky.; S.B., Massachusetts Institute of Technology, Cambridge, Mass., 1993; M.S., Massachusetts Institute of Technology, Cambridge, Mass., 1996; business owner; farmer; judge executive, Lewis County, Ky., 2010-2012; elected simultaneously as a Republican to the One Hundred Twelfth Congress and One Hundred Thirteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Geoffrey C. (Geoff) Davis and reelected to the succeeding Congress (November 6, 2012-present)."
+        ],
+        [
+            'govTrackId' => 412508,
+            'bio'        => "COTTON, Tom, a Senator and a Representative from Arkansas; born in Dardanelle, Yell County, Ark., May 13, 1977; A.B., Harvard University, Cambridge, Mass., 1998; attended Claremont Graduate University, Claremont, Calif., 1998-1999; J.D., Harvard University, Cambridge, Mass., 2002; United States Army, 2004-2009; clerk, U.S. Court of Appeals, 2002-2003; lawyer, private practice; management consultant; farmer; elected as a Republican to the One Hundred Thirteenth Congress (January 3, 2013-January 3, 2015); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412510,
+            'bio'        => "LaMALFA, Doug, a Representative from California; born in Oroville, Butte County, Calif., July 2, 1960; attended Las Plumas High School, Oroville, Calif.; graduated from Briggs High School, Briggs, Calif., 1978; A.A., Butte College, Oroville, Calif., 1980; B.S., California Polytechnic State University, San Luis Obispo, Calif., 1982; rice farmer; member of the California state assembly, 2002-2008; member of the California state senate, 2010-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412513,
+            'bio'        => "COOK, Paul, a Representative from California; born in Meriden, New Haven County, Conn., March 3, 1943; B.S., Southern Connecticut State University, New Haven, Conn., 1966; M.P.A., California State University, San Bernardino, Calif., 1996; M.A., University of California, Riverside, Calif., 2000; United States Marine Corps, 1966-1992; professor; member of the Yucca Valley, Calif. town council, 1998-2006; Mayor of Yucca Valley, Calif.; member of the California state assembly, 2006-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412515,
+            'bio'        => "VALADAO, David G., a Representative from California; born in Hanford, Kings County, Calif., April 14, 1977; graduated from Hanford High School, Hanford, Calif., 1995; attended College of the Sequoias, Visalia, Calif., 1996-1998; farmer; business owner; member of the California state assembly, 2010-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412525,
+            'bio'        => "YOHO, Ted, a Representative from Florida; born in Minneapolis, Minneapolis County, Minn., April 13, 1955; graduated from Deerfield Beach High School, Deerfield Beach, Fla., 1973; attended Florence State University (University of North Alabama), Florence, Ala.; A.A., Broward Community College, Fort Lauderdale, Fl., 1977; B.S.A., University of Florida, Gainesville, Fla., 1979; D.V.M., University of Florida, Gainesville, Fla., 1983; large animal veterinarian; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412526,
+            'bio'        => "DeSANTIS, Ron, a Representative from Florida; born in Jacksonville, Duval County, Fla., September 14, 1978; graduated from Dunedin High School, Dunedin, Fla., 1997; B.A., Yale University, New Haven, Conn., 2001; J.D., Harvard University, Cambridge, Mass., 2005; United States Navy, 2004-2010; United States Navy Reserve, 2010-present; author; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
+        [
+            'govTrackId' => 412531,
+            'bio'        => "COLLINS, Doug, a Representative from Georgia; born in Gainesville, Hall County, Ga., August 16, 1966; graduated from North Hall High School, Gainesville, Ga.; B.A., North Georgia College, Dahlonega, Ga., 1988; M.Div., New Orleans Theological Seminary, New Orleans, La., 1996; J.D., John Marshall Law School, Atlanta, Ga., 2008; United States Air Force Reserve, 2007-present; pastor; lawyer, private practice; businessman; member of the Georgia state house of representatives, 2007-2012; elected as a Republican to the One Hundred Thirteenth and to the succeeding Congress (January 3, 2013-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
