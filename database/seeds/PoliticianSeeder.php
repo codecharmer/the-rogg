@@ -806,6 +806,130 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412397,
             'bio'        => "GOSAR, Paul, a Representative from Arizona; born in Rock Springs, Sweetwater County, Wyo., November 22, 1958; graduated from Pinedale High School, Pinedale, Wyo., 1977; B.S., Creighton University, Omaha, Nebr., 1981; D.D.S., Creighton University, Omaha, Nebr., 1985; dentist; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
         ],
+        [
+            'govTrackId' => 412399,
+            'bio'        => "SCHWEIKERT, David, a Representative from Arizona; born in Los Angeles, Los Angeles County, Calif., on March 3, 1962; A.A., Scottsdale Community College, Scottsdale, Ariz., 1985; B.S., Arizona State University, Tempe, Ariz., 1988; M.B.A., Arizona State University, Tempe, Ariz., 2005; business owner; realtor; financial consultant; member of the Arizona state house of representatives, 1989-1994; member of the Arizona state board of equalization, 1995-2003; Maricopa County, Ariz. treasurer, 2004-2006; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412400,
+            'bio'        => "CRAWFORD, Rick, a Representative from Arkansas; born at Homestead Air Force Base, Miami-Dade County, Florida, on January 22, 1966; graduated from Alvirne High School in Hudson, N.H.; United States Army, 1985-1989; B.S., Arkansas State University, Jonesboro, Ark., 1996; journalist; business owner; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412402,
+            'bio'        => "WOMACK, Steve, a Representative from Arkansas; born in Russellville, Pope County, Ark., on February 18, 1957; graduated from Russellville High School, Russellville, Ark., 1975; B.A., Arkansas Tech University, Russellville, Ark., 1979; Arkansas Army National Guard, 1979-2009; radio station manager; consultant; member of the Rogers, Ark., city council, 1983-1984 and 1997-1998; Mayor of Rogers, Ark., 1999-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412403,
+            'bio'        => "DENHAM, Jeff, a Representative from California; born in Hawthorne, Los Angeles County, California, on July 29, 1967; attended Atascadero High School, Atascadero, Calif.; graduated from Morro Bay High School, Morro Bay, Calif., 1985; A.A.,Victor Valley Junior College, Victorville, Calif., 1989; B.A., California Polytechnic State University, San Luis Obispo, Calif., 1992; United States Air Force, 1984-1988; United States Air Force Reserve, 1988-2000; business owner; member of the California state senate, 2002-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412405,
+            'bio'        => "TIPTON, Scott, a Representative from Colorado; born in Espanola, Rio Arriba County, N. Mex., November 9, 1956; graduated from Cortez High School; B.A., Fort Lewis College, Durango, Colo., 1978; business owner; member of the Colorado state house of representatives, 2008-2010; unsuccessful candidate for election to the United States House of Representatives in 2006; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412406,
+            'bio'        => "GARDNER, Cory, a Senator and a Representative from Colorado; born in Yuma, Yuma County, Colo., on August 22, 1974; graduated from Yuma High School, Yuma, Colo., 1993; B.A., Colorado State University, Fort Collins, Colo., 1997; J.D., University of Colorado, Boulder, Colo., 2001; agricultural advocate; staff, United States Senator Wayne Allard of Colorado, 2002-2005; member of the Colorado state house of representatives, 2005-2010; elected as a Republican to the One Hundred Twelfth and to the succeeding Congress (January 3, 2011-January 3, 2015); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021."
+        ],
+        [
+            'govTrackId' => 412409,
+            'bio'        => "NUGENT, Richard, a Representative from Florida; born in Evergreen Park, Cook County, Illinois, on May 26, 1951; B.A., Saint Leo College, Saint Leo, Fla., 1990; M.P.A., Troy State University, Troy, Ala., 1995; Illinois Air National Guard, 1969-1975; deputy sheriff, Hernando County, Fla.; sheriff of Hernando County, Fla., 2000-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412410,
+            'bio'        => "WEBSTER, Daniel A., a Representative from Florida; born in Charleston, Kanawha County, West Virginia, on April 27, 1949; graduated from Maynard Evans High School, Orlando, Fla., 1967; B.E.E., Georgia Institute of Technology, Atlanta, Ga., 1971; business owner; member of the Florida state house, 1980-1998, speaker of the house of representatives, 1996-1998; member of the Florida state senate, 1998-2008, majority leader, 2006-2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412411,
+            'bio'        => "ROSS, Dennis, a Representative from Florida; born in Lakeland, Polk County, Florida, on October 18, 1959; graduated from Lakeland Senior High School, Lakeland, Fla., 1977; B.S., Auburn University, Auburn, Ala.; J.D., Samford University, Birmingham, Ala.; lawyer, private practice; member of the Florida state house of representatives, 2000-2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412416,
+            'bio'        => "WOODALL, Rob, a Representative from Georgia; born in Athens, Clarke County, Ga., February 11, 1970; graduated from Marist School, Atlanta, Ga., 1988; B.A., Furman University, Greenville, S.C., 1992; J.D., University of Georgia School of Law, Athens, Ga., 1998; staff, United States Representative John Linder, 1994-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412417,
+            'bio'        => "SCOTT, Austin, a Representative from Georgia; born in Augusta, Richmond County, Ga., December 10, 1969; B.B.A., University of Georgia, Athens, Ga., 1993; business owner; member of the Georgia state house of representatives, 1997-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412419,
+            'bio'        => "LABRADOR, Raúl R., a Representative from Idaho; born in Carolina, San Juan County, Puerto Rico, December 8, 1967; B.A., Brigham Young University, Provo, Utah, 1992; J.D., University of Washington, Seattle, Wash., 1995; lawyer, private practice; member of the Idaho state house of representatives, 2006-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412420,
+            'bio'        => "DOLD, Robert, a Representative from Illinois; born in Evanston, Cook County, Ill., June 23, 1969; graduated from New Trier High School, Winnetka, Ill., 1987; B.A., Denison University, Granville, Ohio, 1991; J.D., Indiana University, Bloomington, Ind., 1996; M.B.A., Northwestern University Kellogg School of Management, Evanston, Ill., 2000; business owner; staff, United States Vice President James Danforth Quayle, 1991-1993; staff, United States House of Representatives Committee on Reform and Oversight, 1997-1999; elected as a Republican to the One Hundred Twelfth Congress (January 3, 2011-January 3, 2013); unsuccessful candidate for reelection to the One Hundred Thirteenth Congress in 2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412421,
+            'bio'        => "KINZINGER, Adam, a Representative from Illinois; born in Kankakee, Kankakee County, Illinois, February 27, 1978; graduated from Normal West High School, Normal, Ill., 1996; B.A., Illinois State University, Normal, Ill., 2000; sales representative; United States Air Force/Illinois Air National Guard, 2003-present; member of the McLean County, Ill., board, 1998-2003; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412422,
+            'bio'        => "HULTGREN, Randy, a Representative from Illinois; born in Park Ridge, Cook County, Ill., March 1, 1966; graduated from Wheaton Academy, West Chicago, Ill., 1984; B.A., Bethel University, St. Paul, Minn., 1988; J.D., Chicago-Kent College of Law, Chicago, Ill., 1993; staff, United States Representative Dennis Hastert of Illinois, 1988-1990; lawyer, private practice; member of the DuPage, Ill., county board, 1994-1998; member of the Illinois state house of representatives, 1999-2007; member of the Illinois state senate, 2007-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412426,
+            'bio'        => "ROKITA, Todd, a Representative from Indiana; born in Chicago, Cook County, Ill., February 9, 1970; graduated from Munster High School, Munster, Ind., 1988; B.A., Wabash College, Crawfordsville, Ind., 1992; J.D., Robert H. McKinney School of Law, Indiana University, Indianapolis, Ind., 1995; lawyer, private practice; general counsel, Indiana state secretary of state’s office, 1997-2000; Indiana state deputy secretary of state, 2000-2002; Indiana secretary of state, 2002-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412427,
+            'bio'        => "BUCSHON, Larry, a Representative from Indiana; born in Taylorville, Bartholomew County, Ill., May 31, 1962; B.S., University of Illinois, Urbana-Champaign, Ill., 1984; M.D., University of Illinois, Chicago, Ill., 1988; physician; United States Navy Reserve, 1989-1998; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412428,
+            'bio'        => "YOUNG, Todd, a Representative from Indiana; born in Lancaster, Lancaster County, Pa., August 24, 1972; graduated from Carmel High School, Carmel, Ind., 1990; B.S., United States Naval Academy, Annapolis, Md., 1995; M.B.A., University of Chicago, Chicago, Ill., 2000; M.A., University of London, London, England, 2001; J.D., Robert H. McKinney School of Law, Indiana University, Indianapolis, Ind., 2006; United States Navy, 1990-1991; United States Marine Corps, 1995-2000; staff, United States Senator Richard Lugar of Indiana, 2001-2003; Orange County, Ind., deputy prosecutor, 2007-2010; consultant; lawyer, private practice; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412429,
+            'bio'        => "HUELSKAMP, Tim, a Representative from Kansas; born in Fowler, Meade County, Kans., November 11, 1968; B.A., College of Santa Fe, Santa Fe, N.M., 1991; Ph.D., American University, Washington, D.C., 1995; farmer; legislative analyst; member of Kansas state senate, 1996-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412430,
+            'bio'        => "YODER, Kevin, a Representative from Kansas; born in Hutchison, Reno County, Kans., January 8, 1976; B.A., University of Kansas, Lawrence, Kans., 1999; J.D., University of Kansas, Lawrence, Kans., 2002; lawyer, private practice; member of the Kansas state house of representatives, 2002-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412431,
+            'bio'        => "POMPEO, Mike, a Representative from Kansas; born in Orange, Orange County, Calif., December 30, 1963; B.S., United States Military Academy, West Point, N.Y., 1986; J.D., Harvard University, Cambridge, Mass., 1994; United States Army, 1986-1991; business executive; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412434,
+            'bio'        => "HARRIS, Andy, a Representative from Maryland; born in Brooklyn, Kings County, N.Y., January 25, 1957; B.S., The Johns Hopkins University, Baltimore, Md., 1977; M.D., The Johns Hopkins University, Baltimore, Md., 1980; M.H.S., The Johns Hopkins University, Baltimore, Md., 1995; physician; United States Navy reserve, 1988-2010; member of the Maryland state senate, 1998-2010; minority whip, Maryland state senate; unsuccessful candidate for election to the United States House of Representatives in 2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412436,
+            'bio'        => "BENISHEK, Dan, a Representative from Michigan; born in Iron River, Iron County, Mich., April 20, 1952; graduated from West Iron County High School, Iron River, Mich., 1970; B.S., University of Michigan, Ann Arbor, Mich., 1974; M.D., Wayne State University Medical School, Detroit, Mich., 1978; physician; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412437,
+            'bio'        => "HUIZENGA, Bill, a Representative from Michigan; born in Zeeland, Ottawa County, Mich., January 31, 1969; graduated from Holland Christian High School, Holland, Mich., 1987; B.A., Calvin College, Grand Rapids, Mich., 1991; administrator; business owner; staff, United States Representative Peter Hoekstra of Michigan, 1996-2002; member of the Michigan state house of representatives, 2003-2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412438,
+            'bio'        => "AMASH, Justin, a Representative from Michigan; born in Grand Rapids, Kent County, Mich., April 18, 1980; graduated from Grand Rapids Christian High School, Grand Rapids, Mich., 1998; A.B., University of Michigan, Ann Arbor, Mich., 2002; J.D., University of Michigan, Ann Arbor, Mich., 2005; lawyer, private practice; member of the Michigan state house of representatives, 2008-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412443,
+            'bio'        => "PALAZZO, Steven, a Representative from Mississippi; born in Gulfport, Harrison County, Miss., February 21, 1970; graduated from Saint John High School, Gulfport, Miss., 1988; B.S., University of Southern Mississippi, Hattiesburg, Miss., 1994; M.P.A., University of Southern Mississippi, Hattiesburg, Miss., 1996; United States Marine Corps Reserve, 1988-1996; Mississippi Army National Guard, 2007-present; accountant; member of the Mississippi state house of representatives, 2007-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412444,
+            'bio'        => "HARTZLER, Vicky, a Representative from Missouri; born in Harrisonville, Cass County, Mo., October 13, 1960; graduated from Archie High School, Archie, Mo., 1979; B.S., University of Missouri, Columbia, Mo., 1983; M.S., University of Central Missouri, Warrensburg, Mo., 1992; teacher; farmer; business owner; member of the Missouri state house of representatives, 1995-2001; chairperson, Missouri Women’s Council, 2005; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412445,
+            'bio'        => "LONG, Billy, a Representative from Missouri; born in Springfield, Greene County, Mo., August 11, 1955; attended University of Missouri, Columbia, Mo., 1973-1976; graduated from the Missouri Auction School, 1979; business owner; radio commentator, 1999-2006; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412446,
+            'bio'        => "HECK, Joe, a Representative from Nevada; born in Jamaica, Queens County, N.Y., October 30, 1961; graduated from Wallenpaupack Area High School, Hawley, Pa., 1979; B.S., Pennsylvania State University, University Park, Pa., 1984; D.O., Philadelphia College of Osteopathic Medicine, Philadelphia, Pa., 1988; M.S.S., United States Army War College, Carlisle, Pa., 2006; United States Army Reserve, 1991-present; physician; business owner; faculty, Touro University, Henderson, Nevada; faculty, Community College of Southern Nevada; faculty, University of Nevada School of Medicine, Las Vegas, Nevada; faculty, Uniformed Services University, Bethesda, Md., 1998-2003; member of the Nevada state senate, 2004-2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412447,
+            'bio'        => "GUINTA, Frank, a Representative from New Hampshire; born in Edison, Middlesex County, N.J., September 26, 1970; graduated from Canterbury School, New Milford, Conn., 1989; B.A., Assumption College, Worcester, Mass., 1993; M.A., Franklin Pierce Law Center, Concord, N.H., 2000; businessman; law clerk, New Hampshire Insurance Department, 1999; member of the New Hampshire state house of representatives, 2000-2002; Manchester, N.H., alderman, 2002-2006; staff, United States Representative Jeb Bradley of New Hampshire, 2003-2004; mayor of Manchester, N.H., 2006-2010; elected as a Republican to the One Hundred Twelfth Congress (January 3, 2011-January 3, 2013); unsuccessful candidate for reelection to the One Hundred Thirteenth Congress in 2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412453,
+            'bio'        => "GIBSON, Christopher, a Representative from New York; born in Rockville Centre, Nassau County, N.Y., May 13, 1964; graduated from Ichabod Crane High School, Kinderhook, N.Y.; B.A., Siena College, Loudonville, N.Y., 1986; M.P.A., Cornell University, Ithaca, N.Y., 1995; Ph.D., Cornell University, Ithaca, N.Y., 1998; New York National Guard, 1981-1986; United States Army, 1986-2010; faculty, United States Military Academy, West Point, N.Y.; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
