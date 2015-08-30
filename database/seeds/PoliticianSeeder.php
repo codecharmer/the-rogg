@@ -1282,6 +1282,74 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412639,
             'bio'        => "EMMER, Thomas Earl II, a Representative from Minnesota; born in South Bend, St. Joseph County, Ind., March 3, 1961; graduated from St. Thomas Academy, Mendota Heights, Minn.; B.A., University of Alaska, Fairbanks, Alaska, 1984; J.D., Mitchell College of Law, St. Paul, Minn., 1988; radio host; lawyer, private practice; member of the Independence, Minn., city council, 1995-2002; member of the Delano, Minn., city council, 2003-2004; member of the Minnesota state house of representatives, 2004-2010; deputy minority leader, Minnesota state house of representatives, 2007-2008; unsuccessful candidate for Governor of Minnesota in 2004; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
         ],
+        [
+            'govTrackId' => 412640,
+            'bio'        => "ZINKE, Ryan, a Representative from Montana; born in Bozeman, Gallatin County, Mont., November 1, 1961; graduated from Whitefish High School, Whitefish, Mont., 1980; B.S., University of Oregon, Eugene, Ore., 1984; M.B.A., National University, San Diego, Calif., 1991; M.S., University of San Diego, San Diego, Calif., 2003; United States Navy, 1985-2008; business executive; member of the Montana state senate, 2009-2012; unsuccessful candidate for nomination for lieutenant governor of Montana in 2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412641,
+            'bio'        => "ROUZER, David, a Representative from North Carolina; born in Landstuhl, Germany, February 16, 1972; graduated from Northern High School, Durham, N.C.; B.S., North Carolina State University, Raleigh, N.C., 1994; businessman; associate administrator and rural administrator, United States Department of Agriculture, 2005-2006; staff, United States Senator Jesse Helms of North Carolina, 1996-2000; staff, United States Senator Elizabeth Dole of North Carolina, 2003-2005; member of the North Carolina state senate, 2009-2012; unsuccessful candidate for election to the United States House of Representatives in 2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412643,
+            'bio'        => "MacARTHUR, Thomas Charles, a Representative from New Jersey; born in Hebron, Tolland County, Conn., October 16, 1960; graduated from RHAM High School, Hebron, Conn., 1978; B.A., Hofstra University, Hempstead, N.Y., 1982; insurance executive; member of the Randolph, N.J., city council, 2011-2013; deputy mayor of Randolph, N.J., 2012; mayor of Randolph, N.J., 2013-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412645,
+            'bio'        => "HARDY, Cresent Leo, a Representative from Nevada; born in Mesquite, Clark County, Nev., June 23, 1957; graduated from Virgin Valley High School, Mesquite, Nev., 1975; attended Dixie State College, St. George, Utah; business owner; member of the Mesquite, Nev., city council, 1997-2002; member of the Nevada state assembly, 2011-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412646,
+            'bio'        => "ZELDIN, Lee M, a Representative from New York; born in East Meadow, Nassau County, N.Y., January 30, 1980; graduated from William Floyd High School, Brookhaven, N.Y., 1998; B.A., State University of New York, Albany, N.Y., 2001; J.D., Albany Law School, Albany, N.Y., 2003; United States Army, 2003-2007; United States Army Reserve, 2007-present; lawyer; unsuccessful candidate for election to the United States House of Representatives in 2008; member of the New York state senate, 2010-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412648,
+            'bio'        => "STEFANIK, Elise M, a Representative from New York; born in Albany, Albany County, N.Y., July 2, 1984; graduated from Albany Academy for Girls, Albany, N.Y., 2002; A.B., Harvard University, Cambridge, Mass., 2006; staff, President George W. Bush administration, 2006-2009; campaign aide; businesswoman; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412649,
+            'bio'        => "KATKO, John, a Representative from New York; born in Camillus, Onondaga County, N.Y., November 9, 1962; graduated from Bishop Ludden High School, Syracuse, N.Y., 1980; B.A., Niagara University, Lewiston, N.Y., 1984; J.D., Syracuse University, Syracuse, N.Y., 1988; lawyer, private practice; staff, United States Securities and Exchange Commission, 1991-1995; staff, United States Justice Department, 1995-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412650,
+            'bio'        => "RUSSELL, Steve, a Representative from Oklahoma; born in Oklahoma City, Oklahoma County, Okla., on May 25, 1963; graduated from Del City High School, Del City, Okla., 1981; B.A., Ouachita Baptist University, Arkadelphia, Ark., 1985; U.S. Army, 1985-2006; author; small business owner; member of the Oklahoma state senate, 2008-2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412651,
+            'bio'        => "COSTELLO, Ryan, a Representative from Pennsylvania; born in Chester County, Pa., on September 7, 1976; graduated from Owen J. Roberts High School, Pottstown, Pa., 1995; B.A., Ursinus College, Collegeville, Pa., 1999; LL.B., Villanova University, Villanova, Pa., 2002; lawyer, private practice; member of the board of commissioners, Chester County, Pa., 2011-2013; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412653,
+            'bio'        => "RATCLIFFE, John, a Representative from Texas; born in Chicago, Cook County, Ill., October 20, 1965; B.A., University of Notre Dame, Notre Dame, Ind., 1987; J.D., Southern Methodist University, Dallas, Tex., 1989; lawyer, private practice; professor; United States attorney for the Eastern District of Texas, 2007-2008; mayor of Heath, Tex., 2004-2012; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412654,
+            'bio'        => "HURD, William Ballard, a Representative from Texas; born in San Antonio, Bexar County, Tex., August 19, 1977; graduated from John Marshall High School, San Antonio, Tex., 1995; B.S., Texas Agricultural and Mechanical University, College Station, Tex., 2000; business owner; operations officer, Central Intelligence Agency, 2000-2009; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412655,
+            'bio'        => "BABIN, Brian, a Representative from Texas; born in Port Arthur, Jefferson County, Tex., March 23, 1948; graduated from Forest Park High School, Beaumont, Tex., 1966; B.S., Lamar University, Beaumont, Tex., 1973; D.D.S., University of Texas, Houston, Tex., 1976; United States Air Force, 1975-1979; Texas Army National Guard, 1969-1975; dentist; alderman, Woodville, Tex., 1981-1982, 1984-1989; mayor of Woodville, Tex., 1982-1984; member, Texas Historical Commission, 1989-1995; member of the Woodville, Tex., school board, 1992-1995; unsuccessful candidate for nomination to the United States House of Representatives in 1996 and 1998; member, Lower Neches Valley Authority, 1999-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412656,
+            'bio'        => "LOVE, Ludmya Bourdeau (Mia), a Representative from Utah; born in Brooklyn, Kings County, N.Y., on December 6, 1975; graduated from Norwalk High School, Norwalk, Conn.; B.A., University of Hartford, West Hartford, Conn., 1997; flight attendant; call center operator; member of the Saratoga Springs, Utah, city council, 2003-2009; mayor of Saratoga Springs, Utah, 2010-2013; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412658,
+            'bio'        => "COMSTOCK, Barbara J., a Representative from Virginia; born in Springfield, Hampden County, Mass., June 30, 1959; B.A., Middlebury College, Middlebury, Vt., 1981; J.D., Georgetown University, Washington, D.C., 1986; staff, United States Senator Edward Kennedy of Massachusetts; lawyer, private practice; staff, United States Representative Frank Wolf of Virginia, 1991-1995; staff, United States House of Representatives Oversight and Government Reform Committee, 1995-1999; campaign aide; staff, United States Justice Department, 2002-2003; consultant; member of the Virginia state house of delegates, 2009-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412660,
+            'bio'        => "NEWHOUSE, Daniel Milton, a Representative from Washington; born in Sunnyside, Yakima County, Wash., July 10, 1955; graduated from Sunnyside High School, Sunnyside, Wash., 1973; B.S., Washington State University, Pullman, Wash., 1977; farmer; member of the Washington state house of representatives, 2003-2009; director of the Washington state department of agriculture, 2009-2013; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412661,
+            'bio'        => "GROTHMAN, Glenn, a Representative from Wisconsin; born in Milwaukee, Milwaukee County, Wis., July 3, 1955; graduated from Homestead High School, Mequon, Wisconsin, 1973; B.B.A., University of Wisconsin-Madison, Madison, Wis., 1978; J.D., University of Wisconsin-Madison, Madison, Wis., 1983; lawyer, private practice; member of the Wisconsin state assembly, 1993-2004; member of the Wisconsin state senate, 2004-2014; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
+        [
+            'govTrackId' => 412662,
+            'bio'        => "MOONEY, Alex X., a Representative from West Virginia; born in Washington, D.C., June 5, 1971; graduated from Frederick High School, Frederick, Md.; A.B., Dartmouth College, Hanover, N.H., 1993; unsuccessful candidate for the New Hampshire state house of representatives, 1992; staff, United States Representative Roscoe Bartlett of Maryland, 1993-1995; member of the Maryland state house of delegates, 1999-2010; chairman, Maryland Republican Party, 2010-2013; member, Republican National Committee, 2011-2013; staff, House Republican Conference, 1995; elected as a Republican to the One Hundred Fourteenth Congress (January 3, 2015-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
