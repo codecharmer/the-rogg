@@ -930,6 +930,94 @@ class PoliticianSeeder extends Seeder
             'govTrackId' => 412453,
             'bio'        => "GIBSON, Christopher, a Representative from New York; born in Rockville Centre, Nassau County, N.Y., May 13, 1964; graduated from Ichabod Crane High School, Kinderhook, N.Y.; B.A., Siena College, Loudonville, N.Y., 1986; M.P.A., Cornell University, Ithaca, N.Y., 1995; Ph.D., Cornell University, Ithaca, N.Y., 1998; New York National Guard, 1981-1986; United States Army, 1986-2010; faculty, United States Military Academy, West Point, N.Y.; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
         ],
+        [
+            'govTrackId' => 412454,
+            'bio'        => "HANNA, Richard, a Representative from New York; born in Utica, Oneida County, N.Y., January 25, 1951; graduated from Whitesboro High School, Marcy, N.Y.; B.A., Reed College, Portland, Oreg., 1976; business owner; unsuccessful candidate for election to the United States House of Representatives in 2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412457,
+            'bio'        => "ELLMERS, Renee, a Representative from North Carolina; born in Ironwood, Gogebic County, Mich., February 9, 1964; graduated from Madison High School, Madison Heights, Mich.; B.S., Oakland University, Rochester, Mich., 1990; registered nurse; hospital administrator; member of the Dunn, N.C., planning board, 2006-2010; chair, Dunn, N.C., planning board, 2008-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412460,
+            'bio'        => "JOHNSON, Bill, a Representative from Ohio; born in Roseboro, Sampson County, N.C., November 10, 1954; B.S., Troy University, Troy, Ala., 1979; M.S., Georgia Institute of Technology, Atlanta, Ga., 1984; United States Air Force, 1973-1999; business owner; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412461,
+            'bio'        => "STIVERS, Steve, a Representative from Ohio; born in Cincinnati, Hamilton County, Ohio, March 24, 1965; graduated from Ripley-Union-Lewis High School, Ripley, Ohio, 1983; B.A., Ohio State University, Columbus, Ohio, 1989; M.B.A., Ohio State University, Columbus, Ohio, 1996; M.A., Army War College, Carlisle, Pa., 2012; Ohio Army National Guard, 1988-2008; staff, Ohio state senate; professional advocate; businessman; member of the Ohio state senate, 2003-2008; unsuccessful candidate for election to the One Hundred Eleventh Congress in 2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412462,
+            'bio'        => "RENACCI, Jim, a Representative from Ohio; born in Monongahela, Washington County, Pa., December 3, 1958; graduated from Ringgold High School, Monongahela, Pa., 1976; B.S., Indiana University of Pennsylvania, Indiana, Pa., 1980; business owner; member of the Wadsworth, Ohio, board of zoning appeals, 1994-1995; Wadsworth, Ohio, city council president, 1999-2003; mayor of Wadsworth, Ohio, 2004-2008; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412463,
+            'bio'        => "GIBBS, Bob, a Representative from Ohio; born in Peru, Miami County, Ind., June 14, 1954; graduated from Bay Village Senior High School, Bay Village, Ohio, 1972; A.A.S., Ohio State University Agricultural Technical Institute, Wooster, Ohio, 1974; technician; farmer; business owner; president, Ohio Farm Bureau Federation; member of the Ohio state house of representatives, 2003-2009; member of the Ohio state senate, 2009-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412464,
+            'bio'        => "LANKFORD, James, a Senator and a Representative from Oklahoma; born in Dallas, Dallas County, Tex., March 4, 1968; B.S., University of Texas, Austin, Tex., 1990; M.Div., Southwestern Theological Baptist Seminary, Ft. Worth, Tex., 1994; youth camp director, 1996-2009; elected as a Republican to the One Hundred Twelfth and to the succeeding Congress (January 3, 2011-January 3, 2015); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the U.S. Senate in the November 4, 2014, special election to the unexpired portion of the term ending January 3, 2017, left vacant by the resignation of Thomas Coburn; took the oath of office on January 3, 2015."
+        ],
+        [
+            'govTrackId' => 412465,
+            'bio'        => "KELLY, Mike, a Representative from Pennsylvania; born in Pittsburgh, Allegheny County, Pa., May 10, 1948; B.A., Notre Dame University, South Bend, Ind., 1970; business owner; member of the Butler Pa., area school board, 1992-1995; member of the Butler County, Pa., council, 2006-2009; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412466,
+            'bio'        => "MEEHAN, Patrick, a Representative from Pennsylvania; born in Cheltenham, Montgomery County, Pa., October 20, 1955; graduated from Chestnut Hill Academy, Philadelphia, Pa., 1974; B.A., Bowdoin College, Brunswick, Maine, 1978; J.D., Temple University, Philadelphia, Pa., 1986; lawyer, private practice; United States Attorney for the Eastern District of Pennsylvania, 2001-2008; staff, United States Senator Arlen Specter, 1991-1994; Delaware County, Pa., district attorney, 1996-2001; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412468,
+            'bio'        => "MARINO, Thomas A., a Representative from Pennsylvania; born in Williamsport, Lycoming County, Pa., August 15, 1952; graduated from Williamsport Area High School, Williamsport, Pa., 1970; A.A., Williamsport Area Community College, Williamsport, Pa., 1983; B.A., Lycoming College, Williamsport, Pa., 1985; J.D., Dickinson School of Law, Carlisle, Pa., 1988; manufacturing manager; lawyer, private practice; Lycoming County,Pa., district attorney, 1992-2002; United States attorney for the Middle District of Pennsylvania, 1992-2002; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412469,
+            'bio'        => "BARLETTA, Lou, a Representative from Pennsylvania; born in Hazleton, Luzerne County, Pa., January 28, 1956; graduated from Hazleton High School, Hazleton, Pa., 1974; attended Bloomsburg University, Bloomsburg, Pa.; professional athlete; business owner; member of the Hazleton, Pa., city council, 1998-2000; Mayor of Hazleton, Pa., 2000-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412471,
+            'bio'        => "SCOTT, Tim, a Senator and a Representative from South Carolina; born in North Charleston, Charleston County, S.C., September 19, 1965; attended Presbyterian College, Clinton, S.C., 1983-1984; B.S., Charleston Southern University, Charleston, S.C., 1988; entrepreneur; Charleston County, S.C. council, 1995-2008; unsuccessful candidate for the South Carolina state senate in 1996; member of the South Carolina house of representatives, 2009-2010; elected as a Republican to the One Hundred Twelfth Congress, and served from January 3, 2011, to January 2, 2013, when he resigned to become a U.S. Senator; appointed January 2, 2013, to fill the vacancy caused by the resignation of James DeMint; appointment took effect upon his resignation from the House of Representatives on January 2, 2013; took the oath of office on January 3, 2013; elected in 2014 in a special election for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 412472,
+            'bio'        => "DUNCAN, Jeff, a Representative from South Carolina; born in Greenville, Greenville County, S.C., January 7, 1966; graduated from Ware Shoals High School, Ware Shoals, S.C., 1984; B.A., Clemson University, Clemson, S.C., 1988; banker; real estate broker; member of the South Carolina state house of representatives, 2003-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412473,
+            'bio'        => "GOWDY, Trey, a Representative from South Carolina; born in Greenville, Greenville County, S.C., August 22, 1964; graduated from Spartanburg High School, Spartanburg, S.C., 1982; B.A., Baylor University, Waco, Texas, 1986; J.D., University of South Carolina School of Law, Columbia, S.C., 1989; lawyer, private practice; clerk, South Carolina Court of Appeals; clerk, United States District Court; assistant U. S. attorney, 1994-2000; solicitor, Seventh Judicial Circuit, 2001-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present); chair, Select Committee on the Events Surrounding the 2012 Terrorist Attack in Benghazi (One Hundred Thirteenth Congress)."
+        ],
+        [
+            'govTrackId' => 412474,
+            'bio'        => "MULVANEY, Mick, a Representative from South Carolina; born in Alexandria, Va., July 21, 1967; graduated from Charlotte Catholic High School, Charlotte, N.C., 1985; B.S.F.S., Georgetown University, Washington, D.C., 1989; J.D., University of North Carolina, Chapel Hill, N.C., 1992; lawyer, private practice; real estate developer; member of the South Carolina state house of representatives, 2007-2009; member of the South Carolina state senate, 2009-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412475,
+            'bio'        => "NOEM, Kristi, a Representative from South Dakota; born in Watertown, Codington County, S.Dak., November 30, 1971; graduated from Hamlin High School, Hayti, S.Dak., 1990; attended Mount Marty College, Yankton, S.Dak.; attended Northern State University, Aberdeen, S.Dak., 1990-1992; B.A., South Dakota State University, Brookings, S.Dak., 2011; farmer; rancher; member of the South Dakota state house of representatives, 2007-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412476,
+            'bio'        => "FLEISCHMANN, Chuck, a Representative from Tennessee; born in Ooltewah, Hamilton County, Tenn., October 11, 1962; B.A., University of Illinois, Urbana-Champaign, Ill., 1983; J.D., University of Tennessee, Knoxville, Tenn., 1986; lawyer, private practice; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412477,
+            'bio'        => "DESJARLAIS, Scott, a Representative from Tennessee; born in Des Moines, Polk County, Iowa, February 21, 1964; graduated from Brown High School, Sturgis, S.Dak., 1982; B.S., University of South Dakota, Vermillion, S.Dak., 1987; M.D., University of South Dakota, Vermillion, S.Dak., 1991; physician; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412478,
+            'bio'        => "BLACK, Diane, a Representative from Tennessee; born in Baltimore, Md., January 16, 1951; graduated from Andover High School, Linthicum Heights, Md.; A.S.N., Anne Arundel Community College, Arnold, Md., 1971; B.S.N., Belmont University, Nashville, Tenn., 1992; nurse; nonprofit community organization fundraiser; member of the Tennessee state house of representatives, 1999-2005; member of the Tennessee state senate, 2005-2010; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412479,
+            'bio'        => "FINCHER, Stephen Lee, a Representative from Tennessee; born in Memphis, Shelby County, Tenn., February 7, 1973; graduated from Crockett County High School, Alamo, Tenn., 1990; farmer; business owner; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412480,
+            'bio'        => "FLORES, Bill, a Representative from Texas; born in Cheyenne, Laramie County, Wyo., February 25, 1954; B.B.A., Texas A&M University, College Station, Tex., 1976; M.B.A., Houston Baptist University, Houston, Tex., 1985; certified public accountant; energy company executive; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
+        [
+            'govTrackId' => 412482,
+            'bio'        => "FARENTHOLD, Blake, a Representative from Texas; born in Corpus Christi, Nueces County, Tex., December 12, 1961; graduated from Incarnate Word High School, Corpus Christi, Tex.; B.S., University of Texas, Austin, Tex., 1985; J.D., St. Mary’s University School of Law, San Antonio, Tex., 1989; lawyer, private practice; business owner; radio commentator; elected as a Republican to the One Hundred Twelfth and to the two succeeding Congresses (January 3, 2011-present)."
+        ],
     ];
 
     private /** @noinspection PhpUnusedPrivateFieldInspection */
