@@ -18,12 +18,12 @@
         init();
 
         $scope.showHouse = function () {
-            $scope.filterByOffice = 'House';
+            $scope.filterByOffice = 'Representative';
             $scope.filterByCandidate = false;
         };
 
         $scope.showSenate = function () {
-            $scope.filterByOffice = 'Senate';
+            $scope.filterByOffice = 'Senator';
             $scope.filterByCandidate = false;
         };
 
@@ -47,7 +47,7 @@
         };
 
         function init() {
-            $scope.filterByOffice = 'House';
+            $scope.filterByOffice = 'Representative';
             $scope.filterByCandidate = false;
             $scope.orderBy = 'name';
 

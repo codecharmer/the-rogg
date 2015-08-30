@@ -154,7 +154,13 @@ class PoliticianController extends Controller
             $bioGuideId    = $politicianJson->person->bioguideid;
             $govTrackId    = $politicianJson->person->id;
 
-            $this->politicianRepo->make($name, $state, $roleTypeLabel, $party, $district, $bioGuideId, $govTrackId);
+            $politician = $this->politicianRepo->make($name, $state, $roleTypeLabel, $party, $district, $bioGuideId, $govTrackId);
+
+            if ($politician->getName() == 'Bernard Sanders' || $politician->getName() == 'Ted Cruz' || $politician->getName() == 'Lindsey O. Graham' || $politician->getName() == 'Rand Paul' || $politician->getName() == 'Marco Rubio')
+            {
+                $politician->setIsPresidentialCandidate(true);
+                $this->politicianRepo->save($politician);
+            }
         }
 
         return Response::json('Done');
