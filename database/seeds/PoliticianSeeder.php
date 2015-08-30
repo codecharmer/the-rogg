@@ -22,6 +22,7 @@ class PoliticianSeeder extends Seeder
 
         $this->seedCandidates();
         $this->seedCongress();
+        $this->seedBios();
     }
 
     private function seedCandidates()
@@ -171,4 +172,36 @@ class PoliticianSeeder extends Seeder
             }
         }
     }
+
+    private function seedBios() { }
+
+    private $bios = [
+        [
+            'govTrackId' => '400034',
+            'bio'        => "BLUNT, Roy, a Senator and a Representative from Missouri; born in Niangua, Webster County, Mo., January 10, 1950; graduated Southwest Baptist University, Bolivar, Mo., B.A., 1970; graduated Missouri State University, Springfield, Mo., M.A., 1972; high school history teacher; clerk and chief election officer, Greene County, Mo. 1973-1984; Missouri state secretary of state 1984-1993; president, Southwest Baptist University, Bolivar, Mo. 1993-1996; elected as a Republican to the One Hundred Fifth and to the six succeeding Congresses (January 3, 1997-January 3, 2011); majority whip (One Hundred Eighth through One Hundred Ninth Congresses); acting majority leader (One Hundred Ninth Congress, September 28, 2005-February 2, 2006); minority whip (One Hundred Tenth Congress); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017; vice-chair, Republican Conference (2012-); chair, Committee on Rules and Administration (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => '400040',
+            'bio'        => "BOOZMAN, John, a Senator and a Representative from Arkansas; born in Shreveport, La., December 10, 1950; graduated from Northside High School, Fort Smith, Ark.; attended the University of Arkansas, Fayetteville, Ark., 1969-1972; graduated Southern College of Optometry, 1977; optometrist; business owner; rancher; member of the Rogers, Ark., school board; elected as a Republican to the One Hundred Seventh Congress by special election to fill the vacancy caused by the resignation of United States Representative Asa Hutchinson; reelected to the four succeeding Congresses (November 20, 2001-January 3, 2011); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => '400054',
+            'bio'        => "BURR, Richard M., a Senator and a Representative from North Carolina; born in Charlottesville, Albemarle County, Va., November 30, 1955; graduated from Reynolds High School, Winston-Salem, N.C., 1974; B.A., Wake Forest University, Winston-Salem, N.C., 1978; unsuccessful candidate for election to the One Hundred Third Congress in 1992; elected as a Republican to the One Hundred Fourth and to the four succeeding Congresses (January 3, 1995-January 3, 2005); was not a candidate for reelection to the House of Representatives, but was elected to the United States Senate in 2004; reelected in 2010 for the term ending January 3, 2017; chair, Select Committee on Intelligence (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => '400194',
+            'bio'        => "ISAKSON, Johnny, a Senator and a Representative from Georgia; born in Atlanta, Fulton County, Ga., December 28, 1944; graduated from the University of Georgia, Athens, Ga., 1966; served in the Georgia Air National Guard 1966-1972; member of the Georgia state general assembly, 1976-1990; unsuccessful candidate for election as Governor of Georgia 1990; member of the Georgia state senate 1993-1996; unsuccessful candidate for election to the United States Senate in 1996; chair of the Georgia board of education 1996; elected as a Republican to the One Hundred Sixth Congress by special election to fill the vacancy created when United States Representative Newt Gingrich did not take his seat in the One Hundred Sixth Congress; reelected to the two succeeding Congresses (February 23, 1999-January 3, 2005); was not a candidate for reelection to the House of Representatives, but was elected to the United States Senate in 2004; reelected in 2010 for the term ending January 3, 2017; chair, Committee on Veterans’ Affairs (One Hundred Fourteenth Congress), Select Committee on Ethics (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => '400222',
+            'bio'        => "KIRK, Mark Steven, a Senator and a Representative from Illinois; born in Champaign, Champaign County, Ill., September 15, 1959; B.A., Cornell University, Ithaca, N.Y., 1981; M.S., London School of Economics, London, England, 1982; J.D., Georgetown University, Washington, D.C., 1992; United States Naval Reserves, 1989 to present; lawyer, private practice; staff member for United States Representative John Porter of Illinois, 1984-1990; special assistant, United States Department of State, 1992-1993; staff member for United States House of Representatives International Relations Committee, 1995; elected as a Republican to the One Hundred Seventh and to the four succeeding Congresses, and served from January 3, 2001, until his resignation on November 29, 2010; was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in the November 2, 2010, special election to the term ending January 3, 2011, a seat previously held by appointed Senator Roland Burris, and at the same time elected in the general election for the six-year term ending January 3, 2017; took the oath of office on November 29, 2010."
+        ],
+    ];
+
+    private $temp = [
+        [
+            'govTrackId' => '',
+            'bio'        => ""
+        ],
+    ];
 }
