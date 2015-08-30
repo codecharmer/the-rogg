@@ -4,6 +4,7 @@ use GuzzleHttp\Client;
 use Illuminate\Database\Seeder;
 use TheRogg\Domain\Office;
 use TheRogg\Domain\Party;
+use TheRogg\Domain\Politician;
 use TheRogg\Domain\State;
 use TheRogg\Repositories\Politicians\PoliticianRepositoryInterface as PoliticianRepo;
 
@@ -177,7 +178,13 @@ class PoliticianSeeder extends Seeder
     {
         foreach ($this->bios as $bio)
         {
-            echo $bio;
+            /** @var Politician $politician */
+            $politician = $this->politicianRepo->findBy('govTrackId', $bio['govTrackId']);
+            if (!empty($politician))
+            {
+                $politician->setBio($bio['bio']);
+                $this->politicianRepo->save($politician);
+            }
         }
     }
 
