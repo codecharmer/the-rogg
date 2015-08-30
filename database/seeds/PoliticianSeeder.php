@@ -173,34 +173,89 @@ class PoliticianSeeder extends Seeder
         }
     }
 
-    private function seedBios() { }
+    private function seedBios()
+    {
+        foreach ($this->bios as $bio)
+        {
+            echo $bio;
+        }
+    }
 
     private $bios = [
         [
-            'govTrackId' => '400034',
+            'govTrackId' => 400034,
             'bio'        => "BLUNT, Roy, a Senator and a Representative from Missouri; born in Niangua, Webster County, Mo., January 10, 1950; graduated Southwest Baptist University, Bolivar, Mo., B.A., 1970; graduated Missouri State University, Springfield, Mo., M.A., 1972; high school history teacher; clerk and chief election officer, Greene County, Mo. 1973-1984; Missouri state secretary of state 1984-1993; president, Southwest Baptist University, Bolivar, Mo. 1993-1996; elected as a Republican to the One Hundred Fifth and to the six succeeding Congresses (January 3, 1997-January 3, 2011); majority whip (One Hundred Eighth through One Hundred Ninth Congresses); acting majority leader (One Hundred Ninth Congress, September 28, 2005-February 2, 2006); minority whip (One Hundred Tenth Congress); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017; vice-chair, Republican Conference (2012-); chair, Committee on Rules and Administration (One Hundred Fourteenth Congress)."
         ],
         [
-            'govTrackId' => '400040',
+            'govTrackId' => 400040,
             'bio'        => "BOOZMAN, John, a Senator and a Representative from Arkansas; born in Shreveport, La., December 10, 1950; graduated from Northside High School, Fort Smith, Ark.; attended the University of Arkansas, Fayetteville, Ark., 1969-1972; graduated Southern College of Optometry, 1977; optometrist; business owner; rancher; member of the Rogers, Ark., school board; elected as a Republican to the One Hundred Seventh Congress by special election to fill the vacancy caused by the resignation of United States Representative Asa Hutchinson; reelected to the four succeeding Congresses (November 20, 2001-January 3, 2011); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017."
         ],
         [
-            'govTrackId' => '400054',
+            'govTrackId' => 400054,
             'bio'        => "BURR, Richard M., a Senator and a Representative from North Carolina; born in Charlottesville, Albemarle County, Va., November 30, 1955; graduated from Reynolds High School, Winston-Salem, N.C., 1974; B.A., Wake Forest University, Winston-Salem, N.C., 1978; unsuccessful candidate for election to the One Hundred Third Congress in 1992; elected as a Republican to the One Hundred Fourth and to the four succeeding Congresses (January 3, 1995-January 3, 2005); was not a candidate for reelection to the House of Representatives, but was elected to the United States Senate in 2004; reelected in 2010 for the term ending January 3, 2017; chair, Select Committee on Intelligence (One Hundred Fourteenth Congress)."
         ],
         [
-            'govTrackId' => '400194',
+            'govTrackId' => 400194,
             'bio'        => "ISAKSON, Johnny, a Senator and a Representative from Georgia; born in Atlanta, Fulton County, Ga., December 28, 1944; graduated from the University of Georgia, Athens, Ga., 1966; served in the Georgia Air National Guard 1966-1972; member of the Georgia state general assembly, 1976-1990; unsuccessful candidate for election as Governor of Georgia 1990; member of the Georgia state senate 1993-1996; unsuccessful candidate for election to the United States Senate in 1996; chair of the Georgia board of education 1996; elected as a Republican to the One Hundred Sixth Congress by special election to fill the vacancy created when United States Representative Newt Gingrich did not take his seat in the One Hundred Sixth Congress; reelected to the two succeeding Congresses (February 23, 1999-January 3, 2005); was not a candidate for reelection to the House of Representatives, but was elected to the United States Senate in 2004; reelected in 2010 for the term ending January 3, 2017; chair, Committee on Veterans’ Affairs (One Hundred Fourteenth Congress), Select Committee on Ethics (One Hundred Fourteenth Congress)."
         ],
         [
-            'govTrackId' => '400222',
+            'govTrackId' => 400222,
             'bio'        => "KIRK, Mark Steven, a Senator and a Representative from Illinois; born in Champaign, Champaign County, Ill., September 15, 1959; B.A., Cornell University, Ithaca, N.Y., 1981; M.S., London School of Economics, London, England, 1982; J.D., Georgetown University, Washington, D.C., 1992; United States Naval Reserves, 1989 to present; lawyer, private practice; staff member for United States Representative John Porter of Illinois, 1984-1990; special assistant, United States Department of State, 1992-1993; staff member for United States House of Representatives International Relations Committee, 1995; elected as a Republican to the One Hundred Seventh and to the four succeeding Congresses, and served from January 3, 2001, until his resignation on November 29, 2010; was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in the November 2, 2010, special election to the term ending January 3, 2011, a seat previously held by appointed Senator Roland Burris, and at the same time elected in the general election for the six-year term ending January 3, 2017; took the oath of office on November 29, 2010."
+        ],
+        [
+            'govTrackId' => 400284,
+            'bio'        => "MORAN, Jerry, a Senator and a Representative from Kansas; born in Great Bend, Barton County, Kans., May 29, 1954; attended Plainville High School, Plainville, Kans.; graduated University of Kansas, Lawrence, Kans., B.S., 1976; graduated Kansas University School of Law, Lawrence, Kans., J.D., 1981; M.B.A. candidate, Fort Hays State University, Hays, Kans.; bank officer; instructor, Fort Hays State University, Hays, Kans.; member of the Kansas state senate 1989-1997, serving as vice president 1993-1995, majority leader 1995-1997; Kansas state special assistant attorney general 1982-1985; deputy attorney, Rooks County, Kans. 1987-1995; University of Kansas School of Law, Lawrence, Kans., board of governors, serving as vice president 1993-1994, and as president 1994-1995; board of directors, Kansas chamber of commerce and industry 1996-1997; elected as a Republican to the One Hundred Fifth Congress and to the six succeeding Congresses (January 3, 1997-January 3, 2011); was not a candidate for reelection to the House of Representatives but was elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017; chair, National Republican Senatorial Committee (2012-2014)."
+        ],
+        [
+            'govTrackId' => 400325,
+            'bio'        => "PORTMAN, Robert Jones (Rob), a Senator and a Representative from Ohio; born in Cincinnati, Hamilton County, Ohio, December 19, 1955; graduated from the Cincinnati Country Day School, Cincinnati, Ohio; graduated Dartmouth College, Hanover, N.H., B.A., 1979; graduated University of Michigan School of Law, Ann Arbor, Mich., J.D., 1984; associate counsel to President George H. W. Bush 1989; deputy assistant and director, Office of Legislative Affairs, White House Office 1989-1991; elected as a Republican to the One Hundred Third Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Willis D. Gradison, Jr.; reelected to the six succeeding Congresses until his resignation on April 29, 2005 (May 4, 1993-April 29, 2005); U.S. Trade Representative, in the cabinet of President of George W. Bush 2005-2006; Director, Office of Management and Budget, in the cabinet of President George W. Bush 2006-2007; elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 400408,
+            'bio'        => "TOOMEY, Patrick Joseph, a Senator and a Representative from Pennsylvania; born in Providence, Providence County, R.I., November 17, 1961; graduated from LaSalle Academy, Providence, R.I.; graduated Harvard University, Cambridge, Mass., B.A., 1984; elected to Allentown, Pa., Government Study Commission 1994; elected as a Republican to the One Hundred Sixth and to the two succeeding Congresses (January 3, 1999-January 3, 2005); was not a candidate for reelection in 2004, but was an unsuccessful candidate for nomination to the United States Senate; elected as a Republican to the United States Senate in 2010 for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 400418,
+            'bio'        => "VITTER, David, a Senator and a Representative from Louisiana; born in New Orleans, Orleans Parish, La., May 3, 1961; A.B., Harvard University, Cambridge, Mass., 1983; Rhodes Scholar; B.A., Oxford University, Oxford, England, 1985; J.D., Tulane University School of Law, New Orleans, La., 1988; member of the Louisiana state house of representatives, 1992-1999; elected as a Republican to the One Hundred Sixth Congress by special election, to fill the vacancy caused by the resignation of United States Representative Robert L. Livingston, Jr.; reelected to the two succeeding Congresses (May 29, 1999-January 3, 2005); was not a candidate for reelection to the House of Representatives, but was elected to the United States Senate in 2004; reelected in 2010 for the term ending January 3, 2017; chair, Committee on Small Business and Entrepreneurship (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 300030,
+            'bio'        => "CRAPO, Michael Dean, a Senator and a Representative from Idaho; born in Idaho Falls, Bonneville County, Idaho, May 20, 1951; graduated Idaho Falls High School 1969; B.A., Brigham Young University 1973; J.D., Harvard University School of Law 1977; admitted to the bar in 1977; law clerk to Judge James M. Carter, United States Court of Appeals, Ninth Circuit 1977-1978; practiced law in San Diego 1978-1979, and in Idaho Falls 1979-1992; vice chair, Bonneville County Republican Committee 1979-1981; vice chair, Legislative District 29 Republican Committee 1982-1984; Idaho State senator 1985-1992; elected as a Republican to the One Hundred Third and to the two succeeding Congresses (January 3, 1993-January 3, 1999); was not a candidate for reelection to the U.S. House of Representatives, but was elected to the United States Senate in 1998; reelected in 2004 and again in 2010 for the term ending January 3, 2017."
+        ],
+        [
+            'govTrackId' => 300048,
+            'bio'        => "GRASSLEY, Charles Ernest, a Senator and a Representative from Iowa; born in New Hartford, Butler County, Iowa, September 17, 1933; attended the public schools; graduated, University of Northern Iowa, Cedar Falls 1955; received a graduate degree from the same university in 1956; pursued graduate work, University of Iowa, Iowa City 1957-1958; engaged in agriculture; part-time university instructor; member, Iowa house of representatives 1959-1974; elected in 1974 as a Republican to the Ninety-fourth Congress; reelected to the Ninety-fifth and Ninety-sixth Congresses (January 3, 1975-January 3, 1981); was not a candidate in 1980 for reelection to the House of Representatives, but was elected to the Senate in 1980; reelected in 1986, 1992, 1998, 2004 and again in 2010 for the term ending January 3, 2017; chair, Special Committee on Aging (One Hundred Fifth Congress), Committee on Finance (One Hundred Seventh Congress [January 20 to June 6, 2001], One Hundred Eighth and One Hundred Ninth Congresses), Committee on the Judiciary (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 300071,
+            'bio'        => "McCAIN, John Sidney, III, a Senator and a Representative from Arizona; born in Panama Canal Zone, August 29, 1936; attended schools in Alexandria, Va.; graduated, United States Naval Academy, Annapolis, Md. 1958, and the National War College, Washington, D.C. 1973; pilot, United States Navy 1958-1981, prisoner of war in Vietnam 1967-1973; received numerous awards, including the Silver Star, Legion of Merit, Purple Heart, and Distinguished Flying Cross; elected as a Republican in 1982 to the Ninety-eighth Congress; reelected to the Ninety-ninth Congress in 1984 and served from January 3, 1983, to January 3, 1987; elected to the United States Senate in 1986; reelected in 1992, 1998, 2004, and again in 2010 for the term ending January 3, 2017; chair, Committee on Indian Affairs (One Hundred Fourth Congress; One Hundred Ninth Congress), Committee on Commerce, Science, and Transportation (One Hundred Fifth through One Hundred Sixth Congresses, One Hundred Seventh Congress [January 20, 2001-June 6, 2001], One Hundred Eighth Congress), Committee on Armed Services (One Hundred Fourteenth Congress); was an unsuccessful candidate for the Republican presidential nomination in 2000; was an unsuccessful Republican nominee for President of the United States in 2008."
+        ],
+        [
+            'govTrackId' => 300075,
+            'bio'        => "MURKOWSKI, Lisa, (daughter of Frank Hughes Murkowski), a Senator from Alaska; born in Ketchikan, Alaska, on May 22, 1957; attended public schools in Fairbanks, AK; attended Williamette University in Salem, Oregon, 1975-1977; B.A. in Economics, Georgetown University 1980; J.D., Willamette College of Law 1985; attorney; member, Alaska Bar Association; Anchorage District Court attorney 1987-1989; private practice 1989-1996; Mayor’s Task Force on the Homeless 1990-1991; Anchorage Equal Rights Commission 1997-1998; Alaska State house of representatives 1999-2002; appointed to the U.S. Senate on December 20, 2002, to fill the vacancy caused by the resignation of her father, Frank H. Murkowski; elected to the U.S. Senate in 2004; unsuccessful candidate for renomination in 2010, but subsequently elected as a write-in candidate in the November 2, 2010, general election, for the term ending January 3, 2017; Republican Conference vice-chair (2009-2010); chair, Committee on Energy and Natural Resources (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 300089,
+            'bio'        => "SHELBY, Richard C., a Senator and a Representative from Alabama; born in Birmingham, Ala., May 6, 1934; attended the public schools; graduated, University of Alabama 1957; graduated, University of Alabama School of Law 1963; admitted to the Alabama bar in 1961 and commenced practice in Tuscaloosa; city prosecutor, Tuscaloosa 1963-1971; United States Commissioner, Northern District of Alabama 1966-1970; member, Alabama State senate 1970-1978; elected as a Democrat to the Ninety-sixth Congress in 1978; reelected to the three succeeding Congresses and served from January 3, 1979, to January 3, 1987; was not a candidate for reelection to the House of Representatives in 1986, but was elected to the United States Senate; reelected in 1992, 1998, 2004, and again in 2010 for the term ending January 3, 2017; changed from the Democratic to the Republican Party in 1994; chair, Select Committee on Intelligence (One Hundred Fifth and One Hundred Sixth Congresses, One Hundred Seventh Congress [January 20, 2001-June 6, 2001]), Committee on Banking, Housing and Urban Affairs (One Hundred Eighth and One Hundred Ninth Congresses, One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 400546,
+            'bio'        => "THUNE, John, a Senator and a Representative from South Dakota; born in Pierre, Hughes County, S. Dak., January 7, 1961; graduated from Jones County High School, S. Dak., 1979; B.S., Biola University, La Mirada, Calif., 1983; M.B.A., University of South Dakota, Vermillion, S. Dak., 1984; executive director, South Dakota state municipal league; board of directors, National League of Cities; staff, United States Senator James Abdnor of South Dakota 1985-1986; South Dakota state Republican party executive director 1989-1991; director, South Dakota state railroad division 1991-1993; director, South Dakota state municipal league 1993-1996; elected as a Republican to the One Hundred Fifth and to the two succeeding Congresses (January 3, 1997-January 3, 2003); was not a candidate for reelection to the One Hundred Eighth Congress in 2002, but was an unsuccessful candidate for the United States Senate; elected as a Republican to the U.S. Senate in 2004; reelected in 2010 for the term ending January 3, 2017; vice-chair, Republican Conference (2009); chair, Republican Policy Committee (2009-2012); chair, Republican Conference (2012-); chair, Committee on Commerce, Science, and Transportation (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 300002,
+            'bio'        => "ALEXANDER, Lamar, a Senator from Tennessee; born in Maryville, Tennessee, on July 3, 1940; B.A., Vanderbilt University 1962; J.D., New York University Law School 1965; governor of Tennessee 1979-1987; chairman of the National Governors Association 1985-1986; U.S. secretary of education 1991-1993; elected as a Republican to the U.S. Senate in 2002; reelected in 2008, and again in 2014 for the term ending January 3, 2021; chair, Republican Conference (2008-2012); chair, Committee on Health, Education, Labor, and Pensions (One Hundred Fourteenth Congress)."
+        ],
+        [
+            'govTrackId' => 402675,
+            'bio'        => "COATS, Daniel Ray, a Senator and a Representative from Indiana; born in Jackson, Jackson County, Mich., May 16, 1943; attended the public schools; graduated Jackson High School, 1961; graduated Wheaton College, Wheaton, Ill., B.A., 1965; graduated Indiana University School of Law, Indianapolis, J.D., 1971; admitted to the Indiana bar in 1972 and commenced practice in Fort Wayne; served in the United States Army 1966-1968; district representative, United States Congressman J. Danforth Quayle 1976-1980; elected as a Republican to the Ninety-seventh and to the three succeeding Congresses (January 3, 1981-January 3, 1989); elected to the One Hundred First Congress but did not serve; appointed on December 12, 1988, to the United States Senate to fill the vacancy caused by the election of J. Danforth Quayle as Vice President, and took the oath of office on January 3, 1989; elected by special election in 1990 to the remainder of the term; reelected for a full term in 1992, and served from January 3, 1989, to January 3, 1999; was not a candidate for reelection in 1998; special counsel, law firm of Verner, Liipfert, Bernhard, MacPherson and Hand; U.S. Ambassador to the Federal Republic of Germany 2001-2005; again elected to the United States Senate in 2010 for the term ending January 3, 2017."
         ],
     ];
 
-    private $temp = [
+    private /** @noinspection PhpUnusedPrivateFieldInspection */
+        $temp = [
         [
-            'govTrackId' => '',
+            'govTrackId' => 1,
             'bio'        => ""
         ],
     ];
