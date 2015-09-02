@@ -5,8 +5,8 @@
             <div class="visible-xs col-xs-1">
                 <a href="#" class="Navigation--menuIcon closed"><i class="fa fa-bars fa-2x"></i></a>
             </div>
-            <div class="col-md-9 col-xs-10">
-                <h1 class="Navigation--pageTitle">
+            <div class="col-md-12 col-xs-10">
+                <h1 class="Navigation--pageTitle text-center">
                     @if(Request::path() == '/')
                         The Rogg, your voice, your vote!
                     @elseif(Request::path() == 'politicians')

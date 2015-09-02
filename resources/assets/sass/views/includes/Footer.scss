@@ -2,14 +2,20 @@
   min-height: 200px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: $grey;
+  background-color: #F1F1F1;
 
   h4 {
-    color: #ffffff;
+    color: #6D6C6C;
   }
 
   a {
-    color: $red;
+    color: #003082;
+    text-decoration: none;
+
+    &:hover {
+      color: #B01C2E;
+      text-decoration: none;
+    }
   }
 }
 

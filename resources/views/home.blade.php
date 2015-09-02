@@ -10,7 +10,7 @@
                 </div>
             @endif
 
-            <h2>Nonpartisan, Rate and Comment</h2>
+            <h2>Top Ratings</h2>
 
             <div class="row TabbedReviews">
                 <div class="col-md-12">
@@ -136,7 +136,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Recent Activity</h2>
+                    <h2>Recent Ratings</h2>
                     <ul class="ReviewList">
                         @foreach($recentReviews as $review)
                             <li>

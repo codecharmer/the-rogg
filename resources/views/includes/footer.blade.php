@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="/" title="Home"><img class="Footer--logo" src="/assets/images/logo.png"></a>
+                <a href="/" title="Home"><img class="Footer--logo" src="/assets/images/logo-white-background.png"></a>
 
                 <div class="Footer--copyright">&copy; 2015 The Rogg</div>
             </div>
@@ -11,7 +11,7 @@
 
                 <ul class="Footer--nav">
                     <li><a href="/contact" title="Contact The Rogg">Contact</a></li>
-                    <li><a href="/mission" title="The Rogg's Mission">Mission</a></li>
+                    <li><a href="/purpose" title="The Rogg's Purpose">Purpose</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
