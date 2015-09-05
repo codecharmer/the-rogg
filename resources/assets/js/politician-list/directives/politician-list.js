@@ -19,12 +19,12 @@
 
         $scope.showHouse = function () {
             $scope.filterByOffice = 'Representative';
-            $scope.filterByCandidate = false;
+            $scope.filterByCandidate = undefined;
         };
 
         $scope.showSenate = function () {
             $scope.filterByOffice = 'Senator';
-            $scope.filterByCandidate = false;
+            $scope.filterByCandidate = undefined;
         };
 
         $scope.showCandidates = function () {
