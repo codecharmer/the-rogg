@@ -27,8 +27,16 @@ namespace :deploy do
          sudo :chmod, "-R o+w /usr/share/nginx/html/the-rogg/current/public/assets/images/user-photos"
       end
   end
+  task :configcache do
+		on roles(:app) do
+			within release_path do
+		        execute :php, "artisan config:cache"
+		    end
+	    end
+  end
 end
 
 after 'deploy:publishing', 'deploy:restart'
+after 'deploy:restart', 'deploy:configcache'
 after 'deploy:restart', 'deploy:permissions'
 after 'deploy:permissions', 'gulp'
