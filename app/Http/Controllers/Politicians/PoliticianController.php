@@ -3,7 +3,6 @@
 namespace TheRogg\Http\Controllers\Politicians;
 
 use Auth;
-use GuzzleHttp\Client;
 use InvalidArgumentException;
 use Request;
 use Response;
